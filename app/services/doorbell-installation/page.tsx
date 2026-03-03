@@ -1,0 +1,342 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { CheckCircle2, Phone, ArrowRight, Shield, Star, Clock, Zap, BellRing, Wifi, Smartphone, Volume2, ChevronDown } from 'lucide-react'
+
+const BASE = 'https://frontechsecurity.com'
+const PAGE_URL = `${BASE}/services/doorbell-installation`
+
+export const metadata: Metadata = {
+  title: 'Smart Doorbell Installation Service Near Me | Ring, Nest, Arlo — FrontechSecurity',
+  description: 'Professional smart video doorbell installation by certified technicians. Ring, Nest, Arlo, Eufy, Wyze — all brands. Hardwired or battery models. Same-day service across USA & Canada from $49.99. Call +1 (888) 400-3290.',
+  keywords: [
+    'smart doorbell installation',
+    'smart doorbell installation near me',
+    'video doorbell installation service',
+    'Ring doorbell installation',
+    'Ring doorbell installer near me',
+    'Google Nest doorbell installation',
+    'Nest doorbell setup service',
+    'Arlo doorbell installation',
+    'Eufy doorbell installation',
+    'Wyze doorbell setup',
+    'doorbell camera installation service',
+    'video doorbell setup near me',
+    'hardwired doorbell installation',
+    'battery doorbell installation',
+    'doorbell wiring installation',
+    'doorbell chime installation',
+    'smart doorbell installer',
+    'doorbell camera setup service',
+    'video doorbell installer USA',
+    'smart doorbell installation Canada',
+    'Ring doorbell installation California',
+    'doorbell installation Rancho Cucamonga',
+  ].join(', '),
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: 'Smart Doorbell Installation Near Me — Ring, Nest, Arlo | FrontechSecurity',
+    description: 'Certified installation of Ring, Google Nest, Arlo, Eufy, Wyze, and all video doorbell brands. Same-day across USA & Canada from $49.99. Call now.',
+    url: PAGE_URL,
+    type: 'website',
+    siteName: 'FrontechSecurity',
+    images: [{ url: `${BASE}/og-image.png`, width: 1200, height: 630, alt: 'Smart Doorbell Installation Service — FrontechSecurity' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Smart Doorbell Installation Near Me | FrontechSecurity',
+    description: 'Certified Ring, Nest, Arlo, Eufy doorbell installation. Same-day service. USA & Canada from $49.99.',
+    images: [`${BASE}/og-image.png`],
+  },
+}
+
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: `${BASE}/services` },
+        { '@type': 'ListItem', position: 3, name: 'Smart Doorbell Installation', item: PAGE_URL },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': `${PAGE_URL}#service`,
+      name: 'Smart Doorbell Installation Service',
+      serviceType: 'Video Doorbell Installation',
+      description: 'Professional smart doorbell installation for Ring, Google Nest, Arlo, Eufy, Wyze, and all major brands. Includes old doorbell removal, wiring, mounting, Wi-Fi pairing, chime setup, app installation on all devices, and full walkthrough.',
+      url: PAGE_URL,
+      provider: { '@type': 'LocalBusiness', name: 'FrontechSecurity', url: BASE },
+      areaServed: [{ '@type': 'Country', name: 'United States' }, { '@type': 'Country', name: 'Canada' }],
+      offers: { '@type': 'Offer', priceCurrency: 'USD', price: '49.99', description: 'Complete installation service including app setup and chime. No payment until complete.' },
+      aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '2400', bestRating: '5' },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Does my home need existing doorbell wiring?', acceptedAnswer: { '@type': 'Answer', text: 'No. We install both hardwired and battery-powered doorbells. If your home has existing doorbell wiring we will connect your new device to it. If not, we install the battery version which requires no wiring at all.' } },
+        { '@type': 'Question', name: 'Which doorbell brands do you install?', acceptedAnswer: { '@type': 'Answer', text: 'We install all major brands including Ring (all models), Google Nest Doorbell, Arlo Video Doorbell, Eufy Video Doorbell, Wyze Video Doorbell, Reolink, Lorex, and more.' } },
+        { '@type': 'Question', name: 'How long does doorbell installation take?', acceptedAnswer: { '@type': 'Answer', text: 'A standard smart doorbell installation takes 45 minutes to 1.5 hours depending on whether wiring is involved.' } },
+        { '@type': 'Question', name: 'Will my chime still work after installation?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We install or reconfigure your existing indoor chime as part of the service.' } },
+        { '@type': 'Question', name: 'What if my Wi-Fi signal is weak at the front door?', acceptedAnswer: { '@type': 'Answer', text: 'We assess Wi-Fi signal strength during installation. If the signal is too weak we can set up a Wi-Fi range extender as part of the same visit.' } },
+      ],
+    },
+    {
+      '@type': 'HowTo',
+      name: 'How Smart Doorbell Installation Works',
+      step: [
+        { '@type': 'HowToStep', position: 1, name: 'Booking & Consultation', text: 'Call or book online. Tell us your doorbell brand and model. We confirm if hardwired or battery powered and advise on any wiring needed.' },
+        { '@type': 'HowToStep', position: 2, name: 'Old Doorbell Removal', text: 'We safely remove your existing doorbell and chime, inspect the existing wiring, and ensure the voltage is compatible with your new device.' },
+        { '@type': 'HowToStep', position: 3, name: 'Mounting & Wiring', text: 'The new doorbell is mounted level and secure. For hardwired models, wiring is connected and tested.' },
+        { '@type': 'HowToStep', position: 4, name: 'Wi-Fi Pairing', text: 'Your doorbell is connected to your home Wi-Fi network. We check signal strength and use a Wi-Fi extender if needed.' },
+        { '@type': 'HowToStep', position: 5, name: 'App Setup & Walkthrough', text: 'The app is installed on all household smartphones. We demonstrate live view, two-way talk, motion alerts, and playback.' },
+      ],
+    },
+  ],
+}
+
+const features = [
+  { icon: BellRing, title: 'All Doorbell Brands', desc: 'Ring, Google Nest, Arlo, Eufy, Wyze, Reolink, Lorex, and more — we install every major brand.' },
+  { icon: Wifi, title: 'Wi-Fi Pairing & Config', desc: 'Full network pairing, signal strength optimization, and router settings so your doorbell stays online 24/7.' },
+  { icon: Volume2, title: 'Chime Box Installation', desc: 'We install or replace your existing chime box and ensure it rings correctly for both hardwired and wireless models.' },
+  { icon: Smartphone, title: 'App Setup on All Devices', desc: 'We set up the app on every smartphone in your household including iOS and Android, so everyone gets alerts.' },
+  { icon: Shield, title: 'Motion Zone Setup', desc: 'Custom motion detection zones, sensitivity levels, and package detection configuration to minimize false alerts.' },
+  { icon: Zap, title: 'Two-Way Audio Testing', desc: 'We test and calibrate speaker and microphone quality so you can have clear conversations at your front door.' },
+]
+
+const process = [
+  { step: '01', title: 'Booking & Consultation', desc: 'Call or book online. Tell us your doorbell brand and model. We confirm if hardwired or battery powered and advise on any wiring needed.' },
+  { step: '02', title: 'Old Doorbell Removal', desc: 'We safely remove your existing doorbell and chime, inspect the existing wiring (if any), and ensure the voltage is compatible with your new device.' },
+  { step: '03', title: 'Mounting & Wiring', desc: 'The new doorbell is mounted level and secure. For hardwired models, wiring is connected and tested. Angle wedge mounts are installed if needed for optimal camera angle.' },
+  { step: '04', title: 'Wi-Fi Pairing', desc: 'Your doorbell is connected to your home Wi-Fi network. We check signal strength at the mounting location and use a Wi-Fi extender if needed for a stable connection.' },
+  { step: '05', title: 'App Setup & Walkthrough', desc: 'The app is installed and configured on all household smartphones. We demonstrate live view, two-way talk, motion alerts, and recorded footage access.' },
+]
+
+const faqs = [
+  { q: 'Does my home need existing doorbell wiring?', a: 'No. We install both hardwired and battery-powered doorbells. If your home has existing doorbell wiring we will connect your new device to it. If not, we install the battery version which requires no wiring at all.' },
+  { q: 'Which doorbell brands do you install?', a: 'We install all major brands including Ring (all models), Google Nest Doorbell, Arlo Video Doorbell, Eufy Video Doorbell, Wyze Video Doorbell, Reolink, Lorex, and more. If your brand is not listed here, just call us and we will confirm.' },
+  { q: 'How long does doorbell installation take?', a: 'A standard smart doorbell installation takes 45 minutes to 1.5 hours depending on whether wiring is involved and how many devices we are setting up the app on.' },
+  { q: 'Will my chime still work after installation?', a: 'Yes. We install or reconfigure your existing indoor chime as part of the service. For battery-powered doorbells we also offer wireless chime add-ons that we can install at the same time.' },
+  { q: 'What if my Wi-Fi signal is weak at the front door?', a: 'We assess Wi-Fi signal strength during installation. If the signal is too weak for reliable performance we can set up a Wi-Fi range extender (sold separately) as part of the same visit to ensure a stable connection.' },
+  { q: 'Is there a subscription required for the doorbell to work?', a: 'No subscription is required for basic live view and two-way audio. However, cloud video history (recorded footage storage) typically requires a paid subscription from the manufacturer (e.g. Ring Protect, Nest Aware). We will explain your options during installation.' },
+]
+
+export default function DoorbellInstallationPage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
+    <div className="bg-[#0a0f1e]">
+
+      {/* Hero */}
+      <section className="relative py-20 sm:py-28 px-4 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(14,165,233,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(14,165,233,0.07) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#0ea5e9]/8 to-transparent" />
+        </div>
+        <div className="max-w-5xl mx-auto relative">
+          <nav className="flex items-center gap-2 text-xs text-[#64748b] mb-6" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-[#94a3b8] transition-colors">Home</Link>
+            <span>/</span>
+            <Link href="/services" className="hover:text-[#94a3b8] transition-colors">Services</Link>
+            <span>/</span>
+            <span className="text-[#94a3b8]">Smart Doorbell Installation</span>
+          </nav>
+          <div className="inline-flex items-center gap-2 bg-[#0ea5e9]/15 border border-[#0ea5e9]/40 rounded-full px-3 py-1.5 mb-5">
+            <BellRing size={13} className="text-[#00c2ff]" />
+            <span className="text-[#00c2ff] text-xs font-bold tracking-wider uppercase">High Demand Service</span>
+          </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-5 font-serif text-balance">
+            Smart Doorbell <span className="gradient-text">Installation Service</span>
+          </h1>
+          <p className="text-lg text-[#94a3b8] leading-relaxed mb-8 max-w-3xl">
+            Our certified technicians provide complete smart video doorbell installation for homes and businesses across the USA and Canada. From removing your old doorbell and configuring the wiring to pairing with your Wi-Fi network and setting up the app on every phone in your home — we handle every step so you can see and speak with anyone at your door from anywhere in the world.
+          </p>
+          <div className="flex flex-wrap gap-3 mb-8">
+            {['All Brands Supported', 'Hardwired & Battery Models', 'Wi-Fi Pairing Included', 'Chime Box Setup', 'App on All Devices', 'Same-Day Available'].map((b) => (
+              <span key={b} className="flex items-center gap-1.5 text-xs text-[#f0f4ff] bg-white/5 border border-white/10 rounded-full px-3 py-1">
+                <CheckCircle2 size={11} className="text-[#22c55e] shrink-0" />{b}
+              </span>
+            ))}
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#0ea5e9]/30 transition-shadow pulse-phone">
+              <Phone size={18} /> Call +1 (888) 400-3290 — Free Quote
+            </a>
+            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-colors">
+              Book Online <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust strip */}
+      <div className="bg-[#0f1e3d] border-y border-[#1e3a5f] py-4 px-4">
+        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
+          {[
+            { icon: Star, text: '4.9/5 Rating (2,400+ Reviews)', color: '#f59e0b' },
+            { icon: Shield, text: 'Licensed & Insured Technicians', color: '#22c55e' },
+            { icon: Clock, text: 'Same-Day Appointments Available', color: '#00c2ff' },
+            { icon: Zap, text: 'Average Install: Under 90 Minutes', color: '#0ea5e9' },
+          ].map(({ icon: Icon, text, color }) => (
+            <span key={text} className="flex items-center gap-2 text-sm text-[#94a3b8]">
+              <Icon size={14} style={{ color }} />{text}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Features */}
+      <section className="py-20 px-4 bg-[#060c1a]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-[#0ea5e9] text-xs font-bold uppercase tracking-widest">What Is Included</span>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif text-balance">
+              Everything Covered in Our Doorbell Installation
+            </h2>
+            <p className="text-[#94a3b8] max-w-2xl mx-auto">One flat rate covers the complete service — no extra charges for wiring, app setup, or chime configuration.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {features.map(({ icon: Icon, title, desc }) => (
+              <div key={title} className="glow-card bg-[#111827] rounded-xl p-6">
+                <div className="w-10 h-10 rounded-xl bg-[#0ea5e9]/15 flex items-center justify-center mb-4">
+                  <Icon size={20} className="text-[#0ea5e9]" />
+                </div>
+                <h3 className="text-white font-bold mb-2">{title}</h3>
+                <p className="text-[#94a3b8] text-sm leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Checklist + content */}
+      <section className="py-20 px-4 bg-[#0a0f1e]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <span className="text-[#0ea5e9] text-xs font-bold uppercase tracking-widest">Service Detail</span>
+            <h2 className="text-3xl font-black text-white mt-2 mb-4 font-serif text-balance">Why Professional Doorbell Installation Matters</h2>
+            <p className="text-[#94a3b8] leading-relaxed mb-5">
+              A smart doorbell is your first line of defense — it identifies visitors, deters package theft, and gives you two-way communication with anyone at your door whether you are at home, at work, or on vacation. But a poorly installed doorbell with a weak Wi-Fi connection, incorrect angle, or misconfigured motion zones provides very little real protection.
+            </p>
+            <p className="text-[#94a3b8] leading-relaxed mb-5">
+              Our technicians ensure every doorbell is installed at the correct height and angle for maximum face capture, connected to a strong Wi-Fi signal, and fully configured with the right motion sensitivity so you get alerts for what matters without constant false notifications.
+            </p>
+            <p className="text-[#94a3b8] leading-relaxed mb-6">
+              We also ensure your chime works correctly — including installing a compatible chime box if your home does not already have one — and that every person in your household has the app set up and knows how to use it.
+            </p>
+            <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
+              <Phone size={16} /> Get a Free Estimate
+            </a>
+          </div>
+          <div className="glow-card bg-[#111827] rounded-2xl p-7">
+            <h3 className="text-white font-bold font-serif mb-5">Complete Doorbell Installation Checklist</h3>
+            <ul className="space-y-3">
+              {[
+                'Existing doorbell and chime removal',
+                'Voltage and wiring compatibility check',
+                'Doorbell mounting at optimal height & angle',
+                'Angle wedge mount installation if needed',
+                'Hardwired connection or battery installation',
+                'Indoor chime box installation or replacement',
+                'Wi-Fi network pairing and signal test',
+                'Motion zone and sensitivity configuration',
+                'Package detection setup (where supported)',
+                'Two-way audio speaker and mic calibration',
+                'Night vision and HDR quality check',
+                'App installation on all household phones',
+                'Live view, playback, and alert walkthrough',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-[#94a3b8]">
+                  <CheckCircle2 size={15} className="text-[#22c55e] shrink-0 mt-0.5" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="py-20 px-4 bg-[#060c1a]">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-[#0ea5e9] text-xs font-bold uppercase tracking-widest">Our Process</span>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif text-balance">How Doorbell Installation Works</h2>
+          </div>
+          <div className="space-y-4">
+            {process.map(({ step, title, desc }) => (
+              <div key={step} className="flex gap-5 glow-card bg-[#111827] rounded-xl p-6">
+                <div className="text-3xl font-black gradient-text font-serif shrink-0 w-10">{step}</div>
+                <div>
+                  <h3 className="text-white font-bold mb-1">{title}</h3>
+                  <p className="text-[#94a3b8] text-sm leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing CTA */}
+      <section className="py-16 px-4 bg-[#0a0f1e]">
+        <div className="max-w-3xl mx-auto text-center glow-card bg-[#111827] rounded-2xl p-10">
+          <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">Flat-Rate Pricing</span>
+          <h2 className="text-3xl font-black text-white mt-2 mb-3 font-serif">Doorbell Installation from $49.99</h2>
+          <p className="text-[#94a3b8] mb-2 max-w-xl mx-auto">One flat price for the complete installation service — no extra charges for app setup, chime configuration, or wiring. Price does not include the cost of the doorbell device itself.</p>
+          <p className="text-[#64748b] text-xs mb-7">No payment is collected online. Payment is due only after the job is fully complete and you are satisfied.</p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0ea5e9]/30 transition-shadow pulse-phone">
+              <Phone size={18} /> Call +1 (888) 400-3290
+            </a>
+            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold px-8 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-colors">
+              Book Online
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="py-20 px-4 bg-[#060c1a]">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-[#0ea5e9] text-xs font-bold uppercase tracking-widest">FAQ</span>
+            <h2 className="text-3xl font-black text-white mt-2 font-serif text-balance">Frequently Asked Questions About Doorbell Installation</h2>
+          </div>
+          <div className="space-y-4">
+            {faqs.map(({ q, a }) => (
+              <details key={q} className="group glow-card bg-[#111827] rounded-xl">
+                <summary className="flex items-center justify-between gap-4 cursor-pointer p-6 text-white font-semibold text-sm list-none">
+                  {q}
+                  <ChevronDown size={16} className="text-[#0ea5e9] shrink-0 group-open:rotate-180 transition-transform" />
+                </summary>
+                <p className="px-6 pb-6 text-[#94a3b8] text-sm leading-relaxed">{a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related */}
+      <section className="py-16 px-4 bg-[#0a0f1e]">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-xl font-black text-white font-serif mb-6 text-center">Explore Related Services</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              { href: '/services/security-camera-installation', title: 'Security Camera Installation', desc: 'Complete indoor and outdoor camera system setup.' },
+              { href: '/services/wifi-network-setup', title: 'Wi-Fi & Network Setup', desc: 'Ensure your doorbell stays connected with a strong signal.' },
+              { href: '/services/quick-service-support', title: 'Ongoing Service & Support', desc: '7-day phone and remote support for your devices.' },
+            ].map(({ href, title, desc }) => (
+              <Link key={href} href={href} className="glow-card bg-[#111827] rounded-xl p-5 hover:border-[#0ea5e9] border border-[#1e3a5f] transition-colors group">
+                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-[#00c2ff] transition-colors">{title}</h3>
+                <p className="text-[#94a3b8] text-xs leading-relaxed">{desc}</p>
+                <span className="inline-flex items-center gap-1 text-[#0ea5e9] text-xs font-semibold mt-3">Learn More <ArrowRight size={12} /></span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+    </>
+  )
+}
