@@ -101,12 +101,12 @@ export default function WifiNetworkSetupPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
     <div className="bg-[#0a0f1e]">
-      <section className="relative py-20 sm:py-28 px-4 overflow-hidden">
+      <section className="relative py-10 px-4 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(124,58,237,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(124,58,237,0.07) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#7c3aed]/8 to-transparent" />
         </div>
-        <div className="max-w-5xl mx-auto relative">
+        <div className="max-w-6xl mx-auto relative">
           <nav className="flex items-center gap-2 text-xs text-[#64748b] mb-6" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-[#94a3b8] transition-colors">Home</Link>
             <span>/</span>
