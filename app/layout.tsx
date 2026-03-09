@@ -5,6 +5,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import TopBar from '@/components/TopBar'
+import jivoChat from "@/components/jivoChat"
 
 const inter = Inter({
   subsets: ['latin'],
@@ -314,6 +315,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-sans antialiased bg-[#0a0f1e] text-[#f0f4ff]">
         <TopBar />
         <Navbar />
+          <jivoChat />
         <main>{children}</main>
         <Footer />
       </body>
