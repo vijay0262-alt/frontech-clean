@@ -20,7 +20,7 @@ export default function HeroSection() {
             <span className="text-[#00c2ff] text-[11px] sm:text-xs font-bold tracking-wider uppercase">Certified Smart Home Security Experts</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-4 sm:mb-5 font-serif text-balance">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl text-white leading-tight mb-4 sm:mb-5 font-serif text-balance">
             Professional Security Camera &amp;{' '}
             <span className="gradient-text">Smart Doorbell</span>{' '}
             Installation
