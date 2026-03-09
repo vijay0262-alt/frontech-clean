@@ -4,7 +4,9 @@ import Script from "next/script"
 
 export default function JivoChat() {
   return (
-        <script src="//code.jivosite.com/widget/vGygZb1Lna" async></script>
-
+    <Script
+      src="//code.jivosite.com/widget/vGygZb1Lna"
+      strategy="lazyOnload"
+    />
   )
 }
