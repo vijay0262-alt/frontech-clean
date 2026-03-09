@@ -315,7 +315,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-sans antialiased bg-[#0a0f1e] text-[#f0f4ff]">
         <TopBar />
         <Navbar />
-          <jivoChat />
+          <JivoChat />
         <main>{children}</main>
         <Footer />
       </body>
