@@ -5,7 +5,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import TopBar from '@/components/TopBar'
-import JivoChat from "@/components/JivoChat"
+import JivoChat from '@/components/JivoChat'
 
 const inter = Inter({
   subsets: ['latin'],
