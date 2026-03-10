@@ -35,25 +35,13 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
           scrolled ? 'bg-[#0a0f1e]/98 backdrop-blur-md shadow-xl' : 'bg-[#0a0f1e]/90 backdrop-blur-sm'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#1d6ef5] to-[#00c2ff] flex items-center justify-center">
-              <Shield size={16} className="text-white" />
-            </div>
-            <div className="leading-tight">
-              <span className="block font-bold text-base text-white font-serif tracking-tight">
-                Frontech<span className="text-[#00c2ff]">Security</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Phone CTA - Always visible */}
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-center">
+          {/* Phone CTA - Centered */}
           <a
             href="tel:+18884003290"
-            className="flex items-center gap-2 px-3 py-2.5 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white text-sm font-bold rounded-lg hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all pulse-phone whitespace-nowrap"
+            className="flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white text-base font-bold rounded-lg hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all pulse-phone whitespace-nowrap"
           >
-            <Phone size={16} className="animate-pulse" />
+            <Phone size={18} className="animate-pulse" />
             <span className="hidden sm:inline">Call Now (888) 400-3290</span>
             <span className="sm:hidden">(888) 400-3290</span>
           </a>

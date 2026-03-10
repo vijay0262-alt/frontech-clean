@@ -154,11 +154,6 @@ export default function SecurityCameraInstallationPage() {
               </span>
             ))}
           </div>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-lg px-8 py-5 rounded-xl hover:shadow-xl hover:shadow-[#1d6ef5]/30 transition-shadow pulse-phone animate-pulse">
-              <Phone size={20} /> Call Now (888) 400-3290
-            </a>
-          </div>
           <p className="text-sm text-[#94a3b8] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
           
           <div className="mt-8 p-4 bg-[#1e3a5f]/20 border border-[#1e3a5f] rounded-lg max-w-3xl mx-auto">
@@ -169,16 +164,7 @@ export default function SecurityCameraInstallationPage() {
         </div>
       </section>
 
-      {/* Emergency CTA Banner */}
-      <div className="bg-gradient-to-r from-[#f59e0b] to-[#ea580c] border-y border-[#ea580c] py-5 px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-white font-bold text-lg mb-2">📞 Camera Not Working? Get Expert Help Now!</p>
-          <p className="text-white/90 text-sm mb-3">Third-party professional installation & repair service for all camera brands</p>
-          <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-white text-[#ea580c] font-black px-6 py-3 rounded-lg hover:bg-[#f0f4ff] transition-colors shadow-lg">
-            <Phone size={18} /> CALL NOW (888) 400-3290
-          </a>
-        </div>
-      </div>
+
 
       {/* Why Choose Us - Clear Value Proposition */}
       <section className="py-12 px-4 bg-[#0a0f1e]">
@@ -201,12 +187,7 @@ export default function SecurityCameraInstallationPage() {
               <p className="text-[#94a3b8] text-sm">Certified technicians with 10+ years experience. We guarantee our work.</p>
             </div>
           </div>
-          <div className="mt-8">
-            <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/40 transition-all pulse-phone animate-pulse">
-              <Phone size={22} className="animate-bounce" /> Call Now (888) 400-3290
-            </a>
-            <p className="text-sm text-[#94a3b8] mt-3">Open Now • Average wait time: under 30 seconds</p>
-          </div>
+
         </div>
       </section>
 
@@ -266,9 +247,7 @@ export default function SecurityCameraInstallationPage() {
             <p className="text-[#94a3b8] leading-relaxed mb-6">
               Whether you need a single outdoor camera watching your front door or a comprehensive 8-camera HD system with local NVR recording and cloud backup, our team has the tools and experience to deliver a flawless result.
             </p>
-            <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-shadow">
-              <Phone size={16} /> Get a Free Estimate
-            </a>
+
           </div>
           <div className="glow-card bg-[#111827] rounded-2xl p-7">
             <h3 className="text-white font-bold font-serif mb-5">Complete Installation Checklist</h3>
@@ -396,11 +375,7 @@ export default function SecurityCameraInstallationPage() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
-            <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow">
-              <Phone size={18} /> Call Now (888) 400-3290
-            </a>
-          </div>
+
         </div>
       </section>
 
@@ -429,16 +404,7 @@ export default function SecurityCameraInstallationPage() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
-            <div className="bg-gradient-to-r from-[#1d6ef5]/10 to-[#0ea5e9]/10 border-2 border-[#1d6ef5]/30 rounded-2xl p-8 mb-8">
-              <p className="text-xl text-white font-black mb-2">🚨 Camera Emergency? Need Help NOW?</p>
-              <p className="text-[#94a3b8] mb-4">Don't waste time troubleshooting alone. Our technicians solve 90% of issues on the first call.</p>
-              <a href="tel:+18884003290" className="inline-flex items-center gap-3 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl transition-all pulse-phone animate-pulse">
-                <Phone size={22} className="animate-bounce" /> Call Now (888) 400-3290
-              </a>
-              <p className="text-xs text-[#94a3b8] mt-3">Available 7 days/week • No appointment needed for phone support</p>
-            </div>
-          </div>
+
         </div>
       </section>
 

@@ -146,11 +146,6 @@ export default function DoorbellInstallationPage() {
               </span>
             ))}
           </div>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold text-lg px-8 py-5 rounded-xl hover:shadow-xl hover:shadow-[#0ea5e9]/30 transition-shadow pulse-phone animate-pulse">
-              <Phone size={20} /> Call Now (888) 400-3290
-            </a>
-          </div>
           <p className="text-sm text-[#94a3b8] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
           <p className="text-xs text-[#64748b] mt-3 max-w-2xl">* Third-party professional installation service. Not affiliated with or endorsed by Ring, Nest, Arlo, Blink, or any doorbell manufacturer.</p>
         </div>
@@ -177,12 +172,7 @@ export default function DoorbellInstallationPage() {
               <p className="text-[#94a3b8] text-sm">Certified technicians with 10+ years experience. We guarantee our work.</p>
             </div>
           </div>
-          <div className="mt-8">
-            <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0ea5e9]/40 transition-all pulse-phone animate-pulse">
-              <Phone size={22} className="animate-bounce" /> Call Now (888) 400-3290
-            </a>
-            <p className="text-sm text-[#94a3b8] mt-3">Open Now • Average wait time: under 30 seconds</p>
-          </div>
+
         </div>
       </section>
 
@@ -241,9 +231,7 @@ export default function DoorbellInstallationPage() {
             <p className="text-[#94a3b8] leading-relaxed mb-6">
               We also ensure your chime works correctly — including installing a compatible chime box if your home does not already have one — and that every person in your household has the app set up and knows how to use it.
             </p>
-            <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
-              <Phone size={16} /> Get a Free Estimate
-            </a>
+
           </div>
           <div className="glow-card bg-[#111827] rounded-2xl p-7">
             <h3 className="text-white font-bold font-serif mb-5">Complete Doorbell Installation Checklist</h3>
@@ -367,11 +355,7 @@ export default function DoorbellInstallationPage() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
-            <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow">
-              <Phone size={18} /> Call Now (888) 400-3290
-            </a>
-          </div>
+
         </div>
       </section>
 
@@ -400,16 +384,7 @@ export default function DoorbellInstallationPage() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
-            <div className="bg-gradient-to-r from-[#0ea5e9]/10 to-[#00c2ff]/10 border-2 border-[#0ea5e9]/30 rounded-2xl p-8 mb-8">
-              <p className="text-xl text-white font-black mb-2">🚨 Doorbell Emergency? Need Help NOW?</p>
-              <p className="text-[#94a3b8] mb-4">Don't waste time troubleshooting alone. Our technicians solve 90% of issues on the first call.</p>
-              <a href="tel:+18884003290" className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl transition-all pulse-phone animate-pulse">
-                <Phone size={22} className="animate-bounce" /> Call Now (888) 400-3290
-              </a>
-              <p className="text-xs text-[#94a3b8] mt-3">Available 7 days/week • No appointment needed for phone support</p>
-            </div>
-          </div>
+
         </div>
       </section>
 
@@ -478,18 +453,7 @@ export default function DoorbellInstallationPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-12 px-4 bg-gradient-to-b from-[#0a0f1e] to-[#060c1a]">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 font-serif">Ready to Get Your Doorbell Working?</h2>
-          <p className="text-lg text-[#94a3b8] mb-8">Speak with a certified technician now — free phone consultation</p>
-          <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-black text-xl px-10 py-6 rounded-2xl hover:shadow-2xl hover:shadow-[#0ea5e9]/40 transition-all pulse-phone animate-pulse">
-            <Phone size={24} className="animate-pulse" /> 
-            <span>CALL NOW (888) 400-3290</span>
-          </a>
-          <p className="text-sm text-[#64748b] mt-6">Available 7 days a week  •  Same-day appointments available  •  100% satisfaction guaranteed</p>
-        </div>
-      </section>
+
     </div>
     </LandingPageLayout>
   )
