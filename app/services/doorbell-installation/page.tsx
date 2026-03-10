@@ -414,18 +414,7 @@ export default function DoorbellInstallationPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-12 px-4 bg-gradient-to-b from-[#0a0f1e] to-[#060c1a]">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 font-serif">Ready to Get Your Video Doorbell Working?</h2>
-          <p className="text-lg text-[#94a3b8] mb-8">Speak with a certified technician now — free phone consultation</p>
-          <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-black text-xl px-10 py-6 rounded-2xl hover:shadow-2xl hover:shadow-[#0ea5e9]/40 transition-all pulse-phone animate-pulse">
-            <Phone size={24} className="animate-pulse" /> 
-            <span>CALL NOW (888) 400-3290</span>
-          </a>
-          <p className="text-sm text-[#64748b] mt-6">Available 7 days a week  •  Same-day appointments available  •  100% satisfaction guaranteed</p>
-        </div>
-      </section>
+
 
       {/* Clear Disclaimers Section */}
       <section className="py-12 px-4 bg-[#0a0f1e] border-t border-[#1e3a5f]">
