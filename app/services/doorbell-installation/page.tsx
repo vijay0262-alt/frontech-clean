@@ -415,34 +415,6 @@ export default function DoorbellInstallationPage() {
       </section>
 
 
-
-      {/* Clear Disclaimers Section */}
-      <section className="py-12 px-4 bg-[#0a0f1e] border-t border-[#1e3a5f]">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-[#111827] border border-[#1e3a5f] rounded-xl p-6">
-            <h3 className="text-white font-bold mb-4 text-center">Third-Party Service Disclosure</h3>
-            <div className="space-y-3 text-sm text-[#94a3b8] leading-relaxed">
-              <p>
-                <strong className="text-white">Independent Service Provider:</strong> FrontechSecurity is a third-party, independent technical support and installation service provider. We are NOT affiliated with, authorized by, endorsed by, or sponsored by Ring LLC, Google Nest, Arlo Technologies, Amazon Blink, Eufy, Wyze, Reolink, ADT Inc., or any other video doorbell manufacturer or brand mentioned on this website.
-              </p>
-              <p>
-                <strong className="text-white">Brand Names & Trademarks:</strong> All product names, brand names, trademarks, and registered trademarks mentioned are the property of their respective owners. We use these names solely for descriptive and compatibility purposes to help customers understand which devices and brands we can service.
-              </p>
-              <p>
-                <strong className="text-white">Service Scope:</strong> Our services include installation, setup, configuration, troubleshooting, and repair assistance for video doorbells and related equipment. Hardware/devices are not included unless explicitly stated. Customers must own or purchase their own equipment.
-              </p>
-              <p>
-                <strong className="text-white">Pricing:</strong> Service fees start at $49.99 for basic installation. Final pricing depends on complexity, time required, and specific customer needs. No payment is collected until service completion and customer satisfaction.
-              </p>
-              <p>
-                <strong className="text-white">Manufacturer Support:</strong> For warranty claims or manufacturer-specific support, customers should contact the device manufacturer directly. We provide third-party technical assistance independent of manufacturer warranties.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
     </div>
     </LandingPageLayout>
   )
