@@ -146,6 +146,11 @@ export default function DoorbellInstallationPage() {
               </span>
             ))}
           </div>
+          <div className="mt-8">
+            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0ea5e9]/40 transition-all">
+              <Phone size={22} /> Call Now (888) 400-3290
+            </a>
+          </div>
           <p className="text-sm text-[#94a3b8] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
           <p className="text-xs text-[#64748b] mt-3 max-w-2xl">* Third-party professional installation service. Not affiliated with or endorsed by Ring, Nest, Arlo, Blink, or any doorbell manufacturer.</p>
         </div>

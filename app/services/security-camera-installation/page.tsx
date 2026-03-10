@@ -154,6 +154,11 @@ export default function SecurityCameraInstallationPage() {
               </span>
             ))}
           </div>
+          <div className="mt-8">
+            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/40 transition-all">
+              <Phone size={22} /> Call Now (888) 400-3290
+            </a>
+          </div>
           <p className="text-sm text-[#94a3b8] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
           
           <div className="mt-8 p-4 bg-[#1e3a5f]/20 border border-[#1e3a5f] rounded-lg max-w-3xl mx-auto">
