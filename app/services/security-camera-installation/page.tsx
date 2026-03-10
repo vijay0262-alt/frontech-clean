@@ -1,39 +1,35 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
-import { CheckCircle2, Phone, ArrowRight, Shield, Star, Clock, Zap, Camera, Eye, Wifi, HardDrive, ChevronDown } from 'lucide-react'
+import LandingPageLayout from '@/components/LandingPageLayout'
+import { CheckCircle2, Phone, ArrowRight, Shield, Star, Clock, Zap, Camera, Eye, Wifi, HardDrive, ChevronDown, Wrench, AlertCircle } from 'lucide-react'
 
 const BASE = 'https://frontechsecurity.com'
 const PAGE_URL = `${BASE}/services/security-camera-installation`
 
 export const metadata: Metadata = {
   title: 'Security Camera Installation Service Near Me | USA & Canada — FrontechSecurity',
-  description: 'Professional security camera installation by certified technicians — indoor, outdoor, wired & wireless, HD & 4K. Same-day service across USA & Canada. Starting from $49.99. Call +1 (888) 400-3290 for a free quote.',
+  description: 'Expert security camera installation & repair service. Ring, Arlo, Blink, Reolink, ADT & all brands. Fix not connecting, not working issues. Professional setup & troubleshooting. Same-day service USA & Canada. Call +1 (888) 400-3290.',
   keywords: [
     'security camera installation',
     'security camera installation near me',
     'home security camera installation',
-    'outdoor security camera installation',
-    'indoor security camera setup',
-    'CCTV installation service',
-    '4K security camera installation',
-    'HD security camera setup',
-    'wired security camera installation',
-    'wireless security camera installation',
-    'Ring camera installation service',
-    'Nest camera installation',
-    'Arlo camera setup service',
-    'Wyze camera installation',
+    'Ring camera installation',
+    'Arlo camera installation',
+    'Blink camera installation',
     'Reolink camera installation',
-    'Hikvision installation service',
-    'night vision camera setup',
-    'NVR DVR installation',
-    'security camera installer near me',
-    'security camera installation Rancho Cucamonga',
-    'security camera installation California',
-    'security camera installation USA',
-    'security camera installation Canada',
-    'cheap security camera installation',
-    'professional security camera setup',
+    'ADT camera installation',
+    'security camera not working',
+    'security camera not connecting',
+    'security camera repair',
+    'camera installation service',
+    'wireless camera setup',
+    'outdoor camera installation',
+    'Ring camera not connecting',
+    'Arlo camera offline',
+    'Blink camera setup',
+    'security camera troubleshooting',
+    'same day camera installation',
+    'professional camera installer',
+    'security camera help',
   ].join(', '),
   alternates: { canonical: PAGE_URL },
   openGraph: {
@@ -129,7 +125,7 @@ const faqs = [
 
 export default function SecurityCameraInstallationPage() {
   return (
-    <>
+    <LandingPageLayout>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
     <div className="bg-[#0a0f1e]">
 
@@ -140,37 +136,76 @@ export default function SecurityCameraInstallationPage() {
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#1d6ef5]/8 to-transparent" />
         </div>
         <div className="max-w-6xl mx-auto relative">
-          <nav className="flex items-center gap-2 text-xs text-[#64748b] mb-6" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-[#94a3b8] transition-colors">Home</Link>
-            <span>/</span>
-            <Link href="/services" className="hover:text-[#94a3b8] transition-colors">Services</Link>
-            <span>/</span>
-            <span className="text-[#94a3b8]">Security Camera Installation</span>
-          </nav>
+
           <div className="inline-flex items-center gap-2 bg-[#1d6ef5]/15 border border-[#1d6ef5]/40 rounded-full px-3 py-1.5 mb-5">
             <Camera size={13} className="text-[#00c2ff]" />
             <span className="text-[#00c2ff] text-xs font-bold tracking-wider uppercase">Most Requested Service</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-5 font-serif text-balance">
-            Professional Security Camera <span className="gradient-text">Installation Service</span>
+            Security Camera Installation & Repair <span className="gradient-text">Near You</span>
           </h1>
           <p className="text-lg text-[#94a3b8] leading-relaxed mb-8 max-w-3xl">
-            Our certified technicians install indoor and outdoor security cameras at your home or business across the USA and Canada. From a single front-door camera to a complete multi-camera HD system with NVR recording — we handle everything from mounting to app setup, so your property is protected from day one.
+            <strong className="text-white">Professional installation, setup & repair for Ring, Arlo, Blink, Reolink, ADT & all brands.</strong> Fix cameras not connecting, not working, offline issues. Expert troubleshooting & same-day service across USA & Canada. From $49.99.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
-            {['Same-Day Service Available', 'All Major Brands Supported', 'HD & 4K Resolution', 'Night Vision Setup', 'Full App Configuration', '100% Satisfaction Guaranteed'].map((b) => (
+            {['Ring, Arlo, Blink, ADT Support', 'Not Working? We Fix It', 'Same-Day Service', 'Installation & Repair', 'Connection Issues Solved', 'No Fix, No Pay'].map((b) => (
               <span key={b} className="flex items-center gap-1.5 text-xs text-[#f0f4ff] bg-white/5 border border-white/10 rounded-full px-3 py-1">
                 <CheckCircle2 size={11} className="text-[#22c55e] shrink-0" />{b}
               </span>
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#1d6ef5]/30 transition-shadow pulse-phone">
-              <Phone size={18} /> Call +1 (888) 400-3290 — Free Quote
+            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-lg px-8 py-5 rounded-xl hover:shadow-xl hover:shadow-[#1d6ef5]/30 transition-shadow pulse-phone animate-pulse">
+              <Phone size={20} /> Call Now +1 (888) 400-3290
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-colors">
-              Book Online <ArrowRight size={16} />
-            </Link>
+          </div>
+          <p className="text-sm text-[#94a3b8] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
+          
+          <div className="mt-8 p-4 bg-[#1e3a5f]/20 border border-[#1e3a5f] rounded-lg max-w-3xl mx-auto">
+            <p className="text-xs text-[#94a3b8] leading-relaxed">
+              <strong className="text-[#00c2ff]">Important Notice:</strong> FrontechSecurity is an independent third-party installation and technical support service provider. We are not affiliated with, endorsed by, or sponsored by Ring, Arlo, Blink, Reolink, ADT, Google Nest, or any other camera manufacturer mentioned on this page. All brand names and trademarks are property of their respective owners and are used for descriptive purposes only to indicate compatibility and service expertise.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Emergency CTA Banner */}
+      <div className="bg-gradient-to-r from-[#f59e0b] to-[#ea580c] border-y border-[#ea580c] py-5 px-4">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-white font-bold text-lg mb-2">📞 Camera Not Working? Get Expert Help Now!</p>
+          <p className="text-white/90 text-sm mb-3">Third-party professional installation & repair service for all camera brands</p>
+          <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-white text-[#ea580c] font-black px-6 py-3 rounded-lg hover:bg-[#f0f4ff] transition-colors shadow-lg">
+            <Phone size={18} /> CALL NOW: +1 (888) 400-3290
+          </a>
+        </div>
+      </div>
+
+      {/* Why Choose Us - Clear Value Proposition */}
+      <section className="py-12 px-4 bg-[#0a0f1e]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-6 font-serif">Why Customers Call Us for Camera Help</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="glow-card bg-[#111827] rounded-xl p-6">
+              <div className="text-4xl mb-3">📞</div>
+              <h3 className="text-white font-bold mb-2">Speak to Real Expert</h3>
+              <p className="text-[#94a3b8] text-sm">Live technician support — no bots, no wait. Get instant help over the phone.</p>
+            </div>
+            <div className="glow-card bg-[#111827] rounded-xl p-6">
+              <div className="text-4xl mb-3">⚡</div>
+              <h3 className="text-white font-bold mb-2">Same-Day Service</h3>
+              <p className="text-[#94a3b8] text-sm">Camera offline? Need urgent fix? We come to you today — call now for availability.</p>
+            </div>
+            <div className="glow-card bg-[#111827] rounded-xl p-6">
+              <div className="text-4xl mb-3">✅</div>
+              <h3 className="text-white font-bold mb-2">Fixed Right First Time</h3>
+              <p className="text-[#94a3b8] text-sm">Certified technicians with 10+ years experience. We guarantee our work.</p>
+            </div>
+          </div>
+          <div className="mt-8">
+            <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/40 transition-all pulse-phone animate-pulse">
+              <Phone size={22} className="animate-bounce" /> Call +1 (888) 400-3290 Now
+            </a>
+            <p className="text-sm text-[#94a3b8] mt-3">Open Now • Average wait time: under 30 seconds</p>
           </div>
         </div>
       </section>
@@ -286,20 +321,28 @@ export default function SecurityCameraInstallationPage() {
         </div>
       </section>
 
-      {/* Pricing CTA */}
-      <section className="py-16 px-4 bg-[#0a0f1e]">
-        <div className="max-w-3xl mx-auto text-center glow-card bg-[#111827] rounded-2xl p-10">
-          <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">Transparent Pricing</span>
-          <h2 className="text-3xl font-black text-white mt-2 mb-3 font-serif">Camera Installation from $49.99</h2>
-          <p className="text-[#94a3b8] mb-2 max-w-xl mx-auto">Flat-rate installation pricing — no hourly rates, no surprises. Price is for the installation service only and does not include the cost of hardware.</p>
-          <p className="text-[#64748b] text-xs mb-7">No payment is collected online or until the job is fully complete and you are satisfied.</p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-shadow pulse-phone">
-              <Phone size={18} /> Call +1 (888) 400-3290
-            </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold px-8 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-colors">
-              Book Online
-            </Link>
+      {/* Urgent CTA - Optimized for Calls */}
+      <section className="py-16 px-4 bg-gradient-to-b from-[#0a0f1e] to-[#060c1a]">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center glow-card bg-gradient-to-br from-[#111827] to-[#0a0f1e] border-2 border-[#1d6ef5]/30 rounded-2xl p-10">
+            <div className="inline-block bg-[#22c55e]/20 border border-[#22c55e]/40 rounded-full px-4 py-2 mb-4">
+              <span className="text-[#22c55e] text-sm font-bold">✓ We're Available Right Now</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif">Need Your Camera Working Today?</h2>
+            <p className="text-lg text-[#94a3b8] mb-3 max-w-2xl mx-auto">Stop struggling with confusing apps and settings. Call us and speak with a certified technician in under 30 seconds.</p>
+            <div className="bg-[#0a0f1e]/60 rounded-xl p-6 mb-6 max-w-xl mx-auto">
+              <p className="text-white font-bold mb-2">📋 Service Pricing:</p>
+              <p className="text-[#94a3b8] text-sm mb-2">• Professional Installation: Starting at $49.99</p>
+              <p className="text-[#94a3b8] text-sm mb-2">• Repair & Troubleshooting: From $49.99</p>
+              <p className="text-[#94a3b8] text-sm">• Phone Consultation: FREE (Call now)</p>
+              <p className="text-[#64748b] text-xs mt-3">*Service fee only. Hardware/parts sold separately. No payment until work is complete.</p>
+            </div>
+            <div className="space-y-3">
+              <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
+                <Phone size={26} className="animate-bounce" /> Call +1 (888) 400-3290
+              </a>
+              <p className="text-sm text-[#94a3b8]">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
+            </div>
           </div>
         </div>
       </section>
@@ -327,26 +370,117 @@ export default function SecurityCameraInstallationPage() {
         </div>
       </section>
 
-      {/* Related services */}
+      {/* Supported Brands */}
       <section className="py-16 px-4 bg-[#0a0f1e]">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-xl font-black text-white font-serif mb-6 text-center">Explore Related Services</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-black text-white font-serif mb-3">Third-Party Support for All Major Camera Brands</h2>
+            <p className="text-[#94a3b8] max-w-2xl mx-auto">Independent professional installation, setup, repair & troubleshooting service (not affiliated with manufacturers)</p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
-              { href: '/services/doorbell-installation', title: 'Smart Doorbell Installation', desc: 'Video doorbell mounting, Wi-Fi pairing, and app setup.' },
-              { href: '/services/wifi-network-setup', title: 'Wi-Fi & Network Setup', desc: 'Ensure reliable connectivity for all your cameras.' },
-              { href: '/services/quick-service-support', title: 'Ongoing Service & Support', desc: '7-day phone and remote support for your system.' },
-            ].map(({ href, title, desc }) => (
-              <Link key={href} href={href} className="glow-card bg-[#111827] rounded-xl p-5 hover:border-[#1d6ef5] border border-[#1e3a5f] transition-colors group">
-                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-[#00c2ff] transition-colors">{title}</h3>
-                <p className="text-[#94a3b8] text-xs leading-relaxed">{desc}</p>
-                <span className="inline-flex items-center gap-1 text-[#1d6ef5] text-xs font-semibold mt-3">Learn More <ArrowRight size={12} /></span>
-              </Link>
+              { name: 'Ring Cameras', icon: Camera },
+              { name: 'Arlo Cameras', icon: Eye },
+              { name: 'Blink Cameras', icon: Camera },
+              { name: 'Reolink Cameras', icon: Eye },
+              { name: 'ADT Cameras', icon: Shield },
+              { name: 'Nest Cameras', icon: Camera },
+              { name: 'Wyze Cameras', icon: Eye },
+              { name: 'Eufy Cameras', icon: Camera },
+              { name: 'Lorex Cameras', icon: HardDrive },
+              { name: 'All Brands', icon: Wrench },
+            ].map(({ name, icon: Icon }) => (
+              <div key={name} className="glow-card bg-[#111827] rounded-xl p-5 text-center">
+                <Icon size={28} className="text-[#1d6ef5] mx-auto mb-2" />
+                <p className="text-white font-bold text-sm">{name}</p>
+              </div>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow">
+              <Phone size={18} /> Call +1 (888) 400-3290 for Help
+            </a>
           </div>
         </div>
       </section>
+
+      {/* Common Issues We Fix */}
+      <section className="py-16 px-4 bg-[#060c1a]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-black text-white font-serif mb-3">Common Camera Issues We Fix</h2>
+            <p className="text-[#94a3b8] max-w-2xl mx-auto">From installation to repair & troubleshooting — we solve all security camera problems</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { issue: 'Camera Not Connecting to WiFi', desc: 'Signal strength check, network configuration, extender setup' },
+              { issue: 'Camera Not Working / Offline', desc: 'Power diagnostics, firmware update, full system reset' },
+              { issue: 'Poor Video Quality / No Night Vision', desc: 'Resolution optimization, IR sensor calibration, lens cleaning' },
+              { issue: 'Motion Detection Not Working', desc: 'Zone reconfiguration, sensitivity adjustment, app settings' },
+              { issue: 'App Not Showing Live Feed', desc: 'Account sync, app reinstall, remote access configuration' },
+              { issue: 'Recording Not Saving', desc: 'Storage setup, cloud subscription check, SD card diagnostics' },
+            ].map(({ issue, desc }) => (
+              <div key={issue} className="glow-card bg-[#111827] rounded-xl p-6">
+                <div className="flex items-start gap-3 mb-3">
+                  <AlertCircle size={20} className="text-[#f59e0b] shrink-0 mt-0.5" />
+                  <h3 className="text-white font-bold text-base">{issue}</h3>
+                </div>
+                <p className="text-[#94a3b8] text-sm leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <div className="bg-gradient-to-r from-[#1d6ef5]/10 to-[#0ea5e9]/10 border-2 border-[#1d6ef5]/30 rounded-2xl p-8 mb-8">
+              <p className="text-xl text-white font-black mb-2">🚨 Camera Emergency? Need Help NOW?</p>
+              <p className="text-[#94a3b8] mb-4">Don't waste time troubleshooting alone. Our technicians solve 90% of issues on the first call.</p>
+              <a href="tel:+18884003290" className="inline-flex items-center gap-3 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl transition-all pulse-phone animate-pulse">
+                <Phone size={22} className="animate-bounce" /> Call +1 (888) 400-3290 — Get Help in Minutes
+              </a>
+              <p className="text-xs text-[#94a3b8] mt-3">Available 7 days/week • No appointment needed for phone support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Clear Disclaimers Section */}
+      <section className="py-12 px-4 bg-[#0a0f1e] border-t border-[#1e3a5f]">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-[#111827] border border-[#1e3a5f] rounded-xl p-6">
+            <h3 className="text-white font-bold mb-4 text-center">Third-Party Service Disclosure</h3>
+            <div className="space-y-3 text-sm text-[#94a3b8] leading-relaxed">
+              <p>
+                <strong className="text-white">Independent Service Provider:</strong> FrontechSecurity is a third-party, independent technical support and installation service provider. We are NOT affiliated with, authorized by, endorsed by, or sponsored by Ring LLC, Arlo Technologies, Amazon Blink, Reolink, ADT Inc., Google Nest, or any other security camera manufacturer or brand mentioned on this website.
+              </p>
+              <p>
+                <strong className="text-white">Brand Names & Trademarks:</strong> All product names, brand names, trademarks, and registered trademarks mentioned are the property of their respective owners. We use these names solely for descriptive and compatibility purposes to help customers understand which devices and brands we can service.
+              </p>
+              <p>
+                <strong className="text-white">Service Scope:</strong> Our services include installation, setup, configuration, troubleshooting, and repair assistance for security cameras and related equipment. Hardware/devices are not included unless explicitly stated. Customers must own or purchase their own equipment.
+              </p>
+              <p>
+                <strong className="text-white">Pricing:</strong> Service fees start at $49.99 for basic installation. Final pricing depends on complexity, time required, and specific customer needs. No payment is collected until service completion and customer satisfaction.
+              </p>
+              <p>
+                <strong className="text-white">Manufacturer Support:</strong> For warranty claims or manufacturer-specific support, customers should contact the device manufacturer directly. We provide third-party technical assistance independent of manufacturer warranties.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-12 px-4 bg-gradient-to-b from-[#0a0f1e] to-[#060c1a]">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 font-serif">Ready to Get Your Security Camera Working?</h2>
+          <p className="text-lg text-[#94a3b8] mb-8">Speak with a certified technician now — free phone consultation</p>
+          <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-black text-xl px-10 py-6 rounded-2xl hover:shadow-2xl hover:shadow-[#1d6ef5]/40 transition-all pulse-phone animate-pulse">
+            <Phone size={24} className="animate-pulse" /> 
+            <span>CALL NOW: +1 (888) 400-3290</span>
+          </a>
+          <p className="text-sm text-[#64748b] mt-6">Available 7 days a week  •  Same-day appointments available  •  100% satisfaction guaranteed</p>
+        </div>
+      </section>
     </div>
-    </>
+    </LandingPageLayout>
   )
 }
