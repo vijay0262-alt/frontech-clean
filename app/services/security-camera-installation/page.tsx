@@ -141,7 +141,7 @@ export default function SecurityCameraInstallationPage() {
             <Camera size={13} className="text-[#00c2ff]" />
             <span className="text-[#00c2ff] text-xs font-bold tracking-wider uppercase">Most Requested Service</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-5 font-serif text-balance">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 font-serif text-balance">
             Security Camera Installation & Repair <span className="gradient-text">Near You</span>
           </h1>
           <p className="text-lg text-[#94a3b8] leading-relaxed mb-8 max-w-3xl">
