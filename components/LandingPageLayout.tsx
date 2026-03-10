@@ -6,9 +6,25 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
+    // Hide the default header/footer from main layout
+    const topBar = document.querySelector('.trust-bar')
+    const navbar = document.querySelector('nav')
+    const footer = document.querySelector('body > footer')
+    
+    if (topBar) (topBar as HTMLElement).style.display = 'none'
+    if (navbar) (navbar as HTMLElement).style.display = 'none'
+    if (footer) (footer as HTMLElement).style.display = 'none'
+
     const onScroll = () => setScrolled(window.scrollY > 50)
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      // Restore on unmount
+      if (topBar) (topBar as HTMLElement).style.display = ''
+      if (navbar) (navbar as HTMLElement).style.display = ''
+      if (footer) (footer as HTMLElement).style.display = ''
+    }
   }, [])
 
   return (
@@ -35,11 +51,11 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
           {/* Phone CTA - Always visible */}
           <a
             href="tel:+18884003290"
-            className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white text-sm font-bold rounded-lg hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all pulse-phone"
+            className="flex items-center gap-2 px-3 py-2.5 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white text-sm font-bold rounded-lg hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all pulse-phone whitespace-nowrap"
           >
             <Phone size={16} className="animate-pulse" />
-            <span className="hidden xs:inline">(888) 400-3290</span>
-            <span className="xs:hidden">Call Now</span>
+            <span className="hidden sm:inline">Call Now (888) 400-3290</span>
+            <span className="sm:hidden">(888) 400-3290</span>
           </a>
         </div>
       </div>
@@ -106,7 +122,7 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
           className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white text-base font-bold rounded-xl shadow-2xl hover:shadow-[#1d6ef5]/50 transition-all pulse-phone"
         >
           <Phone size={20} className="animate-pulse" />
-          Call Now - Free Quote
+          Call Now (888) 400-3290
         </a>
       </div>
     </>

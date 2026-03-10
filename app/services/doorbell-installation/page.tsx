@@ -148,7 +148,7 @@ export default function DoorbellInstallationPage() {
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold text-lg px-8 py-5 rounded-xl hover:shadow-xl hover:shadow-[#0ea5e9]/30 transition-shadow pulse-phone animate-pulse">
-              <Phone size={20} /> Call Now +1 (888) 400-3290
+              <Phone size={20} /> Call Now (888) 400-3290
             </a>
           </div>
           <p className="text-sm text-[#94a3b8] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
@@ -179,7 +179,7 @@ export default function DoorbellInstallationPage() {
           </div>
           <div className="mt-8">
             <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0ea5e9]/40 transition-all pulse-phone animate-pulse">
-              <Phone size={22} className="animate-bounce" /> Call +1 (888) 400-3290 Now
+              <Phone size={22} className="animate-bounce" /> Call Now (888) 400-3290
             </a>
             <p className="text-sm text-[#94a3b8] mt-3">Open Now • Average wait time: under 30 seconds</p>
           </div>
@@ -312,7 +312,7 @@ export default function DoorbellInstallationPage() {
             </div>
             <div className="space-y-3">
               <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#0ea5e9]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
-                <Phone size={26} className="animate-bounce" /> Call +1 (888) 400-3290
+                <Phone size={26} className="animate-bounce" /> Call Now (888) 400-3290
               </a>
               <p className="text-sm text-[#94a3b8]">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
             </div>
@@ -369,7 +369,7 @@ export default function DoorbellInstallationPage() {
           </div>
           <div className="text-center mt-10">
             <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow">
-              <Phone size={18} /> Call +1 (888) 400-3290 for Help
+              <Phone size={18} /> Call Now (888) 400-3290
             </a>
           </div>
         </div>
@@ -405,7 +405,7 @@ export default function DoorbellInstallationPage() {
               <p className="text-xl text-white font-black mb-2">🚨 Doorbell Emergency? Need Help NOW?</p>
               <p className="text-[#94a3b8] mb-4">Don't waste time troubleshooting alone. Our technicians solve 90% of issues on the first call.</p>
               <a href="tel:+18884003290" className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl transition-all pulse-phone animate-pulse">
-                <Phone size={22} className="animate-bounce" /> Call +1 (888) 400-3290 — Get Help in Minutes
+                <Phone size={22} className="animate-bounce" /> Call Now (888) 400-3290
               </a>
               <p className="text-xs text-[#94a3b8] mt-3">Available 7 days/week • No appointment needed for phone support</p>
             </div>
@@ -446,7 +446,7 @@ export default function DoorbellInstallationPage() {
           <p className="text-lg text-[#94a3b8] mb-8">Speak with a certified technician now — free phone consultation</p>
           <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-black text-xl px-10 py-6 rounded-2xl hover:shadow-2xl hover:shadow-[#0ea5e9]/40 transition-all pulse-phone animate-pulse">
             <Phone size={24} className="animate-pulse" /> 
-            <span>CALL NOW: +1 (888) 400-3290</span>
+            <span>CALL NOW (888) 400-3290</span>
           </a>
           <p className="text-sm text-[#64748b] mt-6">Available 7 days a week  •  Same-day appointments available  •  100% satisfaction guaranteed</p>
         </div>
@@ -485,7 +485,7 @@ export default function DoorbellInstallationPage() {
           <p className="text-lg text-[#94a3b8] mb-8">Speak with a certified technician now — free phone consultation</p>
           <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0ea5e9] to-[#00c2ff] text-white font-black text-xl px-10 py-6 rounded-2xl hover:shadow-2xl hover:shadow-[#0ea5e9]/40 transition-all pulse-phone animate-pulse">
             <Phone size={24} className="animate-pulse" /> 
-            <span>CALL NOW: +1 (888) 400-3290</span>
+            <span>CALL NOW (888) 400-3290</span>
           </a>
           <p className="text-sm text-[#64748b] mt-6">Available 7 days a week  •  Same-day appointments available  •  100% satisfaction guaranteed</p>
         </div>
