@@ -134,7 +134,7 @@ $body = <<<HTML
         <!-- Footer -->
         <tr>
           <td style="background:#f0f4ff;padding:16px 32px;border-top:1px solid #dde4f0;">
-            <p style="margin:0;color:#9ca3af;font-size:11px;text-align:center;">FrontechSecurity &bull; 7430 Pasito Ave, Rancho Cucamonga, CA 91730 &bull; +1 (888) 400-3290 &bull; frontechsecurity.com</p>
+            <p style="margin:0;color:#9ca3af;font-size:11px;text-align:center;">FrontechSecurity &bull; 7430 Pasito Ave, Rancho Cucamonga, CA 91730 &bull; +1 (844) 810-0173 &bull; frontechsecurity.com</p>
           </td>
         </tr>
 

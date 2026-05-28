@@ -5,7 +5,7 @@ import { CheckCircle2, Phone, ArrowRight, Star, Zap, Shield, Headphones, Clock, 
 export const metadata: Metadata = {
   title: 'Pricing Plans | Security Camera & Doorbell Installation',
   description:
-    'Transparent pricing for security camera and smart doorbell installation. One-time install from $49.99, monthly support $9.99/mo, annual plan $99.99. Call +1 (888) 400-3290.',
+    'Transparent pricing for security camera and smart doorbell installation. One-time install from $49.99, monthly support $9.99/mo, annual plan $99.99. Call +1 (844) 810-0173.',
   alternates: { canonical: 'https://frontechsecurity.com/pricing' },
   openGraph: {
     title: 'Pricing Plans | FrontechSecurity',
@@ -183,7 +183,7 @@ export default function PricingPage() {
                     Get Started <ArrowRight size={16} />
                   </Link>
                   <a
-                    href="tel:+18884003290"
+                    href="tel:+18448100173"
                     className={`flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-sm transition-all ${plan.highlight ? 'bg-white/10 text-white hover:bg-white/20' : 'border border-[#1e3a5f] text-[#94a3b8] hover:text-white'}`}
                   >
                     <Phone size={13} /> Call to Order
@@ -269,10 +269,10 @@ export default function PricingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+18884003290"
+              href="tel:+18448100173"
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1"
             >
-              <Phone size={18} /> +1 (888) 400-3290
+              <Phone size={18} /> +1 (844) 810-0173
             </a>
             <Link
               href="/book"

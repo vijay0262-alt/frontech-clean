@@ -6,7 +6,7 @@ const PAGE_URL = `${BASE}/book`
 
 export const metadata: Metadata = {
   title: 'Book Security Camera or Doorbell Installation — Same-Day Available | FrontechSecurity',
-  description: 'Schedule your security camera or smart doorbell installation online in under 2 minutes. Same-day appointments available across USA & Canada from $49.99. Call +1 (888) 400-3290.',
+  description: 'Schedule your security camera or smart doorbell installation online in under 2 minutes. Same-day appointments available across USA & Canada from $49.99. Call +1 (844) 810-0173.',
   keywords: [
     'book security camera installation',
     'schedule security camera installation',

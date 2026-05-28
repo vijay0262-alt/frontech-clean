@@ -49,7 +49,7 @@ export default function DisclaimerPage() {
 
       <PolicySection title="4. Accuracy of Information">
         <p>
-          Pricing, service availability, and technical specifications listed on this website are subject to change without notice. While we endeavor to keep information current, we do not guarantee that all information on the website is accurate at any given time. Please contact us directly at +1 (888) 400-3290 for the most current pricing and availability.
+          Pricing, service availability, and technical specifications listed on this website are subject to change without notice. While we endeavor to keep information current, we do not guarantee that all information on the website is accurate at any given time. Please contact us directly at +1 (844) 810-0173 for the most current pricing and availability.
         </p>
       </PolicySection>
 
@@ -74,7 +74,7 @@ export default function DisclaimerPage() {
       <PolicySection title="8. Contact">
         <p>For questions about this disclaimer, contact us at:</p>
         <PolicyList items={[
-          'Phone: +1 (888) 400-3290',
+          'Phone: +1 (844) 810-0173',
           'Email: support@frontechsecurity.com',
           'Website: frontechsecurity.com',
         ]} />

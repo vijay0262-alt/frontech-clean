@@ -37,11 +37,11 @@ export default function Footer() {
             Get Expert Installation — Call Now
           </h3>
           <a
-            href="tel:+18884003290"
+            href="tel:+18448100173"
             className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-[#1d6ef5] to-[#00c2ff] text-white font-bold text-lg sm:text-xl px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/30 transition-shadow"
           >
             <Phone size={20} />
-            +1 (888) 400-3290
+            +1 (844) 810-0173
           </a>
           <p className="text-[#94a3b8] text-xs sm:text-sm mt-3">USA &amp; Canada — Mon to Sun, 7AM–10PM EST</p>
         </div>
@@ -67,8 +67,8 @@ export default function Footer() {
               Certified security technicians providing professional smart home camera and doorbell installation, setup, and support across the USA &amp; Canada.
             </p>
             <div className="space-y-2.5 text-sm">
-              <a href="tel:+18884003290" className="flex items-center gap-2 text-[#00c2ff] hover:text-white transition-colors font-semibold">
-                <Phone size={15} /> +1 (888) 400-3290
+              <a href="tel:+18448100173" className="flex items-center gap-2 text-[#00c2ff] hover:text-white transition-colors font-semibold">
+                <Phone size={15} /> +1 (844) 810-0173
               </a>
               <a href="mailto:support@frontechsecurity.com" className="flex items-center gap-2 text-[#94a3b8] hover:text-white transition-colors">
                 <Mail size={15} /> support@frontechsecurity.com

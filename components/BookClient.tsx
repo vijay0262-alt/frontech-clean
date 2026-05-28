@@ -72,8 +72,8 @@ export default function BookClient() {
           </div>
           <p className="text-[#94a3b8] text-sm">A confirmation will be sent to <span className="text-[#00c2ff]">{form.email}</span>. Our technician will call you 30 minutes before arrival.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-all">
-              <Phone size={16} /> +1 (888) 400-3290
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-all">
+              <Phone size={16} /> +1 (844) 810-0173
             </a>
             <Link href="/" className="inline-flex items-center justify-center gap-2 border-2 border-[#1e3a5f] text-[#94a3b8] hover:text-white font-bold px-6 py-3.5 rounded-xl transition-all">Back to Home</Link>
           </div>
@@ -86,7 +86,7 @@ export default function BookClient() {
     <div className="bg-[#0a0f1e] min-h-screen">
       <div className="bg-[#0f1e3d] border-b border-[#1e3a5f] py-3 px-4 text-center">
         <p className="text-[#94a3b8] text-sm">Prefer to book by phone?{' '}
-          <a href="tel:+18884003290" className="text-[#00c2ff] font-black hover:underline">Call +1 (888) 400-3290</a>{' '}— Instant scheduling, no wait
+          <a href="tel:+18448100173" className="text-[#00c2ff] font-black hover:underline">Call +1 (844) 810-0173</a>{' '}— Instant scheduling, no wait
         </p>
       </div>
 
@@ -264,7 +264,7 @@ export default function BookClient() {
             ) : (
               <div className="flex flex-col items-end gap-2">
                 {submitError && (
-                  <p className="text-[#ef4444] text-xs text-right">Something went wrong. Please try again or call <a href="tel:+18884003290" className="underline">+1 (888) 400-3290</a>.</p>
+                  <p className="text-[#ef4444] text-xs text-right">Something went wrong. Please try again or call <a href="tel:+18448100173" className="underline">+1 (844) 810-0173</a>.</p>
                 )}
                 <button onClick={handleSubmit} disabled={loading}
                   className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#22c55e] to-[#16a34a] text-white font-black rounded-xl hover:shadow-lg hover:shadow-[#22c55e]/30 transition-all hover:-translate-y-0.5 disabled:opacity-60">
@@ -278,7 +278,7 @@ export default function BookClient() {
         {/* Reassurance */}
         <div className="mt-8 grid grid-cols-3 gap-4 text-center">
           {[
-            { icon: Phone, label: 'Prefer to call?', sub: '+1 (888) 400-3290', href: 'tel:+18884003290' },
+            { icon: Phone, label: 'Prefer to call?', sub: '+1 (844) 810-0173', href: 'tel:+18448100173' },
             { icon: Shield, label: 'No payment online', sub: 'Pay after service' },
             { icon: Clock, label: 'Same-day available', sub: 'Most areas' },
           ].map(({ icon: Icon, label, sub, href }) => (

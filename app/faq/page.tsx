@@ -3,7 +3,7 @@ import FaqClient from '@/components/FaqClient'
 
 export const metadata: Metadata = {
   title: 'FAQ | Security Camera & Doorbell Installation',
-  description: 'Answers to common questions about security camera installation, smart doorbell setup, pricing plans, and service options. Call +1 (888) 400-3290.',
+  description: 'Answers to common questions about security camera installation, smart doorbell setup, pricing plans, and service options. Call +1 (844) 810-0173.',
   alternates: { canonical: 'https://frontechsecurity.com/faq' },
   openGraph: {
     title: 'Frequently Asked Questions | FrontechSecurity',

@@ -106,11 +106,11 @@ export default function Navbar() {
               Book Install
             </Link>
             <a
-              href="tel:+18884003290"
+              href="tel:+18448100173"
               className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white text-sm font-bold rounded-lg hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-0.5"
             >
               <Phone size={14} />
-              (888) 400-3290
+              (844) 810-0173
             </a>
           </div>
 
@@ -162,11 +162,11 @@ export default function Navbar() {
               Book Installation
             </Link>
             <a
-              href="tel:+18884003290"
+              href="tel:+18448100173"
               className="flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold rounded-lg"
             >
               <Phone size={16} />
-              Call +1 (888) 400-3290
+              Call +1 (844) 810-0173
             </a>
           </div>
         </div>

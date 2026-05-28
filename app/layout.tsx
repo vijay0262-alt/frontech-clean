@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     template: '%s | FrontechSecurity',
   },
   description:
-    'FrontechSecurity — certified security camera and smart doorbell installation, setup & support across USA & Canada. Same-day service from $49.99. Call +1 (888) 400-3290 now.',
+    'FrontechSecurity — certified security camera and smart doorbell installation, setup & support across USA & Canada. Same-day service from $49.99. Call +1 (844) 810-0173 now.',
   keywords: [
     'security camera installation',
     'security camera installation near me',
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Security Camera & Smart Doorbell Installation | FrontechSecurity',
     description:
-      'Certified technicians install security cameras and smart doorbells across USA & Canada. Same-day service from $49.99. Call +1 (888) 400-3290.',
+      'Certified technicians install security cameras and smart doorbells across USA & Canada. Same-day service from $49.99. Call +1 (844) 810-0173.',
     url: BASE_URL,
     siteName: 'FrontechSecurity',
     locale: 'en_US',
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Security Camera & Doorbell Installation | FrontechSecurity',
     description:
-      'Certified installation of security cameras and smart doorbells. USA & Canada. From $49.99. Call +1 (888) 400-3290.',
+      'Certified installation of security cameras and smart doorbells. USA & Canada. From $49.99. Call +1 (844) 810-0173.',
     creator: '@frontechsecurity',
     site: '@frontechsecurity',
     images: [`${BASE_URL}/og-image.png`],
@@ -133,7 +133,7 @@ const jsonLd = {
       name: 'FrontechSecurity',
       legalName: 'FrontechSecurity',
       url: BASE_URL,
-      telephone: '+18884003290',
+      telephone: '+18448100173',
       email: 'support@frontechsecurity.com',
       slogan: 'Expert Security Camera & Doorbell Installation — USA & Canada',
       address: {

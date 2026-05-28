@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Phone, Mail, MapPin, Clock, MessageSquare, CheckCircle2, AlertCircle, ShieldCheck } from 'lucide-react'
 
 const contactMethods = [
-  { icon: Phone, title: 'Call Us Now', desc: 'Speak directly with a technician or book over the phone', value: '+1 (888) 400-3290', action: 'tel:+18884003290', label: 'Call Now', color: 'from-[#1d6ef5] to-[#0ea5e9]' },
+  { icon: Phone, title: 'Call Us Now', desc: 'Speak directly with a technician or book over the phone', value: '+1 (844) 810-0173', action: 'tel:+18448100173', label: 'Call Now', color: 'from-[#1d6ef5] to-[#0ea5e9]' },
   { icon: Mail, title: 'Email Support', desc: 'Send us your questions — we respond within 2 hours', value: 'support@frontechsecurity.com', action: 'mailto:support@frontechsecurity.com', label: 'Send Email', color: 'from-[#7c3aed] to-[#1d6ef5]' },
   { icon: Clock, title: 'Hours of Operation', desc: 'Available 7 days a week for your convenience', value: 'Mon–Sun, 7AM–10PM EST', action: null, label: null, color: 'from-[#22c55e] to-[#0ea5e9]' },
   { icon: MapPin, title: 'Our Address', desc: 'Rancho Cucamonga, CA — serving USA & Canada nationwide', value: '7430 Pasito Ave, Rancho Cucamonga, CA 91730', action: 'https://maps.google.com/?q=7430+Pasito+Ave+Rancho+Cucamonga+CA+91730', label: 'View on Map', color: 'from-[#f59e0b] to-[#ef4444]' },
@@ -55,8 +55,8 @@ export default function ContactClient() {
           </div>
           <p className="text-[#94a3b8] text-sm">Need immediate help? Call us now:</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
-              <Phone size={16} /> +1 (888) 400-3290
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
+              <Phone size={16} /> +1 (844) 810-0173
             </a>
             <a href="/" className="inline-flex items-center justify-center gap-2 border-2 border-[#1e3a5f] text-[#94a3b8] hover:text-white font-bold px-7 py-3.5 rounded-xl transition-colors">
               Back to Home
@@ -78,8 +78,8 @@ export default function ContactClient() {
             We Are Here to <span className="gradient-text">Help You</span>
           </h1>
           <p className="text-[#94a3b8] text-lg mb-6">Have a question about installation, pricing, or your existing system? Reach out — our team responds fast.</p>
-          <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-black text-lg px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1 pulse-phone">
-            <Phone size={20} /> +1 (888) 400-3290 — Call Free
+          <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-black text-lg px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1 pulse-phone">
+            <Phone size={20} /> +1 (844) 810-0173 — Call Free
           </a>
         </div>
       </section>
@@ -163,7 +163,7 @@ export default function ContactClient() {
                   </button>
                   <p className="text-center text-[#94a3b8] text-xs">
                     Prefer to talk? Call us at{' '}
-                    <a href="tel:+18884003290" className="text-[#00c2ff] font-semibold hover:underline">+1 (888) 400-3290</a>
+                    <a href="tel:+18448100173" className="text-[#00c2ff] font-semibold hover:underline">+1 (844) 810-0173</a>
                   </p>
                 </form>
             </div>
@@ -180,8 +180,8 @@ export default function ContactClient() {
                   </li>
                 ))}
               </ul>
-              <a href="tel:+18884003290" className="mt-5 flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-black rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-0.5 pulse-phone">
-                <Phone size={17} /> +1 (888) 400-3290
+              <a href="tel:+18448100173" className="mt-5 flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-black rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-0.5 pulse-phone">
+                <Phone size={17} /> +1 (844) 810-0173
               </a>
             </div>
             <div className="glow-card bg-[#111827] rounded-xl p-6">

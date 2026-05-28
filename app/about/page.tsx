@@ -101,10 +101,10 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               <a
-                href="tel:+18884003290"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1"
+                href="tel:+18448100173"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1"
               >
-                <Phone size={16} /> Call Us: +1 (888) 400-3290
+                <Phone size={16} /> Call Us: +1 (844) 810-0173
               </a>
               <Link
                 href="/book"
@@ -251,7 +251,7 @@ export default function AboutPage() {
             </span>
           </div>
           <p className="text-center text-[#94a3b8] text-sm mt-6">
-            Not in the list? <a href="tel:+18884003290" className="text-[#00c2ff] font-semibold hover:underline">Call us</a> — we travel for larger projects and can often accommodate your area.
+            Not in the list? <a href="tel:+18448100173" className="text-[#00c2ff] font-semibold hover:underline">Call us</a> — we travel for larger projects and can often accommodate your area.
           </p>
         </div>
       </section>
@@ -264,8 +264,8 @@ export default function AboutPage() {
           </h2>
           <p className="text-[#94a3b8] mb-7">Join over 5,000 homeowners who trust us with their family's security.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1">
-              <Phone size={18} /> +1 (888) 400-3290
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1">
+              <Phone size={18} /> +1 (844) 810-0173
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold px-8 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-all">
               Schedule Installation

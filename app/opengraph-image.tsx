@@ -151,7 +151,7 @@ export default async function OgImage() {
 
           {/* Phone */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <span style={{ color: '#00c2ff', fontSize: 18, fontWeight: 700 }}>+1 (888) 400-3290</span>
+            <span style={{ color: '#00c2ff', fontSize: 18, fontWeight: 700 }}>+1 (844) 810-0173</span>
           </div>
         </div>
       </div>

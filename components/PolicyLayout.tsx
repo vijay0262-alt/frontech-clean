@@ -36,10 +36,10 @@ export default function PolicyLayout({ title, subtitle, lastUpdated, children }:
             <p className="text-[#94a3b8] text-sm mb-4">Questions about this policy? Contact us directly.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:+18884003290"
+                href="tel:+18448100173"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-6 py-3 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all"
               >
-                <Phone size={15} /> +1 (888) 400-3290
+                <Phone size={15} /> +1 (844) 810-0173
               </a>
               <a
                 href="mailto:support@frontechsecurity.com"
