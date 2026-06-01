@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, CalendarCheck, ShieldCheck, Star, CheckCircle2 } from 'lucide-react'
 
 export default function HeroSection() {
@@ -73,10 +74,12 @@ export default function HeroSection() {
       {/* Security Camera & Doorbell Image — visible on large screens only */}
       <div className="hidden xl:flex absolute right-8 top-1/2 -translate-y-1/2 z-10">
         <div className="relative">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1558002038-1091a1661116?w=600&h=500&fit=crop"
             alt="Security Camera and Smart Doorbell Installation"
-            className="w-[500px] h-[400px] object-cover rounded-2xl shadow-2xl"
+            width={500}
+            height={400}
+            className="rounded-2xl shadow-2xl"
           />
           {/* Stat overlay on image */}
           <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">

@@ -52,18 +52,12 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5 mb-4">
+            <Link href="/" className="flex items-center mb-4">
               <img
                 src="/logo.png"
                 alt="FrontechSecurity Logo"
                 className="h-10 w-auto object-contain"
               />
-              <div>
-                <span className="block font-bold text-lg text-[#1a1a1a] font-serif">
-                  Frontech<span className="text-[#0066cc]">Security</span>
-                </span>
-                <span className="text-[10px] text-[#4a4a4a] tracking-widest uppercase">Smart Home Experts</span>
-              </div>
             </Link>
             <p className="text-[#4a4a4a] text-sm leading-relaxed mb-5">
               Certified security technicians providing professional smart home camera and doorbell installation, setup, and support across the USA &amp; Canada.
