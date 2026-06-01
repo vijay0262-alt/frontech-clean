@@ -84,9 +84,9 @@ export default function BookClient() {
 
   return (
     <div className="bg-white min-h-screen">
-      <div className="bg-[#0f1e3d] border-b border-[#e5e7eb] py-3 px-4 text-center">
-        <p className="text-[#4a4a4a] text-sm">Prefer to book by phone?{' '}
-          <a href="tel:+18448100173" className="text-[#0066cc] font-black hover:underline">Call +1 (844) 810-0173</a>{' '}— Instant scheduling, no wait
+      <div className="bg-gradient-to-r from-[#0066cc] to-[#0052a3] border-b border-[#e5e7eb] py-3 px-4 text-center">
+        <p className="text-white text-sm">Prefer to book by phone?{' '}
+          <a href="tel:+18448100173" className="text-white font-black hover:underline">Call +1 (844) 810-0173</a>{' '}— Instant scheduling, no wait
         </p>
       </div>
 

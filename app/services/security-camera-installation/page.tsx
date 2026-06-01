@@ -152,7 +152,7 @@ export default function SecurityCameraInstallationPage() {
               <span key={b} className="flex items-center gap-1.5 text-xs text-[#f0f4ff] bg-white/5 border border-white/10 rounded-full px-3 py-1">
                 <CheckCircle2 size={11} className="text-[#22c55e] shrink-0" />{b}
               </span>
-            ))}
+            ))}}
           </div>
           <div className="mt-8">
             <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0066cc]/40 transition-all">
@@ -197,7 +197,7 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* Trust strip */}
-      <div className="bg-[#0f1e3d] border-y border-[#e5e7eb] py-4 px-4">
+      <div className="bg-gradient-to-r from-[#0066cc] to-[#0052a3] border-y border-[#e5e7eb] py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
           {[
             { icon: Star, text: '4.9/5 Rating (2,400+ Reviews)', color: '#f59e0b' },
@@ -205,10 +205,10 @@ export default function SecurityCameraInstallationPage() {
             { icon: Clock, text: 'Same-Day Appointments Available', color: '#00c2ff' },
             { icon: Zap, text: 'Average Install: Under 2 Hours', color: '#1d6ef5' },
           ].map(({ icon: Icon, text, color }) => (
-            <span key={text} className="flex items-center gap-2 text-sm text-[#4a4a4a]">
+            <span key={text} className="flex items-center gap-2 text-sm text-white">
               <Icon size={14} style={{ color }} />{text}
             </span>
-          ))}
+          ))}}
         </div>
       </div>
 
@@ -233,7 +233,7 @@ export default function SecurityCameraInstallationPage() {
                 <h3 className="text-[#1a1a1a] font-bold mb-2">{title}</h3>
                 <p className="text-[#4a4a4a] text-sm leading-relaxed">{desc}</p>
               </div>
-            ))}
+            ))}}
           </div>
         </div>
       </section>
@@ -276,7 +276,7 @@ export default function SecurityCameraInstallationPage() {
                   <CheckCircle2 size={15} className="text-[#22c55e] shrink-0 mt-0.5" />
                   {item}
                 </li>
-              ))}
+              ))}}
             </ul>
           </div>
         </div>
@@ -300,7 +300,7 @@ export default function SecurityCameraInstallationPage() {
                   <p className="text-[#4a4a4a] text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
-            ))}
+            ))}}
           </div>
         </div>
       </section>
@@ -349,7 +349,7 @@ export default function SecurityCameraInstallationPage() {
                 </summary>
                 <p className="px-6 pb-6 text-[#4a4a4a] text-sm leading-relaxed">{a}</p>
               </details>
-            ))}
+            ))}}
           </div>
         </div>
       </section>
@@ -378,7 +378,7 @@ export default function SecurityCameraInstallationPage() {
                 <Icon size={28} className="text-[#0066cc] mx-auto mb-2" />
                 <p className="text-[#1a1a1a] font-bold text-sm">{name}</p>
               </div>
-            ))}
+            ))}}
           </div>
 
         </div>
@@ -407,7 +407,7 @@ export default function SecurityCameraInstallationPage() {
                 </div>
                 <p className="text-[#4a4a4a] text-sm leading-relaxed">{desc}</p>
               </div>
-            ))}
+            ))}}
           </div>
 
         </div>

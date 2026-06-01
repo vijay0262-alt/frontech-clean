@@ -142,7 +142,7 @@ export default function WifiNetworkSetupPage() {
         </div>
       </section>
 
-      <div className="bg-[#0f1e3d] border-y border-[#e5e7eb] py-4 px-4">
+      <div className="bg-gradient-to-r from-[#0066cc] to-[#0052a3] border-y border-[#e5e7eb] py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
           {[
             { icon: Star, text: '4.9/5 Rating (2,400+ Reviews)', color: '#f59e0b' },
@@ -150,7 +150,7 @@ export default function WifiNetworkSetupPage() {
             { icon: Clock, text: 'Same-Day Appointments Available', color: '#00c2ff' },
             { icon: Zap, text: 'Cameras Stay Online After Every Visit', color: '#7c3aed' },
           ].map(({ icon: Icon, text, color }) => (
-            <span key={text} className="flex items-center gap-2 text-sm text-[#4a4a4a]">
+            <span key={text} className="flex items-center gap-2 text-sm text-white">
               <Icon size={14} style={{ color }} />{text}
             </span>
           ))}
