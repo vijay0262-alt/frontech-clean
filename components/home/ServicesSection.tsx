@@ -7,15 +7,15 @@ import QuickServiceIllustration from '@/components/illustrations/QuickServiceIll
 
 export default function ServicesSection() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-[#0066cc]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
-          <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">What We Do</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif">
+          <span className="text-white text-xs font-bold uppercase tracking-widest">What We Do</span>
+          <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif">
             Complete Smart Home Security Services
           </h2>
-          <p className="text-[#4a4a4a] max-w-2xl mx-auto">
+          <p className="text-white/90 max-w-2xl mx-auto">
             From initial installation to ongoing support, our certified technicians handle every aspect of your smart home security setup.
           </p>
         </div>
