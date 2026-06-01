@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Shield, Facebook, Twitter, Instagram, Youtube } from 'lucide-react'
 
 const services = [
@@ -53,9 +54,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center mb-4">
-              <img
+              <Image
                 src="/logo.png"
                 alt="FrontechSecurity Logo"
+                width={120}
+                height={40}
                 className="h-10 w-auto object-contain"
               />
             </Link>

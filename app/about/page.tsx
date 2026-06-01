@@ -2,15 +2,54 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Phone, Shield, Star, Users, Clock, CheckCircle2, Award, MapPin, ArrowRight, Zap, Heart } from 'lucide-react'
 
+const BASE = 'https://frontechsecurity.com'
+const PAGE_URL = `${BASE}/about`
+
 export const metadata: Metadata = {
-  title: 'About Us | Security Camera & Doorbell Installation Experts',
-  description:
-    'Learn about FrontechSecurity — a team of certified smart home security technicians proudly serving USA & Canada. Professional, trusted, and available 7 days a week.',
-  alternates: { canonical: 'https://frontechsecurity.com/about' },
+  title: 'About Us | Security Camera & Doorbell Installation Experts — FrontechSecurity',
+  description: 'Learn about FrontechSecurity — a team of certified smart home security technicians proudly serving USA & Canada. 12,000+ devices installed, 4.9★ rating, 8+ years experience. Professional, trusted, and available 7 days a week.',
+  keywords: [
+    'about FrontechSecurity',
+    'FrontechSecurity company',
+    'security camera installation company',
+    'smart doorbell installation company',
+    'certified security camera technicians',
+    'professional security installers',
+    'home security installation company USA',
+    'home security installation company Canada',
+    'security camera installation experts',
+    'smart home security company',
+    'security camera service company',
+    'doorbell installation company',
+    'licensed security camera installers',
+    'insured security camera technicians',
+    'security camera installation team',
+    'smart home security experts',
+    'security camera installation experience',
+    'security camera installation reviews',
+    'FrontechSecurity technicians',
+    'security camera installation business',
+    'home security company near me',
+    'security camera installation professionals',
+    'certified smart home installers',
+    'security camera installation specialists',
+    'trusted security camera company',
+    'reliable security camera installers',
+  ].join(', '),
+  alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: 'About FrontechSecurity',
-    description: 'Meet the certified team behind 12,000+ successful installations across the USA and Canada.',
-    url: 'https://frontechsecurity.com/about',
+    title: 'About FrontechSecurity | Security Camera & Doorbell Installation Experts',
+    description: 'Meet the certified team behind 12,000+ successful installations across the USA and Canada. 4.9★ rating, 8+ years experience.',
+    url: PAGE_URL,
+    type: 'website',
+    siteName: 'FrontechSecurity',
+    images: [{ url: `${BASE}/og-image.png`, width: 1200, height: 630, alt: 'About FrontechSecurity' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About FrontechSecurity | Security Camera Installation Experts',
+    description: 'Certified technicians with 12,000+ installations across USA & Canada. 4.9★ rated.',
+    images: [`${BASE}/og-image.png`],
   },
 }
 

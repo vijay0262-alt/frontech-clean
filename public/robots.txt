@@ -1,0 +1,17 @@
+# FrontechSecurity - Security Camera & Doorbell Installation
+# Robots.txt for SEO optimization
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://frontechsecurity.com/sitemap.xml
+
+# Crawl delay (optional, respectful crawling)
+Crawl-delay: 1

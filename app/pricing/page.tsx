@@ -2,15 +2,58 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircle2, Phone, ArrowRight, Star, Zap, Shield, Headphones, Clock, X } from 'lucide-react'
 
+const BASE = 'https://frontechsecurity.com'
+const PAGE_URL = `${BASE}/pricing`
+
 export const metadata: Metadata = {
-  title: 'Pricing Plans | Security Camera & Doorbell Installation',
-  description:
-    'Transparent pricing for security camera and smart doorbell installation. One-time install from $49.99, monthly support $9.99/mo, annual plan $99.99. Call +1 (844) 810-0173.',
-  alternates: { canonical: 'https://frontechsecurity.com/pricing' },
+  title: 'Pricing Plans | Security Camera & Doorbell Installation — FrontechSecurity',
+  description: 'Transparent pricing for security camera and smart doorbell installation. One-time install from $49.99, monthly support $9.99/mo, annual plan $99.99. No hidden fees. Call +1 (844) 810-0173.',
+  keywords: [
+    'security camera installation pricing',
+    'doorbell installation pricing',
+    'security camera installation cost',
+    'doorbell installation cost',
+    'security camera installation price',
+    'how much does security camera installation cost',
+    'security camera installation rates',
+    'camera installation service price',
+    'smart doorbell installation price',
+    'Ring camera installation cost',
+    'Arlo camera installation cost',
+    'Nest doorbell installation price',
+    'security camera installation quote',
+    'home security installation pricing',
+    'CCTV installation pricing',
+    'security camera setup cost',
+    'wireless camera installation price',
+    'outdoor camera installation cost',
+    'security camera labor cost',
+    'doorbell installation service cost',
+    'security camera installation near me price',
+    'security camera installation USA pricing',
+    'security camera installation Canada pricing',
+    'security camera installation cheap',
+    'affordable security camera installation',
+    'security camera installation deals',
+    'security camera installation discount',
+    'security camera support plan pricing',
+    'security camera monthly support cost',
+    'security camera annual plan price',
+  ].join(', '),
+  alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: 'Pricing Plans | FrontechSecurity',
-    description: 'One-time install from $49.99. Monthly support $9.99/mo. Annual plan $99.99/yr. No hidden fees.',
-    url: 'https://frontechsecurity.com/pricing',
+    title: 'Pricing Plans | Security Camera & Doorbell Installation — FrontechSecurity',
+    description: 'One-time install from $49.99. Monthly support $9.99/mo. Annual plan $99.99/yr. No hidden fees. Transparent pricing.',
+    url: PAGE_URL,
+    type: 'website',
+    siteName: 'FrontechSecurity',
+    images: [{ url: `${BASE}/og-image.png`, width: 1200, height: 630, alt: 'Pricing Plans — FrontechSecurity' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pricing Plans | Security Camera Installation — FrontechSecurity',
+    description: 'One-time install from $49.99. Monthly support $9.99/mo. No hidden fees.',
+    images: [`${BASE}/og-image.png`],
   },
 }
 

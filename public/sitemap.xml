@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://frontechsecurity.com/</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Services Overview -->
+  <url>
+    <loc>https://frontechsecurity.com/services</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Security Camera Installation -->
+  <url>
+    <loc>https://frontechsecurity.com/services/security-camera-installation</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Doorbell Installation -->
+  <url>
+    <loc>https://frontechsecurity.com/services/doorbell-installation</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Wi-Fi Network Setup -->
+  <url>
+    <loc>https://frontechsecurity.com/services/wifi-network-setup</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Quick Service Support -->
+  <url>
+    <loc>https://frontechsecurity.com/services/quick-service-support</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Pricing -->
+  <url>
+    <loc>https://frontechsecurity.com/pricing</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- About -->
+  <url>
+    <loc>https://frontechsecurity.com/about</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- FAQ -->
+  <url>
+    <loc>https://frontechsecurity.com/faq</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact -->
+  <url>
+    <loc>https://frontechsecurity.com/contact</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Book -->
+  <url>
+    <loc>https://frontechsecurity.com/book</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://frontechsecurity.com/privacy-policy</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://frontechsecurity.com/terms-of-service</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://frontechsecurity.com/cookie-policy</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://frontechsecurity.com/disclaimer</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://frontechsecurity.com/refund-policy</loc>
+    <lastmod>2025-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

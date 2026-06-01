@@ -80,6 +80,7 @@ export default function HeroSection() {
             width={620}
             height={496}
             className="rounded-2xl shadow-2xl"
+            priority
           />
           {/* Stat overlay on image */}
           <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">

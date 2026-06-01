@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, Phone, Shield, ChevronDown } from 'lucide-react'
 
 const navLinks = [
@@ -44,9 +45,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <img
+            <Image
               src="/logo.png"
               alt="FrontechSecurity Logo"
+              width={120}
+              height={40}
               className="h-10 w-auto object-contain"
             />
           </Link>
