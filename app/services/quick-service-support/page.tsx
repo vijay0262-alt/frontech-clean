@@ -189,7 +189,7 @@ export default function QuickServiceSupportPage() {
             <span key={text} className="flex items-center gap-2 text-sm text-white">
               <Icon size={14} style={{ color }} />{text}
             </span>
-          ))}}
+          ))}
         </div>
       </div>
 
