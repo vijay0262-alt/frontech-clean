@@ -306,26 +306,26 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* Urgent CTA - Optimized for Calls */}
-      <section className="py-16 px-4 bg-gradient-to-b from-[#0a0f1e] to-[#060c1a]">
+      <section className="py-16 px-4 bg-gradient-to-r from-[#0066cc] to-[#0052a3]">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center glow-card bg-gradient-to-br from-[#111827] to-[#0a0f1e] border-2 border-[#0066cc]/30 rounded-2xl p-10">
+          <div className="text-center glow-card bg-white/10 border-2 border-white/20 rounded-2xl p-10">
             <div className="inline-block bg-[#22c55e]/20 border border-[#22c55e]/40 rounded-full px-4 py-2 mb-4">
               <span className="text-[#22c55e] text-sm font-bold">✓ We're Available Right Now</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif">Need Your Camera Working Today?</h2>
-            <p className="text-lg text-[#4a4a4a] mb-3 max-w-2xl mx-auto">Stop struggling with confusing apps and settings. Call us and speak with a certified technician in under 30 seconds.</p>
-            <div className="bg-white/60 rounded-xl p-6 mb-6 max-w-xl mx-auto">
-              <p className="text-[#1a1a1a] font-bold mb-2">📋 Service Pricing:</p>
-              <p className="text-[#4a4a4a] text-sm mb-2">• Professional Installation: Starting at $49.99</p>
-              <p className="text-[#4a4a4a] text-sm mb-2">• Repair & Troubleshooting: From $49.99</p>
-              <p className="text-[#4a4a4a] text-sm">• Phone Consultation: FREE (Call now)</p>
-              <p className="text-[#64748b] text-xs mt-3">*Service fee only. Hardware/parts sold separately. No payment until work is complete.</p>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif">Need Your Camera Working Today?</h2>
+            <p className="text-lg text-white mb-3 max-w-2xl mx-auto">Stop struggling with confusing apps and settings. Call us and speak with a certified technician in under 30 seconds.</p>
+            <div className="bg-white/20 rounded-xl p-6 mb-6 max-w-xl mx-auto">
+              <p className="text-white font-bold mb-2">📋 Service Pricing:</p>
+              <p className="text-white text-sm mb-2">• Professional Installation: Starting at $49.99</p>
+              <p className="text-white text-sm mb-2">• Repair & Troubleshooting: From $49.99</p>
+              <p className="text-white text-sm">• Phone Consultation: FREE (Call now)</p>
+              <p className="text-white/80 text-xs mt-3">*Service fee only. Hardware/parts sold separately. No payment until work is complete.</p>
             </div>
             <div className="space-y-3">
               <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#0066cc]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
                 <Phone size={26} className="animate-bounce" /> Call Now (844) 810-0173
               </a>
-              <p className="text-sm text-[#4a4a4a]">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
+              <p className="text-sm text-white">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
             </div>
           </div>
         </div>
