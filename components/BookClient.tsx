@@ -18,7 +18,7 @@ const steps = ['Service', 'Details', 'Schedule', 'Confirm']
 export default function BookClient() {
   const [step, setStep] = useState(0)
   const [selectedService, setSelectedService] = useState('')
-  const [form, setForm] = useState({ name: '', email: '', phone: '', address: '', city: '', state: '', zip: '', date: '', time: '', notes: '', plan: 'basic' })
+  const [form, setForm] = useState({ name: '', email: '', phone: '', address: '', city: '', state: '', zip: '', date: '', time: '', notes: '', deviceType: '' })
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
 
@@ -30,7 +30,7 @@ export default function BookClient() {
     setLoading(true)
     setSubmitError(false)
     try {
-      const res = await fetch('/mail.php', {
+      const res = await fetch('/api/book', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -50,7 +50,7 @@ export default function BookClient() {
 
   const canAdvance = () => {
     if (step === 0) return !!selectedService
-    if (step === 1) return !!(form.name && form.email && form.phone && form.address && form.city && form.zip)
+    if (step === 1) return !!(form.name && form.email && form.phone && form.address && form.city && form.zip && form.deviceType)
     if (step === 2) return !!(form.date && form.time)
     return true
   }
@@ -174,11 +174,12 @@ export default function BookClient() {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[#4a4a4a] text-xs font-semibold mb-1.5 uppercase tracking-wider">Support Plan (Optional)</label>
-                  <select name="plan" value={form.plan} onChange={handleChange} className="form-input">
-                    <option value="basic">One-Time Install — $49.99</option>
-                    <option value="monthly">+ Monthly Support Plan — $9.99/mo</option>
-                    <option value="annual">+ Annual Service Plan — $99.99/yr (Best Value)</option>
+                  <label className="block text-[#4a4a4a] text-xs font-semibold mb-1.5 uppercase tracking-wider">Installation or Repair for ? *</label>
+                  <select name="deviceType" value={form.deviceType} onChange={handleChange} required className="form-input">
+                    <option value="">Select device type</option>
+                    <option value="Security Camera System">Security Camera System</option>
+                    <option value="Smart Door Bell">Smart Door Bell</option>
+                    <option value="Any other devices">Any other devices</option>
                   </select>
                 </div>
               </div>
@@ -224,7 +225,7 @@ export default function BookClient() {
               <div className="space-y-1 text-sm mb-6">
                 {[
                   { label: 'Service', value: services.find((s) => s.id === selectedService)?.label },
-                  { label: 'Plan', value: form.plan === 'basic' ? 'One-Time Install ($49.99)' : form.plan === 'monthly' ? 'Monthly Support (+$9.99/mo)' : 'Annual Plan (+$99.99/yr)' },
+                  { label: 'Device Type', value: form.deviceType },
                   { label: 'Name', value: form.name },
                   { label: 'Phone', value: form.phone },
                   { label: 'Email', value: form.email },
