@@ -44,9 +44,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-lg bg-[#0066cc] flex items-center justify-center shadow-md group-hover:shadow-[#0066cc]/40 transition-shadow">
-              <Shield size={20} className="text-white" />
-            </div>
+            <img
+              src="/logo.png"
+              alt="FrontechSecurity Logo"
+              className="h-10 w-auto object-contain"
+            />
             <div className="leading-tight">
               <span className="block font-bold text-lg text-[#1a1a1a] font-serif tracking-tight">
                 Frontech<span className="text-[#0066cc]">Security</span>

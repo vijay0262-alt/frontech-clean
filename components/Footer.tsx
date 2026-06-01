@@ -53,9 +53,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0066cc] to-[#0052a3] flex items-center justify-center">
-                <Shield size={22} className="text-white" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="FrontechSecurity Logo"
+                className="h-10 w-auto object-contain"
+              />
               <div>
                 <span className="block font-bold text-lg text-[#1a1a1a] font-serif">
                   Frontech<span className="text-[#0066cc]">Security</span>
