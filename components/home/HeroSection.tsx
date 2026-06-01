@@ -72,13 +72,13 @@ export default function HeroSection() {
       </div>
 
       {/* Security Camera & Doorbell Image — visible on large screens only */}
-      <div className="hidden xl:flex absolute right-8 top-1/2 -translate-y-1/2 z-10">
+      <div className="hidden xl:flex absolute right-4 top-1/2 -translate-y-1/2 z-10">
         <div className="relative">
           <Image
             src="/hero.png"
             alt="Security Camera and Smart Doorbell Installation"
-            width={650}
-            height={550}
+            width={550}
+            height={450}
             className="rounded-2xl shadow-2xl"
           />
           {/* Stat overlay on image */}
