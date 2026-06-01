@@ -75,7 +75,7 @@ export default function HeroSection() {
       <div className="hidden xl:flex absolute right-8 top-1/2 -translate-y-1/2 z-10">
         <div className="relative">
           <Image
-            src="https://images.unsplash.com/photo-1558002038-1091a1661116?w=600&h=500&fit=crop"
+            src="/hero.png"
             alt="Security Camera and Smart Doorbell Installation"
             width={500}
             height={400}
