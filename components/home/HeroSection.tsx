@@ -77,8 +77,8 @@ export default function HeroSection() {
           <Image
             src="/hero.png"
             alt="Security Camera and Smart Doorbell Installation"
-            width={500}
-            height={400}
+            width={650}
+            height={550}
             className="rounded-2xl shadow-2xl"
           />
           {/* Stat overlay on image */}
