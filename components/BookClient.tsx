@@ -39,9 +39,11 @@ export default function BookClient() {
           service: services.find((s) => s.id === selectedService)?.label ?? selectedService,
         }),
       })
-      if (!res.ok) throw new Error('Failed')
+      const data = await res.json()
+      if (!res.ok || !data.success) throw new Error(data.message || 'Failed')
       setSubmitted(true)
-    } catch {
+    } catch (error) {
+      console.error('Form submission error:', error)
       setSubmitError(true)
     } finally {
       setLoading(false)
