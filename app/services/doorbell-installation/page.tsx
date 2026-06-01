@@ -141,7 +141,7 @@ export default function DoorbellInstallationPage() {
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
             {['Ring, Nest, Arlo, Blink Support', 'Not Working? We Fix It', 'Same-Day Service', 'WiFi Connection Issues Solved', 'Installation & Repair', 'No Fix, No Pay'].map((b) => (
-              <span key={b} className="flex items-center gap-1.5 text-xs text-[#f0f4ff] bg-white/5 border border-white/10 rounded-full px-3 py-1">
+              <span key={b} className="flex items-center gap-1.5 text-xs text-white bg-[#0066cc] border border-[#0052a3] rounded-full px-3 py-1">
                 <CheckCircle2 size={11} className="text-[#22c55e] shrink-0" />{b}
               </span>
             ))}
