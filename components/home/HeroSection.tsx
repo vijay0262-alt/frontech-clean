@@ -70,18 +70,32 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Stat cards — visible on large screens only */}
-      <div className="hidden xl:flex absolute right-12 top-1/2 -translate-y-1/2 flex-col gap-4 z-10">
-        {[
-          { num: '10,000+', label: 'Installations Done' },
-          { num: '98%', label: 'Customer Satisfaction' },
-          { num: '< 2 hrs', label: 'Avg. Install Time' },
-        ].map((stat) => (
-          <div key={stat.num} className="bg-white border-2 border-[#e5e7eb] rounded-lg px-5 py-4 text-center min-w-[150px] shadow-md">
-            <p className="text-2xl font-black text-[#0066cc]">{stat.num}</p>
-            <p className="text-[#4a4a4a] text-xs mt-0.5">{stat.label}</p>
+      {/* Security Camera & Doorbell Image — visible on large screens only */}
+      <div className="hidden xl:flex absolute right-8 top-1/2 -translate-y-1/2 z-10">
+        <div className="relative">
+          <img
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=500&fit=crop"
+            alt="Security Camera and Smart Doorbell Installation"
+            className="w-[500px] h-[400px] object-cover rounded-2xl shadow-2xl"
+          />
+          {/* Stat overlay on image */}
+          <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
+            <div className="grid grid-cols-3 gap-3 text-center">
+              <div>
+                <p className="text-xl font-black text-[#0066cc]">10k+</p>
+                <p className="text-[10px] text-[#4a4a4a]">Installs</p>
+              </div>
+              <div>
+                <p className="text-xl font-black text-[#0066cc]">98%</p>
+                <p className="text-[10px] text-[#4a4a4a]">Satisfied</p>
+              </div>
+              <div>
+                <p className="text-xl font-black text-[#0066cc]">&lt;2h</p>
+                <p className="text-[10px] text-[#4a4a4a]">Avg Time</p>
+              </div>
+            </div>
           </div>
-        ))}
+        </div>
       </div>
 
       {/* Mobile stat strip */}
