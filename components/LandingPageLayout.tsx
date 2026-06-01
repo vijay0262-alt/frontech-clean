@@ -32,15 +32,14 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
           scrolled ? 'bg-white shadow-md' : 'bg-white'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-center relative">
           {/* Homepage Icon - Hidden on mobile, visible on tablet and desktop */}
           <a
             href="/"
-            className="hidden md:flex items-center gap-2 px-4 py-3 bg-[#0052a3] hover:bg-[#0066cc] text-white text-base font-bold rounded-lg hover:shadow-lg transition-all"
+            className="hidden md:absolute md:left-4 items-center gap-2 text-[#0066cc] hover:text-[#0052a3] transition-all"
             aria-label="Go to homepage"
           >
-            <Home size={18} />
-            <span>Home</span>
+            <Home size={24} />
           </a>
           
           {/* Phone CTA - Centered */}
