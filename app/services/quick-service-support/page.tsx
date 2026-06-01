@@ -165,7 +165,7 @@ export default function QuickServiceSupportPage() {
               <span key={b} className="flex items-center gap-1.5 text-xs text-[#f0f4ff] bg-white/5 border border-white/10 rounded-full px-3 py-1">
                 <CheckCircle2 size={11} className="text-[#22c55e] shrink-0" />{b}
               </span>
-            ))}}
+            ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[#0052a3] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#22c55e]/30 transition-shadow pulse-phone">
@@ -210,7 +210,7 @@ export default function QuickServiceSupportPage() {
                 <h3 className="text-[#1a1a1a] font-bold mb-2">{title}</h3>
                 <p className="text-[#4a4a4a] text-sm leading-relaxed">{desc}</p>
               </div>
-            ))}}
+            ))}
           </div>
         </div>
       </section>
@@ -237,13 +237,13 @@ export default function QuickServiceSupportPage() {
                     <li key={f} className="flex items-start gap-2 text-sm text-[#4a4a4a]">
                       <CheckCircle2 size={14} className="text-[#22c55e] shrink-0 mt-0.5" />{f}
                     </li>
-                  ))}}
+                  ))}
                 </ul>
                 <Link href="/book" className="inline-flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-[#22c55e] to-[#0052a3] text-white font-bold rounded-xl hover:shadow-lg transition-shadow">
                   {cta} <ArrowRight size={15} />
                 </Link>
               </div>
-            ))}}
+            ))}
           </div>
         </div>
       </section>
@@ -263,7 +263,7 @@ export default function QuickServiceSupportPage() {
                 </summary>
                 <p className="px-6 pb-6 text-[#4a4a4a] text-sm leading-relaxed">{a}</p>
               </details>
-            ))}}
+            ))}
           </div>
         </div>
       </section>
@@ -282,7 +282,7 @@ export default function QuickServiceSupportPage() {
                 <p className="text-[#4a4a4a] text-xs leading-relaxed">{desc}</p>
                 <span className="inline-flex items-center gap-1 text-[#22c55e] text-xs font-semibold mt-3">Learn More <ArrowRight size={12} /></span>
               </Link>
-            ))}}
+            ))}
           </div>
         </div>
       </section>
