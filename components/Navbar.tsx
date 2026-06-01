@@ -63,7 +63,7 @@ export default function Navbar() {
               link.children ? (
                 <div
                   key={link.label}
-                  className="relative"
+                  className="relative pt-1"
                   onMouseEnter={() => setDropdown(link.label)}
                   onMouseLeave={() => setDropdown(null)}
                 >
@@ -72,7 +72,7 @@ export default function Navbar() {
                     <ChevronDown size={14} className={`transition-transform ${dropdown === link.label ? 'rotate-180' : ''}`} />
                   </button>
                   {dropdown === link.label && (
-                    <div className="absolute top-full left-0 w-56 mt-1 bg-white border border-[#e5e7eb] rounded-lg shadow-lg py-2 z-50">
+                    <div className="absolute top-full left-0 w-56 bg-white border border-[#e5e7eb] rounded-lg shadow-lg py-2 z-50">
                       {link.children.map((child) => (
                         <Link
                           key={child.label}
