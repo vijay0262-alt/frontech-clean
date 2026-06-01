@@ -87,20 +87,20 @@ export default function PricingSection() {
             >
               {plan.badge && (
                 <div className={`absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full ${
-                  plan.highlight ? 'bg-white/20 text-[#1a1a1a]' : 'bg-[#0066cc]/20 text-[#0066cc] border border-[#0066cc]/30'
+                  plan.highlight ? 'bg-white/20 text-white' : 'bg-[#0066cc]/20 text-[#0066cc] border border-[#0066cc]/30'
                 }`}>
                   {plan.badge}
                 </div>
               )}
               <div className="p-7">
-                <h3 className={`text-lg font-bold mb-1 ${plan.highlight ? 'text-[#1a1a1a]' : 'text-[#1a1a1a]'}`}>
+                <h3 className={`text-lg font-bold mb-1 ${plan.highlight ? 'text-white' : 'text-[#1a1a1a]'}`}>
                   {plan.name}
                 </h3>
                 <p className={`text-xs mb-5 ${plan.highlight ? 'text-blue-100' : 'text-[#4a4a4a]'}`}>
                   {plan.desc}
                 </p>
                 <div className="flex items-end gap-1 mb-6">
-                  <span className={`text-4xl font-black ${plan.highlight ? 'text-[#1a1a1a]' : 'gradient-text'}`}>
+                  <span className={`text-4xl font-black ${plan.highlight ? 'text-white' : 'gradient-text'}`}>
                     {plan.price}
                   </span>
                   <span className={`text-sm pb-1 ${plan.highlight ? 'text-blue-100' : 'text-[#4a4a4a]'}`}>
@@ -111,7 +111,7 @@ export default function PricingSection() {
                 <ul className="space-y-2.5 mb-7">
                   {plan.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm">
-                      <Check size={15} className={`mt-0.5 shrink-0 ${plan.highlight ? 'text-[#1a1a1a]' : 'text-[#22c55e]'}`} />
+                      <Check size={15} className={`mt-0.5 shrink-0 ${plan.highlight ? 'text-white' : 'text-[#22c55e]'}`} />
                       <span className={plan.highlight ? 'text-blue-50' : 'text-[#4a4a4a]'}>{f}</span>
                     </li>
                   ))}
@@ -122,7 +122,7 @@ export default function PricingSection() {
                   className={`block text-center font-bold py-3.5 rounded-xl transition-all hover:-translate-y-0.5 ${
                     plan.highlight
                       ? 'bg-white text-[#0066cc] hover:bg-blue-50 hover:shadow-lg'
-                      : 'bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] hover:shadow-lg hover:shadow-[#0066cc]/30'
+                      : 'bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white hover:shadow-lg hover:shadow-[#0066cc]/30'
                   }`}
                 >
                   {plan.cta}

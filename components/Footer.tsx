@@ -32,8 +32,8 @@ export default function Footer() {
       {/* CTA Banner */}
       <div className="bg-gradient-to-r from-[#0066cc] to-[#0052a3] py-8 sm:py-10 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#1a1a1a]/80 text-xs sm:text-sm font-semibold uppercase tracking-widest mb-2">Ready to Secure Your Home?</p>
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1a1a1a] mb-4 font-serif text-balance">
+          <p className="text-white/90 text-xs sm:text-sm font-semibold uppercase tracking-widest mb-2">Ready to Secure Your Home?</p>
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 font-serif text-balance">
             Get Expert Installation — Call Now
           </h3>
           <a
@@ -43,7 +43,7 @@ export default function Footer() {
             <Phone size={20} />
             ☎ +1 (844) 810-0173
           </a>
-          <p className="text-[#1a1a1a]/80 text-xs sm:text-sm mt-3">USA &amp; Canada — Mon to Sun, 7AM–10PM EST</p>
+          <p className="text-white/90 text-xs sm:text-sm mt-3">USA &amp; Canada — Mon to Sun, 7AM–10PM EST</p>
         </div>
       </div>
 
@@ -54,7 +54,7 @@ export default function Footer() {
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0066cc] to-[#0052a3] flex items-center justify-center">
-                <Shield size={22} className="text-[#1a1a1a]" />
+                <Shield size={22} className="text-white" />
               </div>
               <div>
                 <span className="block font-bold text-lg text-[#1a1a1a] font-serif">

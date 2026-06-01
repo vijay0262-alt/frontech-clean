@@ -108,7 +108,7 @@ export default function AboutPage() {
               </a>
               <Link
                 href="/book"
-                className="inline-flex items-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-6 py-3.5 rounded-xl hover:bg-[#0066cc] hover:text-[#1a1a1a] transition-all"
+                className="inline-flex items-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-6 py-3.5 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all"
               >
                 Book Installation <ArrowRight size={16} />
               </Link>
@@ -267,7 +267,7 @@ export default function AboutPage() {
             <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
               <Phone size={18} /> +1 (844) 810-0173
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-all">
+            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all">
               Schedule Installation
             </Link>
           </div>

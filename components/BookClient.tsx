@@ -102,7 +102,7 @@ export default function BookClient() {
           {steps.map((s, i) => (
             <div key={s} className="flex items-center gap-2">
               <div className={`flex items-center gap-2 text-xs font-bold ${i === step ? 'text-[#1a1a1a]' : i < step ? 'text-[#22c55e]' : 'text-[#4b5563]'}`}>
-                <div className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-black ${i < step ? 'bg-[#22c55e] text-[#1a1a1a]' : i === step ? 'bg-[#0066cc] text-[#1a1a1a]' : 'bg-[#1e2d4a] text-[#4b5563]'}`}>
+                <div className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-black ${i < step ? 'bg-[#22c55e] text-[#1a1a1a]' : i === step ? 'bg-[#0066cc] text-white' : 'bg-[#1e2d4a] text-[#4b5563]'}`}>
                   {i < step ? <CheckCircle2 size={14} /> : i + 1}
                 </div>
                 <span className="hidden sm:block">{s}</span>

@@ -45,7 +45,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="w-9 h-9 rounded-lg bg-[#0066cc] flex items-center justify-center shadow-md group-hover:shadow-[#0066cc]/40 transition-shadow">
-              <Shield size={20} className="text-[#1a1a1a]" />
+              <Shield size={20} className="text-white" />
             </div>
             <div className="leading-tight">
               <span className="block font-bold text-lg text-[#1a1a1a] font-serif tracking-tight">

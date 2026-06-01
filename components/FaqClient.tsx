@@ -72,9 +72,9 @@ export default function FaqClient() {
             <div className="sticky top-24 space-y-1">
               {categories.map((cat, i) => (
                 <button key={cat.label} onClick={() => { setActiveCategory(i); setOpenIndex(null) }}
-                  className={`w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all ${activeCategory === i ? 'bg-[#0066cc] text-[#1a1a1a]' : 'text-[#4a4a4a] hover:text-[#1a1a1a] hover:bg-white'}`}>
+                  className={`w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all ${activeCategory === i ? 'bg-[#0066cc] text-white' : 'text-[#4a4a4a] hover:text-[#1a1a1a] hover:bg-white'}`}>
                   {cat.label}
-                  <span className={`ml-2 text-xs ${activeCategory === i ? 'text-[#1a1a1a]/70' : 'text-[#4b5563]'}`}>({cat.faqs.length})</span>
+                  <span className={`ml-2 text-xs ${activeCategory === i ? 'text-white/70' : 'text-[#4b5563]'}`}>({cat.faqs.length})</span>
                 </button>
               ))}
               <div className="pt-4 mt-4 border-t border-[#e5e7eb]">
@@ -118,7 +118,7 @@ export default function FaqClient() {
             <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
               <Phone size={18} /> +1 (844) 810-0173
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-all">
+            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all">
               Book Online <ArrowRight size={16} />
             </Link>
           </div>

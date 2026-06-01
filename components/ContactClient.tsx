@@ -78,7 +78,7 @@ export default function ContactClient() {
             We Are Here to <span className="gradient-text">Help You</span>
           </h1>
           <p className="text-[#4a4a4a] text-lg mb-6">Have a question about installation, pricing, or your existing system? Reach out — our team responds fast.</p>
-          <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-black text-lg px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1 pulse-phone">
+          <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-black text-lg px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1 pulse-phone">
             <Phone size={20} /> +1 (844) 810-0173 — Call Free
           </a>
         </div>
@@ -90,7 +90,7 @@ export default function ContactClient() {
           {contactMethods.map(({ icon: Icon, title, desc, value, action, label, color }) => (
             <div key={title} className="glow-card bg-white rounded-xl p-6 flex flex-col gap-3">
               <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center`}>
-                <Icon size={20} className="text-[#1a1a1a]" />
+                <Icon size={20} className="text-white" />
               </div>
               <div>
                 <h3 className="text-[#1a1a1a] font-bold text-sm mb-1">{title}</h3>
@@ -98,7 +98,7 @@ export default function ContactClient() {
                 <p className="text-[#0066cc] font-semibold text-sm">{value}</p>
               </div>
               {action && label && (
-                <a href={action} className={`mt-auto inline-flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg text-sm font-bold transition-all bg-gradient-to-r ${color} text-[#1a1a1a] hover:shadow-md hover:-translate-y-0.5`}>
+                <a href={action} className={`mt-auto inline-flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg text-sm font-bold transition-all bg-gradient-to-r ${color} text-white hover:shadow-md hover:-translate-y-0.5`}>
                   {label}
                 </a>
               )}
@@ -158,7 +158,7 @@ export default function ContactClient() {
                       <AlertCircle size={16} /> Something went wrong. Please try again or call us directly.
                     </div>
                   )}
-                  <button type="submit" disabled={loading} className="w-full py-4 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-black rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-0.5 disabled:opacity-60">
+                  <button type="submit" disabled={loading} className="w-full py-4 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-black rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-0.5 disabled:opacity-60">
                     {loading ? 'Sending...' : 'Send Message'}
                   </button>
                   <p className="text-center text-[#4a4a4a] text-xs">
@@ -180,7 +180,7 @@ export default function ContactClient() {
                   </li>
                 ))}
               </ul>
-              <a href="tel:+18448100173" className="mt-5 flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-black rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-0.5 pulse-phone">
+              <a href="tel:+18448100173" className="mt-5 flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-black rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-0.5 pulse-phone">
                 <Phone size={17} /> +1 (844) 810-0173
               </a>
             </div>

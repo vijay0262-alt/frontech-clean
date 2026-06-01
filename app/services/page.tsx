@@ -193,8 +193,8 @@ export default function ServicesPage() {
             <div className={`grid grid-cols-1 lg:grid-cols-2 gap-14 items-center ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
               <div className={idx % 2 !== 0 ? 'lg:order-2' : ''}>
                 <div className={`inline-flex items-center gap-2 bg-gradient-to-r ${svc.color} rounded-full px-3 py-1 mb-4`}>
-                  <svc.icon size={13} className="text-[#1a1a1a]" />
-                  <span className="text-[#1a1a1a] text-xs font-bold">{svc.badge}</span>
+                  <svc.icon size={13} className="text-white" />
+                  <span className="text-white text-xs font-bold">{svc.badge}</span>
                 </div>
               <h2 className="text-3xl font-black text-[#1a1a1a] mb-2 font-serif">{svc.title}</h2>
               <p className="text-[#0066cc] font-semibold text-sm mb-4">{svc.subtitle}</p>
@@ -267,7 +267,7 @@ export default function ServicesPage() {
             <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
               <Phone size={18} /> +1 (844) 810-0173
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-all">
+            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all">
               Book Online
             </Link>
           </div>

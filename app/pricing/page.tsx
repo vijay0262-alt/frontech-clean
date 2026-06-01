@@ -25,7 +25,7 @@ const plans = [
     tagline: 'Perfect for a single device installation',
     color: 'from-[#1e3a5f] to-[#0f1e3d]',
     borderColor: 'border-[#e5e7eb]',
-    ctaStyle: 'border-2 border-[#0066cc] text-[#0066cc] hover:bg-[#0066cc] hover:text-[#1a1a1a]',
+    ctaStyle: 'border-2 border-[#0066cc] text-[#0066cc] hover:bg-[#0066cc] hover:text-white',
     features: [
       { text: '1 device installation (camera or doorbell)', included: true },
       { text: 'Professional mounting & wiring', included: true },
@@ -276,7 +276,7 @@ export default function PricingPage() {
             </a>
             <Link
               href="/book"
-              className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-all"
+              className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all"
             >
               Book Online
             </Link>
