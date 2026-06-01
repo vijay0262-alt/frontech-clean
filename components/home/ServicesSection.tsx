@@ -7,15 +7,15 @@ import QuickServiceIllustration from '@/components/illustrations/QuickServiceIll
 
 export default function ServicesSection() {
   return (
-    <section className="py-20 px-4 bg-[#0a0f1e]">
+    <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
-          <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">What We Do</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif">
+          <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">What We Do</span>
+          <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif">
             Complete Smart Home Security Services
           </h2>
-          <p className="text-[#94a3b8] max-w-2xl mx-auto">
+          <p className="text-[#4a4a4a] max-w-2xl mx-auto">
             From initial installation to ongoing support, our certified technicians handle every aspect of your smart home security setup.
           </p>
         </div>
@@ -23,61 +23,61 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* Card 1 — Security Camera */}
-          <div className="glow-card bg-[#111827] rounded-2xl overflow-hidden group">
-            <div className="relative h-52 overflow-hidden bg-[#0a0f1e]">
+          <div className="glow-card bg-white border-2 border-[#e5e7eb] rounded-xl overflow-hidden group hover:shadow-lg">
+            <div className="relative h-52 overflow-hidden bg-blue-50">
               <SecurityCameraIllustration />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#111827]/60 via-transparent to-transparent" />
-              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-gradient-to-br from-[#1d6ef5] to-[#0ea5e9] flex items-center justify-center shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
+              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-[#0066cc] flex items-center justify-center shadow-lg">
                 <Camera size={20} className="text-white" />
               </div>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-white mb-2">Security Camera Installation</h3>
-              <p className="text-[#94a3b8] text-sm leading-relaxed mb-4">Professional mounting, wiring, and configuration of indoor and outdoor security cameras. We handle everything from placement planning to final testing.</p>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Security Camera Installation</h3>
+              <p className="text-[#4a4a4a] text-sm leading-relaxed mb-4">Professional mounting, wiring, and configuration of indoor and outdoor security cameras. We handle everything from placement planning to final testing.</p>
               <ul className="grid grid-cols-2 gap-1.5 mb-5">
                 {['Indoor & outdoor cameras', 'HD/4K resolution setup', 'Night vision config', 'Cloud & local storage'].map((f) => (
-                  <li key={f} className="flex items-center gap-1.5 text-xs text-[#94a3b8]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#1d6ef5] shrink-0" />{f}
+                  <li key={f} className="flex items-center gap-1.5 text-xs text-[#4a4a4a]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#0066cc] shrink-0" />{f}
                   </li>
                 ))}
               </ul>
-              <Link href="/services#camera" className="flex items-center gap-1.5 text-[#00c2ff] text-sm font-semibold hover:gap-3 transition-all group-hover:text-white">
+              <Link href="/services#camera" className="flex items-center gap-1.5 text-[#0066cc] text-sm font-semibold hover:gap-3 transition-all group-hover:text-[#0052a3]">
                 Learn More <ArrowRight size={15} />
               </Link>
             </div>
           </div>
 
           {/* Card 2 — Smart Doorbell */}
-          <div className="glow-card bg-[#111827] rounded-2xl overflow-hidden group">
-            <div className="relative h-52 overflow-hidden bg-[#0a0f1e]">
+          <div className="glow-card bg-white border-2 border-[#e5e7eb] rounded-xl overflow-hidden group hover:shadow-lg">
+            <div className="relative h-52 overflow-hidden bg-blue-50">
               <DoorbellIllustration />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#111827]/60 via-transparent to-transparent" />
-              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-gradient-to-br from-[#0ea5e9] to-[#00c2ff] flex items-center justify-center shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
+              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-[#0052a3] flex items-center justify-center shadow-lg">
                 <BellRing size={20} className="text-white" />
               </div>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-white mb-2">Smart Doorbell Setup</h3>
-              <p className="text-[#94a3b8] text-sm leading-relaxed mb-4">Complete smart doorbell installation including Wi-Fi pairing, motion zone configuration, two-way audio testing, and mobile app integration.</p>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Smart Doorbell Setup</h3>
+              <p className="text-[#4a4a4a] text-sm leading-relaxed mb-4">Complete smart doorbell installation including Wi-Fi pairing, motion zone configuration, two-way audio testing, and mobile app integration.</p>
               <ul className="grid grid-cols-2 gap-1.5 mb-5">
                 {['Video doorbell mounting', 'Wi-Fi & app pairing', 'Motion zone setup', 'Chime installation'].map((f) => (
-                  <li key={f} className="flex items-center gap-1.5 text-xs text-[#94a3b8]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#0ea5e9] shrink-0" />{f}
+                  <li key={f} className="flex items-center gap-1.5 text-xs text-[#4a4a4a]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#0052a3] shrink-0" />{f}
                   </li>
                 ))}
               </ul>
-              <Link href="/services#doorbell" className="flex items-center gap-1.5 text-[#00c2ff] text-sm font-semibold hover:gap-3 transition-all group-hover:text-white">
+              <Link href="/services#doorbell" className="flex items-center gap-1.5 text-[#0066cc] text-sm font-semibold hover:gap-3 transition-all group-hover:text-[#0052a3]">
                 Learn More <ArrowRight size={15} />
               </Link>
             </div>
           </div>
 
           {/* Card 3 — Wi-Fi & Network */}
-          <div className="glow-card bg-[#111827] rounded-2xl overflow-hidden group">
-            <div className="relative h-52 overflow-hidden bg-[#0a0f1e]">
+          <div className="glow-card bg-white border-2 border-[#e5e7eb] rounded-xl overflow-hidden group hover:shadow-lg">
+            <div className="relative h-52 overflow-hidden bg-blue-50">
               <NetworkIllustration />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#111827]/60 via-transparent to-transparent" />
-              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-gradient-to-br from-[#1d6ef5] to-[#7c3aed] flex items-center justify-center shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
+              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center shadow-lg">
                 <Wifi size={20} className="text-white" />
               </div>
             </div>
