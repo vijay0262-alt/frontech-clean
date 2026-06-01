@@ -33,8 +33,8 @@ export default function HeroSection() {
           {/* Key benefits */}
           <div className="flex flex-wrap gap-2 sm:gap-3 mb-7 sm:mb-9">
             {['Same-Day Service', 'All Major Brands', 'Full App Setup', '100% Satisfaction'].map((b) => (
-              <span key={b} className="flex items-center gap-1.5 text-xs sm:text-sm text-[#1a1a1a] bg-green-50 border border-green-200 rounded-full px-3 py-1">
-                <CheckCircle2 size={12} className="text-[#22c55e] shrink-0" />
+              <span key={b} className="flex items-center gap-1.5 text-xs sm:text-sm text-white bg-[#22c55e] border border-[#16a34a] rounded-full px-3 py-1">
+                <CheckCircle2 size={12} className="text-white shrink-0" />
                 {b}
               </span>
             ))}

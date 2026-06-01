@@ -149,8 +149,8 @@ export default function SecurityCameraInstallationPage() {
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
             {['Ring, Arlo, Blink, ADT Support', 'Not Working? We Fix It', 'Same-Day Service', 'Installation & Repair', 'Connection Issues Solved', 'No Fix, No Pay'].map((b) => (
-              <span key={b} className="flex items-center gap-1.5 text-xs text-white bg-[#0066cc] border border-[#0052a3] rounded-full px-3 py-1">
-                <CheckCircle2 size={11} className="text-[#22c55e] shrink-0" />{b}
+              <span key={b} className="flex items-center gap-1.5 text-xs text-white bg-[#22c55e] border border-[#16a34a] rounded-full px-3 py-1">
+                <CheckCircle2 size={11} className="text-white shrink-0" />{b}
               </span>
             ))}
           </div>
