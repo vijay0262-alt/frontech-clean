@@ -30,7 +30,7 @@ export default function BookClient() {
     setLoading(true)
     setSubmitError(false)
     try {
-      const res = await fetch('/api/book', {
+      const res = await fetch('/mail.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

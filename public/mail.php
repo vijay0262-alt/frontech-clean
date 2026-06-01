@@ -40,7 +40,8 @@ function clean($val) {
 $type = clean($data['_type'] ?? 'contact'); // 'contact' or 'booking'
 
 // Recipients
-$recipients = ['vijay0262@gmail.com', 'info@frontechsecurity.com'];
+$to           = 'info@frontechsecurity.com';
+$cc           = 'vijaymehra@aol.com';
 $from_name    = 'FrontechSecurity Website';
 $from_email   = 'no-reply@frontechsecurity.com';
 $reply_to     = clean($data['email'] ?? '');
@@ -48,6 +49,7 @@ $reply_header = $reply_to ? "Reply-To: {$reply_to}\r\n" : '';
 $headers      = "MIME-Version: 1.0\r\n"
               . "Content-Type: text/html; charset=UTF-8\r\n"
               . "From: {$from_name} <{$from_email}>\r\n"
+              . "Cc: {$cc}\r\n"
               . $reply_header
               . "X-Mailer: PHP/" . phpversion();
 
@@ -57,7 +59,7 @@ if ($type === 'booking') {
 
     $rows = [
         'Service'          => clean($data['service'] ?? ''),
-        'Plan'             => clean($data['plan'] ?? ''),
+        'Device Type'      => clean($data['deviceType'] ?? ''),
         'Full Name'        => clean($data['name'] ?? ''),
         'Phone'            => clean($data['phone'] ?? ''),
         'Email'            => clean($data['email'] ?? ''),
