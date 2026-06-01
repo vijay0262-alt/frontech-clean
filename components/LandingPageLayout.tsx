@@ -33,10 +33,10 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-center relative">
-          {/* Homepage Icon - Hidden on mobile, visible on tablet and desktop */}
+          {/* Homepage Icon - Visible on all devices */}
           <a
             href="/"
-            className="hidden md:flex md:absolute md:left-4 items-center gap-2 text-[#0066cc] hover:text-[#0052a3] transition-all"
+            className="flex absolute left-4 items-center gap-2 text-[#0066cc] hover:text-[#0052a3] transition-all"
             aria-label="Go to homepage"
           >
             <Home size={24} />

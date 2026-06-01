@@ -258,31 +258,6 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="py-14 px-4 bg-gradient-to-r from-[#0f1e3d] via-[#1d3a7a] to-[#0f1e3d]">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-4 text-balance">
-            Not Sure Which Plan? Talk to Our Team
-          </h2>
-          <p className="text-[#4a4a4a] mb-7">
-            Our specialists will help you pick the right plan based on your home size, number of devices, and budget — at no charge.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+18448100173"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
-            >
-              <Phone size={18} /> +1 (844) 810-0173
-            </a>
-            <Link
-              href="/book"
-              className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all"
-            >
-              Book Online
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
