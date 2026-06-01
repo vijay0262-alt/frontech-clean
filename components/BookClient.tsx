@@ -72,7 +72,7 @@ export default function BookClient() {
           </div>
           <p className="text-[#4a4a4a] text-sm">A confirmation will be sent to <span className="text-[#0066cc]">{form.email}</span>. Our technician will call you 30 minutes before arrival.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-all">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-all">
               <Phone size={16} /> +1 (844) 810-0173
             </a>
             <Link href="/" className="inline-flex items-center justify-center gap-2 border-2 border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a] font-bold px-6 py-3.5 rounded-xl transition-all">Back to Home</Link>
@@ -258,7 +258,7 @@ export default function BookClient() {
             )}
             {step < 3 ? (
               <button onClick={() => setStep(step + 1)} disabled={!canAdvance()}
-                className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-0.5 disabled:opacity-40 disabled:cursor-not-allowed">
+                className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-0.5 disabled:opacity-40 disabled:cursor-not-allowed">
                 Continue <ArrowRight size={16} />
               </button>
             ) : (

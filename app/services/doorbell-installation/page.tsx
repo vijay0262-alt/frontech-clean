@@ -147,7 +147,7 @@ export default function DoorbellInstallationPage() {
             ))}
           </div>
           <div className="mt-8">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-[#1a1a1a] font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/40 transition-all">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/40 transition-all">
               <Phone size={22} /> Call Now (844) 810-0173
             </a>
           </div>
@@ -304,7 +304,7 @@ export default function DoorbellInstallationPage() {
               <p className="text-[#64748b] text-xs mt-3">*Service fee only. Hardware/parts sold separately. No payment until work is complete.</p>
             </div>
             <div className="space-y-3">
-              <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-[#1a1a1a] font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
+              <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
                 <Phone size={26} className="animate-bounce" /> Call Now (844) 810-0173
               </a>
               <p className="text-sm text-[#4a4a4a]">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>

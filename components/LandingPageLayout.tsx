@@ -36,7 +36,7 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
           {/* Phone CTA - Centered */}
           <a
             href="tel:+18448100173"
-            className="flex items-center gap-2 px-4 py-3 bg-[#0066cc] hover:bg-[#0052a3] text-[#1a1a1a] text-base font-bold rounded-lg hover:shadow-lg transition-all pulse-phone whitespace-nowrap"
+            className="flex items-center gap-2 px-4 py-3 bg-[#0066cc] hover:bg-[#0052a3] text-white text-base font-bold rounded-lg hover:shadow-lg transition-all pulse-phone whitespace-nowrap"
           >
             <Phone size={18} className="animate-pulse" />
             <span className="hidden sm:inline">☎ Call Now (844) 810-0173</span>
@@ -54,7 +54,7 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
       <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-gradient-to-t from-white via-white to-transparent p-4 pointer-events-none">
         <a
           href="tel:+18448100173"
-          className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#0066cc] hover:bg-[#0052a3] text-[#1a1a1a] text-base font-bold rounded-xl shadow-lg transition-all pulse-phone pointer-events-auto"
+          className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#0066cc] hover:bg-[#0052a3] text-white text-base font-bold rounded-xl shadow-lg transition-all pulse-phone pointer-events-auto"
         >
           <Phone size={20} className="animate-pulse" />
           ☎ Call Now (844) 810-0173

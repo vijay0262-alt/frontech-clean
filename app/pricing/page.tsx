@@ -69,7 +69,7 @@ const plans = [
     tagline: 'Complete coverage — save 16% vs monthly',
     color: 'from-[#7c3aed] to-[#0066cc]',
     borderColor: 'border-[#7c3aed]/60',
-    ctaStyle: 'bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-[#1a1a1a] hover:shadow-lg hover:shadow-[#7c3aed]/30',
+    ctaStyle: 'bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white hover:shadow-lg hover:shadow-[#7c3aed]/30',
     features: [
       { text: 'Everything in Monthly plan', included: true },
       { text: '1 free on-site revisit per year', included: true },
@@ -127,7 +127,7 @@ export default function PricingPage() {
           </p>
           <a
             href="tel:+18448100173"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1 pulse-phone"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1 pulse-phone"
           >
             <Phone size={18} />
             ☎ Questions? Call +1 (844) 810-0173
@@ -148,7 +148,7 @@ export default function PricingPage() {
               }`}
             >
               {plan.badge && (
-                <div className={`absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-wide ${plan.highlight ? 'bg-white text-[#0066cc]' : 'bg-gradient-to-r ' + plan.color + ' text-[#1a1a1a]'}`}>
+                <div className={`absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-wide ${plan.highlight ? 'bg-white text-[#0066cc]' : 'bg-gradient-to-r ' + plan.color + ' text-white'}`}>
                   {plan.badge}
                 </div>
               )}
@@ -270,7 +270,7 @@ export default function PricingPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+18448100173"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
             >
               <Phone size={18} /> +1 (844) 810-0173
             </a>

@@ -58,7 +58,7 @@ export default function FaqClient() {
             Frequently Asked <span className="gradient-text">Questions</span>
           </h1>
           <p className="text-[#4a4a4a] text-lg mb-8">Everything you need to know about our services. Can't find your answer? Call us directly.</p>
-          <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-7 py-3.5 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
+          <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
             <Phone size={16} /> +1 (844) 810-0173
           </a>
         </div>
@@ -115,7 +115,7 @@ export default function FaqClient() {
           <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-4 text-balance">{"Didn't Find Your Answer?"}</h2>
           <p className="text-[#4a4a4a] mb-7">Our technicians are standing by. Call for an instant, expert answer.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
               <Phone size={18} /> +1 (844) 810-0173
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-all">

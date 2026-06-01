@@ -55,7 +55,7 @@ export default function ContactClient() {
           </div>
           <p className="text-[#4a4a4a] text-sm">Need immediate help? Call us now:</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-7 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
               <Phone size={16} /> +1 (844) 810-0173
             </a>
             <a href="/" className="inline-flex items-center justify-center gap-2 border-2 border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a] font-bold px-7 py-3.5 rounded-xl transition-colors">

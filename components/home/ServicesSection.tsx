@@ -28,7 +28,7 @@ export default function ServicesSection() {
               <SecurityCameraIllustration />
               <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-[#0066cc] flex items-center justify-center shadow-lg">
-                <Camera size={20} className="text-[#1a1a1a]" />
+                <Camera size={20} className="text-white" />
               </div>
             </div>
             <div className="p-6">
@@ -53,7 +53,7 @@ export default function ServicesSection() {
               <DoorbellIllustration />
               <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-[#0052a3] flex items-center justify-center shadow-lg">
-                <BellRing size={20} className="text-[#1a1a1a]" />
+                <BellRing size={20} className="text-white" />
               </div>
             </div>
             <div className="p-6">
@@ -78,7 +78,7 @@ export default function ServicesSection() {
               <NetworkIllustration />
               <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center shadow-lg">
-                <Wifi size={20} className="text-[#1a1a1a]" />
+                <Wifi size={20} className="text-white" />
               </div>
             </div>
             <div className="p-6">
@@ -101,9 +101,9 @@ export default function ServicesSection() {
           <div className="glow-card bg-white rounded-2xl overflow-hidden group">
             <div className="relative h-52 overflow-hidden bg-white">
               <QuickServiceIllustration />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#111827]/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-gradient-to-br from-[#22c55e] to-[#0052a3] flex items-center justify-center shadow-lg">
-                <Headphones size={20} className="text-[#1a1a1a]" />
+                <Headphones size={20} className="text-white" />
               </div>
             </div>
             <div className="p-6">
@@ -127,7 +127,7 @@ export default function ServicesSection() {
         <div className="text-center mt-10">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
           >
             View All Services <ArrowRight size={18} />
           </Link>

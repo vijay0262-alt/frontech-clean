@@ -178,7 +178,7 @@ export default function ServicesPage() {
           </p>
           <a
             href="tel:+18448100173"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
           >
             <Phone size={18} />
             ☎ Call for Free Estimate — +1 (844) 810-0173
@@ -210,7 +210,7 @@ export default function ServicesPage() {
                 <div className="flex flex-wrap gap-3">
                   <Link
                     href="/book"
-                    className={`inline-flex items-center gap-2 bg-gradient-to-r ${svc.color} text-[#1a1a1a] font-bold px-6 py-3 rounded-xl hover:shadow-lg transition-all hover:-translate-y-0.5`}
+                    className={`inline-flex items-center gap-2 bg-gradient-to-r ${svc.color} text-white font-bold px-6 py-3 rounded-xl hover:shadow-lg transition-all hover:-translate-y-0.5`}
                   >
                     {svc.cta} <ArrowRight size={16} />
                   </Link>
@@ -264,7 +264,7 @@ export default function ServicesPage() {
           <h2 className="text-2xl font-black text-[#1a1a1a] font-serif mb-4">Ready to Get Started?</h2>
           <p className="text-[#4a4a4a] mb-7">Call us now for a free consultation or book online in minutes.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
               <Phone size={18} /> +1 (844) 810-0173
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-all">

@@ -37,7 +37,7 @@ export default function PolicyLayout({ title, subtitle, lastUpdated, children }:
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="tel:+18448100173"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-6 py-3 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-6 py-3 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all"
               >
                 <Phone size={15} /> +1 (844) 810-0173
               </a>
