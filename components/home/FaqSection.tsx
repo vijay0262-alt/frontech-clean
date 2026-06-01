@@ -41,11 +41,11 @@ export default function FaqSection() {
   const [open, setOpen] = useState<number | null>(0)
 
   return (
-    <section className="py-20 px-4 bg-[#060c1a]">
+    <section className="py-20 px-4 bg-white">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">Got Questions?</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif">
+          <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">Got Questions?</span>
+          <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif">
             Frequently Asked Questions
           </h2>
         </div>
@@ -54,33 +54,33 @@ export default function FaqSection() {
           {faqs.map((faq, idx) => (
             <div
               key={idx}
-              className={`glow-card bg-[#111827] rounded-xl overflow-hidden transition-all ${open === idx ? 'border-[#1d6ef5]/50' : ''}`}
+              className={`glow-card bg-white rounded-xl overflow-hidden transition-all border-2 border-[#e5e7eb] ${open === idx ? 'border-[#0066cc]' : ''}`}
             >
               <button
                 className="w-full text-left flex items-center justify-between gap-4 px-6 py-4"
                 onClick={() => setOpen(open === idx ? null : idx)}
               >
-                <span className="text-white font-semibold text-sm sm:text-base">{faq.q}</span>
+                <span className="text-[#1a1a1a] font-semibold text-sm sm:text-base">{faq.q}</span>
                 <ChevronDown
                   size={18}
-                  className={`text-[#1d6ef5] shrink-0 transition-transform duration-300 ${open === idx ? 'rotate-180' : ''}`}
+                  className={`text-[#0066cc] shrink-0 transition-transform duration-300 ${open === idx ? 'rotate-180' : ''}`}
                 />
               </button>
               {open === idx && (
                 <div className="px-6 pb-5">
-                  <div className="h-px bg-[#1e3a5f] mb-4" />
-                  <p className="text-[#94a3b8] text-sm leading-relaxed">{faq.a}</p>
+                  <div className="h-px bg-[#e5e7eb] mb-4" />
+                  <p className="text-[#4a4a4a] text-sm leading-relaxed">{faq.a}</p>
                 </div>
               )}
             </div>
           ))}
         </div>
 
-        <div className="mt-10 text-center p-6 bg-[#111827] rounded-2xl border border-[#1e3a5f]">
-          <p className="text-[#94a3b8] mb-3">Still have questions? Our team is standing by.</p>
+        <div className="mt-10 text-center p-6 bg-[#f5f5f5] rounded-2xl border border-[#e5e7eb]">
+          <p className="text-[#4a4a4a] mb-3">Still have questions? Our team is standing by.</p>
           <a
             href="tel:+18448100173"
-            className="inline-flex items-center gap-2 text-[#00c2ff] font-bold hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-[#0066cc] font-bold hover:text-[#0052a3] transition-colors"
           >
             <Phone size={16} />
             Call +1 (844) 810-0173 — Free Consultation

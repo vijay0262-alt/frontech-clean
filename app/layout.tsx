@@ -24,7 +24,7 @@ const montserrat = Montserrat({
 const BASE_URL = 'https://frontechsecurity.com'
 
 export const viewport: Viewport = {
-  themeColor: '#0a0f1e',
+  themeColor: '#0066cc',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -312,7 +312,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans antialiased bg-[#0a0f1e] text-[#f0f4ff]">
+      <body className="font-sans antialiased bg-white text-[#f0f4ff]">
         <TopBar />
         <Navbar />
           <JivoChat />

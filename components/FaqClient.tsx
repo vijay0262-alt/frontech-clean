@@ -48,17 +48,17 @@ export default function FaqClient() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <div className="bg-[#0a0f1e]">
+    <div className="bg-white">
       {/* Hero */}
       <section className="py-20 px-4 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ background: 'radial-gradient(ellipse at 50% 0%, #1d6ef5, transparent 70%)' }} />
         <div className="max-w-3xl mx-auto relative">
-          <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">FAQ</span>
-          <h1 className="text-4xl sm:text-5xl font-black text-white mt-3 mb-5 font-serif text-balance">
+          <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">FAQ</span>
+          <h1 className="text-4xl sm:text-5xl font-black text-[#1a1a1a] mt-3 mb-5 font-serif text-balance">
             Frequently Asked <span className="gradient-text">Questions</span>
           </h1>
-          <p className="text-[#94a3b8] text-lg mb-8">Everything you need to know about our services. Can't find your answer? Call us directly.</p>
-          <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1">
+          <p className="text-[#4a4a4a] text-lg mb-8">Everything you need to know about our services. Can't find your answer? Call us directly.</p>
+          <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-7 py-3.5 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
             <Phone size={16} /> +1 (844) 810-0173
           </a>
         </div>
@@ -72,14 +72,14 @@ export default function FaqClient() {
             <div className="sticky top-24 space-y-1">
               {categories.map((cat, i) => (
                 <button key={cat.label} onClick={() => { setActiveCategory(i); setOpenIndex(null) }}
-                  className={`w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all ${activeCategory === i ? 'bg-[#1d6ef5] text-white' : 'text-[#94a3b8] hover:text-white hover:bg-[#111827]'}`}>
+                  className={`w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all ${activeCategory === i ? 'bg-[#0066cc] text-[#1a1a1a]' : 'text-[#4a4a4a] hover:text-[#1a1a1a] hover:bg-white'}`}>
                   {cat.label}
-                  <span className={`ml-2 text-xs ${activeCategory === i ? 'text-white/70' : 'text-[#4b5563]'}`}>({cat.faqs.length})</span>
+                  <span className={`ml-2 text-xs ${activeCategory === i ? 'text-[#1a1a1a]/70' : 'text-[#4b5563]'}`}>({cat.faqs.length})</span>
                 </button>
               ))}
-              <div className="pt-4 mt-4 border-t border-[#1e3a5f]">
-                <p className="text-[#94a3b8] text-xs mb-3">Still have questions?</p>
-                <a href="tel:+18448100173" className="flex items-center gap-2 text-[#00c2ff] text-sm font-semibold hover:text-white transition-colors">
+              <div className="pt-4 mt-4 border-t border-[#e5e7eb]">
+                <p className="text-[#4a4a4a] text-xs mb-3">Still have questions?</p>
+                <a href="tel:+18448100173" className="flex items-center gap-2 text-[#0066cc] text-sm font-semibold hover:text-[#1a1a1a] transition-colors">
                   <Phone size={14} /> Call Us Now
                 </a>
               </div>
@@ -88,18 +88,18 @@ export default function FaqClient() {
 
           {/* FAQ list */}
           <div className="flex-1">
-            <h2 className="text-white font-bold text-2xl font-serif mb-6">{categories[activeCategory].label}</h2>
+            <h2 className="text-[#1a1a1a] font-bold text-2xl font-serif mb-6">{categories[activeCategory].label}</h2>
             <div className="space-y-3">
               {categories[activeCategory].faqs.map((faq, i) => (
-                <div key={i} className={`glow-card bg-[#111827] rounded-xl overflow-hidden ${openIndex === i ? 'border-[#1d6ef5]/50' : ''}`}>
+                <div key={i} className={`glow-card bg-white rounded-xl overflow-hidden ${openIndex === i ? 'border-[#0066cc]/50' : ''}`}>
                   <button className="w-full flex items-start justify-between gap-4 p-5 text-left" onClick={() => setOpenIndex(openIndex === i ? null : i)} aria-expanded={openIndex === i}>
-                    <span className={`font-semibold text-sm leading-relaxed ${openIndex === i ? 'text-white' : 'text-[#cbd5e1]'}`}>{faq.q}</span>
-                    <ChevronDown size={18} className={`shrink-0 mt-0.5 text-[#1d6ef5] transition-transform ${openIndex === i ? 'rotate-180' : ''}`} />
+                    <span className={`font-semibold text-sm leading-relaxed ${openIndex === i ? 'text-[#1a1a1a]' : 'text-[#cbd5e1]'}`}>{faq.q}</span>
+                    <ChevronDown size={18} className={`shrink-0 mt-0.5 text-[#0066cc] transition-transform ${openIndex === i ? 'rotate-180' : ''}`} />
                   </button>
                   {openIndex === i && (
                     <div className="px-5 pb-5">
                       <div className="h-px bg-[#1e3a5f] mb-4" />
-                      <p className="text-[#94a3b8] text-sm leading-relaxed">{faq.a}</p>
+                      <p className="text-[#4a4a4a] text-sm leading-relaxed">{faq.a}</p>
                     </div>
                   )}
                 </div>
@@ -112,13 +112,13 @@ export default function FaqClient() {
       {/* CTA */}
       <section className="py-14 px-4 bg-gradient-to-r from-[#0f1e3d] via-[#1d3a7a] to-[#0f1e3d]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-black text-white font-serif mb-4 text-balance">{"Didn't Find Your Answer?"}</h2>
-          <p className="text-[#94a3b8] mb-7">Our technicians are standing by. Call for an instant, expert answer.</p>
+          <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-4 text-balance">{"Didn't Find Your Answer?"}</h2>
+          <p className="text-[#4a4a4a] mb-7">Our technicians are standing by. Call for an instant, expert answer.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
               <Phone size={18} /> +1 (844) 810-0173
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold px-8 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-all">
+            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-all">
               Book Online <ArrowRight size={16} />
             </Link>
           </div>

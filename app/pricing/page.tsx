@@ -24,8 +24,8 @@ const plans = [
     highlight: false,
     tagline: 'Perfect for a single device installation',
     color: 'from-[#1e3a5f] to-[#0f1e3d]',
-    borderColor: 'border-[#1e3a5f]',
-    ctaStyle: 'border-2 border-[#1d6ef5] text-[#1d6ef5] hover:bg-[#1d6ef5] hover:text-white',
+    borderColor: 'border-[#e5e7eb]',
+    ctaStyle: 'border-2 border-[#0066cc] text-[#0066cc] hover:bg-[#0066cc] hover:text-[#1a1a1a]',
     features: [
       { text: '1 device installation (camera or doorbell)', included: true },
       { text: 'Professional mounting & wiring', included: true },
@@ -45,9 +45,9 @@ const plans = [
     period: '/month',
     highlight: true,
     tagline: 'Ongoing peace of mind for your system',
-    color: 'from-[#1d6ef5] to-[#0ea5e9]',
-    borderColor: 'border-[#1d6ef5]',
-    ctaStyle: 'bg-white text-[#1d6ef5] hover:bg-[#f0f4ff] font-black',
+    color: 'from-[#0066cc] to-[#0052a3]',
+    borderColor: 'border-[#0066cc]',
+    ctaStyle: 'bg-white text-[#0066cc] hover:bg-[#f0f4ff] font-black',
     features: [
       { text: 'Unlimited phone & chat support', included: true },
       { text: 'Remote diagnostics & troubleshooting', included: true },
@@ -67,9 +67,9 @@ const plans = [
     period: '/year',
     highlight: false,
     tagline: 'Complete coverage — save 16% vs monthly',
-    color: 'from-[#7c3aed] to-[#1d6ef5]',
+    color: 'from-[#7c3aed] to-[#0066cc]',
     borderColor: 'border-[#7c3aed]/60',
-    ctaStyle: 'bg-gradient-to-r from-[#7c3aed] to-[#1d6ef5] text-white hover:shadow-lg hover:shadow-[#7c3aed]/30',
+    ctaStyle: 'bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-[#1a1a1a] hover:shadow-lg hover:shadow-[#7c3aed]/30',
     features: [
       { text: 'Everything in Monthly plan', included: true },
       { text: '1 free on-site revisit per year', included: true },
@@ -113,24 +113,24 @@ const faqs = [
 
 export default function PricingPage() {
   return (
-    <div className="bg-[#0a0f1e]">
+    <div className="bg-white">
       {/* Hero */}
       <section className="py-20 px-4 text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ background: 'radial-gradient(ellipse at 50% 0%, #1d6ef5, transparent 70%)' }} />
+        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ background: 'radial-gradient(ellipse at 50% 0%, #0066cc, transparent 70%)' }} />
         <div className="max-w-3xl mx-auto relative">
-          <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">Simple Pricing</span>
-          <h1 className="text-4xl sm:text-5xl font-black text-white mt-3 mb-5 font-serif text-balance">
+          <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">Simple Pricing</span>
+          <h1 className="text-4xl sm:text-5xl font-black text-[#1a1a1a] mt-3 mb-5 font-serif text-balance">
             Transparent Plans, <span className="gradient-text">Zero Surprises</span>
           </h1>
-          <p className="text-[#94a3b8] text-lg mb-8">
+          <p className="text-[#4a4a4a] text-lg mb-8">
             One-time installation or ongoing support — choose the plan that fits your home security needs. All work performed by certified technicians.
           </p>
           <a
             href="tel:+18448100173"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1 pulse-phone"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1 pulse-phone"
           >
             <Phone size={18} />
-            Questions? Call +1 (844) 810-0173
+            ☎ Questions? Call +1 (844) 810-0173
           </a>
         </div>
       </section>
@@ -143,33 +143,33 @@ export default function PricingPage() {
               key={plan.id}
               className={`relative rounded-2xl flex flex-col ${
                 plan.highlight
-                  ? 'pricing-popular text-white scale-[1.03]'
-                  : 'bg-[#111827] border ' + plan.borderColor
+                  ? 'pricing-popular text-[#1a1a1a] scale-[1.03]'
+                  : 'bg-white border-2 border-[#e5e7eb] ' + plan.borderColor
               }`}
             >
               {plan.badge && (
-                <div className={`absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-wide ${plan.highlight ? 'bg-white text-[#1d6ef5]' : 'bg-gradient-to-r ' + plan.color + ' text-white'}`}>
+                <div className={`absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-wide ${plan.highlight ? 'bg-white text-[#0066cc]' : 'bg-gradient-to-r ' + plan.color + ' text-[#1a1a1a]'}`}>
                   {plan.badge}
                 </div>
               )}
               <div className="p-7 flex flex-col flex-1">
                 <div className="mb-6">
-                  <h3 className={`text-lg font-black mb-1 font-serif ${plan.highlight ? 'text-white' : 'text-white'}`}>{plan.name}</h3>
-                  <p className={`text-sm ${plan.highlight ? 'text-white/80' : 'text-[#94a3b8]'}`}>{plan.tagline}</p>
+                  <h3 className={`text-lg font-black mb-1 font-serif ${plan.highlight ? 'text-[#1a1a1a]' : 'text-[#1a1a1a]'}`}>{plan.name}</h3>
+                  <p className={`text-sm ${plan.highlight ? 'text-[#1a1a1a]/80' : 'text-[#4a4a4a]'}`}>{plan.tagline}</p>
                 </div>
                 <div className="flex items-end gap-1 mb-6">
-                  <span className={`text-5xl font-black font-serif ${plan.highlight ? 'text-white' : 'text-white'}`}>{plan.price}</span>
-                  <span className={`text-sm pb-2 ${plan.highlight ? 'text-white/70' : 'text-[#94a3b8]'}`}>{plan.period}</span>
+                  <span className={`text-5xl font-black font-serif ${plan.highlight ? 'text-[#1a1a1a]' : 'text-[#0066cc]'}`}>{plan.price}</span>
+                  <span className={`text-sm pb-2 ${plan.highlight ? 'text-[#1a1a1a]/70' : 'text-[#4a4a4a]'}`}>{plan.period}</span>
                 </div>
                 <ul className="space-y-3 mb-7 flex-1">
                   {plan.features.map((f) => (
                     <li key={f.text} className="flex items-start gap-2.5 text-sm">
                       {f.included ? (
-                        <CheckCircle2 size={16} className={`shrink-0 mt-0.5 ${plan.highlight ? 'text-white' : 'text-[#22c55e]'}`} />
+                        <CheckCircle2 size={16} className={`shrink-0 mt-0.5 ${plan.highlight ? 'text-[#1a1a1a]' : 'text-[#22c55e]'}`} />
                       ) : (
-                        <X size={16} className={`shrink-0 mt-0.5 ${plan.highlight ? 'text-white/30' : 'text-[#4b5563]'}`} />
+                        <X size={16} className={`shrink-0 mt-0.5 ${plan.highlight ? 'text-[#1a1a1a]/30' : 'text-[#4b5563]'}`} />
                       )}
-                      <span className={f.included ? (plan.highlight ? 'text-white/90' : 'text-[#cbd5e1]') : (plan.highlight ? 'text-white/30 line-through' : 'text-[#4b5563] line-through')}>
+                      <span className={f.included ? (plan.highlight ? 'text-[#1a1a1a]/90' : 'text-[#1a1a1a]') : (plan.highlight ? 'text-[#1a1a1a]/30 line-through' : 'text-[#9ca3af] line-through')}>
                         {f.text}
                       </span>
                     </li>
@@ -184,7 +184,7 @@ export default function PricingPage() {
                   </Link>
                   <a
                     href="tel:+18448100173"
-                    className={`flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-sm transition-all ${plan.highlight ? 'bg-white/10 text-white hover:bg-white/20' : 'border border-[#1e3a5f] text-[#94a3b8] hover:text-white'}`}
+                    className={`flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-sm transition-all ${plan.highlight ? 'bg-white/10 text-[#1a1a1a] hover:bg-white/20' : 'border border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a]'}`}
                   >
                     <Phone size={13} /> Call to Order
                   </a>
@@ -206,33 +206,33 @@ export default function PricingPage() {
             { icon: Zap, label: 'Fast Response', sub: 'Under 1 hour callback' },
           ].map(({ icon: Icon, label, sub }) => (
             <div key={label} className="flex flex-col items-center gap-1">
-              <Icon size={20} className="text-[#1d6ef5] mb-1" />
-              <span className="text-white text-sm font-bold">{label}</span>
-              <span className="text-[#94a3b8] text-xs">{sub}</span>
+              <Icon size={20} className="text-[#0066cc] mb-1" />
+              <span className="text-[#1a1a1a] text-sm font-bold">{label}</span>
+              <span className="text-[#4a4a4a] text-xs">{sub}</span>
             </div>
           ))}
         </div>
       </section>
 
       {/* Add-ons */}
-      <section className="py-20 px-4 bg-[#060c1a]">
+      <section className="py-20 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-white font-serif mb-3">Add-On Services</h2>
-            <p className="text-[#94a3b8]">Customize your installation with these optional enhancements</p>
+            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Add-On Services</h2>
+            <p className="text-[#4a4a4a]">Customize your installation with these optional enhancements</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {addons.map((a) => (
-              <div key={a.name} className="glow-card bg-[#111827] rounded-xl p-5 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-[#1d6ef5]/15 flex items-center justify-center shrink-0">
-                  <Zap size={18} className="text-[#1d6ef5]" />
+              <div key={a.name} className="glow-card bg-white rounded-xl p-5 flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-[#0066cc]/15 flex items-center justify-center shrink-0">
+                  <Zap size={18} className="text-[#0066cc]" />
                 </div>
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-1">
-                    <h3 className="text-white font-bold text-sm">{a.name}</h3>
-                    <span className="text-[#00c2ff] font-black text-sm shrink-0">{a.price}</span>
+                    <h3 className="text-[#1a1a1a] font-bold text-sm">{a.name}</h3>
+                    <span className="text-[#0066cc] font-black text-sm shrink-0">{a.price}</span>
                   </div>
-                  <p className="text-[#94a3b8] text-xs leading-relaxed">{a.desc}</p>
+                  <p className="text-[#4a4a4a] text-xs leading-relaxed">{a.desc}</p>
                 </div>
               </div>
             ))}
@@ -241,17 +241,17 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-4 bg-[#0a0f1e]">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-white font-serif mb-3">Pricing FAQ</h2>
-            <p className="text-[#94a3b8]">Common questions about our plans and pricing</p>
+            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Pricing FAQ</h2>
+            <p className="text-[#4a4a4a]">Common questions about our plans and pricing</p>
           </div>
           <div className="space-y-4">
             {faqs.map((f) => (
-              <div key={f.q} className="glow-card bg-[#111827] rounded-xl p-6">
-                <h3 className="text-white font-bold mb-2">{f.q}</h3>
-                <p className="text-[#94a3b8] text-sm leading-relaxed">{f.a}</p>
+              <div key={f.q} className="glow-card bg-white rounded-xl p-6">
+                <h3 className="text-[#1a1a1a] font-bold mb-2">{f.q}</h3>
+                <p className="text-[#4a4a4a] text-sm leading-relaxed">{f.a}</p>
               </div>
             ))}
           </div>
@@ -261,22 +261,22 @@ export default function PricingPage() {
       {/* Bottom CTA */}
       <section className="py-14 px-4 bg-gradient-to-r from-[#0f1e3d] via-[#1d3a7a] to-[#0f1e3d]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-black text-white font-serif mb-4 text-balance">
+          <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-4 text-balance">
             Not Sure Which Plan? Talk to Our Team
           </h2>
-          <p className="text-[#94a3b8] mb-7">
+          <p className="text-[#4a4a4a] mb-7">
             Our specialists will help you pick the right plan based on your home size, number of devices, and budget — at no charge.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+18448100173"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
             >
               <Phone size={18} /> +1 (844) 810-0173
             </a>
             <Link
               href="/book"
-              className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold px-8 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-all"
+              className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-all"
             >
               Book Online
             </Link>

@@ -11,12 +11,12 @@ const badges = [
 
 export default function TopBar() {
   return (
-    <div className="trust-bar border-b border-[#1e3a5f]/60 py-2 px-4 bg-[#060c1a]">
+    <div className="trust-bar border-b border-[#e5e7eb]/60 py-2 px-4 bg-[#f5f5f5]">
       <div className="max-w-7xl mx-auto flex items-center justify-center sm:justify-between gap-x-4 gap-y-1 flex-wrap">
         {badges.map(({ icon: Icon, text, color }) => (
           <span
             key={text}
-            className="flex items-center gap-1.5 text-[11px] sm:text-xs text-[#94a3b8] whitespace-nowrap"
+            className="flex items-center gap-1.5 text-[11px] sm:text-xs text-[#4a4a4a] whitespace-nowrap"
           >
             <Icon size={12} style={{ color }} className="shrink-0" />
             {text}

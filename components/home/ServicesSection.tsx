@@ -28,7 +28,7 @@ export default function ServicesSection() {
               <SecurityCameraIllustration />
               <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-[#0066cc] flex items-center justify-center shadow-lg">
-                <Camera size={20} className="text-white" />
+                <Camera size={20} className="text-[#1a1a1a]" />
               </div>
             </div>
             <div className="p-6">
@@ -53,7 +53,7 @@ export default function ServicesSection() {
               <DoorbellIllustration />
               <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-[#0052a3] flex items-center justify-center shadow-lg">
-                <BellRing size={20} className="text-white" />
+                <BellRing size={20} className="text-[#1a1a1a]" />
               </div>
             </div>
             <div className="p-6">
@@ -78,45 +78,45 @@ export default function ServicesSection() {
               <NetworkIllustration />
               <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center shadow-lg">
-                <Wifi size={20} className="text-white" />
+                <Wifi size={20} className="text-[#1a1a1a]" />
               </div>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-white mb-2">Wi-Fi & Network Optimization</h3>
-              <p className="text-[#94a3b8] text-sm leading-relaxed mb-4">Ensure your security devices always stay connected. We optimize your home network for reliable, high-speed camera streaming with zero downtime.</p>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Wi-Fi & Network Optimization</h3>
+              <p className="text-[#4a4a4a] text-sm leading-relaxed mb-4">Ensure your security devices always stay connected. We optimize your home network for reliable, high-speed camera streaming with zero downtime.</p>
               <ul className="grid grid-cols-2 gap-1.5 mb-5">
                 {['Network assessment', 'Wi-Fi extender setup', 'Port forwarding config', 'Bandwidth optimization'].map((f) => (
-                  <li key={f} className="flex items-center gap-1.5 text-xs text-[#94a3b8]">
+                  <li key={f} className="flex items-center gap-1.5 text-xs text-[#4a4a4a]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#7c3aed] shrink-0" />{f}
                   </li>
                 ))}
               </ul>
-              <Link href="/services#setup" className="flex items-center gap-1.5 text-[#00c2ff] text-sm font-semibold hover:gap-3 transition-all group-hover:text-white">
+              <Link href="/services#setup" className="flex items-center gap-1.5 text-[#0066cc] text-sm font-semibold hover:gap-3 transition-all group-hover:text-[#1a1a1a]">
                 Learn More <ArrowRight size={15} />
               </Link>
             </div>
           </div>
 
           {/* Card 4 — Quick Service */}
-          <div className="glow-card bg-[#111827] rounded-2xl overflow-hidden group">
-            <div className="relative h-52 overflow-hidden bg-[#0a0f1e]">
+          <div className="glow-card bg-white rounded-2xl overflow-hidden group">
+            <div className="relative h-52 overflow-hidden bg-white">
               <QuickServiceIllustration />
               <div className="absolute inset-0 bg-gradient-to-t from-[#111827]/60 via-transparent to-transparent" />
-              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-gradient-to-br from-[#22c55e] to-[#0ea5e9] flex items-center justify-center shadow-lg">
-                <Headphones size={20} className="text-white" />
+              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-gradient-to-br from-[#22c55e] to-[#0052a3] flex items-center justify-center shadow-lg">
+                <Headphones size={20} className="text-[#1a1a1a]" />
               </div>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-white mb-2">Quick Service & Support</h3>
-              <p className="text-[#94a3b8] text-sm leading-relaxed mb-4">Fast, reliable help to keep your system running perfectly. From app setup to firmware updates, our specialists have you covered 7 days a week.</p>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Quick Service & Support</h3>
+              <p className="text-[#4a4a4a] text-sm leading-relaxed mb-4">Fast, reliable help to keep your system running perfectly. From app setup to firmware updates, our specialists have you covered 7 days a week.</p>
               <ul className="grid grid-cols-2 gap-1.5 mb-5">
                 {['Phone & remote service', 'App setup & sync', 'Firmware updates', 'System health checks'].map((f) => (
-                  <li key={f} className="flex items-center gap-1.5 text-xs text-[#94a3b8]">
+                  <li key={f} className="flex items-center gap-1.5 text-xs text-[#4a4a4a]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e] shrink-0" />{f}
                   </li>
                 ))}
               </ul>
-              <Link href="/services#support" className="flex items-center gap-1.5 text-[#00c2ff] text-sm font-semibold hover:gap-3 transition-all group-hover:text-white">
+              <Link href="/services#support" className="flex items-center gap-1.5 text-[#0066cc] text-sm font-semibold hover:gap-3 transition-all group-hover:text-[#1a1a1a]">
                 Learn More <ArrowRight size={15} />
               </Link>
             </div>
@@ -127,7 +127,7 @@ export default function ServicesSection() {
         <div className="text-center mt-10">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
           >
             View All Services <ArrowRight size={18} />
           </Link>

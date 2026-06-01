@@ -83,32 +83,32 @@ const serviceAreas = [
 
 export default function AboutPage() {
   return (
-    <div className="bg-[#0a0f1e]">
+    <div className="bg-white">
       {/* Hero */}
       <section className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ background: 'radial-gradient(ellipse at 30% 50%, #1d6ef5, transparent 60%)' }} />
+        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ background: 'radial-gradient(ellipse at 30% 50%, #0066cc, transparent 60%)' }} />
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div>
-            <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">About FrontechSecurity</span>
-            <h1 className="text-4xl sm:text-5xl font-black text-white mt-3 mb-6 font-serif leading-tight text-balance">
+            <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">About FrontechSecurity</span>
+            <h1 className="text-4xl sm:text-5xl font-black text-[#1a1a1a] mt-3 mb-6 font-serif leading-tight text-balance">
               Protecting Homes Across <span className="gradient-text">USA & Canada</span>
             </h1>
-            <p className="text-[#94a3b8] text-lg leading-relaxed mb-6">
+            <p className="text-[#4a4a4a] text-lg leading-relaxed mb-6">
               We are a team of passionate, certified smart home security technicians dedicated to making professional-grade camera and doorbell installation accessible to every homeowner and business. Founded with a mission to simplify home security, we have grown to serve thousands of satisfied customers from coast to coast.
             </p>
-            <p className="text-[#94a3b8] leading-relaxed mb-8">
+            <p className="text-[#4a4a4a] leading-relaxed mb-8">
               Whether you need a single doorbell installed or a full multi-camera security system deployed across your property, we bring the expertise, professionalism, and care that your home deserves.
             </p>
             <div className="flex flex-wrap gap-3">
               <a
                 href="tel:+18448100173"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
               >
-                <Phone size={16} /> Call Us: +1 (844) 810-0173
+                <Phone size={16} /> ☎ Call Us: +1 (844) 810-0173
               </a>
               <Link
                 href="/book"
-                className="inline-flex items-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold px-6 py-3.5 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-all"
+                className="inline-flex items-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-6 py-3.5 rounded-xl hover:bg-[#0066cc] hover:text-[#1a1a1a] transition-all"
               >
                 Book Installation <ArrowRight size={16} />
               </Link>
@@ -121,7 +121,7 @@ export default function AboutPage() {
                 alt="Professional technician installing a security camera system on a residential property"
                 className="w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1e]/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0066cc]/20 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 flex justify-around">
                 {[
                   { v: '12K+', l: 'Installs' },
@@ -129,8 +129,8 @@ export default function AboutPage() {
                   { v: '8 Yrs', l: 'Experience' },
                 ].map((s) => (
                   <div key={s.l} className="text-center">
-                    <div className="text-white font-black text-xl font-serif">{s.v}</div>
-                    <div className="text-[#94a3b8] text-xs">{s.l}</div>
+                    <div className="text-[#1a1a1a] font-black text-xl font-serif">{s.v}</div>
+                    <div className="text-[#4a4a4a] text-xs">{s.l}</div>
                   </div>
                 ))}
               </div>
@@ -144,23 +144,23 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map(({ value, label, icon: Icon }) => (
             <div key={label} className="flex flex-col items-center gap-2">
-              <div className="w-12 h-12 rounded-xl bg-[#1d6ef5]/15 flex items-center justify-center mb-1">
-                <Icon size={22} className="text-[#1d6ef5]" />
+              <div className="w-12 h-12 rounded-xl bg-[#0066cc]/15 flex items-center justify-center mb-1">
+                <Icon size={22} className="text-[#0066cc]" />
               </div>
-              <div className="text-3xl font-black text-white font-serif">{value}</div>
-              <div className="text-[#94a3b8] text-sm">{label}</div>
+              <div className="text-3xl font-black text-[#1a1a1a] font-serif">{value}</div>
+              <div className="text-[#4a4a4a] text-sm">{label}</div>
             </div>
           ))}
         </div>
       </section>
 
       {/* Our Story */}
-      <section className="py-20 px-4 bg-[#060c1a]">
+      <section className="py-20 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-white font-serif mb-4">Our Story</h2>
+            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-4">Our Story</h2>
           </div>
-          <div className="glow-card bg-[#111827] rounded-2xl p-8 md:p-12 space-y-5 text-[#94a3b8] leading-relaxed">
+          <div className="glow-card bg-white rounded-2xl p-8 md:p-12 space-y-5 text-[#4a4a4a] leading-relaxed">
             <p>
               FrontechSecurity was founded by a group of IT and networking professionals who noticed a recurring problem: homeowners were purchasing high-quality smart security cameras and doorbells but struggling to install, configure, and maintain them properly. Devices sat in boxes for months, were installed at wrong angles, or kept disconnecting from Wi-Fi — leaving homes less secure than before.
             </p>
@@ -172,7 +172,7 @@ export default function AboutPage() {
             </p>
             <div className="pt-4 flex flex-wrap gap-4">
               {['Ring Compatible', 'Arlo Compatible', 'Nest Compatible', 'Eufy Compatible', 'Reolink Compatible', 'Blink Compatible'].map((b) => (
-                <span key={b} className="inline-flex items-center gap-1.5 bg-[#1d6ef5]/10 border border-[#1d6ef5]/30 text-[#93c5fd] text-xs font-semibold px-3 py-1.5 rounded-full">
+                <span key={b} className="inline-flex items-center gap-1.5 bg-[#0066cc]/10 border border-[#0066cc]/30 text-[#93c5fd] text-xs font-semibold px-3 py-1.5 rounded-full">
                   <CheckCircle2 size={11} className="text-[#22c55e]" /> {b}
                 </span>
               ))}
@@ -182,21 +182,21 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-20 px-4 bg-[#0a0f1e]">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-white font-serif mb-3">Our Core Values</h2>
-            <p className="text-[#94a3b8]">The principles that guide every installation, every call, every visit</p>
+            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Our Core Values</h2>
+            <p className="text-[#4a4a4a]">The principles that guide every installation, every call, every visit</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {values.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="glow-card bg-[#111827] rounded-xl p-7 flex gap-5">
-                <div className="w-12 h-12 rounded-xl bg-[#1d6ef5]/15 flex items-center justify-center shrink-0">
-                  <Icon size={22} className="text-[#1d6ef5]" />
+              <div key={title} className="glow-card bg-white rounded-xl p-7 flex gap-5">
+                <div className="w-12 h-12 rounded-xl bg-[#0066cc]/15 flex items-center justify-center shrink-0">
+                  <Icon size={22} className="text-[#0066cc]" />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold text-lg mb-2 font-serif">{title}</h3>
-                  <p className="text-[#94a3b8] text-sm leading-relaxed">{desc}</p>
+                  <h3 className="text-[#1a1a1a] font-bold text-lg mb-2 font-serif">{title}</h3>
+                  <p className="text-[#4a4a4a] text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -205,24 +205,24 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 px-4 bg-[#060c1a]">
+      <section className="py-20 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-white font-serif mb-3">Meet Our Experts</h2>
-            <p className="text-[#94a3b8]">Certified professionals who treat your home with the utmost respect</p>
+            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Meet Our Experts</h2>
+            <p className="text-[#4a4a4a]">Certified professionals who treat your home with the utmost respect</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {team.map((member) => (
-              <div key={member.name} className="glow-card bg-[#111827] rounded-xl overflow-hidden text-center">
+              <div key={member.name} className="glow-card bg-white rounded-xl overflow-hidden text-center">
                 <div className="w-full aspect-square flex items-center justify-center" style={{ background: `${member.color}18` }}>
-                  <div className="w-24 h-24 rounded-full flex items-center justify-center text-3xl font-black text-white border-4 font-serif" style={{ background: `linear-gradient(135deg, ${member.color}, ${member.color}99)`, borderColor: `${member.color}50` }}>
+                  <div className="w-24 h-24 rounded-full flex items-center justify-center text-3xl font-black text-[#1a1a1a] border-4 font-serif" style={{ background: `linear-gradient(135deg, ${member.color}, ${member.color}99)`, borderColor: `${member.color}50` }}>
                     {member.initials}
                   </div>
                 </div>
                 <div className="p-5">
-                  <h3 className="text-white font-bold mb-0.5">{member.name}</h3>
-                  <p className="text-[#1d6ef5] text-xs font-semibold mb-1">{member.role}</p>
-                  <p className="text-[#94a3b8] text-xs mb-3">{member.years}</p>
+                  <h3 className="text-[#1a1a1a] font-bold mb-0.5">{member.name}</h3>
+                  <p className="text-[#0066cc] text-xs font-semibold mb-1">{member.role}</p>
+                  <p className="text-[#4a4a4a] text-xs mb-3">{member.years}</p>
                   <div className="text-[10px] text-[#22c55e] bg-[#22c55e]/10 rounded-full px-2 py-1">
                     {member.certifications}
                   </div>
@@ -234,24 +234,24 @@ export default function AboutPage() {
       </section>
 
       {/* Service Areas */}
-      <section className="py-20 px-4 bg-[#0a0f1e]">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-black text-white font-serif mb-3">Cities We Serve</h2>
-            <p className="text-[#94a3b8]">Currently serving major metropolitan areas across the USA and Canada — with more cities being added every month.</p>
+            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Cities We Serve</h2>
+            <p className="text-[#4a4a4a]">Currently serving major metropolitan areas across the USA and Canada — with more cities being added every month.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {serviceAreas.map((city) => (
-              <span key={city} className="inline-flex items-center gap-1.5 bg-[#111827] border border-[#1e3a5f] text-[#94a3b8] text-sm px-4 py-2 rounded-lg hover:border-[#1d6ef5] hover:text-white transition-all">
-                <MapPin size={12} className="text-[#1d6ef5]" /> {city}
+              <span key={city} className="inline-flex items-center gap-1.5 bg-white border border-[#e5e7eb] text-[#4a4a4a] text-sm px-4 py-2 rounded-lg hover:border-[#0066cc] hover:text-[#1a1a1a] transition-all">
+                <MapPin size={12} className="text-[#0066cc]" /> {city}
               </span>
             ))}
-            <span className="inline-flex items-center gap-1.5 bg-[#1d6ef5]/10 border border-[#1d6ef5]/40 text-[#93c5fd] text-sm px-4 py-2 rounded-lg font-semibold">
+            <span className="inline-flex items-center gap-1.5 bg-[#0066cc]/10 border border-[#0066cc]/40 text-[#93c5fd] text-sm px-4 py-2 rounded-lg font-semibold">
               + 50 more cities
             </span>
           </div>
-          <p className="text-center text-[#94a3b8] text-sm mt-6">
-            Not in the list? <a href="tel:+18448100173" className="text-[#00c2ff] font-semibold hover:underline">Call us</a> — we travel for larger projects and can often accommodate your area.
+          <p className="text-center text-[#4a4a4a] text-sm mt-6">
+            Not in the list? <a href="tel:+18448100173" className="text-[#0066cc] font-semibold hover:underline">Call us</a> — we travel for larger projects and can often accommodate your area.
           </p>
         </div>
       </section>
@@ -259,15 +259,15 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-14 px-4 bg-gradient-to-r from-[#0f1e3d] via-[#1d3a7a] to-[#0f1e3d]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-black text-white font-serif mb-4 text-balance">
+          <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-4 text-balance">
             Ready to Secure Your Home with the Best?
           </h2>
-          <p className="text-[#94a3b8] mb-7">Join over 5,000 homeowners who trust us with their family's security.</p>
+          <p className="text-[#4a4a4a] mb-7">Join over 5,000 homeowners who trust us with their family's security.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
               <Phone size={18} /> +1 (844) 810-0173
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold px-8 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-all">
+            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-all">
               Schedule Installation
             </Link>
           </div>

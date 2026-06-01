@@ -92,7 +92,7 @@ const plans = [
     desc: 'Single remote session to diagnose and fix one specific issue.',
     features: ['One remote support session', 'Camera offline diagnosis', 'App sync and login issues', 'Firmware troubleshooting', 'No ongoing commitment'],
     cta: 'Book a Service Call',
-    color: 'border-[#1e3a5f]',
+    color: 'border-[#e5e7eb]',
     badge: null,
   },
   {
@@ -101,7 +101,7 @@ const plans = [
     desc: 'Unlimited phone and remote support every month with no contracts.',
     features: ['Unlimited phone support', 'Unlimited remote sessions', 'Camera offline resolution', 'App and firmware updates', 'Motion & alert tuning', 'Cancel anytime'],
     cta: 'Start Monthly Plan',
-    color: 'border-[#1d6ef5]',
+    color: 'border-[#0066cc]',
     badge: 'Most Popular',
   },
   {
@@ -136,7 +136,7 @@ export default function QuickServiceSupportPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
-    <div className="bg-[#0a0f1e]">
+    <div className="bg-white">
       <section className="relative py-10 px-4 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(34,197,94,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(34,197,94,0.07) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
@@ -144,20 +144,20 @@ export default function QuickServiceSupportPage() {
         </div>
         <div className="max-w-6xl mx-auto relative">
           <nav className="flex items-center gap-2 text-xs text-[#64748b] mb-6" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-[#94a3b8] transition-colors">Home</Link>
+            <Link href="/" className="hover:text-[#4a4a4a] transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/services" className="hover:text-[#94a3b8] transition-colors">Services</Link>
+            <Link href="/services" className="hover:text-[#4a4a4a] transition-colors">Services</Link>
             <span>/</span>
-            <span className="text-[#94a3b8]">Quick Service & Support</span>
+            <span className="text-[#4a4a4a]">Quick Service & Support</span>
           </nav>
           <div className="inline-flex items-center gap-2 bg-[#22c55e]/15 border border-[#22c55e]/40 rounded-full px-3 py-1.5 mb-5">
             <Headphones size={13} className="text-[#22c55e]" />
             <span className="text-[#22c55e] text-xs font-bold tracking-wider uppercase">Available 7 Days a Week</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-5 font-serif text-balance">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1a1a1a] leading-tight mb-5 font-serif text-balance">
             Security Camera Support <span className="gradient-text">& Service Plans</span>
           </h1>
-          <p className="text-lg text-[#94a3b8] leading-relaxed mb-8 max-w-3xl">
+          <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8 max-w-3xl">
             Our specialists are available 7 days a week, 7AM to 10PM EST to diagnose and fix any issue with your security cameras or smart doorbells — fast, by phone or remote session, with no long wait times. Whether your camera just went offline, your app stopped working, or your recordings are failing, we get your system back online quickly.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
@@ -168,17 +168,17 @@ export default function QuickServiceSupportPage() {
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[#0ea5e9] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#22c55e]/30 transition-shadow pulse-phone">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[#0052a3] text-[#1a1a1a] font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#22c55e]/30 transition-shadow pulse-phone">
               <Phone size={18} /> Call +1 (844) 810-0173 — Under 60 Sec
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-colors">
+            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-colors">
               Book a Service Call <ArrowRight size={16} />
             </Link>
           </div>
         </div>
       </section>
 
-      <div className="bg-[#0f1e3d] border-y border-[#1e3a5f] py-4 px-4">
+      <div className="bg-[#0f1e3d] border-y border-[#e5e7eb] py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
           {[
             { icon: Star, text: '4.9/5 Rating (2,400+ Reviews)', color: '#f59e0b' },
@@ -186,7 +186,7 @@ export default function QuickServiceSupportPage() {
             { icon: Shield, text: 'Certified Tech Support Specialists', color: '#1d6ef5' },
             { icon: Zap, text: '95% of Issues Fixed Remotely', color: '#00c2ff' },
           ].map(({ icon: Icon, text, color }) => (
-            <span key={text} className="flex items-center gap-2 text-sm text-[#94a3b8]">
+            <span key={text} className="flex items-center gap-2 text-sm text-[#4a4a4a]">
               <Icon size={14} style={{ color }} />{text}
             </span>
           ))}
@@ -194,21 +194,21 @@ export default function QuickServiceSupportPage() {
       </div>
 
       {/* Issues we fix */}
-      <section className="py-20 px-4 bg-[#060c1a]">
+      <section className="py-20 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">What We Fix</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif text-balance">Common Issues Our Specialists Resolve</h2>
-            <p className="text-[#94a3b8] max-w-2xl mx-auto">95% of security camera and smart doorbell issues are fixed remotely in a single call.</p>
+            <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">Common Issues Our Specialists Resolve</h2>
+            <p className="text-[#4a4a4a] max-w-2xl mx-auto">95% of security camera and smart doorbell issues are fixed remotely in a single call.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {issues.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="glow-card bg-[#111827] rounded-xl p-6">
+              <div key={title} className="glow-card bg-white rounded-xl p-6">
                 <div className="w-10 h-10 rounded-xl bg-[#22c55e]/15 flex items-center justify-center mb-4">
                   <Icon size={20} className="text-[#22c55e]" />
                 </div>
-                <h3 className="text-white font-bold mb-2">{title}</h3>
-                <p className="text-[#94a3b8] text-sm leading-relaxed">{desc}</p>
+                <h3 className="text-[#1a1a1a] font-bold mb-2">{title}</h3>
+                <p className="text-[#4a4a4a] text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -216,30 +216,30 @@ export default function QuickServiceSupportPage() {
       </section>
 
       {/* Plans */}
-      <section className="py-20 px-4 bg-[#0a0f1e]">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">Service Plans</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif text-balance">Choose the Right Support Plan for You</h2>
-            <p className="text-[#94a3b8] max-w-2xl mx-auto">All prices are for the support service only. No payment is collected online.</p>
+            <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">Choose the Right Support Plan for You</h2>
+            <p className="text-[#4a4a4a] max-w-2xl mx-auto">All prices are for the support service only. No payment is collected online.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {plans.map(({ name, price, desc, features, cta, color, badge }) => (
-              <div key={name} className={`glow-card bg-[#111827] rounded-2xl p-7 border-2 ${color} flex flex-col`}>
+              <div key={name} className={`glow-card bg-white rounded-2xl p-7 border-2 ${color} flex flex-col`}>
                 {badge && (
-                  <span className="self-start text-xs font-black bg-gradient-to-r from-[#1d6ef5] to-[#22c55e] text-white rounded-full px-3 py-1 mb-4">{badge}</span>
+                  <span className="self-start text-xs font-black bg-gradient-to-r from-[#0066cc] to-[#22c55e] text-[#1a1a1a] rounded-full px-3 py-1 mb-4">{badge}</span>
                 )}
-                <h3 className="text-white font-black font-serif text-xl mb-1">{name}</h3>
-                <p className="text-[#00c2ff] font-bold text-lg mb-2">{price}</p>
-                <p className="text-[#94a3b8] text-sm mb-5">{desc}</p>
+                <h3 className="text-[#1a1a1a] font-black font-serif text-xl mb-1">{name}</h3>
+                <p className="text-[#0066cc] font-bold text-lg mb-2">{price}</p>
+                <p className="text-[#4a4a4a] text-sm mb-5">{desc}</p>
                 <ul className="space-y-2.5 mb-6 flex-1">
                   {features.map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-[#94a3b8]">
+                    <li key={f} className="flex items-start gap-2 text-sm text-[#4a4a4a]">
                       <CheckCircle2 size={14} className="text-[#22c55e] shrink-0 mt-0.5" />{f}
                     </li>
                   ))}
                 </ul>
-                <Link href="/book" className="inline-flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-[#22c55e] to-[#0ea5e9] text-white font-bold rounded-xl hover:shadow-lg transition-shadow">
+                <Link href="/book" className="inline-flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-[#22c55e] to-[#0052a3] text-[#1a1a1a] font-bold rounded-xl hover:shadow-lg transition-shadow">
                   {cta} <ArrowRight size={15} />
                 </Link>
               </div>
@@ -248,38 +248,38 @@ export default function QuickServiceSupportPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-[#060c1a]">
+      <section className="py-20 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">FAQ</span>
-            <h2 className="text-3xl font-black text-white mt-2 font-serif text-balance">Support Plans — Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 font-serif text-balance">Support Plans — Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map(({ q, a }) => (
-              <details key={q} className="group glow-card bg-[#111827] rounded-xl">
-                <summary className="flex items-center justify-between gap-4 cursor-pointer p-6 text-white font-semibold text-sm list-none">
+              <details key={q} className="group glow-card bg-white rounded-xl">
+                <summary className="flex items-center justify-between gap-4 cursor-pointer p-6 text-[#1a1a1a] font-semibold text-sm list-none">
                   {q}
                   <ChevronDown size={16} className="text-[#22c55e] shrink-0 group-open:rotate-180 transition-transform" />
                 </summary>
-                <p className="px-6 pb-6 text-[#94a3b8] text-sm leading-relaxed">{a}</p>
+                <p className="px-6 pb-6 text-[#4a4a4a] text-sm leading-relaxed">{a}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-[#0a0f1e]">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-xl font-black text-white font-serif mb-6 text-center">Explore Our Other Services</h2>
+          <h2 className="text-xl font-black text-[#1a1a1a] font-serif mb-6 text-center">Explore Our Other Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
               { href: '/services/security-camera-installation', title: 'Security Camera Installation', desc: 'Full camera mounting, wiring, and configuration service.' },
               { href: '/services/doorbell-installation', title: 'Smart Doorbell Installation', desc: 'Professional doorbell setup from removal to app walkthrough.' },
               { href: '/services/wifi-network-setup', title: 'Wi-Fi & Network Setup', desc: 'Ensure cameras stay online with optimized network settings.' },
             ].map(({ href, title, desc }) => (
-              <Link key={href} href={href} className="glow-card bg-[#111827] rounded-xl p-5 hover:border-[#22c55e] border border-[#1e3a5f] transition-colors group">
-                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-[#22c55e] transition-colors">{title}</h3>
-                <p className="text-[#94a3b8] text-xs leading-relaxed">{desc}</p>
+              <Link key={href} href={href} className="glow-card bg-white rounded-xl p-5 hover:border-[#22c55e] border border-[#e5e7eb] transition-colors group">
+                <h3 className="text-[#1a1a1a] font-bold text-sm mb-1 group-hover:text-[#22c55e] transition-colors">{title}</h3>
+                <p className="text-[#4a4a4a] text-xs leading-relaxed">{desc}</p>
                 <span className="inline-flex items-center gap-1 text-[#22c55e] text-xs font-semibold mt-3">Learn More <ArrowRight size={12} /></span>
               </Link>
             ))}

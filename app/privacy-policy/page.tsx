@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
 
       <PolicySection title="2. Information We Collect">
         <p>We may collect the following categories of personal information:</p>
-        <p><strong className="text-white">Information You Provide Directly:</strong></p>
+        <p><strong className="text-[#1a1a1a]">Information You Provide Directly:</strong></p>
         <PolicyList items={[
           'Full name, phone number, and email address',
           'Home or business address for scheduling appointments',
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
           'Messages and communications sent through contact forms',
           'Appointment preferences and service notes',
         ]} />
-        <p className="mt-3"><strong className="text-white">Information Collected Automatically:</strong></p>
+        <p className="mt-3"><strong className="text-[#1a1a1a]">Information Collected Automatically:</strong></p>
         <PolicyList items={[
           'IP address and browser type',
           'Pages visited and time spent on the website',

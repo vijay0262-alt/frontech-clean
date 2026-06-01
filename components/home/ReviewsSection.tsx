@@ -47,29 +47,29 @@ const reviews = [
 
 export default function ReviewsSection() {
   return (
-    <section className="py-20 px-4 bg-[#060c1a]">
+    <section className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">Customer Reviews</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif">
+          <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">Customer Reviews</span>
+          <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif">
             What Our Customers Say
           </h2>
           <div className="flex items-center justify-center gap-2 mb-3">
             {[1,2,3,4,5].map((s) => <Star key={s} size={20} fill="#f59e0b" className="text-[#f59e0b]" />)}
-            <span className="text-white font-bold ml-2 text-lg">4.9 / 5</span>
+            <span className="text-[#1a1a1a] font-bold ml-2 text-lg">4.9 / 5</span>
           </div>
-          <p className="text-[#94a3b8]">Based on 2,400+ verified customer reviews across USA &amp; Canada</p>
+          <p className="text-[#4a4a4a]">Based on 2,400+ verified customer reviews across USA &amp; Canada</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {reviews.map((rev) => (
-            <div key={rev.name} className="glow-card bg-[#111827] rounded-2xl p-6">
-              <Quote size={24} className="text-[#1d6ef5]/30 mb-3" />
-              <p className="text-[#94a3b8] text-sm leading-relaxed mb-5 italic">{`"${rev.text}"`}</p>
+            <div key={rev.name} className="glow-card bg-white rounded-2xl p-6 border-2 border-[#e5e7eb] hover:border-[#0066cc]">
+              <Quote size={24} className="text-[#0066cc]/20 mb-3" />
+              <p className="text-[#4a4a4a] text-sm leading-relaxed mb-5 italic">{`"${rev.text}"`}</p>
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-white font-semibold text-sm">{rev.name}</p>
-                  <p className="text-[#94a3b8] text-xs">{rev.location}</p>
+                  <p className="text-[#1a1a1a] font-semibold text-sm">{rev.name}</p>
+                  <p className="text-[#4a4a4a] text-xs">{rev.location}</p>
                 </div>
                 <div className="text-right">
                   <div className="flex gap-0.5 justify-end mb-1">
@@ -77,7 +77,7 @@ export default function ReviewsSection() {
                       <Star key={i} size={12} fill="#f59e0b" className="text-[#f59e0b]" />
                     ))}
                   </div>
-                  <span className="text-[10px] text-[#1d6ef5] bg-[#1d6ef5]/10 border border-[#1d6ef5]/20 rounded-full px-2 py-0.5">
+                  <span className="text-[10px] text-[#0066cc] bg-[#0066cc]/10 border border-[#0066cc]/20 rounded-full px-2 py-0.5">
                     {rev.service}
                   </span>
                 </div>

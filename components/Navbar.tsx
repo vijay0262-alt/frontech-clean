@@ -45,7 +45,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="w-9 h-9 rounded-lg bg-[#0066cc] flex items-center justify-center shadow-md group-hover:shadow-[#0066cc]/40 transition-shadow">
-              <Shield size={20} className="text-white" />
+              <Shield size={20} className="text-[#1a1a1a]" />
             </div>
             <div className="leading-tight">
               <span className="block font-bold text-lg text-[#1a1a1a] font-serif tracking-tight">
@@ -107,7 +107,7 @@ export default function Navbar() {
             </Link>
             <a
               href="tel:+18448100173"
-              className="flex items-center gap-2 px-4 py-2 bg-[#0066cc] hover:bg-[#0052a3] text-white text-sm font-bold rounded-lg hover:shadow-lg transition-all"
+              className="flex items-center gap-2 px-4 py-2 bg-[#0066cc] hover:bg-[#0052a3] text-[#1a1a1a] text-sm font-bold rounded-lg hover:shadow-lg transition-all"
             >
               <Phone size={14} />
               (844) 810-0173
@@ -163,7 +163,7 @@ export default function Navbar() {
             </Link>
             <a
               href="tel:+18448100173"
-              className="flex items-center justify-center gap-2 px-4 py-3 bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold rounded-lg"
+              className="flex items-center justify-center gap-2 px-4 py-3 bg-[#0066cc] hover:bg-[#0052a3] text-[#1a1a1a] font-bold rounded-lg"
             >
               <Phone size={16} />
               Call (844) 810-0173

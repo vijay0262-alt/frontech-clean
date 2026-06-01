@@ -100,7 +100,7 @@ export default function WifiNetworkSetupPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
-    <div className="bg-[#0a0f1e]">
+    <div className="bg-white">
       <section className="relative py-10 px-4 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(124,58,237,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(124,58,237,0.07) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
@@ -108,20 +108,20 @@ export default function WifiNetworkSetupPage() {
         </div>
         <div className="max-w-6xl mx-auto relative">
           <nav className="flex items-center gap-2 text-xs text-[#64748b] mb-6" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-[#94a3b8] transition-colors">Home</Link>
+            <Link href="/" className="hover:text-[#4a4a4a] transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/services" className="hover:text-[#94a3b8] transition-colors">Services</Link>
+            <Link href="/services" className="hover:text-[#4a4a4a] transition-colors">Services</Link>
             <span>/</span>
-            <span className="text-[#94a3b8]">Wi-Fi & Network Setup</span>
+            <span className="text-[#4a4a4a]">Wi-Fi & Network Setup</span>
           </nav>
           <div className="inline-flex items-center gap-2 bg-[#7c3aed]/15 border border-[#7c3aed]/40 rounded-full px-3 py-1.5 mb-5">
             <Wifi size={13} className="text-[#a78bfa]" />
             <span className="text-[#a78bfa] text-xs font-bold tracking-wider uppercase">Critical for Camera Performance</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-5 font-serif text-balance">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1a1a1a] leading-tight mb-5 font-serif text-balance">
             Wi-Fi & Network Setup <span className="gradient-text">for Security Cameras</span>
           </h1>
-          <p className="text-lg text-[#94a3b8] leading-relaxed mb-8 max-w-3xl">
+          <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8 max-w-3xl">
             Even the most expensive security camera is useless if it keeps going offline. Our network specialists assess your home Wi-Fi, eliminate dead zones, optimize router settings, and ensure every camera and doorbell maintains a fast, stable connection around the clock — so your security system is always working when you need it.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
@@ -132,17 +132,17 @@ export default function WifiNetworkSetupPage() {
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#1d6ef5] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#7c3aed]/30 transition-shadow pulse-phone">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-[#1a1a1a] font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#7c3aed]/30 transition-shadow pulse-phone">
               <Phone size={18} /> Call +1 (844) 810-0173 — Free Consult
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-colors">
+            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-colors">
               Book Online <ArrowRight size={16} />
             </Link>
           </div>
         </div>
       </section>
 
-      <div className="bg-[#0f1e3d] border-y border-[#1e3a5f] py-4 px-4">
+      <div className="bg-[#0f1e3d] border-y border-[#e5e7eb] py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
           {[
             { icon: Star, text: '4.9/5 Rating (2,400+ Reviews)', color: '#f59e0b' },
@@ -150,48 +150,48 @@ export default function WifiNetworkSetupPage() {
             { icon: Clock, text: 'Same-Day Appointments Available', color: '#00c2ff' },
             { icon: Zap, text: 'Cameras Stay Online After Every Visit', color: '#7c3aed' },
           ].map(({ icon: Icon, text, color }) => (
-            <span key={text} className="flex items-center gap-2 text-sm text-[#94a3b8]">
+            <span key={text} className="flex items-center gap-2 text-sm text-[#4a4a4a]">
               <Icon size={14} style={{ color }} />{text}
             </span>
           ))}
         </div>
       </div>
 
-      <section className="py-20 px-4 bg-[#060c1a]">
+      <section className="py-20 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#7c3aed] text-xs font-bold uppercase tracking-widest">What Is Included</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif text-balance">Complete Network Setup for Your Security Devices</h2>
-            <p className="text-[#94a3b8] max-w-2xl mx-auto">Every network optimization visit is customized to your specific property, ISP setup, and device count.</p>
+            <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">Complete Network Setup for Your Security Devices</h2>
+            <p className="text-[#4a4a4a] max-w-2xl mx-auto">Every network optimization visit is customized to your specific property, ISP setup, and device count.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {features.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="glow-card bg-[#111827] rounded-xl p-6">
+              <div key={title} className="glow-card bg-white rounded-xl p-6">
                 <div className="w-10 h-10 rounded-xl bg-[#7c3aed]/15 flex items-center justify-center mb-4">
                   <Icon size={20} className="text-[#7c3aed]" />
                 </div>
-                <h3 className="text-white font-bold mb-2">{title}</h3>
-                <p className="text-[#94a3b8] text-sm leading-relaxed">{desc}</p>
+                <h3 className="text-[#1a1a1a] font-bold mb-2">{title}</h3>
+                <p className="text-[#4a4a4a] text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-[#0a0f1e]">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="text-[#7c3aed] text-xs font-bold uppercase tracking-widest">Why It Matters</span>
-            <h2 className="text-3xl font-black text-white mt-2 mb-4 font-serif text-balance">A Security Camera Is Only as Good as Its Connection</h2>
-            <p className="text-[#94a3b8] leading-relaxed mb-5">Most security camera issues — cameras going offline, delayed motion alerts, poor video quality, failed recordings — are not hardware problems. They are network problems. A camera that drops its Wi-Fi connection during a break-in is worse than having no camera at all because it creates a false sense of security.</p>
-            <p className="text-[#94a3b8] leading-relaxed mb-5">Our network specialists have configured hundreds of home and small business networks specifically for security device performance. We understand the bandwidth requirements of HD and 4K cameras, the latency requirements for real-time alerts, and the port forwarding rules needed for NVR remote access on every major router brand.</p>
-            <p className="text-[#94a3b8] leading-relaxed mb-6">Whether you just installed new cameras or you have an existing system that keeps going offline, our network service delivers a stable foundation for your entire security ecosystem.</p>
-            <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#1d6ef5] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
+            <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">A Security Camera Is Only as Good as Its Connection</h2>
+            <p className="text-[#4a4a4a] leading-relaxed mb-5">Most security camera issues — cameras going offline, delayed motion alerts, poor video quality, failed recordings — are not hardware problems. They are network problems. A camera that drops its Wi-Fi connection during a break-in is worse than having no camera at all because it creates a false sense of security.</p>
+            <p className="text-[#4a4a4a] leading-relaxed mb-5">Our network specialists have configured hundreds of home and small business networks specifically for security device performance. We understand the bandwidth requirements of HD and 4K cameras, the latency requirements for real-time alerts, and the port forwarding rules needed for NVR remote access on every major router brand.</p>
+            <p className="text-[#4a4a4a] leading-relaxed mb-6">Whether you just installed new cameras or you have an existing system that keeps going offline, our network service delivers a stable foundation for your entire security ecosystem.</p>
+            <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-[#1a1a1a] font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
               <Phone size={16} /> Fix My Camera Network
             </a>
           </div>
-          <div className="glow-card bg-[#111827] rounded-2xl p-7">
-            <h3 className="text-white font-bold font-serif mb-5">Full Network Setup Checklist</h3>
+          <div className="glow-card bg-white rounded-2xl p-7">
+            <h3 className="text-[#1a1a1a] font-bold font-serif mb-5">Full Network Setup Checklist</h3>
             <ul className="space-y-3">
               {[
                 'Wi-Fi signal strength test at all camera locations',
@@ -208,7 +208,7 @@ export default function WifiNetworkSetupPage() {
                 'All cameras and doorbells reconnected and tested',
                 'Remote access test from an external network',
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-[#94a3b8]">
+                <li key={item} className="flex items-start gap-3 text-sm text-[#4a4a4a]">
                   <CheckCircle2 size={15} className="text-[#22c55e] shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -218,55 +218,55 @@ export default function WifiNetworkSetupPage() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-[#060c1a]">
-        <div className="max-w-3xl mx-auto text-center glow-card bg-[#111827] rounded-2xl p-10">
+      <section className="py-16 px-4 bg-\[#f5f5f5\]">
+        <div className="max-w-3xl mx-auto text-center glow-card bg-white rounded-2xl p-10">
           <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">Add-On Service</span>
-          <h2 className="text-3xl font-black text-white mt-2 mb-3 font-serif">Network Setup — Add-On Pricing</h2>
-          <p className="text-[#94a3b8] mb-2 max-w-xl mx-auto">Wi-Fi and network configuration is available as an add-on to any installation service or as a standalone visit. Call us to discuss your situation and get a flat-rate quote.</p>
+          <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 mb-3 font-serif">Network Setup — Add-On Pricing</h2>
+          <p className="text-[#4a4a4a] mb-2 max-w-xl mx-auto">Wi-Fi and network configuration is available as an add-on to any installation service or as a standalone visit. Call us to discuss your situation and get a flat-rate quote.</p>
           <p className="text-[#64748b] text-xs mb-7">Hardware (extenders, managed switches, mesh nodes) not included in service price and is quoted separately.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#1d6ef5] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow pulse-phone">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-[#1a1a1a] font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow pulse-phone">
               <Phone size={18} /> Call +1 (844) 810-0173
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold px-8 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-colors">
+            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-colors">
               Book Online
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-[#0a0f1e]">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#7c3aed] text-xs font-bold uppercase tracking-widest">FAQ</span>
-            <h2 className="text-3xl font-black text-white mt-2 font-serif text-balance">Network Setup — Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 font-serif text-balance">Network Setup — Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map(({ q, a }) => (
-              <details key={q} className="group glow-card bg-[#111827] rounded-xl">
-                <summary className="flex items-center justify-between gap-4 cursor-pointer p-6 text-white font-semibold text-sm list-none">
+              <details key={q} className="group glow-card bg-white rounded-xl">
+                <summary className="flex items-center justify-between gap-4 cursor-pointer p-6 text-[#1a1a1a] font-semibold text-sm list-none">
                   {q}
                   <ChevronDown size={16} className="text-[#7c3aed] shrink-0 group-open:rotate-180 transition-transform" />
                 </summary>
-                <p className="px-6 pb-6 text-[#94a3b8] text-sm leading-relaxed">{a}</p>
+                <p className="px-6 pb-6 text-[#4a4a4a] text-sm leading-relaxed">{a}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-[#060c1a]">
+      <section className="py-16 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-xl font-black text-white font-serif mb-6 text-center">Explore Related Services</h2>
+          <h2 className="text-xl font-black text-[#1a1a1a] font-serif mb-6 text-center">Explore Related Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
               { href: '/services/security-camera-installation', title: 'Security Camera Installation', desc: 'Full camera mounting, wiring, and app setup service.' },
               { href: '/services/doorbell-installation', title: 'Smart Doorbell Installation', desc: 'Professional doorbell setup with Wi-Fi pairing included.' },
               { href: '/services/quick-service-support', title: 'Ongoing Service & Support', desc: '7-day phone and remote support for your system.' },
             ].map(({ href, title, desc }) => (
-              <Link key={href} href={href} className="glow-card bg-[#111827] rounded-xl p-5 hover:border-[#7c3aed] border border-[#1e3a5f] transition-colors group">
-                <h3 className="text-white font-bold text-sm mb-1 group-hover:text-[#a78bfa] transition-colors">{title}</h3>
-                <p className="text-[#94a3b8] text-xs leading-relaxed">{desc}</p>
+              <Link key={href} href={href} className="glow-card bg-white rounded-xl p-5 hover:border-[#7c3aed] border border-[#e5e7eb] transition-colors group">
+                <h3 className="text-[#1a1a1a] font-bold text-sm mb-1 group-hover:text-[#a78bfa] transition-colors">{title}</h3>
+                <p className="text-[#4a4a4a] text-xs leading-relaxed">{desc}</p>
                 <span className="inline-flex items-center gap-1 text-[#7c3aed] text-xs font-semibold mt-3">Learn More <ArrowRight size={12} /></span>
               </Link>
             ))}

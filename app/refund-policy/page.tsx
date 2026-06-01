@@ -20,14 +20,14 @@ export default function RefundPolicyPage() {
       </PolicySection>
 
       <PolicySection title="2. One-Time Installation Services">
-        <p><strong className="text-white">Before Service:</strong></p>
+        <p><strong className="text-[#1a1a1a]">Before Service:</strong></p>
         <PolicyList items={[
           'Full refund if you cancel at least 24 hours before your scheduled appointment',
           'Cancellations within 24 hours of the appointment may be subject to a $25 late cancellation fee',
           'No-shows (technician arrives and no one is home without prior notice) may be charged the full service fee',
         ]} />
 
-        <p className="mt-4"><strong className="text-white">After Service:</strong></p>
+        <p className="mt-4"><strong className="text-[#1a1a1a]">After Service:</strong></p>
         <PolicyList items={[
           'If the installation does not meet the agreed-upon scope of work, we will return to correct it at no cost within 30 days',
           'Refund requests must be submitted within 30 days of the service date',

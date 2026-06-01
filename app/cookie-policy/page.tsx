@@ -69,7 +69,7 @@ export default function CookiePolicyPage() {
         </p>
         <p>
           To opt out of Google Analytics tracking, visit:{' '}
-          <a href="https://tools.google.com/dlpage/gaoptout" className="text-[#1d6ef5] hover:underline" target="_blank" rel="noopener noreferrer">
+          <a href="https://tools.google.com/dlpage/gaoptout" className="text-[#0066cc] hover:underline" target="_blank" rel="noopener noreferrer">
             tools.google.com/dlpage/gaoptout
           </a>
         </p>

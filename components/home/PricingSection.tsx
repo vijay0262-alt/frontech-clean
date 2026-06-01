@@ -63,14 +63,14 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <section className="py-16 sm:py-20 px-4 bg-[#060c1a]">
+    <section className="py-16 sm:py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 sm:mb-14">
-          <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">Simple Pricing</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif text-balance">
+          <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">Simple Pricing</span>
+          <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">
             Transparent Plans, No Hidden Fees
           </h2>
-          <p className="text-[#94a3b8] max-w-xl mx-auto text-sm sm:text-base">
+          <p className="text-[#4a4a4a] max-w-xl mx-auto text-sm sm:text-base">
             Choose the plan that fits your needs. All plans include our satisfaction guarantee.
           </p>
         </div>
@@ -81,29 +81,29 @@ export default function PricingSection() {
               key={plan.name}
               className={`rounded-2xl overflow-hidden relative ${
                 plan.highlight
-                  ? 'pricing-popular ring-2 ring-[#1d6ef5]/50 md:scale-105 z-10'
-                  : 'bg-[#111827] glow-card'
+                  ? 'pricing-popular ring-2 ring-[#0066cc]/50 md:scale-105 z-10'
+                  : 'bg-white glow-card border-2 border-[#e5e7eb]'
               }`}
             >
               {plan.badge && (
                 <div className={`absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full ${
-                  plan.highlight ? 'bg-white/20 text-white' : 'bg-[#1d6ef5]/20 text-[#60a5fa] border border-[#1d6ef5]/30'
+                  plan.highlight ? 'bg-white/20 text-[#1a1a1a]' : 'bg-[#0066cc]/20 text-[#0066cc] border border-[#0066cc]/30'
                 }`}>
                   {plan.badge}
                 </div>
               )}
               <div className="p-7">
-                <h3 className={`text-lg font-bold mb-1 ${plan.highlight ? 'text-white' : 'text-white'}`}>
+                <h3 className={`text-lg font-bold mb-1 ${plan.highlight ? 'text-[#1a1a1a]' : 'text-[#1a1a1a]'}`}>
                   {plan.name}
                 </h3>
-                <p className={`text-xs mb-5 ${plan.highlight ? 'text-blue-100' : 'text-[#94a3b8]'}`}>
+                <p className={`text-xs mb-5 ${plan.highlight ? 'text-blue-100' : 'text-[#4a4a4a]'}`}>
                   {plan.desc}
                 </p>
                 <div className="flex items-end gap-1 mb-6">
-                  <span className={`text-4xl font-black ${plan.highlight ? 'text-white' : 'gradient-text'}`}>
+                  <span className={`text-4xl font-black ${plan.highlight ? 'text-[#1a1a1a]' : 'gradient-text'}`}>
                     {plan.price}
                   </span>
-                  <span className={`text-sm pb-1 ${plan.highlight ? 'text-blue-100' : 'text-[#94a3b8]'}`}>
+                  <span className={`text-sm pb-1 ${plan.highlight ? 'text-blue-100' : 'text-[#4a4a4a]'}`}>
                     {plan.period}
                   </span>
                 </div>
@@ -111,8 +111,8 @@ export default function PricingSection() {
                 <ul className="space-y-2.5 mb-7">
                   {plan.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm">
-                      <Check size={15} className={`mt-0.5 shrink-0 ${plan.highlight ? 'text-white' : 'text-[#22c55e]'}`} />
-                      <span className={plan.highlight ? 'text-blue-50' : 'text-[#94a3b8]'}>{f}</span>
+                      <Check size={15} className={`mt-0.5 shrink-0 ${plan.highlight ? 'text-[#1a1a1a]' : 'text-[#22c55e]'}`} />
+                      <span className={plan.highlight ? 'text-blue-50' : 'text-[#4a4a4a]'}>{f}</span>
                     </li>
                   ))}
                 </ul>
@@ -121,8 +121,8 @@ export default function PricingSection() {
                   href={plan.href}
                   className={`block text-center font-bold py-3.5 rounded-xl transition-all hover:-translate-y-0.5 ${
                     plan.highlight
-                      ? 'bg-white text-[#1d6ef5] hover:bg-blue-50 hover:shadow-lg'
-                      : 'bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white hover:shadow-lg hover:shadow-[#1d6ef5]/30'
+                      ? 'bg-white text-[#0066cc] hover:bg-blue-50 hover:shadow-lg'
+                      : 'bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] hover:shadow-lg hover:shadow-[#0066cc]/30'
                   }`}
                 >
                   {plan.cta}
@@ -134,10 +134,10 @@ export default function PricingSection() {
 
         {/* Call CTA */}
         <div className="mt-12 text-center">
-          <p className="text-[#94a3b8] mb-3">Need a custom quote for multiple devices or a business property?</p>
+          <p className="text-[#4a4a4a] mb-3">Need a custom quote for multiple devices or a business property?</p>
           <a
             href="tel:+18448100173"
-            className="inline-flex items-center gap-2 text-[#00c2ff] font-bold hover:text-white transition-colors text-lg"
+            className="inline-flex items-center gap-2 text-[#0066cc] font-bold hover:text-[#0052a3] transition-colors text-lg"
           >
             <Phone size={18} />
             Call +1 (844) 810-0173 for a Free Quote

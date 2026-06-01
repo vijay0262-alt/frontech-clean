@@ -127,25 +127,25 @@ export default function SecurityCameraInstallationPage() {
   return (
     <LandingPageLayout>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
-    <div className="bg-[#0a0f1e]">
+    <div className="bg-white">
 
       {/* Hero */}
       <section className="relative py-10 px-4 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(29,110,245,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(29,110,245,0.07) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#1d6ef5]/8 to-transparent" />
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#0066cc]/8 to-transparent" />
         </div>
         <div className="max-w-6xl mx-auto relative">
 
-          <div className="inline-flex items-center gap-2 bg-[#1d6ef5]/15 border border-[#1d6ef5]/40 rounded-full px-3 py-1.5 mb-5">
-            <Camera size={13} className="text-[#00c2ff]" />
-            <span className="text-[#00c2ff] text-xs font-bold tracking-wider uppercase">Most Requested Service</span>
+          <div className="inline-flex items-center gap-2 bg-[#0066cc]/15 border border-[#0066cc]/40 rounded-full px-3 py-1.5 mb-5">
+            <Camera size={13} className="text-[#0066cc]" />
+            <span className="text-[#0066cc] text-xs font-bold tracking-wider uppercase">Most Requested Service</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 font-serif text-balance">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1a1a1a] leading-tight mb-5 font-serif text-balance">
             Security Camera Installation & Repair <span className="gradient-text">Near You</span>
           </h1>
-          <p className="text-lg text-[#94a3b8] leading-relaxed mb-8 max-w-3xl">
-            <strong className="text-white">Professional installation, setup & repair for Ring, Arlo, Blink, Reolink, ADT & all brands.</strong> Fix cameras not connecting, not working, offline issues. Expert troubleshooting & same-day service across USA & Canada. From $49.99.
+          <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8 max-w-3xl">
+            <strong className="text-[#1a1a1a]">Professional installation, setup & repair for Ring, Arlo, Blink, Reolink, ADT & all brands.</strong> Fix cameras not connecting, not working, offline issues. Expert troubleshooting & same-day service across USA & Canada. From $49.99.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
             {['Ring, Arlo, Blink, ADT Support', 'Not Working? We Fix It', 'Same-Day Service', 'Installation & Repair', 'Connection Issues Solved', 'No Fix, No Pay'].map((b) => (
@@ -155,15 +155,15 @@ export default function SecurityCameraInstallationPage() {
             ))}
           </div>
           <div className="mt-8">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/40 transition-all">
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0066cc]/40 transition-all">
               <Phone size={22} /> Call Now (844) 810-0173
             </a>
           </div>
-          <p className="text-sm text-[#94a3b8] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
+          <p className="text-sm text-[#4a4a4a] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
           
-          <div className="mt-8 p-4 bg-[#1e3a5f]/20 border border-[#1e3a5f] rounded-lg max-w-3xl mx-auto">
-            <p className="text-xs text-[#94a3b8] leading-relaxed">
-              <strong className="text-[#00c2ff]">Important Notice:</strong> FrontechSecurity is an independent third-party installation and technical support service provider. We are not affiliated with, endorsed by, or sponsored by Ring, Arlo, Blink, Reolink, ADT, Google Nest, or any other camera manufacturer mentioned on this page. All brand names and trademarks are property of their respective owners and are used for descriptive purposes only to indicate compatibility and service expertise.
+          <div className="mt-8 p-4 bg-[#1e3a5f]/20 border border-[#e5e7eb] rounded-lg max-w-3xl mx-auto">
+            <p className="text-xs text-[#4a4a4a] leading-relaxed">
+              <strong className="text-[#0066cc]">Important Notice:</strong> FrontechSecurity is an independent third-party installation and technical support service provider. We are not affiliated with, endorsed by, or sponsored by Ring, Arlo, Blink, Reolink, ADT, Google Nest, or any other camera manufacturer mentioned on this page. All brand names and trademarks are property of their respective owners and are used for descriptive purposes only to indicate compatibility and service expertise.
             </p>
           </div>
         </div>
@@ -172,24 +172,24 @@ export default function SecurityCameraInstallationPage() {
 
 
       {/* Why Choose Us - Clear Value Proposition */}
-      <section className="py-12 px-4 bg-[#0a0f1e]">
+      <section className="py-12 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-black text-white mb-6 font-serif">Why Customers Call Us for Camera Help</h2>
+          <h2 className="text-2xl sm:text-3xl font-black text-[#1a1a1a] mb-6 font-serif">Why Customers Call Us for Camera Help</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="glow-card bg-[#111827] rounded-xl p-6">
+            <div className="glow-card bg-white rounded-xl p-6">
               <div className="text-4xl mb-3">📞</div>
-              <h3 className="text-white font-bold mb-2">Speak to Real Expert</h3>
-              <p className="text-[#94a3b8] text-sm">Live technician support — no bots, no wait. Get instant help over the phone.</p>
+              <h3 className="text-[#1a1a1a] font-bold mb-2">Speak to Real Expert</h3>
+              <p className="text-[#4a4a4a] text-sm">Live technician support — no bots, no wait. Get instant help over the phone.</p>
             </div>
-            <div className="glow-card bg-[#111827] rounded-xl p-6">
+            <div className="glow-card bg-white rounded-xl p-6">
               <div className="text-4xl mb-3">⚡</div>
-              <h3 className="text-white font-bold mb-2">Same-Day Service</h3>
-              <p className="text-[#94a3b8] text-sm">Camera offline? Need urgent fix? We come to you today — call now for availability.</p>
+              <h3 className="text-[#1a1a1a] font-bold mb-2">Same-Day Service</h3>
+              <p className="text-[#4a4a4a] text-sm">Camera offline? Need urgent fix? We come to you today — call now for availability.</p>
             </div>
-            <div className="glow-card bg-[#111827] rounded-xl p-6">
+            <div className="glow-card bg-white rounded-xl p-6">
               <div className="text-4xl mb-3">✅</div>
-              <h3 className="text-white font-bold mb-2">Fixed Right First Time</h3>
-              <p className="text-[#94a3b8] text-sm">Certified technicians with 10+ years experience. We guarantee our work.</p>
+              <h3 className="text-[#1a1a1a] font-bold mb-2">Fixed Right First Time</h3>
+              <p className="text-[#4a4a4a] text-sm">Certified technicians with 10+ years experience. We guarantee our work.</p>
             </div>
           </div>
 
@@ -197,7 +197,7 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* Trust strip */}
-      <div className="bg-[#0f1e3d] border-y border-[#1e3a5f] py-4 px-4">
+      <div className="bg-[#0f1e3d] border-y border-[#e5e7eb] py-4 px-4">
         <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
           {[
             { icon: Star, text: '4.9/5 Rating (2,400+ Reviews)', color: '#f59e0b' },
@@ -205,7 +205,7 @@ export default function SecurityCameraInstallationPage() {
             { icon: Clock, text: 'Same-Day Appointments Available', color: '#00c2ff' },
             { icon: Zap, text: 'Average Install: Under 2 Hours', color: '#1d6ef5' },
           ].map(({ icon: Icon, text, color }) => (
-            <span key={text} className="flex items-center gap-2 text-sm text-[#94a3b8]">
+            <span key={text} className="flex items-center gap-2 text-sm text-[#4a4a4a]">
               <Icon size={14} style={{ color }} />{text}
             </span>
           ))}
@@ -213,25 +213,25 @@ export default function SecurityCameraInstallationPage() {
       </div>
 
       {/* What's included */}
-      <section className="py-20 px-4 bg-[#060c1a]">
+      <section className="py-20 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">What Is Included</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif text-balance">
+            <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">What Is Included</span>
+            <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">
               Everything You Need for a Complete Camera System
             </h2>
-            <p className="text-[#94a3b8] max-w-2xl mx-auto">
+            <p className="text-[#4a4a4a] max-w-2xl mx-auto">
               Every security camera installation by FrontechSecurity includes all of the following — no hidden fees, no upsells during the job.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {features.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="glow-card bg-[#111827] rounded-xl p-6">
-                <div className="w-10 h-10 rounded-xl bg-[#1d6ef5]/15 flex items-center justify-center mb-4">
-                  <Icon size={20} className="text-[#1d6ef5]" />
+              <div key={title} className="glow-card bg-white rounded-xl p-6">
+                <div className="w-10 h-10 rounded-xl bg-[#0066cc]/15 flex items-center justify-center mb-4">
+                  <Icon size={20} className="text-[#0066cc]" />
                 </div>
-                <h3 className="text-white font-bold mb-2">{title}</h3>
-                <p className="text-[#94a3b8] text-sm leading-relaxed">{desc}</p>
+                <h3 className="text-[#1a1a1a] font-bold mb-2">{title}</h3>
+                <p className="text-[#4a4a4a] text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -239,23 +239,23 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* Full checklist */}
-      <section className="py-20 px-4 bg-[#0a0f1e]">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">Full Service Detail</span>
-            <h2 className="text-3xl font-black text-white mt-2 mb-4 font-serif text-balance">
+            <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">Full Service Detail</span>
+            <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">
               What Our Security Camera Installation Covers
             </h2>
-            <p className="text-[#94a3b8] leading-relaxed mb-6">
+            <p className="text-[#4a4a4a] leading-relaxed mb-6">
               FrontechSecurity provides a complete, end-to-end installation experience. We do not just mount a camera and leave — we ensure your entire system works perfectly before we walk out the door. Our technicians are trained on all major brands and have experience with hundreds of property types including apartments, condos, townhomes, and detached houses.
             </p>
-            <p className="text-[#94a3b8] leading-relaxed mb-6">
+            <p className="text-[#4a4a4a] leading-relaxed mb-6">
               Whether you need a single outdoor camera watching your front door or a comprehensive 8-camera HD system with local NVR recording and cloud backup, our team has the tools and experience to deliver a flawless result.
             </p>
 
           </div>
-          <div className="glow-card bg-[#111827] rounded-2xl p-7">
-            <h3 className="text-white font-bold font-serif mb-5">Complete Installation Checklist</h3>
+          <div className="glow-card bg-white rounded-2xl p-7">
+            <h3 className="text-[#1a1a1a] font-bold font-serif mb-5">Complete Installation Checklist</h3>
             <ul className="space-y-3">
               {[
                 'Property walk-through and coverage planning',
@@ -272,7 +272,7 @@ export default function SecurityCameraInstallationPage() {
                 'Live view and remote playback testing',
                 'Full walkthrough and how-to for every family member',
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-[#94a3b8]">
+                <li key={item} className="flex items-start gap-3 text-sm text-[#4a4a4a]">
                   <CheckCircle2 size={15} className="text-[#22c55e] shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -283,21 +283,21 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* How it works */}
-      <section className="py-20 px-4 bg-[#060c1a]">
+      <section className="py-20 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">Our Process</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif text-balance">
+            <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">Our Process</span>
+            <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">
               How Our Camera Installation Works
             </h2>
           </div>
           <div className="space-y-4">
             {process.map(({ step, title, desc }) => (
-              <div key={step} className="flex gap-5 glow-card bg-[#111827] rounded-xl p-6">
+              <div key={step} className="flex gap-5 glow-card bg-white rounded-xl p-6">
                 <div className="text-3xl font-black gradient-text font-serif shrink-0 w-10">{step}</div>
                 <div>
-                  <h3 className="text-white font-bold mb-1">{title}</h3>
-                  <p className="text-[#94a3b8] text-sm leading-relaxed">{desc}</p>
+                  <h3 className="text-[#1a1a1a] font-bold mb-1">{title}</h3>
+                  <p className="text-[#4a4a4a] text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -308,46 +308,46 @@ export default function SecurityCameraInstallationPage() {
       {/* Urgent CTA - Optimized for Calls */}
       <section className="py-16 px-4 bg-gradient-to-b from-[#0a0f1e] to-[#060c1a]">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center glow-card bg-gradient-to-br from-[#111827] to-[#0a0f1e] border-2 border-[#1d6ef5]/30 rounded-2xl p-10">
+          <div className="text-center glow-card bg-gradient-to-br from-[#111827] to-[#0a0f1e] border-2 border-[#0066cc]/30 rounded-2xl p-10">
             <div className="inline-block bg-[#22c55e]/20 border border-[#22c55e]/40 rounded-full px-4 py-2 mb-4">
               <span className="text-[#22c55e] text-sm font-bold">✓ We're Available Right Now</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif">Need Your Camera Working Today?</h2>
-            <p className="text-lg text-[#94a3b8] mb-3 max-w-2xl mx-auto">Stop struggling with confusing apps and settings. Call us and speak with a certified technician in under 30 seconds.</p>
-            <div className="bg-[#0a0f1e]/60 rounded-xl p-6 mb-6 max-w-xl mx-auto">
-              <p className="text-white font-bold mb-2">📋 Service Pricing:</p>
-              <p className="text-[#94a3b8] text-sm mb-2">• Professional Installation: Starting at $49.99</p>
-              <p className="text-[#94a3b8] text-sm mb-2">• Repair & Troubleshooting: From $49.99</p>
-              <p className="text-[#94a3b8] text-sm">• Phone Consultation: FREE (Call now)</p>
+            <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif">Need Your Camera Working Today?</h2>
+            <p className="text-lg text-[#4a4a4a] mb-3 max-w-2xl mx-auto">Stop struggling with confusing apps and settings. Call us and speak with a certified technician in under 30 seconds.</p>
+            <div className="bg-white/60 rounded-xl p-6 mb-6 max-w-xl mx-auto">
+              <p className="text-[#1a1a1a] font-bold mb-2">📋 Service Pricing:</p>
+              <p className="text-[#4a4a4a] text-sm mb-2">• Professional Installation: Starting at $49.99</p>
+              <p className="text-[#4a4a4a] text-sm mb-2">• Repair & Troubleshooting: From $49.99</p>
+              <p className="text-[#4a4a4a] text-sm">• Phone Consultation: FREE (Call now)</p>
               <p className="text-[#64748b] text-xs mt-3">*Service fee only. Hardware/parts sold separately. No payment until work is complete.</p>
             </div>
             <div className="space-y-3">
-              <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
+              <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-[#1a1a1a] font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#0066cc]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
                 <Phone size={26} className="animate-bounce" /> Call Now (844) 810-0173
               </a>
-              <p className="text-sm text-[#94a3b8]">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
+              <p className="text-sm text-[#4a4a4a]">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* FAQs */}
-      <section className="py-20 px-4 bg-[#060c1a]">
+      <section className="py-20 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-[#1d6ef5] text-xs font-bold uppercase tracking-widest">FAQ</span>
-            <h2 className="text-3xl font-black text-white mt-2 font-serif text-balance">
+            <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">FAQ</span>
+            <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 font-serif text-balance">
               Frequently Asked Questions About Camera Installation
             </h2>
           </div>
           <div className="space-y-4">
             {faqs.map(({ q, a }) => (
-              <details key={q} className="group glow-card bg-[#111827] rounded-xl">
-                <summary className="flex items-center justify-between gap-4 cursor-pointer p-6 text-white font-semibold text-sm list-none">
+              <details key={q} className="group glow-card bg-white rounded-xl">
+                <summary className="flex items-center justify-between gap-4 cursor-pointer p-6 text-[#1a1a1a] font-semibold text-sm list-none">
                   {q}
-                  <ChevronDown size={16} className="text-[#1d6ef5] shrink-0 group-open:rotate-180 transition-transform" />
+                  <ChevronDown size={16} className="text-[#0066cc] shrink-0 group-open:rotate-180 transition-transform" />
                 </summary>
-                <p className="px-6 pb-6 text-[#94a3b8] text-sm leading-relaxed">{a}</p>
+                <p className="px-6 pb-6 text-[#4a4a4a] text-sm leading-relaxed">{a}</p>
               </details>
             ))}
           </div>
@@ -355,11 +355,11 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* Supported Brands */}
-      <section className="py-16 px-4 bg-[#0a0f1e]">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-black text-white font-serif mb-3">Third-Party Support for All Major Camera Brands</h2>
-            <p className="text-[#94a3b8] max-w-2xl mx-auto">Independent professional installation, setup, repair & troubleshooting service (not affiliated with manufacturers)</p>
+            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Third-Party Support for All Major Camera Brands</h2>
+            <p className="text-[#4a4a4a] max-w-2xl mx-auto">Independent professional installation, setup, repair & troubleshooting service (not affiliated with manufacturers)</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
@@ -374,9 +374,9 @@ export default function SecurityCameraInstallationPage() {
               { name: 'Lorex Cameras', icon: HardDrive },
               { name: 'All Brands', icon: Wrench },
             ].map(({ name, icon: Icon }) => (
-              <div key={name} className="glow-card bg-[#111827] rounded-xl p-5 text-center">
-                <Icon size={28} className="text-[#1d6ef5] mx-auto mb-2" />
-                <p className="text-white font-bold text-sm">{name}</p>
+              <div key={name} className="glow-card bg-white rounded-xl p-5 text-center">
+                <Icon size={28} className="text-[#0066cc] mx-auto mb-2" />
+                <p className="text-[#1a1a1a] font-bold text-sm">{name}</p>
               </div>
             ))}
           </div>
@@ -385,11 +385,11 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* Common Issues We Fix */}
-      <section className="py-16 px-4 bg-[#060c1a]">
+      <section className="py-16 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-black text-white font-serif mb-3">Common Camera Issues We Fix</h2>
-            <p className="text-[#94a3b8] max-w-2xl mx-auto">From installation to repair & troubleshooting — we solve all security camera problems</p>
+            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Common Camera Issues We Fix</h2>
+            <p className="text-[#4a4a4a] max-w-2xl mx-auto">From installation to repair & troubleshooting — we solve all security camera problems</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
@@ -400,12 +400,12 @@ export default function SecurityCameraInstallationPage() {
               { issue: 'App Not Showing Live Feed', desc: 'Account sync, app reinstall, remote access configuration' },
               { issue: 'Recording Not Saving', desc: 'Storage setup, cloud subscription check, SD card diagnostics' },
             ].map(({ issue, desc }) => (
-              <div key={issue} className="glow-card bg-[#111827] rounded-xl p-6">
+              <div key={issue} className="glow-card bg-white rounded-xl p-6">
                 <div className="flex items-start gap-3 mb-3">
                   <AlertCircle size={20} className="text-[#f59e0b] shrink-0 mt-0.5" />
-                  <h3 className="text-white font-bold text-base">{issue}</h3>
+                  <h3 className="text-[#1a1a1a] font-bold text-base">{issue}</h3>
                 </div>
-                <p className="text-[#94a3b8] text-sm leading-relaxed">{desc}</p>
+                <p className="text-[#4a4a4a] text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -414,25 +414,25 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* Clear Disclaimers Section */}
-      <section className="py-12 px-4 bg-[#0a0f1e] border-t border-[#1e3a5f]">
+      <section className="py-12 px-4 bg-white border-t border-[#e5e7eb]">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-[#111827] border border-[#1e3a5f] rounded-xl p-6">
-            <h3 className="text-white font-bold mb-4 text-center">Third-Party Service Disclosure</h3>
-            <div className="space-y-3 text-sm text-[#94a3b8] leading-relaxed">
+          <div className="bg-white border border-[#e5e7eb] rounded-xl p-6">
+            <h3 className="text-[#1a1a1a] font-bold mb-4 text-center">Third-Party Service Disclosure</h3>
+            <div className="space-y-3 text-sm text-[#4a4a4a] leading-relaxed">
               <p>
-                <strong className="text-white">Independent Service Provider:</strong> FrontechSecurity is a third-party, independent technical support and installation service provider. We are NOT affiliated with, authorized by, endorsed by, or sponsored by Ring LLC, Arlo Technologies, Amazon Blink, Reolink, ADT Inc., Google Nest, or any other security camera manufacturer or brand mentioned on this website.
+                <strong className="text-[#1a1a1a]">Independent Service Provider:</strong> FrontechSecurity is a third-party, independent technical support and installation service provider. We are NOT affiliated with, authorized by, endorsed by, or sponsored by Ring LLC, Arlo Technologies, Amazon Blink, Reolink, ADT Inc., Google Nest, or any other security camera manufacturer or brand mentioned on this website.
               </p>
               <p>
-                <strong className="text-white">Brand Names & Trademarks:</strong> All product names, brand names, trademarks, and registered trademarks mentioned are the property of their respective owners. We use these names solely for descriptive and compatibility purposes to help customers understand which devices and brands we can service.
+                <strong className="text-[#1a1a1a]">Brand Names & Trademarks:</strong> All product names, brand names, trademarks, and registered trademarks mentioned are the property of their respective owners. We use these names solely for descriptive and compatibility purposes to help customers understand which devices and brands we can service.
               </p>
               <p>
-                <strong className="text-white">Service Scope:</strong> Our services include installation, setup, configuration, troubleshooting, and repair assistance for security cameras and related equipment. Hardware/devices are not included unless explicitly stated. Customers must own or purchase their own equipment.
+                <strong className="text-[#1a1a1a]">Service Scope:</strong> Our services include installation, setup, configuration, troubleshooting, and repair assistance for security cameras and related equipment. Hardware/devices are not included unless explicitly stated. Customers must own or purchase their own equipment.
               </p>
               <p>
-                <strong className="text-white">Pricing:</strong> Service fees start at $49.99 for basic installation. Final pricing depends on complexity, time required, and specific customer needs. No payment is collected until service completion and customer satisfaction.
+                <strong className="text-[#1a1a1a]">Pricing:</strong> Service fees start at $49.99 for basic installation. Final pricing depends on complexity, time required, and specific customer needs. No payment is collected until service completion and customer satisfaction.
               </p>
               <p>
-                <strong className="text-white">Manufacturer Support:</strong> For warranty claims or manufacturer-specific support, customers should contact the device manufacturer directly. We provide third-party technical assistance independent of manufacturer warranties.
+                <strong className="text-[#1a1a1a]">Manufacturer Support:</strong> For warranty claims or manufacturer-specific support, customers should contact the device manufacturer directly. We provide third-party technical assistance independent of manufacturer warranties.
               </p>
             </div>
           </div>
