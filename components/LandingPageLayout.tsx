@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { Phone, Shield } from 'lucide-react'
+import { Phone, Shield, Home } from 'lucide-react'
 
 export default function LandingPageLayout({ children }: { children: React.ReactNode }) {
   const [scrolled, setScrolled] = useState(false)
@@ -32,7 +32,17 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
           scrolled ? 'bg-white shadow-md' : 'bg-white'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-center">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+          {/* Homepage Icon - Hidden on mobile, visible on tablet and desktop */}
+          <a
+            href="/"
+            className="hidden md:flex items-center gap-2 px-4 py-3 bg-[#0052a3] hover:bg-[#0066cc] text-white text-base font-bold rounded-lg hover:shadow-lg transition-all"
+            aria-label="Go to homepage"
+          >
+            <Home size={18} />
+            <span>Home</span>
+          </a>
+          
           {/* Phone CTA - Centered */}
           <a
             href="tel:+18448100173"
