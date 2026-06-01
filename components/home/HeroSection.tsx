@@ -4,14 +4,14 @@ import { Phone, CalendarCheck, ShieldCheck, Star, CheckCircle2 } from 'lucide-re
 
 export default function HeroSection() {
   return (
-    <section className="relative flex items-center overflow-hidden bg-white" style={{ minHeight: 'calc(100svh - 64px)' }}>
+    <section className="relative flex items-center overflow-hidden bg-white sm:min-h-[calc(100svh-64px)]" style={{ minHeight: '100svh' }}>
       {/* Lightweight CSS background — subtle light blue accent */}
       <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-50 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 w-full">
         <div className="max-w-3xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-3 py-1.5 mb-5 sm:mb-6">

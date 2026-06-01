@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={`sticky top-0 z-50 transition-all duration-300 hidden sm:block ${
         scrolled
           ? 'bg-white shadow-md border-b border-[#e5e7eb]'
           : 'bg-white border-b border-[#e5e7eb]'

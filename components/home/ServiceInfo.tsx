@@ -1,19 +1,19 @@
 export default function ServiceInfo() {
   return (
-    <section className="py-16 sm:py-20 px-4 bg-[#0f172a] border-t border-[#1e293b]">
+    <section className="py-16 sm:py-20 px-4 bg-[#0066cc] border-t border-[#0052a3]">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
         <div className="text-center mb-12">
-          <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">
+          <span className="text-white text-xs font-bold uppercase tracking-widest">
             Service Transparency
           </span>
 
-          <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif">
+          <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif">
             About Our Services
           </h2>
 
-          <p className="text-[#4a4a4a] max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="text-white/90 max-w-2xl mx-auto text-sm sm:text-base">
             Frontech Security provides professional security camera installation
             and smart doorbell setup services for residential properties.
           </p>
