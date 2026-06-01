@@ -106,7 +106,7 @@ export default function TermsOfServicePage() {
       <PolicySection title="11. Contact">
         <p>For questions regarding these Terms, contact us at:</p>
         <PolicyList items={[
-          'Phone: +1 (888) 400-3290',
+          'Phone: +1 (844) 810-0173',
           'Email: support@frontechsecurity.com',
         ]} />
       </PolicySection>

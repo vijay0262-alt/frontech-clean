@@ -5,7 +5,7 @@ const steps = [
     num: '01',
     icon: Phone,
     title: 'Call or Book Online',
-    desc: 'Contact us by phone at +1 (888) 400-3290 or use our online booking form. We\'ll discuss your needs and recommend the best setup for your home.',
+    desc: 'Contact us by phone at +1 (844) 810-0173 or use our online booking form. We\'ll discuss your needs and recommend the best setup for your home.',
     color: 'from-[#1d6ef5] to-[#0ea5e9]',
   },
   {

@@ -7,7 +7,7 @@ const PAGE_URL = `${BASE}/services/security-camera-installation`
 
 export const metadata: Metadata = {
   title: 'Security Camera Installation Service Near Me | USA & Canada — FrontechSecurity',
-  description: 'Expert security camera installation & repair service. Ring, Arlo, Blink, Reolink, ADT & all brands. Fix not connecting, not working issues. Professional setup & troubleshooting. Same-day service USA & Canada. Call +1 (888) 400-3290.',
+  description: 'Expert security camera installation & repair service. Ring, Arlo, Blink, Reolink, ADT & all brands. Fix not connecting, not working issues. Professional setup & troubleshooting. Same-day service USA & Canada. Call +1 (844) 810-0173.',
   keywords: [
     'security camera installation',
     'security camera installation near me',
@@ -155,8 +155,8 @@ export default function SecurityCameraInstallationPage() {
             ))}
           </div>
           <div className="mt-8">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/40 transition-all">
-              <Phone size={22} /> Call Now (888) 400-3290
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/40 transition-all">
+              <Phone size={22} /> Call Now (844) 810-0173
             </a>
           </div>
           <p className="text-sm text-[#94a3b8] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
@@ -322,8 +322,8 @@ export default function SecurityCameraInstallationPage() {
               <p className="text-[#64748b] text-xs mt-3">*Service fee only. Hardware/parts sold separately. No payment until work is complete.</p>
             </div>
             <div className="space-y-3">
-              <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
-                <Phone size={26} className="animate-bounce" /> Call Now (888) 400-3290
+              <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
+                <Phone size={26} className="animate-bounce" /> Call Now (844) 810-0173
               </a>
               <p className="text-sm text-[#94a3b8]">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
             </div>

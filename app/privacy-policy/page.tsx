@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
           'Opt out of marketing communications',
           'Lodge a complaint with a supervisory authority',
         ]} />
-        <p className="mt-3">To exercise any of these rights, contact us at support@frontechsecurity.com or call +1 (888) 400-3290.</p>
+        <p className="mt-3">To exercise any of these rights, contact us at support@frontechsecurity.com or call +1 (844) 810-0173.</p>
       </PolicySection>
 
       <PolicySection title="8. Third-Party Links">
@@ -117,7 +117,7 @@ export default function PrivacyPolicyPage() {
           If you have questions about this Privacy Policy, please contact us at:
         </p>
         <PolicyList items={[
-          'Phone: +1 (888) 400-3290',
+          'Phone: +1 (844) 810-0173',
           'Email: support@frontechsecurity.com',
           'Website: frontechsecurity.com',
         ]} />

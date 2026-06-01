@@ -69,7 +69,7 @@ export default function RefundPolicyPage() {
       <PolicySection title="6. How to Request a Refund">
         <p>To request a refund, please:</p>
         <PolicyList items={[
-          'Call us at +1 (888) 400-3290',
+          'Call us at +1 (844) 810-0173',
           'Email us at support@frontechsecurity.com with your booking reference and reason',
           'Include your name, appointment date, and a description of the issue',
         ]} />

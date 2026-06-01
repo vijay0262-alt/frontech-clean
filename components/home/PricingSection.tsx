@@ -136,11 +136,11 @@ export default function PricingSection() {
         <div className="mt-12 text-center">
           <p className="text-[#94a3b8] mb-3">Need a custom quote for multiple devices or a business property?</p>
           <a
-            href="tel:+18884003290"
+            href="tel:+18448100173"
             className="inline-flex items-center gap-2 text-[#00c2ff] font-bold hover:text-white transition-colors text-lg"
           >
             <Phone size={18} />
-            Call +1 (888) 400-3290 for a Free Quote
+            Call +1 (844) 810-0173 for a Free Quote
           </a>
         </div>
       </div>

@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: 'Do you serve both the USA and Canada?',
-    a: 'Yes! We currently serve over 50 cities across the United States and Canada. Call us at +1 (888) 400-3290 to confirm availability in your area.',
+    a: 'Yes! We currently serve over 50 cities across the United States and Canada. Call us at +1 (844) 810-0173 to confirm availability in your area.',
   },
   {
     q: 'What is included in the Monthly Support Plan?',
@@ -79,11 +79,11 @@ export default function FaqSection() {
         <div className="mt-10 text-center p-6 bg-[#111827] rounded-2xl border border-[#1e3a5f]">
           <p className="text-[#94a3b8] mb-3">Still have questions? Our team is standing by.</p>
           <a
-            href="tel:+18884003290"
+            href="tel:+18448100173"
             className="inline-flex items-center gap-2 text-[#00c2ff] font-bold hover:text-white transition-colors"
           >
             <Phone size={16} />
-            Call +1 (888) 400-3290 — Free Consultation
+            Call +1 (844) 810-0173 — Free Consultation
           </a>
         </div>
       </div>

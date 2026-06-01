@@ -11,7 +11,7 @@ const PAGE_URL = `${BASE}/services`
 
 export const metadata: Metadata = {
   title: 'Security Camera Installation, Doorbell Setup & Support Services | FrontechSecurity',
-  description: 'Expert security camera installation, smart doorbell setup, Wi-Fi network optimization, and ongoing tech support — certified technicians across USA & Canada. Same-day service from $49.99. Call +1 (888) 400-3290.',
+  description: 'Expert security camera installation, smart doorbell setup, Wi-Fi network optimization, and ongoing tech support — certified technicians across USA & Canada. Same-day service from $49.99. Call +1 (844) 810-0173.',
   keywords: [
     'security camera installation service',
     'smart doorbell installation service',
@@ -177,11 +177,11 @@ export default function ServicesPage() {
             From a single camera installation to a full smart home security ecosystem — our certified technicians handle every aspect of your setup.
           </p>
           <a
-            href="tel:+18884003290"
+            href="tel:+18448100173"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1"
           >
             <Phone size={18} />
-            Call for Free Estimate — +1 (888) 400-3290
+            Call for Free Estimate — +1 (844) 810-0173
           </a>
         </div>
       </section>
@@ -215,7 +215,7 @@ export default function ServicesPage() {
                     {svc.cta} <ArrowRight size={16} />
                   </Link>
                   <a
-                    href="tel:+18884003290"
+                    href="tel:+18448100173"
                     className="inline-flex items-center gap-2 border border-[#1e3a5f] text-[#94a3b8] hover:text-white hover:border-[#1d6ef5] font-semibold px-6 py-3 rounded-xl transition-all"
                   >
                     <Phone size={15} />
@@ -264,8 +264,8 @@ export default function ServicesPage() {
           <h2 className="text-2xl font-black text-white font-serif mb-4">Ready to Get Started?</h2>
           <p className="text-[#94a3b8] mb-7">Call us now for a free consultation or book online in minutes.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1">
-              <Phone size={18} /> +1 (888) 400-3290
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1">
+              <Phone size={18} /> +1 (844) 810-0173
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold px-8 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-all">
               Book Online

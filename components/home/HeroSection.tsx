@@ -44,11 +44,11 @@ export default function HeroSection() {
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10">
             <a
-              href="tel:+18884003290"
+              href="tel:+18448100173"
               className="flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl hover:shadow-2xl hover:shadow-[#1d6ef5]/40 transition-shadow pulse-phone"
             >
               <Phone size={18} />
-              Call +1 (888) 400-3290
+              Call +1 (844) 810-0173
             </a>
             <Link
               href="/book"

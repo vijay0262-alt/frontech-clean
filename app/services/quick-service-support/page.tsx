@@ -7,7 +7,7 @@ const PAGE_URL = `${BASE}/services/quick-service-support`
 
 export const metadata: Metadata = {
   title: 'Security Camera Tech Support & Service Plans | $9.99/mo — FrontechSecurity USA & Canada',
-  description: 'Fast security camera and smart doorbell tech support — 7 days a week, 7AM–10PM. Fix cameras offline, app issues, firmware failures. Plans from $9.99/month. Call +1 (888) 400-3290.',
+  description: 'Fast security camera and smart doorbell tech support — 7 days a week, 7AM–10PM. Fix cameras offline, app issues, firmware failures. Plans from $9.99/month. Call +1 (844) 810-0173.',
   keywords: [
     'security camera tech support',
     'security camera support service',
@@ -168,8 +168,8 @@ export default function QuickServiceSupportPage() {
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[#0ea5e9] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#22c55e]/30 transition-shadow pulse-phone">
-              <Phone size={18} /> Call +1 (888) 400-3290 — Under 60 Sec
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[#0ea5e9] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#22c55e]/30 transition-shadow pulse-phone">
+              <Phone size={18} /> Call +1 (844) 810-0173 — Under 60 Sec
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-colors">
               Book a Service Call <ArrowRight size={16} />

@@ -7,7 +7,7 @@ const PAGE_URL = `${BASE}/services/wifi-network-setup`
 
 export const metadata: Metadata = {
   title: 'Wi-Fi & Network Setup for Security Cameras — Router, Extender & Remote Access | FrontechSecurity',
-  description: 'Professional Wi-Fi optimization for security cameras and smart doorbells — router config, extender installation, port forwarding, and remote access setup. USA & Canada. Call +1 (888) 400-3290.',
+  description: 'Professional Wi-Fi optimization for security cameras and smart doorbells — router config, extender installation, port forwarding, and remote access setup. USA & Canada. Call +1 (844) 810-0173.',
   keywords: [
     'wifi setup for security cameras',
     'network setup security cameras',
@@ -132,8 +132,8 @@ export default function WifiNetworkSetupPage() {
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#1d6ef5] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#7c3aed]/30 transition-shadow pulse-phone">
-              <Phone size={18} /> Call +1 (888) 400-3290 — Free Consult
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#1d6ef5] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#7c3aed]/30 transition-shadow pulse-phone">
+              <Phone size={18} /> Call +1 (844) 810-0173 — Free Consult
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-colors">
               Book Online <ArrowRight size={16} />
@@ -186,7 +186,7 @@ export default function WifiNetworkSetupPage() {
             <p className="text-[#94a3b8] leading-relaxed mb-5">Most security camera issues — cameras going offline, delayed motion alerts, poor video quality, failed recordings — are not hardware problems. They are network problems. A camera that drops its Wi-Fi connection during a break-in is worse than having no camera at all because it creates a false sense of security.</p>
             <p className="text-[#94a3b8] leading-relaxed mb-5">Our network specialists have configured hundreds of home and small business networks specifically for security device performance. We understand the bandwidth requirements of HD and 4K cameras, the latency requirements for real-time alerts, and the port forwarding rules needed for NVR remote access on every major router brand.</p>
             <p className="text-[#94a3b8] leading-relaxed mb-6">Whether you just installed new cameras or you have an existing system that keeps going offline, our network service delivers a stable foundation for your entire security ecosystem.</p>
-            <a href="tel:+18884003290" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#1d6ef5] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
+            <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#1d6ef5] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
               <Phone size={16} /> Fix My Camera Network
             </a>
           </div>
@@ -225,8 +225,8 @@ export default function WifiNetworkSetupPage() {
           <p className="text-[#94a3b8] mb-2 max-w-xl mx-auto">Wi-Fi and network configuration is available as an add-on to any installation service or as a standalone visit. Call us to discuss your situation and get a flat-rate quote.</p>
           <p className="text-[#64748b] text-xs mb-7">Hardware (extenders, managed switches, mesh nodes) not included in service price and is quoted separately.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18884003290" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#1d6ef5] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow pulse-phone">
-              <Phone size={18} /> Call +1 (888) 400-3290
+            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#1d6ef5] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow pulse-phone">
+              <Phone size={18} /> Call +1 (844) 810-0173
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#00c2ff] text-[#00c2ff] font-bold px-8 py-4 rounded-xl hover:bg-[#00c2ff] hover:text-[#0a0f1e] transition-colors">
               Book Online

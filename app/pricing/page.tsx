@@ -126,11 +126,11 @@ export default function PricingPage() {
             One-time installation or ongoing support — choose the plan that fits your home security needs. All work performed by certified technicians.
           </p>
           <a
-            href="tel:+18884003290"
+            href="tel:+18448100173"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1d6ef5] to-[#0ea5e9] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#1d6ef5]/30 transition-all hover:-translate-y-1 pulse-phone"
           >
             <Phone size={18} />
-            Questions? Call +1 (888) 400-3290
+            Questions? Call +1 (844) 810-0173
           </a>
         </div>
       </section>
