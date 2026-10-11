@@ -56,13 +56,11 @@ export async function POST(request: Request) {
     );
   }
 
-  // NOTE: with the Resend free/onboarding sender (onboarding@resend.dev), mail
-  // can only be delivered to the Resend account owner's email. To deliver to
-  // the addresses below, verify frontechsecurity.com at resend.com/domains and
-  // set RESEND_FROM to an address on that domain (e.g. no-reply@).
+  // frontechsecurity.com is verified in Resend — send from the verified domain.
+  // Override with RESEND_FROM if a different sender address is needed.
   const to = MAIL_TO || "info@frontechsecurity.com";
   const cc = MAIL_CC || "vijay0262@gmail.com";
-  const from = RESEND_FROM || "onboarding@resend.dev";
+  const from = RESEND_FROM || "no-reply@frontechsecurity.com";
 
   const service = clean(data.service) || (type === "booking" ? "Service Request" : "Inquiry");
   const subject =

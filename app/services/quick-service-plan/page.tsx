@@ -142,7 +142,7 @@ export default function QuickServiceAssistancePage() {
           <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(34,197,94,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(34,197,94,0.07) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#22c55e]/8 to-transparent" />
         </div>
-        <div className="max-w-6xl mx-auto relative">
+        <div className="max-w-7xl mx-auto relative">
           <nav className="flex items-center gap-2 text-xs text-[#64748b] mb-6" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-[#4a4a4a] transition-colors">Home</Link>
             <span>/</span>
@@ -157,7 +157,7 @@ export default function QuickServiceAssistancePage() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1a1a1a] leading-tight mb-5 font-serif text-balance">
             Security Camera Assistance <span className="gradient-text">& Service Plans</span>
           </h1>
-          <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8 max-w-3xl">
+          <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8 max-w-4xl">
             Our specialists are available 7 days a week, 7AM to 10PM EST to diagnose and resolve any issue with your security cameras or smart doorbells — fast, by phone or guided session, with no long wait times. Whether your camera just went offline, your app stopped working, or your recordings are failing, we get your system back online quickly.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
@@ -168,7 +168,7 @@ export default function QuickServiceAssistancePage() {
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[#0052a3] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#22c55e]/30 transition-shadow pulse-phone">
+            <a href="tel:+18449667866" className="lg:hidden inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[#0052a3] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#22c55e]/30 transition-shadow pulse-phone">
               <Phone size={18} /> Call +1 (844) 966-7866 — Under 60 Sec
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-colors">
@@ -179,7 +179,7 @@ export default function QuickServiceAssistancePage() {
       </section>
 
       <div className="bg-gradient-to-r from-[#0066cc] to-[#0052a3] border-y border-[#e5e7eb] py-4 px-4">
-        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
           {[
             { icon: Star, text: '4.9/5 Rating (2,400+ Reviews)', color: '#f59e0b' },
             { icon: Clock, text: 'Average Wait: Under 60 Seconds', color: '#22c55e' },
@@ -195,11 +195,11 @@ export default function QuickServiceAssistancePage() {
 
       {/* Issues we resolve */}
       <section className="py-20 px-4 bg-\[#f5f5f5\]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">What We Resolve</span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">Common Issues Our Specialists Resolve</h2>
-            <p className="text-[#4a4a4a] max-w-2xl mx-auto">95% of security camera and smart doorbell issues are resolved in a single call.</p>
+            <p className="text-[#4a4a4a] max-w-3xl mx-auto">95% of security camera and smart doorbell issues are resolved in a single call.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {issues.map(({ icon: Icon, title, desc }) => (
@@ -217,11 +217,11 @@ export default function QuickServiceAssistancePage() {
 
       {/* Plans */}
       <section className="py-20 px-4 bg-white">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">Service Plans</span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">Choose the Right Service Plan for You</h2>
-            <p className="text-[#4a4a4a] max-w-2xl mx-auto">All prices are for the service only. No payment is collected online.</p>
+            <p className="text-[#4a4a4a] max-w-3xl mx-auto">All prices are for the service only. No payment is collected online.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {plans.map(({ name, price, desc, features, cta, color, badge }) => (
@@ -249,7 +249,7 @@ export default function QuickServiceAssistancePage() {
       </section>
 
       <section className="py-20 px-4 bg-\[#f5f5f5\]">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">FAQ</span>
             <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 font-serif text-balance">Service Plans — Frequently Asked Questions</h2>
@@ -269,7 +269,7 @@ export default function QuickServiceAssistancePage() {
       </section>
 
       <section className="py-16 px-4 bg-white">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-xl font-black text-[#1a1a1a] font-serif mb-6 text-center">Explore Our Other Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[

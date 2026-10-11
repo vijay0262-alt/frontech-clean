@@ -127,7 +127,7 @@ export default function DoorbellInstallationPage() {
           <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(14,165,233,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(14,165,233,0.07) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#0052a3]/8 to-transparent" />
         </div>
-        <div className="max-w-6xl mx-auto relative">
+        <div className="max-w-7xl mx-auto relative">
 
           <div className="inline-flex items-center gap-2 bg-[#0052a3]/15 border border-[#0052a3]/40 rounded-full px-3 py-1.5 mb-5">
             <BellRing size={13} className="text-[#0066cc]" />
@@ -136,7 +136,7 @@ export default function DoorbellInstallationPage() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1a1a1a] leading-tight mb-5 font-serif text-balance">
             Video Doorbell Installation & Service <span className="gradient-text">Near You</span>
           </h1>
-          <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8 max-w-3xl">
+          <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8 max-w-4xl">
             <strong className="text-[#1a1a1a]">Professional installation, setup & service for Ring, Nest, Arlo, Blink & all doorbell brands.</strong> Resolve doorbell not connecting, not working, offline issues. Expert diagnostics & same-day service across USA & Canada. From $49.99.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
@@ -147,18 +147,21 @@ export default function DoorbellInstallationPage() {
             ))}
           </div>
           <div className="mt-8">
-            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/40 transition-all">
+            <a href="tel:+18449667866" className="lg:hidden inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/40 transition-all">
               <Phone size={22} /> Call Now (844) 966-7866
+            </a>
+            <a href="/book" className="hidden lg:inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/40 transition-all">
+              Book Free Installation
             </a>
           </div>
           <p className="text-sm text-[#4a4a4a] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
-          <p className="text-xs text-[#64748b] mt-3 max-w-2xl">* Third-party professional installation service. Not affiliated with or endorsed by Ring, Nest, Arlo, Blink, or any doorbell manufacturer.</p>
+          <p className="text-xs text-[#64748b] mt-3 max-w-3xl">* Third-party professional installation service. Not affiliated with or endorsed by Ring, Nest, Arlo, Blink, or any doorbell manufacturer.</p>
         </div>
       </section>
 
       {/* Why Choose Us - Clear Value Proposition */}
       <section className="py-12 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl font-black text-[#1a1a1a] mb-6 font-serif">Why Customers Call Us for Doorbell Help</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="glow-card bg-white rounded-xl p-6">
@@ -183,7 +186,7 @@ export default function DoorbellInstallationPage() {
 
       {/* Trust strip */}
       <div className="bg-gradient-to-r from-[#0066cc] to-[#0052a3] border-y border-[#e5e7eb] py-4 px-4">
-        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
           {[
             { icon: Star, text: '4.9/5 Rating (2,400+ Reviews)', color: '#f59e0b' },
             { icon: Shield, text: 'Licensed & Insured Technicians', color: '#22c55e' },
@@ -199,13 +202,13 @@ export default function DoorbellInstallationPage() {
 
       {/* Features */}
       <section className="py-20 px-4 bg-\[#f5f5f5\]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#0052a3] text-xs font-bold uppercase tracking-widest">What Is Included</span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">
               Everything Covered in Our Doorbell Installation
             </h2>
-            <p className="text-[#4a4a4a] max-w-2xl mx-auto">One flat rate covers the complete service — no extra charges for wiring, app setup, or chime configuration.</p>
+            <p className="text-[#4a4a4a] max-w-3xl mx-auto">One flat rate covers the complete service — no extra charges for wiring, app setup, or chime configuration.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {features.map(({ icon: Icon, title, desc }) => (
@@ -223,7 +226,7 @@ export default function DoorbellInstallationPage() {
 
       {/* Checklist + content */}
       <section className="py-20 px-4 bg-white">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="text-[#0052a3] text-xs font-bold uppercase tracking-widest">Service Detail</span>
             <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">Why Professional Doorbell Installation Matters</h2>
@@ -268,7 +271,7 @@ export default function DoorbellInstallationPage() {
 
       {/* How it works */}
       <section className="py-20 px-4 bg-\[#f5f5f5\]">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#0052a3] text-xs font-bold uppercase tracking-widest">Our Process</span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">How Doorbell Installation Works</h2>
@@ -289,14 +292,14 @@ export default function DoorbellInstallationPage() {
 
       {/* Urgent CTA - Optimized for Calls */}
       <section className="py-16 px-4 bg-gradient-to-r from-[#0066cc] to-[#0052a3]">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center glow-card bg-white/10 border-2 border-white/20 rounded-2xl p-10">
             <div className="inline-block bg-[#22c55e]/20 border border-[#22c55e]/40 rounded-full px-4 py-2 mb-4">
               <span className="text-[#22c55e] text-sm font-bold">✓ We're Available Right Now</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 font-serif">Need Your Doorbell Working Today?</h2>
-            <p className="text-lg text-white mb-3 max-w-2xl mx-auto">Stop struggling with confusing apps and settings. Call us and speak with a certified technician in under 30 seconds.</p>
-            <div className="bg-white/20 rounded-xl p-6 mb-6 max-w-xl mx-auto">
+            <p className="text-lg text-white mb-3 max-w-3xl mx-auto">Stop struggling with confusing apps and settings. Call us and speak with a certified technician in under 30 seconds.</p>
+            <div className="bg-white/20 rounded-xl p-6 mb-6 max-w-2xl mx-auto">
               <p className="text-white font-bold mb-2">📋 Service Pricing:</p>
               <p className="text-white text-sm mb-2">• Professional Installation: Starting at $49.99</p>
               <p className="text-white text-sm mb-2">• Service & Diagnostics: From $49.99</p>
@@ -304,8 +307,8 @@ export default function DoorbellInstallationPage() {
               <p className="text-white/80 text-xs mt-3">*Service fee only. Hardware/parts sold separately. No payment until work is complete.</p>
             </div>
             <div className="space-y-3">
-              <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
-                <Phone size={26} className="animate-bounce" /> Call Now (844) 966-7866
+              <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/50 transition-all pulse-phone w-full sm:w-auto">
+                <Phone size={26} /> Call Now (844) 966-7866
               </a>
               <p className="text-sm text-white">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
             </div>
@@ -315,7 +318,7 @@ export default function DoorbellInstallationPage() {
 
       {/* FAQs */}
       <section className="py-20 px-4 bg-\[#f5f5f5\]">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#0052a3] text-xs font-bold uppercase tracking-widest">FAQ</span>
             <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 font-serif text-balance">Frequently Asked Questions About Doorbell Installation</h2>
@@ -336,10 +339,10 @@ export default function DoorbellInstallationPage() {
 
       {/* Covered Brands */}
       <section className="py-16 px-4 bg-white">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Independent Service for All Doorbell Brands</h2>
-            <p className="text-[#4a4a4a] max-w-2xl mx-auto">Independent professional installation, setup, service & diagnostics service (not affiliated with manufacturers)</p>
+            <p className="text-[#4a4a4a] max-w-3xl mx-auto">Independent professional installation, setup, service & diagnostics service (not affiliated with manufacturers)</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
@@ -366,10 +369,10 @@ export default function DoorbellInstallationPage() {
 
       {/* Common Issues We Resolve */}
       <section className="py-16 px-4 bg-\[#f5f5f5\]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Common Doorbell Issues We Resolve</h2>
-            <p className="text-[#4a4a4a] max-w-2xl mx-auto">From installation to service & diagnostics — we solve all video doorbell problems</p>
+            <p className="text-[#4a4a4a] max-w-3xl mx-auto">From installation to service & diagnostics — we solve all video doorbell problems</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
@@ -395,7 +398,7 @@ export default function DoorbellInstallationPage() {
 
       {/* Clear Disclaimers Section */}
       <section className="py-12 px-4 bg-white border-t border-[#e5e7eb]">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="bg-white border border-[#e5e7eb] rounded-xl p-6">
             <h3 className="text-[#1a1a1a] font-bold mb-4 text-center">Third-Party Service Disclosure</h3>
             <div className="space-y-3 text-sm text-[#4a4a4a] leading-relaxed">

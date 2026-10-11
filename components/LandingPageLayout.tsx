@@ -42,10 +42,10 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
             <Home size={24} />
           </a>
           
-          {/* Phone CTA - Centered */}
+          {/* Phone CTA - Centered (mobile/tablet only) */}
           <a
             href="tel:+18449667866"
-            className="flex items-center gap-2 px-4 py-3 bg-[#0066cc] hover:bg-[#0052a3] text-white text-base font-bold rounded-lg hover:shadow-lg transition-all pulse-phone whitespace-nowrap"
+            className="lg:hidden flex items-center gap-2 px-4 py-3 bg-[#0066cc] hover:bg-[#0052a3] text-white text-base font-bold rounded-lg hover:shadow-lg transition-all pulse-phone whitespace-nowrap"
           >
             <Phone size={18} className="animate-pulse" />
             <span className="hidden sm:inline">☎ Call Now (844) 966-7866</span>
@@ -59,16 +59,6 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
         {children}
       </div>
 
-      {/* Floating Mobile CTA - with higher z-index to stay above footer */}
-      <div className="resolved bottom-0 left-0 right-0 z-50 lg:hidden bg-gradient-to-t from-white via-white to-transparent p-4 pointer-events-none">
-        <a
-          href="tel:+18449667866"
-          className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#0066cc] hover:bg-[#0052a3] text-white text-base font-bold rounded-xl shadow-lg transition-all pulse-phone pointer-events-auto"
-        >
-          <Phone size={20} className="animate-pulse" />
-          ☎ Call Now (844) 966-7866
-        </a>
-      </div>
     </>
   )
 }

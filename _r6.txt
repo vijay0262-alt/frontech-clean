@@ -1,0 +1,88 @@
+﻿=== page.tsx:150
+))}
+</div>
+<div className="mt-8">
+<a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-lg px-10 py-5 r
+<Phone size={22} /> Call Now (844) 966-7866
+</a>
+</div>
+=== page.tsx:307
+<p className="text-white/80 text-xs mt-3">*Service fee only. Hardware/parts sold separately. No payment until work is complete.</p>
+</div>
+<div className="space-y-3">
+<a href="tel:+18449667866" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-xl px-12 py-6 r
+<Phone size={26} className="animate-bounce" /> Call Now (844) 966-7866
+</a>
+<p className="text-sm text-white">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
+=== page.tsx:171
+))}
+</div>
+<div className="flex flex-col sm:flex-row gap-3">
+<a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[#0052a3] text-white font-bold text-base px-7 py-4 
+<Phone size={18} /> Call +1 (844) 966-7866 — Under 60 Sec
+</a>
+<Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#0
+=== page.tsx:158
+))}
+</div>
+<div className="mt-8">
+<a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold text-lg px-10 py-5 r
+<Phone size={22} /> Call Now (844) 966-7866
+</a>
+</div>
+=== page.tsx:325
+<p className="text-white/80 text-xs mt-3">*Service fee only. Hardware/parts sold separately. No payment until work is complete.</p>
+</div>
+<div className="space-y-3">
+<a href="tel:+18449667866" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold text-xl px-12 py-6 r
+<Phone size={26} className="animate-bounce" /> Call Now (844) 966-7866
+</a>
+<p className="text-sm text-white">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
+=== page.tsx:135
+))}
+</div>
+<div className="flex flex-col sm:flex-row gap-3">
+<a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold text-base px-7 py-4 
+<Phone size={18} /> Call +1 (844) 966-7866 — Free Consult
+</a>
+<Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#0
+=== page.tsx:189
+<p className="text-[#4a4a4a] leading-relaxed mb-5">Most security camera issues — cameras going offline, delayed motion alerts, poor video quality, failed recordings — are
+<p className="text-[#4a4a4a] leading-relaxed mb-5">Our network specialists have configured hundreds of home and small business networks specifically for security device p
+<p className="text-[#4a4a4a] leading-relaxed mb-6">Whether you just installed new cameras or you have an existing system that keeps going offline, our network service del
+<a href="tel:+18449667866" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow
+<Phone size={16} /> Restore My Camera Network
+</a>
+</div>
+=== page.tsx:228
+<p className="text-[#4a4a4a] mb-2 max-w-xl mx-auto">Wi-Fi and network configuration is available as an add-on to any installation service or as a standalone visit. Call u
+<p className="text-[#64748b] text-xs mb-7">Hardware (extenders, managed switches, mesh nodes) not included in service price and is quoted separately.</p>
+<div className="flex flex-col sm:flex-row gap-3 justify-center">
+<a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold px-8 py-4 rounded-xl
+<Phone size={18} /> Call +1 (844) 966-7866
+</a>
+<Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hov
+=== page.tsx:180
+From a single camera installation to a full smart home security ecosystem — our certified technicians handle every aspect of your setup.
+</p>
+<a
+href="tel:+18449667866"
+className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30
+>
+<Phone size={18} />
+=== page.tsx:218
+{svc.cta} <ArrowRight size={16} />
+</Link>
+<a
+href="tel:+18449667866"
+className="inline-flex items-center gap-2 border border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a] hover:border-[#0066cc] font-semibold px-6 py-3 rounded-xl transition
+>
+<Phone size={15} />
+=== page.tsx:267
+<h2 className="text-2xl font-black text-[#1a1a1a] font-serif mb-4">Ready to Get Started?</h2>
+<p className="text-[#4a4a4a] mb-7">Call us now for a free consultation or book online in minutes.</p>
+<div className="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl
+<Phone size={18} /> +1 (844) 966-7866
+</a>
+<Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hov

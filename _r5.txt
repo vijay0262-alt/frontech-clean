@@ -1,0 +1,5 @@
+﻿page.tsx:180: href="tel:+18449667866"
+page.tsx:218: href="tel:+18449667866"
+page.tsx:267: <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold 
+Navbar.tsx:107: href="tel:+18449667866"
+Navbar.tsx:163: href="tel:+18449667866"

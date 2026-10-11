@@ -168,17 +168,17 @@ export default function ServicesPage() {
       {/* Hero */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 30% 50%, #0066cc, transparent 60%)' }} />
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">Our Services</span>
           <h1 className="text-4xl sm:text-5xl font-black text-[#1a1a1a] mt-3 mb-5 font-serif">
             Complete Smart Home <span className="gradient-text">Security Services</span>
           </h1>
-          <p className="text-[#4a4a4a] text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-[#4a4a4a] text-lg max-w-3xl mx-auto mb-8">
             From a single camera installation to a full smart home security ecosystem — our certified technicians handle every aspect of your setup.
           </p>
           <a
             href="tel:+18449667866"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
+            className="lg:hidden inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
           >
             <Phone size={18} />
             ☎ Call for Free Estimate — +1 (844) 966-7866
@@ -189,7 +189,7 @@ export default function ServicesPage() {
       {/* Service sections */}
       {serviceSections.map((svc, idx) => (
         <section key={svc.id} id={svc.id} className={`py-20 px-4 ${idx % 2 === 0 ? 'bg-white' : 'bg-[#f5f5f5]'}`}>
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className={`grid grid-cols-1 lg:grid-cols-2 gap-14 items-center ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
               <div className={idx % 2 !== 0 ? 'lg:order-2' : ''}>
                 <div className={`inline-flex items-center gap-2 bg-gradient-to-r ${svc.color} rounded-full px-3 py-1 mb-4`}>
@@ -214,13 +214,6 @@ export default function ServicesPage() {
                   >
                     {svc.cta} <ArrowRight size={16} />
                   </Link>
-                  <a
-                    href="tel:+18449667866"
-                    className="inline-flex items-center gap-2 border border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a] hover:border-[#0066cc] font-semibold px-6 py-3 rounded-xl transition-all"
-                  >
-                    <Phone size={15} />
-                    Call Now
-                  </a>
                 </div>
               </div>
               <div className={idx % 2 !== 0 ? 'lg:order-1' : ''}>
@@ -239,7 +232,7 @@ export default function ServicesPage() {
 
       {/* Add-ons */}
       <section className="py-20 px-4 bg-\[#f5f5f5\]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl font-black text-[#1a1a1a] font-serif">Additional Services & Add-Ons</h2>
             <p className="text-[#4a4a4a] mt-2">Enhance your security setup with our specialty services</p>
@@ -260,7 +253,7 @@ export default function ServicesPage() {
 
       {/* Bottom CTA */}
       <section className="py-14 px-4 bg-white">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-black text-[#1a1a1a] font-serif mb-4">Ready to Get Started?</h2>
           <p className="text-[#4a4a4a] mb-7">Call us now for a free consultation or book online in minutes.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
