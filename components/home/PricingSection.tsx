@@ -12,10 +12,10 @@ const plans = [
       'Installation of 1 device',
       'Basic Wi-Fi pairing',
       'Mobile app setup',
-      '30-day email support',
+      '30-day email assistance',
       'Installation certificate',
     ],
-    notIncluded: ['Priority scheduling', 'Remote support', 'Annual maintenance'],
+    notIncluded: ['Priority scheduling', 'Guided assistance', 'Annual maintenance'],
     cta: 'Get Started',
     href: '/book?plan=basic',
     highlight: false,
@@ -25,12 +25,12 @@ const plans = [
     price: '$9.99',
     period: '/month',
     badge: 'Most Popular',
-    desc: 'Ongoing support to keep your system running perfectly',
+    desc: 'Ongoing assistance to keep your system running perfectly',
     features: [
-      'Unlimited phone support',
-      'Remote troubleshooting',
+      'Unlimited phone assistance',
+      'Guided diagnostics',
       'Firmware update assistance',
-      'App & connectivity support',
+      'App & connectivity assistance',
       'Priority response (same day)',
       'Monthly system health check',
     ],
@@ -136,11 +136,11 @@ export default function PricingSection() {
         <div className="mt-12 text-center">
           <p className="text-[#4a4a4a] mb-3">Need a custom quote for multiple devices or a business property?</p>
           <a
-            href="tel:+18448100173"
+            href="tel:+18449667866"
             className="inline-flex items-center gap-2 text-[#0066cc] font-bold hover:text-[#0052a3] transition-colors text-lg"
           >
             <Phone size={18} />
-            Call +1 (844) 810-0173 for a Free Quote
+            Call +1 (844) 966-7866 for a Free Quote
           </a>
         </div>
       </div>

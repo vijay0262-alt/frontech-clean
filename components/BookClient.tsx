@@ -6,8 +6,8 @@ import { Phone, CheckCircle2, Calendar, Clock, Shield, ArrowRight, Star, User, M
 const services = [
   { id: 'camera', label: 'Security Camera Installation', price: 'From $49.99', desc: 'Indoor/outdoor cameras, wiring, app setup' },
   { id: 'doorbell', label: 'Smart Doorbell Installation', price: 'From $49.99', desc: 'Video doorbell, wiring/battery, Wi-Fi pairing' },
-  { id: 'setup', label: 'Wi-Fi & Network Setup', price: 'Add-on', desc: 'Router config, extender, remote access' },
-  { id: 'support', label: 'Quick Service Plan', price: '$9.99/mo', desc: 'Ongoing phone & remote service' },
+  { id: 'setup', label: 'Wi-Fi & Network Setup', price: 'Add-on', desc: 'Router config, extender, anywhere access' },
+  { id: 'assistance', label: 'Quick Service Plan', price: '$9.99/mo', desc: 'Ongoing phone & guided service' },
   { id: 'bundle', label: 'Multi-Device Bundle (4+ devices)', price: 'From $129.99', desc: 'Best rate for 4 or more devices' },
   { id: 'other', label: 'Not sure — need a consultation', price: 'Free', desc: "Tell us your situation and we'll advise you" },
 ]
@@ -30,7 +30,7 @@ export default function BookClient() {
     setLoading(true)
     setSubmitError(false)
     try {
-      const res = await fetch('/mail.php', {
+      const res = await fetch('/api/mail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -74,8 +74,8 @@ export default function BookClient() {
           </div>
           <p className="text-[#4a4a4a] text-sm">A confirmation will be sent to <span className="text-[#0066cc]">{form.email}</span>. Our technician will call you 30 minutes before arrival.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-all">
-              <Phone size={16} /> +1 (844) 810-0173
+            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-all">
+              <Phone size={16} /> +1 (844) 966-7866
             </a>
             <Link href="/" className="inline-flex items-center justify-center gap-2 border-2 border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a] font-bold px-6 py-3.5 rounded-xl transition-all">Back to Home</Link>
           </div>
@@ -88,7 +88,7 @@ export default function BookClient() {
     <div className="bg-white min-h-screen">
       <div className="bg-gradient-to-r from-[#0066cc] to-[#0052a3] border-b border-[#e5e7eb] py-3 px-4 text-center">
         <p className="text-white text-sm">Prefer to book by phone?{' '}
-          <a href="tel:+18448100173" className="text-white font-black hover:underline">Call +1 (844) 810-0173</a>{' '}— Instant scheduling, no wait
+          <a href="tel:+18449667866" className="text-white font-black hover:underline">Call +1 (844) 966-7866</a>{' '}— Instant scheduling, no wait
         </p>
       </div>
 
@@ -176,7 +176,7 @@ export default function BookClient() {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[#4a4a4a] text-xs font-semibold mb-1.5 uppercase tracking-wider">Installation or Repair for ? *</label>
+                  <label className="block text-[#4a4a4a] text-xs font-semibold mb-1.5 uppercase tracking-wider">Installation or Service for ? *</label>
                   <select name="deviceType" value={form.deviceType} onChange={handleChange} required className="form-input">
                     <option value="">Select device type</option>
                     <option value="Security Camera System">Security Camera System</option>
@@ -267,7 +267,7 @@ export default function BookClient() {
             ) : (
               <div className="flex flex-col items-end gap-2">
                 {submitError && (
-                  <p className="text-[#ef4444] text-xs text-right">Something went wrong. Please try again or call <a href="tel:+18448100173" className="underline">+1 (844) 810-0173</a>.</p>
+                  <p className="text-[#ef4444] text-xs text-right">Something went wrong. Please try again or call <a href="tel:+18449667866" className="underline">+1 (844) 966-7866</a>.</p>
                 )}
                 <button onClick={handleSubmit} disabled={loading}
                   className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#22c55e] to-[#16a34a] text-[#1a1a1a] font-black rounded-xl hover:shadow-lg hover:shadow-[#22c55e]/30 transition-all hover:-translate-y-0.5 disabled:opacity-60">
@@ -281,7 +281,7 @@ export default function BookClient() {
         {/* Reassurance */}
         <div className="mt-8 grid grid-cols-3 gap-4 text-center">
           {[
-            { icon: Phone, label: 'Prefer to call?', sub: '+1 (844) 810-0173', href: 'tel:+18448100173' },
+            { icon: Phone, label: 'Prefer to call?', sub: '+1 (844) 966-7866', href: 'tel:+18449667866' },
             { icon: Shield, label: 'No payment online', sub: 'Pay after service' },
             { icon: Clock, label: 'Same-day available', sub: 'Most areas' },
           ].map(({ icon: Icon, label, sub, href }) => (

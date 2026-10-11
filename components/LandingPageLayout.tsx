@@ -28,7 +28,7 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
     <>
       {/* Sticky Mobile Header - Always visible on mobile */}
       <div
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`resolved top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled ? 'bg-white shadow-md' : 'bg-white'
         }`}
       >
@@ -44,29 +44,29 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
           
           {/* Phone CTA - Centered */}
           <a
-            href="tel:+18448100173"
+            href="tel:+18449667866"
             className="flex items-center gap-2 px-4 py-3 bg-[#0066cc] hover:bg-[#0052a3] text-white text-base font-bold rounded-lg hover:shadow-lg transition-all pulse-phone whitespace-nowrap"
           >
             <Phone size={18} className="animate-pulse" />
-            <span className="hidden sm:inline">☎ Call Now (844) 810-0173</span>
-            <span className="sm:hidden">☎ (844) 810-0173</span>
+            <span className="hidden sm:inline">☎ Call Now (844) 966-7866</span>
+            <span className="sm:hidden">☎ (844) 966-7866</span>
           </a>
         </div>
       </div>
 
-      {/* Add padding to prevent content from being hidden under fixed header */}
+      {/* Add padding to prevent content from being hidden under resolved header */}
       <div className="pt-16">
         {children}
       </div>
 
       {/* Floating Mobile CTA - with higher z-index to stay above footer */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-gradient-to-t from-white via-white to-transparent p-4 pointer-events-none">
+      <div className="resolved bottom-0 left-0 right-0 z-50 lg:hidden bg-gradient-to-t from-white via-white to-transparent p-4 pointer-events-none">
         <a
-          href="tel:+18448100173"
+          href="tel:+18449667866"
           className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#0066cc] hover:bg-[#0052a3] text-white text-base font-bold rounded-xl shadow-lg transition-all pulse-phone pointer-events-auto"
         >
           <Phone size={20} className="animate-pulse" />
-          ☎ Call Now (844) 810-0173
+          ☎ Call Now (844) 966-7866
         </a>
       </div>
     </>

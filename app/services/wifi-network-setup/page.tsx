@@ -6,8 +6,8 @@ const BASE = 'https://frontechsecurity.com'
 const PAGE_URL = `${BASE}/services/wifi-network-setup`
 
 export const metadata: Metadata = {
-  title: 'Wi-Fi & Network Setup for Security Cameras — Router, Extender & Remote Access | FrontechSecurity',
-  description: 'Professional Wi-Fi optimization for security cameras and smart doorbells — router config, extender installation, port forwarding, and remote access setup. USA & Canada. Call +1 (844) 810-0173.',
+  title: 'Wi-Fi & Network Setup for Security Cameras — Router, Extender & Anywhere Access | FrontechSecurity',
+  description: 'Professional Wi-Fi optimization for security cameras and smart doorbells — router config, extender installation, port forwarding, and anywhere access setup. USA & Canada. Call +1 (844) 966-7866.',
   keywords: [
     'wifi setup for security cameras',
     'network setup security cameras',
@@ -15,23 +15,23 @@ export const metadata: Metadata = {
     'security camera keeps going offline',
     'router configuration security cameras',
     'port forwarding security cameras',
-    'remote access security camera setup',
+    'anywhere access security camera setup',
     'wifi extender for security cameras',
     'mesh network security cameras',
-    'NVR remote access setup',
+    'NVR anywhere access setup',
     'DDNS setup security camera',
     'QoS router security camera',
     'security camera network optimization',
     'CCTV network setup service',
     'smart home network configuration',
     'router setup smart home USA',
-    'wifi camera keeps disconnecting fix',
+    'wifi camera keeps disconnecting resolution',
     'security camera ip address setup',
   ].join(', '),
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Wi-Fi & Network Setup for Security Cameras — FrontechSecurity',
-    description: 'Expert network optimization so your cameras and doorbells stay online 24/7. Router config, extenders, port forwarding, remote access. USA & Canada.',
+    description: 'Expert network optimization so your cameras and doorbells stay online 24/7. Router config, extenders, port forwarding, anywhere access. USA & Canada.',
     url: PAGE_URL,
     type: 'website',
     siteName: 'FrontechSecurity',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Wi-Fi & Network Setup for Security Cameras | FrontechSecurity',
-    description: 'Fix disconnecting cameras with expert Wi-Fi and network optimization. USA & Canada.',
+    description: 'Resolve disconnecting cameras with expert Wi-Fi and network optimization. USA & Canada.',
     images: [`${BASE}/og-image.png`],
   },
 }
@@ -61,7 +61,7 @@ const pageSchema = {
       '@id': `${PAGE_URL}#service`,
       name: 'Wi-Fi & Network Setup for Security Cameras',
       serviceType: 'Network Configuration',
-      description: 'Professional Wi-Fi and network optimization for security cameras and smart doorbells — signal assessment, extender installation, router configuration, port forwarding, DDNS setup, and remote access.',
+      description: 'Professional Wi-Fi and network optimization for security cameras and smart doorbells — signal assessment, extender installation, router configuration, port forwarding, DDNS setup, and anywhere access.',
       url: PAGE_URL,
       provider: { '@type': 'LocalBusiness', name: 'FrontechSecurity', url: BASE },
       areaServed: [{ '@type': 'Country', name: 'United States' }, { '@type': 'Country', name: 'Canada' }],
@@ -69,9 +69,9 @@ const pageSchema = {
     {
       '@type': 'FAQPage',
       mainEntity: [
-        { '@type': 'Question', name: 'Why does my security camera keep going offline?', acceptedAnswer: { '@type': 'Answer', text: 'The most common causes are weak Wi-Fi signal at the camera location, router firmware issues, IP address conflicts, or a router that drops idle connections. Our technicians diagnose the exact cause and fix it during a single visit.' } },
-        { '@type': 'Question', name: 'Do I need a separate network for my security cameras?', acceptedAnswer: { '@type': 'Answer', text: 'It is best practice to put security cameras on a dedicated network or VLAN for security and performance. We can set this up if your router supports it.' } },
-        { '@type': 'Question', name: 'What is port forwarding and do I need it?', acceptedAnswer: { '@type': 'Answer', text: 'Port forwarding allows you to access your NVR or camera system remotely over the internet without a cloud subscription. We set it up on your router so you can view cameras from any network worldwide.' } },
+        { '@type': 'Question', name: 'Why does my security camera keep going offline?', acceptedAnswer: { '@type': 'Answer', text: 'The most common causes are weak Wi-Fi signal at the camera location, router firmware issues, IP address conflicts, or a router that drops idle connections. Our technicians diagnose the exact cause and resolve it during a single visit.' } },
+        { '@type': 'Question', name: 'Do I need a separate network for my security cameras?', acceptedAnswer: { '@type': 'Answer', text: 'It is best practice to put security cameras on a dedicated network or VLAN for security and performance. We can set this up if your router assistances it.' } },
+        { '@type': 'Question', name: 'What is port forwarding and do I need it?', acceptedAnswer: { '@type': 'Answer', text: 'Port forwarding allows you to access your NVR or camera system by phone over the internet without a cloud subscription. We set it up on your router so you can view cameras from any network worldwide.' } },
         { '@type': 'Question', name: 'Will setting up an extender slow down my internet?', acceptedAnswer: { '@type': 'Answer', text: 'A correctly placed and configured Wi-Fi extender will not noticeably slow your main network. We place extenders in optimal locations.' } },
         { '@type': 'Question', name: 'Can you configure my router if I have a complex setup?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We work with all router brands and ISP-provided gateways including Xfinity, AT&T, Spectrum, Fios, and more.' } },
       ],
@@ -82,16 +82,16 @@ const pageSchema = {
 const features = [
   { icon: Wifi, title: 'Wi-Fi Coverage Assessment', desc: 'We measure signal strength at every camera location and identify dead zones that cause disconnections.' },
   { icon: Router, title: 'Extender & Mesh Setup', desc: 'Installation and configuration of Wi-Fi extenders or mesh nodes to eliminate weak signal areas.' },
-  { icon: Globe, title: 'Remote Access Setup', desc: 'Port forwarding, DDNS configuration, and static IP setup so you can access your cameras from anywhere.' },
+  { icon: Globe, title: 'Anywhere Access Setup', desc: 'Port forwarding, DDNS configuration, and static IP setup so you can access your cameras from anywhere.' },
   { icon: Lock, title: 'Router Security Config', desc: 'We configure your router with strong security settings to keep your camera network protected from intrusion.' },
   { icon: Zap, title: 'Bandwidth Optimization', desc: 'QoS (Quality of Service) settings that prioritize camera traffic for uninterrupted HD streaming.' },
   { icon: Shield, title: 'All Devices Reconnected', desc: 'After network changes we reconnect every camera and doorbell to ensure nothing is left offline.' },
 ]
 
 const faqs = [
-  { q: 'Why does my security camera keep going offline?', a: 'The most common causes are weak Wi-Fi signal at the camera location, router firmware that needs updating, IP address conflicts, or a router that drops connections after idle periods. Our technicians diagnose the exact cause and fix it during a single visit.' },
-  { q: 'Do I need a separate network for my security cameras?', a: 'It is best practice to put security cameras on a dedicated network or VLAN for security and performance reasons. We can set this up during our visit if your router supports it, or recommend an upgrade if needed.' },
-  { q: 'What is port forwarding and do I need it?', a: 'Port forwarding allows you to access your NVR or camera system remotely over the internet without a cloud subscription. We set it up on your router so you can view your cameras from any network worldwide. Not all systems require it — we advise based on your specific setup.' },
+  { q: 'Why does my security camera keep going offline?', a: 'The most common causes are weak Wi-Fi signal at the camera location, router firmware that needs updating, IP address conflicts, or a router that drops connections after idle periods. Our technicians diagnose the exact cause and resolve it during a single visit.' },
+  { q: 'Do I need a separate network for my security cameras?', a: 'It is best practice to put security cameras on a dedicated network or VLAN for security and performance reasons. We can set this up during our visit if your router assistances it, or recommend an upgrade if needed.' },
+  { q: 'What is port forwarding and do I need it?', a: 'Port forwarding allows you to access your NVR or camera system by phone over the internet without a cloud subscription. We set it up on your router so you can view your cameras from any network worldwide. Not all systems require it — we advise based on your specific setup.' },
   { q: 'Will setting up an extender slow down my internet?', a: 'A correctly placed and configured Wi-Fi extender will not noticeably slow your main network. We place extenders in optimal locations and configure them as backhaul nodes where possible to minimize latency.' },
   { q: 'Can you configure my router if I have a complex setup?', a: 'Yes. We work with all router brands and ISP-provided gateway devices including Xfinity, AT&T, Spectrum, Fios, and more. We handle complex setups including double NAT situations, business routers, and managed switches.' },
 ]
@@ -125,15 +125,15 @@ export default function WifiNetworkSetupPage() {
             Even the most expensive security camera is useless if it keeps going offline. Our network specialists assess your home Wi-Fi, eliminate dead zones, optimize router settings, and ensure every camera and doorbell maintains a fast, stable connection around the clock — so your security system is always working when you need it.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
-            {['Wi-Fi Signal Assessment', 'Extender & Mesh Setup', 'Port Forwarding Config', 'Remote Access Setup', 'Router Security Settings', 'All Devices Reconnected'].map((b) => (
+            {['Wi-Fi Signal Assessment', 'Extender & Mesh Setup', 'Port Forwarding Config', 'Anywhere Access Setup', 'Router Security Settings', 'All Devices Reconnected'].map((b) => (
               <span key={b} className="flex items-center gap-1.5 text-xs text-[#f0f4ff] bg-white/5 border border-white/10 rounded-full px-3 py-1">
                 <CheckCircle2 size={11} className="text-[#22c55e] shrink-0" />{b}
               </span>
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#7c3aed]/30 transition-shadow pulse-phone">
-              <Phone size={18} /> Call +1 (844) 810-0173 — Free Consult
+            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#7c3aed]/30 transition-shadow pulse-phone">
+              <Phone size={18} /> Call +1 (844) 966-7866 — Free Consult
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-colors">
               Book Online <ArrowRight size={16} />
@@ -184,10 +184,10 @@ export default function WifiNetworkSetupPage() {
             <span className="text-[#7c3aed] text-xs font-bold uppercase tracking-widest">Why It Matters</span>
             <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 mb-4 font-serif text-balance">A Security Camera Is Only as Good as Its Connection</h2>
             <p className="text-[#4a4a4a] leading-relaxed mb-5">Most security camera issues — cameras going offline, delayed motion alerts, poor video quality, failed recordings — are not hardware problems. They are network problems. A camera that drops its Wi-Fi connection during a break-in is worse than having no camera at all because it creates a false sense of security.</p>
-            <p className="text-[#4a4a4a] leading-relaxed mb-5">Our network specialists have configured hundreds of home and small business networks specifically for security device performance. We understand the bandwidth requirements of HD and 4K cameras, the latency requirements for real-time alerts, and the port forwarding rules needed for NVR remote access on every major router brand.</p>
+            <p className="text-[#4a4a4a] leading-relaxed mb-5">Our network specialists have configured hundreds of home and small business networks specifically for security device performance. We understand the bandwidth requirements of HD and 4K cameras, the latency requirements for real-time alerts, and the port forwarding rules needed for NVR anywhere access on every major router brand.</p>
             <p className="text-[#4a4a4a] leading-relaxed mb-6">Whether you just installed new cameras or you have an existing system that keeps going offline, our network service delivers a stable foundation for your entire security ecosystem.</p>
-            <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
-              <Phone size={16} /> Fix My Camera Network
+            <a href="tel:+18449667866" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
+              <Phone size={16} /> Restore My Camera Network
             </a>
           </div>
           <div className="glow-card bg-white rounded-2xl p-7">
@@ -199,14 +199,14 @@ export default function WifiNetworkSetupPage() {
                 'Wi-Fi extender or mesh node installation',
                 'Router firmware update check',
                 'DHCP reservation for all security devices',
-                'Port forwarding rules for NVR/DVR remote access',
+                'Port forwarding rules for NVR/DVR anywhere access',
                 'DDNS (dynamic DNS) hostname setup',
                 'Static or reserved IP configuration',
                 'QoS camera traffic prioritization',
                 'Isolated VLAN or guest network for cameras',
                 'Router firewall and security settings review',
                 'All cameras and doorbells reconnected and tested',
-                'Remote access test from an external network',
+                'Anywhere access test from an external network',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-[#4a4a4a]">
                   <CheckCircle2 size={15} className="text-[#22c55e] shrink-0 mt-0.5" />
@@ -225,8 +225,8 @@ export default function WifiNetworkSetupPage() {
           <p className="text-[#4a4a4a] mb-2 max-w-xl mx-auto">Wi-Fi and network configuration is available as an add-on to any installation service or as a standalone visit. Call us to discuss your situation and get a flat-rate quote.</p>
           <p className="text-[#64748b] text-xs mb-7">Hardware (extenders, managed switches, mesh nodes) not included in service price and is quoted separately.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow pulse-phone">
-              <Phone size={18} /> Call +1 (844) 810-0173
+            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow pulse-phone">
+              <Phone size={18} /> Call +1 (844) 966-7866
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-colors">
               Book Online
@@ -262,7 +262,7 @@ export default function WifiNetworkSetupPage() {
             {[
               { href: '/services/security-camera-installation', title: 'Security Camera Installation', desc: 'Full camera mounting, wiring, and app setup service.' },
               { href: '/services/doorbell-installation', title: 'Smart Doorbell Installation', desc: 'Professional doorbell setup with Wi-Fi pairing included.' },
-              { href: '/services/quick-service-support', title: 'Ongoing Service & Support', desc: '7-day phone and remote support for your system.' },
+              { href: '/services/quick-service-plan', title: 'Ongoing Service & Care', desc: '7-day phone and guided assistance for your system.' },
             ].map(({ href, title, desc }) => (
               <Link key={href} href={href} className="glow-card bg-white rounded-xl p-5 hover:border-[#7c3aed] border border-[#e5e7eb] transition-colors group">
                 <h3 className="text-[#1a1a1a] font-bold text-sm mb-1 group-hover:text-[#a78bfa] transition-colors">{title}</h3>

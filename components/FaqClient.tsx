@@ -9,8 +9,8 @@ const categories = [
     faqs: [
       { q: 'How long does a security camera installation take?', a: 'Most single-camera installations are completed within 1–2 hours. A full multi-camera system (4–8 cameras) typically takes 3–5 hours depending on your property size, cable routing complexity, and number of floors.' },
       { q: 'Do I need to supply the camera or doorbell myself?', a: 'Yes — our service covers labor, setup, and configuration. You purchase the hardware (camera, doorbell, etc.) and we install and configure it. If you need guidance choosing the right device, our team is happy to recommend compatible options over the phone.' },
-      { q: 'What brands do you support?', a: 'We support all major brands including Ring, Arlo, Nest (Google), Eufy, Reolink, Blink, Hikvision, Lorex, Amcrest, Swann, and many more. If you are unsure whether we support your brand, call us before booking.' },
-      { q: 'Do you offer same-day installation?', a: 'Same-day appointments are available in most major metropolitan areas across the USA and Canada, subject to technician availability. We recommend calling +1 (844) 810-0173 directly for the fastest scheduling.' },
+      { q: 'What brands do you cover?', a: 'We cover all major brands including Ring, Arlo, Nest (Google), Eufy, Reolink, Blink, Hikvision, Lorex, Amcrest, Swann, and many more. If you are unsure whether we cover your brand, call us before booking.' },
+      { q: 'Do you offer same-day installation?', a: 'Same-day appointments are available in most major metropolitan areas across the USA and Canada, subject to technician availability. We recommend calling +1 (844) 966-7866 directly for the fastest scheduling.' },
       { q: 'Can you install both wired and wireless cameras?', a: 'Yes. We handle both wired (PoE, coaxial) and wireless (Wi-Fi, battery-powered) installations. Our technicians assess your home layout to determine the best placement and cable routing for wired systems.' },
     ],
   },
@@ -18,24 +18,24 @@ const categories = [
     label: 'Pricing & Plans',
     faqs: [
       { q: 'What is included in the $49.99 one-time install fee?', a: 'The $49.99 one-time fee covers the professional installation and configuration of a single device (one camera or one doorbell), including mounting, Wi-Fi pairing, app setup, and a brief walkthrough. Additional devices are $39.99 each.' },
-      { q: 'How does the $9.99/month support plan work?', a: 'The monthly support plan gives you unlimited phone and remote support for your security system. This includes troubleshooting connectivity issues, app re-setup, firmware guidance, camera offline resolution, and more. Cancel anytime — no contract.' },
-      { q: 'What is the difference between monthly and annual plans?', a: 'The annual plan ($99.99/year) includes everything in the monthly plan plus one free on-site revisit per year, priority emergency response, new device setup for up to 2 devices per year, and a dedicated support agent. You save approximately $19.89 compared to paying monthly.' },
+      { q: 'How does the $9.99/month service plan work?', a: 'The monthly service plan gives you unlimited phone and guided assistance for your security system. This includes diagnostics connectivity issues, app re-setup, firmware guidance, camera offline resolution, and more. Cancel anytime — no contract.' },
+      { q: 'What is the difference between monthly and annual plans?', a: 'The annual plan ($99.99/year) includes everything in the monthly plan plus one free on-site revisit per year, priority emergency response, new device setup for up to 2 devices per year, and a dedicated service specialist. You save approximately $19.89 compared to paying monthly.' },
       { q: 'Is there a money-back guarantee?', a: 'Yes. If you are not satisfied with your installation within 30 days, we will return to correct the issue at no charge. Please see our full Refund Policy for details.' },
     ],
   },
   {
     label: 'Quick Service',
     faqs: [
-      { q: 'My camera keeps going offline — can you help?', a: 'Absolutely. Camera connectivity issues are one of the most common requests. Common causes include Wi-Fi signal weakness, router setting conflicts, or firmware issues. Our specialists can diagnose and resolve most issues remotely within minutes.' },
-      { q: 'What if I change my Wi-Fi router or password?', a: 'Changing your router or password typically requires re-pairing all cameras. This is a simple process our team can walk you through over the phone, or we can perform it remotely if you have access to the device.' },
+      { q: 'My camera keeps going offline — can you help?', a: 'Absolutely. Camera connectivity issues are one of the most common requests. Common causes include Wi-Fi signal weakness, router setting conflicts, or firmware issues. Our specialists can diagnose and resolve most issues by phone within minutes.' },
+      { q: 'What if I change my Wi-Fi router or password?', a: 'Changing your router or password typically requires re-pairing all cameras. This is a simple process our team can walk you through over the phone, or we can walk you through it by phone if you have access to the device.' },
       { q: 'Can you help set up the app on multiple phones?', a: 'Yes. We set up the app for all household members during installation. If you need to add a new user or phone later, our team can guide you through it at no extra charge for plan customers.' },
-      { q: 'Do you offer emergency service?', a: 'Annual plan customers receive priority emergency response. All customers can call +1 (844) 810-0173 during operating hours (Mon–Sun, 7AM–10PM EST) for urgent issues.' },
+      { q: 'Do you offer emergency service?', a: 'Annual plan customers receive priority emergency response. All customers can call +1 (844) 966-7866 during operating hours (Mon–Sun, 7AM–10PM EST) for urgent issues.' },
     ],
   },
   {
     label: 'Scheduling',
     faqs: [
-      { q: 'How do I reschedule or cancel my appointment?', a: 'Contact us at least 24 hours before your appointment via phone at +1 (844) 810-0173 or email. We do not charge rescheduling or cancellation fees as long as you provide adequate notice.' },
+      { q: 'How do I reschedule or cancel my appointment?', a: 'Contact us at least 24 hours before your appointment via phone at +1 (844) 966-7866 or email. We do not charge rescheduling or cancellation fees as long as you provide adequate notice.' },
       { q: 'Do your technicians arrive on time?', a: 'We provide a 2-hour arrival window and call you approximately 30 minutes before arrival. Our on-time rate is over 95%. In the rare case of a delay, we will notify you proactively.' },
       { q: 'What areas do you serve?', a: 'We currently serve all major metropolitan areas across the United States and Canada, including New York, Los Angeles, Chicago, Toronto, Vancouver, Miami, Dallas, and 50+ more cities. Call us to confirm availability in your area.' },
       { q: 'Do you work on weekends and holidays?', a: 'Yes. We operate Monday through Sunday, 7AM–10PM EST including most major holidays.' },
@@ -58,8 +58,8 @@ export default function FaqClient() {
             Frequently Asked <span className="gradient-text">Questions</span>
           </h1>
           <p className="text-[#4a4a4a] text-lg mb-8">Everything you need to know about our services. Can't find your answer? Call us directly.</p>
-          <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
-            <Phone size={16} /> +1 (844) 810-0173
+          <a href="tel:+18449667866" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
+            <Phone size={16} /> +1 (844) 966-7866
           </a>
         </div>
       </section>
@@ -79,7 +79,7 @@ export default function FaqClient() {
               ))}
               <div className="pt-4 mt-4 border-t border-[#e5e7eb]">
                 <p className="text-[#4a4a4a] text-xs mb-3">Still have questions?</p>
-                <a href="tel:+18448100173" className="flex items-center gap-2 text-[#0066cc] text-sm font-semibold hover:text-[#1a1a1a] transition-colors">
+                <a href="tel:+18449667866" className="flex items-center gap-2 text-[#0066cc] text-sm font-semibold hover:text-[#1a1a1a] transition-colors">
                   <Phone size={14} /> Call Us Now
                 </a>
               </div>
@@ -115,8 +115,8 @@ export default function FaqClient() {
           <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-4 text-balance">{"Didn't Find Your Answer?"}</h2>
           <p className="text-[#4a4a4a] mb-7">Our technicians are standing by. Call for an instant, expert answer.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
-              <Phone size={18} /> +1 (844) 810-0173
+            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
+              <Phone size={18} /> +1 (844) 966-7866
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all">
               Book Online <ArrowRight size={16} />

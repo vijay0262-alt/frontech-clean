@@ -6,7 +6,7 @@ const services = [
   { label: 'Security Camera Installation', href: '/services/security-camera-installation' },
   { label: 'Smart Doorbell Installation', href: '/services/doorbell-installation' },
   { label: 'Wi-Fi & Network Setup', href: '/services/wifi-network-setup' },
-  { label: 'Quick Service & Support', href: '/services/quick-service-support' },
+  { label: 'Quick Service Plan', href: '/services/quick-service-plan' },
   { label: 'All Services', href: '/services' },
   { label: 'Book Installation', href: '/book' },
 ]
@@ -17,6 +17,7 @@ const company = [
   { label: 'Contact Us', href: '/contact' },
   { label: 'Schedule Installation', href: '/book' },
   { label: 'FAQ', href: '/faq' },
+  { label: 'Blog', href: '/blog' },
 ]
 
 const legal = [
@@ -38,11 +39,11 @@ export default function Footer() {
             Get Expert Installation — Call Now
           </h3>
           <a
-            href="tel:+18448100173"
+            href="tel:+18449667866"
             className="inline-flex items-center gap-2 sm:gap-3 bg-white text-[#0066cc] font-bold text-lg sm:text-xl px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl hover:bg-blue-50 hover:shadow-2xl transition-all"
           >
             <Phone size={20} />
-            ☎ +1 (844) 810-0173
+            ☎ +1 (844) 966-7866
           </a>
           <p className="text-white/90 text-xs sm:text-sm mt-3">USA &amp; Canada — Mon to Sun, 7AM–10PM EST</p>
         </div>
@@ -63,14 +64,14 @@ export default function Footer() {
               />
             </Link>
             <p className="text-[#4a4a4a] text-sm leading-relaxed mb-5">
-              Certified security technicians providing professional smart home camera and doorbell installation, setup, and support across the USA &amp; Canada.
+              Certified security technicians providing professional smart home camera and doorbell installation, setup, and service across the USA &amp; Canada.
             </p>
             <div className="space-y-2.5 text-sm">
-              <a href="tel:+18448100173" className="flex items-center gap-2 text-[#0066cc] hover:text-[#0052a3] transition-colors font-semibold">
-                <Phone size={15} /> +1 (844) 810-0173
+              <a href="tel:+18449667866" className="flex items-center gap-2 text-[#0066cc] hover:text-[#0052a3] transition-colors font-semibold">
+                <Phone size={15} /> +1 (844) 966-7866
               </a>
-              <a href="mailto:support@frontechsecurity.com" className="flex items-center gap-2 text-[#4a4a4a] hover:text-[#0066cc] transition-colors">
-                <Mail size={15} /> support@frontechsecurity.com
+              <a href="mailto:info@frontechsecurity.com" className="flex items-center gap-2 text-[#4a4a4a] hover:text-[#0066cc] transition-colors">
+                <Mail size={15} /> info@frontechsecurity.com
               </a>
               <span className="flex items-start gap-2 text-[#4a4a4a]">
                 <MapPin size={15} className="shrink-0 mt-0.5" />
@@ -147,7 +148,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto space-y-3">
           <p className="text-[11px] text-[#666666] leading-relaxed text-center sm:text-left">
             <span className="text-[#4a4a4a] font-semibold">Disclaimer: </span>
-            FrontechSecurity is an independent third-party installation and technical support service. We are not affiliated with, authorized by, endorsed by, or in any way officially connected to Ring, Google Nest, Arlo, Wyze, Eufy, SimpliSafe, ADT, or any other security brand or manufacturer. All product names, logos, and trademarks are the property of their respective owners. Our services consist solely of third-party installation, setup, and support. Prices listed on this website are for installation and support services only and do not include the cost of hardware or devices.
+            FrontechSecurity is an independent third-party installation and professional service service. We are not affiliated with, authorized by, endorsed by, or in any way officially connected to Ring, Google Nest, Arlo, Wyze, Eufy, SimpliSafe, ADT, or any other security brand or manufacturer. All product names, logos, and trademarks are the property of their respective owners. Our services consist solely of third-party installation, setup, and service. Prices listed on this website are for installation and services only and do not include the cost of hardware or devices.
           </p>
           <p className="text-[11px] text-[#666666] leading-relaxed text-center sm:text-left">
             Results may vary based on property layout, internet infrastructure, and device compatibility. All service descriptions and response times are estimates and not guarantees. By using this website or our services, you agree to our{' '}

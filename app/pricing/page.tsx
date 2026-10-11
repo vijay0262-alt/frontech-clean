@@ -7,7 +7,7 @@ const PAGE_URL = `${BASE}/pricing`
 
 export const metadata: Metadata = {
   title: 'Pricing Plans | Security Camera & Doorbell Installation — FrontechSecurity',
-  description: 'Transparent pricing for security camera and smart doorbell installation. One-time install from $49.99, monthly support $9.99/mo, annual plan $99.99. No hidden fees. Call +1 (844) 810-0173.',
+  description: 'Transparent pricing for security camera and smart doorbell installation. One-time install from $49.99, monthly assistance $9.99/mo, annual plan $99.99. No hidden fees. Call +1 (844) 966-7866.',
   keywords: [
     'security camera installation pricing',
     'doorbell installation pricing',
@@ -36,14 +36,14 @@ export const metadata: Metadata = {
     'affordable security camera installation',
     'security camera installation deals',
     'security camera installation discount',
-    'security camera support plan pricing',
-    'security camera monthly support cost',
+    'security camera service plan pricing',
+    'security camera monthly assistance cost',
     'security camera annual plan price',
   ].join(', '),
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Pricing Plans | Security Camera & Doorbell Installation — FrontechSecurity',
-    description: 'One-time install from $49.99. Monthly support $9.99/mo. Annual plan $99.99/yr. No hidden fees. Transparent pricing.',
+    description: 'One-time install from $49.99. Monthly assistance $9.99/mo. Annual plan $99.99/yr. No hidden fees. Transparent pricing.',
     url: PAGE_URL,
     type: 'website',
     siteName: 'FrontechSecurity',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Pricing Plans | Security Camera Installation — FrontechSecurity',
-    description: 'One-time install from $49.99. Monthly support $9.99/mo. No hidden fees.',
+    description: 'One-time install from $49.99. Monthly assistance $9.99/mo. No hidden fees.',
     images: [`${BASE}/og-image.png`],
   },
 }
@@ -74,16 +74,16 @@ const plans = [
       { text: 'Professional mounting & wiring', included: true },
       { text: 'Wi-Fi pairing & app setup', included: true },
       { text: 'Motion zone configuration', included: true },
-      { text: '30-day email support', included: true },
-      { text: 'Multi-device support', included: false },
-      { text: 'Priority phone support', included: false },
+      { text: '30-day email assistance', included: true },
+      { text: 'Multi-device assistance', included: false },
+      { text: 'Priority phone assistance', included: false },
       { text: 'On-site revisit', included: false },
     ],
   },
   {
     id: 'monthly',
     badge: 'Most Popular',
-    name: 'Monthly Support',
+    name: 'Monthly Service',
     price: '$9.99',
     period: '/month',
     highlight: true,
@@ -92,8 +92,8 @@ const plans = [
     borderColor: 'border-[#0066cc]',
     ctaStyle: 'bg-white text-[#0066cc] hover:bg-[#f0f4ff] font-black',
     features: [
-      { text: 'Unlimited phone & chat support', included: true },
-      { text: 'Remote diagnostics & troubleshooting', included: true },
+      { text: 'Unlimited phone & chat assistance', included: true },
+      { text: 'Guided diagnostics', included: true },
       { text: 'Firmware update assistance', included: true },
       { text: 'App re-setup & sync issues', included: true },
       { text: 'Camera offline resolution', included: true },
@@ -119,7 +119,7 @@ const plans = [
       { text: 'Priority emergency response', included: true },
       { text: 'New device setup (up to 2/yr)', included: true },
       { text: 'System upgrade consultation', included: true },
-      { text: 'Dedicated support agent', included: true },
+      { text: 'Dedicated service specialist', included: true },
       { text: 'Annual system health checkup', included: true },
       { text: 'Save $19.89 vs monthly', included: true },
     ],
@@ -142,7 +142,7 @@ const faqs = [
   },
   {
     q: 'Can I cancel the monthly plan anytime?',
-    a: 'Absolutely. The monthly support plan is month-to-month with no contracts or cancellation fees. You can cancel via phone or email at any time.',
+    a: 'Absolutely. The monthly service plan is month-to-month with no contracts or cancellation fees. You can cancel via phone or email at any time.',
   },
   {
     q: 'What is included in the annual plan on-site visit?',
@@ -150,7 +150,7 @@ const faqs = [
   },
   {
     q: 'Do prices include parts or hardware?',
-    a: 'Our pricing covers labor, setup, and support only. Hardware (cameras, doorbells, routers) is provided by the customer. We can advise on the best devices for your needs.',
+    a: 'Our pricing covers labor, setup, and service only. Hardware (cameras, doorbells, routers) is provided by the customer. We can advise on the best devices for your needs.',
   },
 ]
 
@@ -166,14 +166,14 @@ export default function PricingPage() {
             Transparent Plans, <span className="gradient-text">Zero Surprises</span>
           </h1>
           <p className="text-[#4a4a4a] text-lg mb-8">
-            One-time installation or ongoing support — choose the plan that fits your home security needs. All work performed by certified technicians.
+            One-time installation or ongoing assistance — choose the plan that fits your home security needs. All work performed by certified technicians.
           </p>
           <a
-            href="tel:+18448100173"
+            href="tel:+18449667866"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1 pulse-phone"
           >
             <Phone size={18} />
-            ☎ Questions? Call +1 (844) 810-0173
+            ☎ Questions? Call +1 (844) 966-7866
           </a>
         </div>
       </section>
@@ -226,7 +226,7 @@ export default function PricingPage() {
                     Get Started <ArrowRight size={16} />
                   </Link>
                   <a
-                    href="tel:+18448100173"
+                    href="tel:+18449667866"
                     className={`flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-sm transition-all ${plan.highlight ? 'bg-white/10 text-[#1a1a1a] hover:bg-white/20' : 'border border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a]'}`}
                   >
                     <Phone size={13} /> Call to Order

@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'FrontechSecurity — Security Camera & Doorbell Installation',
     short_name: 'FrontechSecurity',
     description:
-      'Professional security camera and smart doorbell installation, setup & support across USA & Canada. Same-day service from $49.99.',
+      'Professional security camera and smart doorbell installation, setup & service across USA & Canada. Same-day service from $49.99.',
     start_url: '/',
     display: 'standalone',
     background_color: '#0a0f1e',

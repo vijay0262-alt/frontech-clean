@@ -5,7 +5,7 @@ const steps = [
     num: '01',
     icon: Phone,
     title: 'Call or Book Online',
-    desc: 'Contact us by phone at +1 (844) 810-0173 or use our online booking form. We\'ll discuss your needs and recommend the best setup for your home.',
+    desc: 'Contact us by phone at +1 (844) 966-7866 or use our online booking form. We\'ll discuss your needs and recommend the best setup for your home.',
     color: 'from-[#0066cc] to-[#0052a3]',
   },
   {
@@ -25,8 +25,8 @@ const steps = [
   {
     num: '04',
     icon: CheckCircle2,
-    title: 'Test, Train & Support',
-    desc: 'We walk you through your new system, show you how to use the app, and ensure you\'re fully comfortable. Ongoing support is just a call away.',
+    title: 'Test, Train & Service',
+    desc: 'We walk you through your new system, show you how to use the app, and ensure you\'re fully comfortable. Ongoing assistance is just a call away.',
     color: 'from-[#f59e0b] to-[#ef4444]',
   },
 ]

@@ -8,27 +8,28 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^16.0.2",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/postcss": "^4.0.0",
-    "postcss": "^8.4.38",
-    "autoprefixer": "^10.4.17",
-    "lucide-react": "^0.400.0",
     "@radix-ui/react-slot": "^1.1.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "autoprefixer": "^10.4.17",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "lucide-react": "^0.400.0",
+    "next": "^16.0.2",
+    "nodemailer": "^6.9.13",
+    "postcss": "^8.4.38",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "resend": "^6.32.1",
     "tailwind-merge": "^2.3.0",
-    "nodemailer": "^6.9.13"
+    "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
     "@types/node": "^20.0.0",
+    "@types/nodemailer": "^6.4.14",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@types/nodemailer": "^6.4.14",
     "eslint": "^9.0.0",
-    "eslint-config-next": "16.0.0"
+    "eslint-config-next": "16.0.0",
+    "typescript": "^5.0.0"
   }
 }

@@ -7,7 +7,7 @@ const PAGE_URL = `${BASE}/services/doorbell-installation`
 
 export const metadata: Metadata = {
   title: 'Smart Doorbell Installation Service Near Me | Ring, Nest, Arlo — FrontechSecurity',
-  description: 'Expert video doorbell installation & repair. Ring, Nest, Arlo, Blink & all brands. Fix not connecting, not working, offline issues. Professional setup & troubleshooting. Same-day service USA & Canada from $49.99. Call +1 (844) 810-0173.',
+  description: 'Expert video doorbell installation & service. Ring, Nest, Arlo, Blink & all brands. Resolve not connecting, not working, offline issues. Professional setup & diagnostics. Same-day service USA & Canada from $49.99. Call +1 (844) 966-7866.',
   keywords: [
     'Ring doorbell installation',
     'Ring doorbell not working',
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
     'Nest doorbell installation',
     'Arlo doorbell installation',
     'Blink doorbell installation',
-    'video doorbell repair',
+    'video doorbell service',
     'doorbell installation service',
     'doorbell not connecting to wifi',
     'doorbell offline',
-    'doorbell troubleshooting',
+    'doorbell diagnostics',
     'same day doorbell installation',
     'doorbell setup help',
     'video doorbell not working',
-    'smart doorbell repair near me',
+    'smart doorbell service near me',
   ].join(', '),
   alternates: { canonical: PAGE_URL },
   openGraph: {
@@ -134,21 +134,21 @@ export default function DoorbellInstallationPage() {
             <span className="text-[#0066cc] text-xs font-bold tracking-wider uppercase">High Demand Service</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1a1a1a] leading-tight mb-5 font-serif text-balance">
-            Video Doorbell Installation & Repair <span className="gradient-text">Near You</span>
+            Video Doorbell Installation & Service <span className="gradient-text">Near You</span>
           </h1>
           <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8 max-w-3xl">
-            <strong className="text-[#1a1a1a]">Professional installation, setup & repair for Ring, Nest, Arlo, Blink & all doorbell brands.</strong> Fix doorbell not connecting, not working, offline issues. Expert troubleshooting & same-day service across USA & Canada. From $49.99.
+            <strong className="text-[#1a1a1a]">Professional installation, setup & service for Ring, Nest, Arlo, Blink & all doorbell brands.</strong> Resolve doorbell not connecting, not working, offline issues. Expert diagnostics & same-day service across USA & Canada. From $49.99.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
-            {['Ring, Nest, Arlo, Blink Support', 'Not Working? We Fix It', 'Same-Day Service', 'WiFi Connection Issues Solved', 'Installation & Repair', 'No Fix, No Pay'].map((b) => (
+            {['Ring, Nest, Arlo, Blink Assistance', 'Not Working? We Resolve It', 'Same-Day Service', 'WiFi Connection Issues Solved', 'Installation & Service', 'Solved or No Charge'].map((b) => (
               <span key={b} className="flex items-center gap-1.5 text-xs text-[#1a1a1a] bg-[#22c55e]/60 border border-[#22c55e] rounded-full px-3 py-1">
                 <CheckCircle2 size={11} className="text-[#22c55e] shrink-0" />{b}
               </span>
             ))}
           </div>
           <div className="mt-8">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/40 transition-all">
-              <Phone size={22} /> Call Now (844) 810-0173
+            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/40 transition-all">
+              <Phone size={22} /> Call Now (844) 966-7866
             </a>
           </div>
           <p className="text-sm text-[#4a4a4a] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
@@ -164,16 +164,16 @@ export default function DoorbellInstallationPage() {
             <div className="glow-card bg-white rounded-xl p-6">
               <div className="text-4xl mb-3">📞</div>
               <h3 className="text-[#1a1a1a] font-bold mb-2">Speak to Real Expert</h3>
-              <p className="text-[#4a4a4a] text-sm">Live technician support — no bots, no wait. Get instant help over the phone.</p>
+              <p className="text-[#4a4a4a] text-sm">Live technician assistance — no bots, no wait. Get instant help over the phone.</p>
             </div>
             <div className="glow-card bg-white rounded-xl p-6">
               <div className="text-4xl mb-3">⚡</div>
               <h3 className="text-[#1a1a1a] font-bold mb-2">Same-Day Service</h3>
-              <p className="text-[#4a4a4a] text-sm">Doorbell offline? Need urgent fix? We come to you today — call now for availability.</p>
+              <p className="text-[#4a4a4a] text-sm">Doorbell offline? Need urgent resolution? We come to you today — call now for availability.</p>
             </div>
             <div className="glow-card bg-white rounded-xl p-6">
               <div className="text-4xl mb-3">✅</div>
-              <h3 className="text-[#1a1a1a] font-bold mb-2">Fixed Right First Time</h3>
+              <h3 className="text-[#1a1a1a] font-bold mb-2">Resolved Right First Time</h3>
               <p className="text-[#4a4a4a] text-sm">Certified technicians with 10+ years experience. We guarantee our work.</p>
             </div>
           </div>
@@ -250,7 +250,7 @@ export default function DoorbellInstallationPage() {
                 'Indoor chime box installation or replacement',
                 'Wi-Fi network pairing and signal test',
                 'Motion zone and sensitivity configuration',
-                'Package detection setup (where supported)',
+                'Package detection setup (where available)',
                 'Two-way audio speaker and mic calibration',
                 'Night vision and HDR quality check',
                 'App installation on all household phones',
@@ -299,13 +299,13 @@ export default function DoorbellInstallationPage() {
             <div className="bg-white/20 rounded-xl p-6 mb-6 max-w-xl mx-auto">
               <p className="text-white font-bold mb-2">📋 Service Pricing:</p>
               <p className="text-white text-sm mb-2">• Professional Installation: Starting at $49.99</p>
-              <p className="text-white text-sm mb-2">• Repair & Troubleshooting: From $49.99</p>
+              <p className="text-white text-sm mb-2">• Service & Diagnostics: From $49.99</p>
               <p className="text-white text-sm">• Phone Consultation: FREE (Call now)</p>
               <p className="text-white/80 text-xs mt-3">*Service fee only. Hardware/parts sold separately. No payment until work is complete.</p>
             </div>
             <div className="space-y-3">
-              <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
-                <Phone size={26} className="animate-bounce" /> Call Now (844) 810-0173
+              <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0052a3] to-[#0066cc] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#0052a3]/50 transition-all pulse-phone animate-pulse w-full sm:w-auto">
+                <Phone size={26} className="animate-bounce" /> Call Now (844) 966-7866
               </a>
               <p className="text-sm text-white">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
             </div>
@@ -334,12 +334,12 @@ export default function DoorbellInstallationPage() {
         </div>
       </section>
 
-      {/* Supported Brands */}
+      {/* Covered Brands */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Third-Party Support for All Doorbell Brands</h2>
-            <p className="text-[#4a4a4a] max-w-2xl mx-auto">Independent professional installation, setup, repair & troubleshooting service (not affiliated with manufacturers)</p>
+            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Independent Service for All Doorbell Brands</h2>
+            <p className="text-[#4a4a4a] max-w-2xl mx-auto">Independent professional installation, setup, service & diagnostics service (not affiliated with manufacturers)</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
@@ -364,18 +364,18 @@ export default function DoorbellInstallationPage() {
         </div>
       </section>
 
-      {/* Common Issues We Fix */}
+      {/* Common Issues We Resolve */}
       <section className="py-16 px-4 bg-\[#f5f5f5\]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Common Doorbell Issues We Fix</h2>
-            <p className="text-[#4a4a4a] max-w-2xl mx-auto">From installation to repair & troubleshooting — we solve all video doorbell problems</p>
+            <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Common Doorbell Issues We Resolve</h2>
+            <p className="text-[#4a4a4a] max-w-2xl mx-auto">From installation to service & diagnostics — we solve all video doorbell problems</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               { issue: 'Doorbell Not Connecting to WiFi', desc: 'Network pairing, signal boost, router configuration, extender setup' },
               { issue: 'Doorbell Not Working / Offline', desc: 'Power check, transformer replacement, wiring diagnostics, firmware update' },
-              { issue: 'No Video Feed / Black Screen', desc: 'Camera lens cleaning, app troubleshooting, account sync, device reset' },
+              { issue: 'No Video Feed / Black Screen', desc: 'Camera lens cleaning, app diagnostics, account sync, device reset' },
               { issue: 'Chime Not Ringing', desc: 'Chime box installation, voltage check, wireless chime pairing' },
               { issue: 'Motion Alerts Not Working', desc: 'Zone setup, sensitivity adjustment, notification settings configuration' },
               { issue: 'Two-Way Audio Not Working', desc: 'Microphone & speaker test, volume calibration, connection diagnostics' },
@@ -400,19 +400,19 @@ export default function DoorbellInstallationPage() {
             <h3 className="text-[#1a1a1a] font-bold mb-4 text-center">Third-Party Service Disclosure</h3>
             <div className="space-y-3 text-sm text-[#4a4a4a] leading-relaxed">
               <p>
-                <strong className="text-[#1a1a1a]">Independent Service Provider:</strong> FrontechSecurity is a third-party, independent technical support and installation service provider. We are NOT affiliated with, authorized by, endorsed by, or sponsored by Ring LLC, Google Nest, Arlo Technologies, Amazon Blink, Eufy, ADT Inc., or any other video doorbell manufacturer or brand mentioned on this website.
+                <strong className="text-[#1a1a1a]">Independent Service Provider:</strong> FrontechSecurity is a third-party, independent service and installation service provider. We are NOT affiliated with, authorized by, endorsed by, or sponsored by Ring LLC, Google Nest, Arlo Technologies, Amazon Blink, Eufy, ADT Inc., or any other video doorbell manufacturer or brand mentioned on this website.
               </p>
               <p>
                 <strong className="text-[#1a1a1a]">Brand Names & Trademarks:</strong> All product names, brand names, trademarks, and registered trademarks mentioned are the property of their respective owners. We use these names solely for descriptive and compatibility purposes to help customers understand which devices and brands we can service.
               </p>
               <p>
-                <strong className="text-[#1a1a1a]">Service Scope:</strong> Our services include installation, setup, configuration, troubleshooting, and repair assistance for video doorbells and related equipment. Hardware/devices are not included unless explicitly stated. Customers must own or purchase their own equipment.
+                <strong className="text-[#1a1a1a]">Service Scope:</strong> Our services include installation, setup, configuration, diagnostics, and service assistance for video doorbells and related equipment. Hardware/devices are not included unless explicitly stated. Customers must own or purchase their own equipment.
               </p>
               <p>
                 <strong className="text-[#1a1a1a]">Pricing:</strong> Service fees start at $49.99 for basic installation. Final pricing depends on complexity, time required, and specific customer needs. No payment is collected until service completion and customer satisfaction.
               </p>
               <p>
-                <strong className="text-[#1a1a1a]">Manufacturer Support:</strong> For warranty claims or manufacturer-specific support, customers should contact the device manufacturer directly. We provide third-party technical assistance independent of manufacturer warranties.
+                <strong className="text-[#1a1a1a]">Manufacturer Warranty:</strong> For warranty claims or manufacturer warranty service, customers should contact the device manufacturer directly. We provide third-party service assistance independent of manufacturer warranties.
               </p>
             </div>
           </div>

@@ -26,7 +26,7 @@ export default function TermsOfServicePage() {
           'Smart video doorbell installation and configuration',
           'Wi-Fi network setup and optimization for security devices',
           'App configuration and user training',
-          'Remote and on-site service & assistance',
+          'Guided and on-site service & assistance',
           'System upgrades and maintenance',
         ]} />
       </PolicySection>
@@ -68,7 +68,7 @@ export default function TermsOfServicePage() {
           'Defective, incompatible, or damaged hardware provided by the customer',
           'Warranty claims on customer-provided equipment',
           'Losses resulting from the failure of third-party device manufacturers',
-          'Devices that become discontinued or unsupported by manufacturers',
+          'Devices that become discontinued or no longer serviced by manufacturers',
         ]} />
       </PolicySection>
 
@@ -106,8 +106,8 @@ export default function TermsOfServicePage() {
       <PolicySection title="11. Contact">
         <p>For questions regarding these Terms, contact us at:</p>
         <PolicyList items={[
-          'Phone: +1 (844) 810-0173',
-          'Email: support@frontechsecurity.com',
+          'Phone: +1 (844) 966-7866',
+          'Email: info@frontechsecurity.com',
         ]} />
       </PolicySection>
     </PolicyLayout>

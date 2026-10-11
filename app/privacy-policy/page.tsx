@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
           'Schedule and coordinate installation appointments',
           'Contact you about your service booking and updates',
           'Process payments and send invoices',
-          'Provide customer support and respond to inquiries',
+          'Provide customer care and respond to inquiries',
           'Send service reminders or follow-up communications',
           'Improve our website and service offerings',
           'Comply with legal obligations',
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
 
       <PolicySection title="6. Data Security">
         <p>
-          We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These include SSL encryption, access controls, and secure data storage.
+          We implement appropriate professional and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These include SSL encryption, access controls, and secure data storage.
         </p>
         <p>
           However, no method of transmission over the internet is 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee absolute security.
@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
           'Opt out of marketing communications',
           'Lodge a complaint with a supervisory authority',
         ]} />
-        <p className="mt-3">To exercise any of these rights, contact us at support@frontechsecurity.com or call +1 (844) 810-0173.</p>
+        <p className="mt-3">To exercise any of these rights, contact us at info@frontechsecurity.com or call +1 (844) 966-7866.</p>
       </PolicySection>
 
       <PolicySection title="8. Third-Party Links">
@@ -117,8 +117,8 @@ export default function PrivacyPolicyPage() {
           If you have questions about this Privacy Policy, please contact us at:
         </p>
         <PolicyList items={[
-          'Phone: +1 (844) 810-0173',
-          'Email: support@frontechsecurity.com',
+          'Phone: +1 (844) 966-7866',
+          'Email: info@frontechsecurity.com',
           'Website: frontechsecurity.com',
         ]} />
       </PolicySection>

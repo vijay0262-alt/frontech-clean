@@ -96,8 +96,8 @@ export default function CookiePolicyPage() {
       <PolicySection title="9. Contact Us">
         <p>For questions or concerns about our use of cookies, please contact us:</p>
         <PolicyList items={[
-          'Phone: +1 (844) 810-0173',
-          'Email: support@frontechsecurity.com',
+          'Phone: +1 (844) 966-7866',
+          'Email: info@frontechsecurity.com',
           'Website: frontechsecurity.com',
         ]} />
       </PolicySection>

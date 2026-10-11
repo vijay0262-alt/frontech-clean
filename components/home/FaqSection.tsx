@@ -13,15 +13,15 @@ const faqs = [
   },
   {
     q: 'Do you provide the cameras or doorbells, or do I need to supply them?',
-    a: 'We are an installation and support service — you supply the devices, and we install them. However, we can advise you on the best devices for your specific home layout and needs.',
+    a: 'We are an installation and service — you supply the devices, and we install them. However, we can advise you on the best devices for your specific home layout and needs.',
   },
   {
     q: 'Do you serve both the USA and Canada?',
-    a: 'Yes! We currently serve over 50 cities across the United States and Canada. Call us at +1 (844) 810-0173 to confirm availability in your area.',
+    a: 'Yes! We currently serve over 50 cities across the United States and Canada. Call us at +1 (844) 966-7866 to confirm availability in your area.',
   },
   {
-    q: 'What is included in the Monthly Support Plan?',
-    a: 'The $9.99/month plan includes unlimited phone and remote support, help with app issues, firmware update assistance, connectivity troubleshooting, and priority response. Cancel anytime.',
+    q: 'What is included in the Monthly Service Plan?',
+    a: 'The $9.99/month plan includes unlimited phone and guided assistance, help with app issues, firmware update assistance, connectivity diagnostics, and priority response. Cancel anytime.',
   },
   {
     q: 'What does the Annual Protection Plan include?',
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'Can you help if my existing camera system stops working?',
-    a: 'Yes! Our support plans cover troubleshooting and repair of existing systems. Call us and we can often resolve the issue remotely, or dispatch a technician if needed.',
+    a: 'Yes! Our service plans cover diagnostics and service of existing systems. Call us and we can often resolve the issue by phone, or dispatch a technician if needed.',
   },
 ]
 
@@ -79,11 +79,11 @@ export default function FaqSection() {
         <div className="mt-10 text-center p-6 bg-[#f5f5f5] rounded-2xl border border-[#e5e7eb]">
           <p className="text-[#4a4a4a] mb-3">Still have questions? Our team is standing by.</p>
           <a
-            href="tel:+18448100173"
+            href="tel:+18449667866"
             className="inline-flex items-center gap-2 text-[#0066cc] font-bold hover:text-[#0052a3] transition-colors"
           >
             <Phone size={16} />
-            Call +1 (844) 810-0173 — Free Consultation
+            Call +1 (844) 966-7866 — Free Consultation
           </a>
         </div>
       </div>

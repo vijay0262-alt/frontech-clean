@@ -27,7 +27,7 @@ export default function DisclaimerPage() {
           FrontechSecurity provides professional installation, setup, and service plans for smart home security cameras and doorbells. We make the following important disclosures:
         </p>
         <PolicyList items={[
-          'We are an independent installation and support service. We are not affiliated with, endorsed by, or an authorized dealer of any device manufacturer (including Ring, Arlo, Nest, Eufy, Reolink, Blink, or others).',
+          'We are an independent installation and service. We are not affiliated with, endorsed by, or an authorized dealer of any device manufacturer (including Ring, Arlo, Nest, Eufy, Reolink, Blink, or others).',
           'Device brand names are used solely to describe compatibility and are the property of their respective owners.',
           'We do not manufacture, sell, or distribute any hardware. All devices must be supplied by the customer.',
           'Installation results may vary depending on home construction, Wi-Fi infrastructure, device condition, and other factors outside our control.',
@@ -49,7 +49,7 @@ export default function DisclaimerPage() {
 
       <PolicySection title="4. Accuracy of Information">
         <p>
-          Pricing, service availability, and technical specifications listed on this website are subject to change without notice. While we endeavor to keep information current, we do not guarantee that all information on the website is accurate at any given time. Please contact us directly at +1 (844) 810-0173 for the most current pricing and availability.
+          Pricing, service availability, and device specifications listed on this website are subject to change without notice. While we endeavor to keep information current, we do not guarantee that all information on the website is accurate at any given time. Please contact us directly at +1 (844) 966-7866 for the most current pricing and availability.
         </p>
       </PolicySection>
 
@@ -74,8 +74,8 @@ export default function DisclaimerPage() {
       <PolicySection title="8. Contact">
         <p>For questions about this disclaimer, contact us at:</p>
         <PolicyList items={[
-          'Phone: +1 (844) 810-0173',
-          'Email: support@frontechsecurity.com',
+          'Phone: +1 (844) 966-7866',
+          'Email: info@frontechsecurity.com',
           'Website: frontechsecurity.com',
         ]} />
       </PolicySection>

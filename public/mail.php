@@ -136,7 +136,7 @@ $body = <<<HTML
         <!-- Footer -->
         <tr>
           <td style="background:#f0f4ff;padding:16px 32px;border-top:1px solid #dde4f0;">
-            <p style="margin:0;color:#9ca3af;font-size:11px;text-align:center;">FrontechSecurity &bull; 7430 Pasito Ave, Rancho Cucamonga, CA 91730 &bull; +1 (844) 810-0173 &bull; frontechsecurity.com</p>
+            <p style="margin:0;color:#9ca3af;font-size:11px;text-align:center;">FrontechSecurity &bull; 7430 Pasito Ave, Rancho Cucamonga, CA 91730 &bull; +1 (844) 966-7866 &bull; frontechsecurity.com</p>
           </td>
         </tr>
 
@@ -149,6 +149,7 @@ HTML;
 
 // ── SEND TO ALL RECIPIENTS ───────────────────────────────────────────
 $all_sent = true;
+$recipients = [$to, $cc];
 foreach ($recipients as $to) {
     $sent = mail($to, $subject, $body, $headers);
     if (!$sent) $all_sent = false;

@@ -3,7 +3,7 @@ import PolicyLayout, { PolicySection, PolicyList } from '@/components/PolicyLayo
 
 export const metadata: Metadata = {
   title: 'Refund Policy | FrontechSecurity',
-  description: 'FrontechSecurity refund and satisfaction guarantee policy for installation and support services.',
+  description: 'FrontechSecurity refund and satisfaction guarantee policy for installation and services.',
 }
 
 export default function RefundPolicyPage() {
@@ -15,7 +15,7 @@ export default function RefundPolicyPage() {
     >
       <PolicySection title="1. Our Satisfaction Guarantee">
         <p>
-          FrontechSecurity is committed to providing professional, high-quality installation and support services. We back our work with a 30-day satisfaction guarantee. If you are not satisfied with the quality of our installation or service, we will return to correct the issue at no additional charge.
+          FrontechSecurity is committed to providing professional, high-quality installation and services. We back our work with a 30-day satisfaction guarantee. If you are not satisfied with the quality of our installation or service, we will return to correct the issue at no additional charge.
         </p>
       </PolicySection>
 
@@ -36,18 +36,18 @@ export default function RefundPolicyPage() {
         ]} />
       </PolicySection>
 
-      <PolicySection title="3. Monthly Support Plan ($9.99/mo)">
+      <PolicySection title="3. Monthly Service Plan ($9.99/mo)">
         <PolicyList items={[
-          'You may cancel your monthly support plan at any time with no penalty',
+          'You may cancel your monthly service plan at any time with no penalty',
           'Cancellation takes effect at the end of the current billing cycle',
           'No partial or prorated refunds are issued for the current month upon cancellation',
-          'If you experience a technical issue that our support team failed to resolve, you may request a refund for that month by contacting us within 7 days',
+          'If you experience a service issue that our service team failed to resolve, you may request a refund for that month by contacting us within 7 days',
         ]} />
       </PolicySection>
 
       <PolicySection title="4. Annual Service Plan ($99.99/yr)">
         <PolicyList items={[
-          'Full refund available within 14 days of purchase if no support sessions have been used',
+          'Full refund available within 14 days of purchase if no service sessions have been used',
           'Prorated refund for unused full months after 14 days (e.g., if you cancel after 2 months, 10 months of unused plan value may be refunded)',
           'Used services (on-site visits, setup sessions) are deducted at retail rate from any refund amount',
           'Cancellation requests must be submitted via phone or email',
@@ -69,8 +69,8 @@ export default function RefundPolicyPage() {
       <PolicySection title="6. How to Request a Refund">
         <p>To request a refund, please:</p>
         <PolicyList items={[
-          'Call us at +1 (844) 810-0173',
-          'Email us at support@frontechsecurity.com with your booking reference and reason',
+          'Call us at +1 (844) 966-7866',
+          'Email us at info@frontechsecurity.com with your booking reference and reason',
           'Include your name, appointment date, and a description of the issue',
         ]} />
         <p className="mt-3">Our team will review your request and respond within 2 business days. Approved refunds are processed within 5–10 business days to your original payment method.</p>

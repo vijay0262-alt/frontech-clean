@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { blogPosts } from '@/lib/blog-data'
 
 const BASE_URL = 'https://frontechsecurity.com'
 
@@ -22,11 +23,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/services/security-camera-installation`,             lastModified: DATES.service, changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE_URL}/services/doorbell-installation`,                    lastModified: DATES.service, changeFrequency: 'monthly', priority: 0.93 },
     { url: `${BASE_URL}/services/wifi-network-setup`,                       lastModified: DATES.service, changeFrequency: 'monthly', priority: 0.88 },
-    { url: `${BASE_URL}/services/quick-service-support`,                    lastModified: DATES.service, changeFrequency: 'monthly', priority: 0.88 },
+    { url: `${BASE_URL}/services/quick-service-plan`,                    lastModified: DATES.service, changeFrequency: 'monthly', priority: 0.88 },
 
     // Informational pages
     { url: `${BASE_URL}/about`,  lastModified: DATES.service, changeFrequency: 'monthly', priority: 0.72 },
     { url: `${BASE_URL}/faq`,    lastModified: DATES.service, changeFrequency: 'monthly', priority: 0.75 },
+    // Blog posts - fresh content for SEO
+    { url: `${BASE_URL}/blog`,   lastModified: DATES.core,    changeFrequency: 'weekly',  priority: 0.8 },
+    ...blogPosts.map((post) => ({
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
 
     // Legal — low crawl priority, yearly
     { url: `${BASE_URL}/privacy-policy`,  lastModified: DATES.legal, changeFrequency: 'yearly', priority: 0.3 },

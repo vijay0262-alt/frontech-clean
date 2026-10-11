@@ -16,7 +16,7 @@ export default function ServicesSection() {
             Complete Smart Home Security Services
           </h2>
           <p className="text-[#4a4a4a] max-w-2xl mx-auto">
-            From initial installation to ongoing support, our certified technicians handle every aspect of your smart home security setup.
+            From initial installation to ongoing assistance, our certified technicians handle every aspect of your smart home security setup.
           </p>
         </div>
 
@@ -107,16 +107,16 @@ export default function ServicesSection() {
               </div>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Quick Service & Support</h3>
+              <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Quick Service Plan</h3>
               <p className="text-[#4a4a4a] text-sm leading-relaxed mb-4">Fast, reliable help to keep your system running perfectly. From app setup to firmware updates, our specialists have you covered 7 days a week.</p>
               <ul className="grid grid-cols-2 gap-1.5 mb-5">
-                {['Phone & remote service', 'App setup & sync', 'Firmware updates', 'System health checks'].map((f) => (
+                {['Phone & guided service', 'App setup & sync', 'Firmware updates', 'System health checks'].map((f) => (
                   <li key={f} className="flex items-center gap-1.5 text-xs text-[#4a4a4a]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e] shrink-0" />{f}
                   </li>
                 ))}
               </ul>
-              <Link href="/services#support" className="flex items-center gap-1.5 text-[#0066cc] text-sm font-semibold hover:gap-3 transition-all group-hover:text-[#1a1a1a]">
+              <Link href="/services#assistance" className="flex items-center gap-1.5 text-[#0066cc] text-sm font-semibold hover:gap-3 transition-all group-hover:text-[#1a1a1a]">
                 Learn More <ArrowRight size={15} />
               </Link>
             </div>

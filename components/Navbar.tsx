@@ -13,12 +13,13 @@ const navLinks = [
       { label: 'Security Camera Installation', href: '/services/security-camera-installation' },
       { label: 'Smart Doorbell Installation', href: '/services/doorbell-installation' },
       { label: 'Wi-Fi & Network Setup', href: '/services/wifi-network-setup' },
-      { label: 'Quick Service & Support', href: '/services/quick-service-support' },
+      { label: 'Quick Service Plan', href: '/services/quick-service-plan' },
       { label: 'All Services', href: '/services' },
     ],
   },
   { label: 'Pricing', href: '/pricing' },
   { label: 'About Us', href: '/about' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -103,11 +104,11 @@ export default function Navbar() {
               Book Install
             </Link>
             <a
-              href="tel:+18448100173"
+              href="tel:+18449667866"
               className="flex items-center gap-2 px-4 py-2 bg-[#0066cc] hover:bg-[#0052a3] text-white text-sm font-bold rounded-lg hover:shadow-lg transition-all"
             >
               <Phone size={14} />
-              (844) 810-0173
+              (844) 966-7866
             </a>
           </div>
 
@@ -159,11 +160,11 @@ export default function Navbar() {
               Book Installation
             </Link>
             <a
-              href="tel:+18448100173"
+              href="tel:+18449667866"
               className="flex items-center justify-center gap-2 px-4 py-3 bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold rounded-lg"
             >
               <Phone size={16} />
-              Call (844) 810-0173
+              Call (844) 966-7866
             </a>
           </div>
         </div>

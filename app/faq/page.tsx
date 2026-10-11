@@ -5,8 +5,8 @@ const BASE = 'https://frontechsecurity.com'
 const PAGE_URL = `${BASE}/faq`
 
 export const metadata: Metadata = {
-  title: 'FAQ - Security Camera Installation, Doorbell Setup, Pricing & Support | FrontechSecurity',
-  description: 'Frequently asked questions about security camera installation, smart doorbell setup, pricing plans, service areas, troubleshooting, and technical support. Get answers to all your questions. Call +1 (844) 810-0173.',
+  title: 'FAQ - Security Camera Installation, Doorbell Setup, Pricing & Service | FrontechSecurity',
+  description: 'Frequently asked questions about security camera installation, smart doorbell setup, pricing plans, service areas, diagnostics, and professional service. Get answers to all your questions. Call +1 (844) 966-7866.',
   keywords: [
     'security camera installation FAQ',
     'doorbell installation FAQ',
@@ -19,17 +19,17 @@ export const metadata: Metadata = {
     'Ring camera installation questions',
     'Arlo camera installation FAQ',
     'Nest doorbell setup questions',
-    'security camera troubleshooting FAQ',
-    'camera offline fix FAQ',
+    'security camera diagnostics FAQ',
+    'camera offline service FAQ',
     'security camera not working help',
     'doorbell not connecting FAQ',
     'security camera warranty questions',
-    'security camera support plan FAQ',
+    'security camera service plan FAQ',
     'home security installation questions',
     'CCTV installation FAQ',
     'smart home security questions',
     'security camera wifi setup FAQ',
-    'security camera remote access FAQ',
+    'security camera anywhere access FAQ',
     'NVR DVR setup questions',
     'security camera night vision FAQ',
     'motion detection setup FAQ',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   ].join(', '),
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: 'FAQ - Security Camera Installation, Doorbell Setup & Support | FrontechSecurity',
-    description: 'Get answers to all your questions about security camera installation, smart doorbell setup, pricing, and technical support. USA & Canada.',
+    title: 'FAQ - Security Camera Installation, Doorbell Setup & Service | FrontechSecurity',
+    description: 'Get answers to all your questions about security camera installation, smart doorbell setup, pricing, and professional service. USA & Canada.',
     url: PAGE_URL,
     type: 'website',
     siteName: 'FrontechSecurity',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'FAQ - Security Camera Installation & Doorbell Setup | FrontechSecurity',
-    description: 'Find answers to common questions about installation, pricing, and support. USA & Canada.',
+    description: 'Find answers to common questions about installation, pricing, and service. USA & Canada.',
     images: [`${BASE}/og-image.png`],
   },
 }
@@ -70,7 +70,7 @@ const faqSchema = {
       '@type': 'FAQPage',
       '@id': `${PAGE_URL}#page`,
       name: 'Security Camera Installation FAQ',
-      description: 'Frequently asked questions about security camera installation, smart doorbell setup, pricing plans, and technical support services.',
+      description: 'Frequently asked questions about security camera installation, smart doorbell setup, pricing plans, and professional service services.',
       url: PAGE_URL,
       mainEntity: [
         {
@@ -86,7 +86,7 @@ const faqSchema = {
           name: 'Do you install cameras I already own?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. We install cameras you have already purchased from any brand — Ring, Arlo, Google Nest, Wyze, Eufy, Reolink, Hikvision, Dahua, and more. We also help troubleshoot and fix cameras that are not working or not connecting.',
+            text: 'Yes. We install cameras you have already purchased from any brand — Ring, Arlo, Google Nest, Wyze, Eufy, Reolink, Hikvision, Dahua, and more. We also help diagnose and resolve cameras that are not working or not connecting.',
           },
         },
         {
@@ -102,7 +102,7 @@ const faqSchema = {
           name: 'Do you offer same-day service?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Same-day appointments are available in most areas across USA and Canada. Call us at +1 (844) 810-0173 to check availability and schedule your installation.',
+            text: 'Yes. Same-day appointments are available in most areas across USA and Canada. Call us at +1 (844) 966-7866 to check availability and schedule your installation.',
           },
         },
         {
@@ -123,7 +123,7 @@ const faqSchema = {
         },
         {
           '@type': 'Question',
-          name: 'What brands do you support?',
+          name: 'What brands do you cover?',
           acceptedAnswer: {
             '@type': 'Answer',
             text: 'We work with all major brands including Ring, Google Nest, Arlo, Wyze, Eufy, Reolink, Hikvision, Axis, Dahua, Lorex, Amcrest, and more.',

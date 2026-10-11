@@ -6,7 +6,7 @@ const PAGE_URL = `${BASE}/contact`
 
 export const metadata: Metadata = {
   title: 'Contact Us — Security Camera & Doorbell Installation | Rancho Cucamonga, CA',
-  description: 'Contact FrontechSecurity — call +1 (844) 810-0173, email support@frontechsecurity.com, or send a message online. Located at 7430 Pasito Ave, Rancho Cucamonga, CA 91730. Available 7 days a week.',
+  description: 'Contact FrontechSecurity — call +1 (844) 966-7866, email info@frontechsecurity.com, or send a message online. Located at 7430 Pasito Ave, Rancho Cucamonga, CA 91730. Available 7 days a week.',
   keywords: [
     'contact FrontechSecurity',
     'security camera installation contact',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ].join(', '),
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: 'Contact FrontechSecurity — Rancho Cucamonga, CA | +1 (844) 810-0173',
+    title: 'Contact FrontechSecurity — Rancho Cucamonga, CA | +1 (844) 966-7866',
     description: 'Reach our team by phone, email, or contact form. Available 7 days a week 7AM–10PM. Located at 7430 Pasito Ave, Rancho Cucamonga, CA 91730.',
     url: PAGE_URL,
     type: 'website',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact FrontechSecurity | +1 (844) 810-0173',
+    title: 'Contact FrontechSecurity | +1 (844) 966-7866',
     description: 'Call or message FrontechSecurity for a free security camera or doorbell installation quote. Available 7 days a week.',
     images: [`${BASE}/og-image.png`],
   },
@@ -47,8 +47,8 @@ const contactSchema = {
     '@type': 'LocalBusiness',
     name: 'FrontechSecurity',
     url: BASE,
-    telephone: '+18448100173',
-    email: 'support@frontechsecurity.com',
+    telephone: '+18449667866',
+    email: 'info@frontechsecurity.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '7430 Pasito Ave',
@@ -61,7 +61,7 @@ const contactSchema = {
     openingHours: 'Mo-Su 07:00-22:00',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+18448100173',
+      telephone: '+18449667866',
       contactType: 'Customer Service',
       areaServed: ['US', 'CA'],
       availableLanguage: 'English',

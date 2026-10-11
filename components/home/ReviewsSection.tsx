@@ -19,14 +19,14 @@ const reviews = [
     name: 'James R.',
     location: 'Los Angeles, CA',
     rating: 5,
-    text: 'Called them on a Friday afternoon and they had a tech at my door Saturday morning. Super fast, clean installation. The monthly support plan is worth every penny.',
+    text: 'Called them on a Friday afternoon and they had a tech at my door Saturday morning. Super fast, clean installation. The monthly service plan is worth every penny.',
     service: 'Security Camera Install',
   },
   {
     name: 'Linda M.',
     location: 'Chicago, IL',
     rating: 5,
-    text: 'I was struggling with my camera going offline constantly. Their remote support team diagnosed it as a Wi-Fi issue and fixed it in 20 minutes. Excellent support!',
+    text: 'I was struggling with my camera going offline constantly. Their service team diagnosed it as a Wi-Fi issue and resolved it in 20 minutes. Excellent assistance!',
     service: 'Quick Service Plan',
   },
   {

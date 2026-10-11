@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { Phone, Mail, MapPin, Clock, MessageSquare, CheckCircle2, AlertCircle, ShieldCheck } from 'lucide-react'
 
 const contactMethods = [
-  { icon: Phone, title: 'Call Us Now', desc: 'Speak directly with a technician or book over the phone', value: '+1 (844) 810-0173', action: 'tel:+18448100173', label: 'Call Now', color: 'from-[#0066cc] to-[#0052a3]' },
-  { icon: Mail, title: 'Email Support', desc: 'Send us your questions — we respond within 2 hours', value: 'support@frontechsecurity.com', action: 'mailto:support@frontechsecurity.com', label: 'Send Email', color: 'from-[#7c3aed] to-[#0066cc]' },
+  { icon: Phone, title: 'Call Us Now', desc: 'Speak directly with a technician or book over the phone', value: '+1 (844) 966-7866', action: 'tel:+18449667866', label: 'Call Now', color: 'from-[#0066cc] to-[#0052a3]' },
+  { icon: Mail, title: 'Email Us', desc: 'Send us your questions — we respond within 2 hours', value: 'info@frontechsecurity.com', action: 'mailto:info@frontechsecurity.com', label: 'Send Email', color: 'from-[#7c3aed] to-[#0066cc]' },
   { icon: Clock, title: 'Hours of Operation', desc: 'Available 7 days a week for your convenience', value: 'Mon–Sun, 7AM–10PM EST', action: null, label: null, color: 'from-[#22c55e] to-[#0052a3]' },
   { icon: MapPin, title: 'Our Address', desc: 'Rancho Cucamonga, CA — serving USA & Canada nationwide', value: '7430 Pasito Ave, Rancho Cucamonga, CA 91730', action: 'https://maps.google.com/?q=7430+Pasito+Ave+Rancho+Cucamonga+CA+91730', label: 'View on Map', color: 'from-[#f59e0b] to-[#ef4444]' },
 ]
@@ -24,7 +24,7 @@ export default function ContactClient() {
     setLoading(true)
     setStatus('idle')
     try {
-      const res = await fetch('/mail.php', {
+      const res = await fetch('/api/mail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...form, _type: 'contact' }),
@@ -55,8 +55,8 @@ export default function ContactClient() {
           </div>
           <p className="text-[#4a4a4a] text-sm">Need immediate help? Call us now:</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
-              <Phone size={16} /> +1 (844) 810-0173
+            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
+              <Phone size={16} /> +1 (844) 966-7866
             </a>
             <a href="/" className="inline-flex items-center justify-center gap-2 border-2 border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a] font-bold px-7 py-3.5 rounded-xl transition-colors">
               Back to Home
@@ -78,8 +78,8 @@ export default function ContactClient() {
             We Are Here to <span className="gradient-text">Help You</span>
           </h1>
           <p className="text-[#4a4a4a] text-lg mb-6">Have a question about installation, pricing, or your existing system? Reach out — our team responds fast.</p>
-          <a href="tel:+18448100173" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-black text-lg px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1 pulse-phone">
-            <Phone size={20} /> +1 (844) 810-0173 — Call Free
+          <a href="tel:+18449667866" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-black text-lg px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1 pulse-phone">
+            <Phone size={20} /> +1 (844) 966-7866 — Call Free
           </a>
         </div>
       </section>
@@ -163,7 +163,7 @@ export default function ContactClient() {
                   </button>
                   <p className="text-center text-[#4a4a4a] text-xs">
                     Prefer to talk? Call us at{' '}
-                    <a href="tel:+18448100173" className="text-[#0066cc] font-semibold hover:underline">+1 (844) 810-0173</a>
+                    <a href="tel:+18449667866" className="text-[#0066cc] font-semibold hover:underline">+1 (844) 966-7866</a>
                   </p>
                 </form>
             </div>
@@ -180,8 +180,8 @@ export default function ContactClient() {
                   </li>
                 ))}
               </ul>
-              <a href="tel:+18448100173" className="mt-5 flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-black rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-0.5 pulse-phone">
-                <Phone size={17} /> +1 (844) 810-0173
+              <a href="tel:+18449667866" className="mt-5 flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-black rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-0.5 pulse-phone">
+                <Phone size={17} /> +1 (844) 966-7866
               </a>
             </div>
             <div className="glow-card bg-white rounded-xl p-6">
@@ -228,7 +228,7 @@ export default function ContactClient() {
             <div className="bg-[#0a1628] border border-[#e5e7eb] rounded-xl p-4 flex items-start gap-3">
               <ShieldCheck size={15} className="text-[#0066cc] shrink-0 mt-0.5" />
               <p className="text-[#64748b] text-[11px] leading-relaxed">
-                FrontechSecurity is an independent third-party installation and support service. We are not affiliated with, endorsed by, or an official partner of Ring, Google Nest, Arlo, Wyze, or any other brand. All brand names are trademarks of their respective owners.
+                FrontechSecurity is an independent third-party installation and service. We are not affiliated with, endorsed by, or an official partner of Ring, Google Nest, Arlo, Wyze, or any other brand. All brand names are trademarks of their respective owners.
               </p>
             </div>
           </div>

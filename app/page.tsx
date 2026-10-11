@@ -14,7 +14,7 @@ const BASE = 'https://frontechsecurity.com'
 
 export const metadata: Metadata = {
   title: 'Security Camera Installation & Smart Doorbell Setup | USA & Canada — FrontechSecurity',
-  description: 'Professional security camera installation and smart doorbell setup service. Ring, Arlo, Nest, Blink & all brands. Same-day service from $49.99. Certified technicians across USA & Canada. Call +1 (844) 810-0173.',
+  description: 'Professional security camera installation and smart doorbell setup service. Ring, Arlo, Nest, Blink & all brands. Same-day service from $49.99. Certified technicians across USA & Canada. Call +1 (844) 966-7866.',
   keywords: [
     'security camera installation',
     'security camera installation near me',
@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     'video doorbell setup',
     'security camera not working',
     'security camera not connecting',
-    'security camera repair',
+    'security camera service',
     'camera installation service',
     'wireless camera setup',
     'outdoor camera installation',
     'Ring camera not connecting',
     'Arlo camera offline',
     'Blink camera setup',
-    'security camera troubleshooting',
+    'security camera diagnostics',
     'same day camera installation',
     'professional camera installer',
     'security camera help',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     'CCTV installation services',
     'smart home security services',
     'security camera wifi setup',
-    'security camera tech support',
+    'security camera expert service',
     'security installation services USA',
     'security installation services Canada',
     'security camera installation Los Angeles',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     'doorbell not working',
     'doorbell not connecting to wifi',
     'doorbell offline',
-    'doorbell troubleshooting',
+    'doorbell diagnostics',
     'same day doorbell installation',
     'doorbell installation service',
   ].join(', '),
@@ -100,8 +100,8 @@ const homePageSchema = {
       '@id': `${BASE}#business`,
       name: 'FrontechSecurity',
       url: BASE,
-      telephone: '+18448100173',
-      email: 'support@frontechsecurity.com',
+      telephone: '+18449667866',
+      email: 'info@frontechsecurity.com',
       address: {
         '@type': 'PostalAddress',
         streetAddress: '7430 Pasito Ave',
@@ -177,7 +177,7 @@ const homePageSchema = {
           name: 'Do you install cameras I already own?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. We install cameras you have already purchased from any brand — Ring, Arlo, Google Nest, Wyze, Eufy, Reolink, Hikvision, Dahua, and more. We also help troubleshoot and fix cameras that are not working or not connecting.',
+            text: 'Yes. We install cameras you have already purchased from any brand — Ring, Arlo, Google Nest, Wyze, Eufy, Reolink, Hikvision, Dahua, and more. We also help diagnose and resolve cameras that are not working or not connecting.',
           },
         },
         {
@@ -193,7 +193,7 @@ const homePageSchema = {
           name: 'Do you offer same-day service?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Same-day appointments are available in most areas across USA and Canada. Call us at +1 (844) 810-0173 to check availability and schedule your installation.',
+            text: 'Yes. Same-day appointments are available in most areas across USA and Canada. Call us at +1 (844) 966-7866 to check availability and schedule your installation.',
           },
         },
         {

@@ -10,8 +10,8 @@ const BASE = 'https://frontechsecurity.com'
 const PAGE_URL = `${BASE}/services`
 
 export const metadata: Metadata = {
-  title: 'Security Camera Installation, Doorbell Setup & Support Services | FrontechSecurity',
-  description: 'Expert security camera installation, smart doorbell setup, Wi-Fi network optimization, and ongoing tech support — certified technicians across USA & Canada. Same-day service from $49.99. Call +1 (844) 810-0173.',
+  title: 'Security Camera Installation, Doorbell Setup & Service Services | FrontechSecurity',
+  description: 'Expert security camera installation, smart doorbell setup, Wi-Fi network optimization, and ongoing expert service — certified technicians across USA & Canada. Same-day service from $49.99. Call +1 (844) 966-7866.',
   keywords: [
     'security camera installation service',
     'smart doorbell installation service',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'CCTV installation services',
     'smart home security services',
     'security camera wifi setup',
-    'security camera tech support',
+    'security camera expert service',
     'home security system installation',
     'security installation services USA',
     'security installation services Canada',
@@ -57,14 +57,14 @@ const servicesCatalogSchema = {
       '@type': 'CollectionPage',
       '@id': `${PAGE_URL}#page`,
       name: 'Security Camera & Smart Home Installation Services',
-      description: 'Complete range of security camera installation, smart doorbell setup, Wi-Fi network configuration, and ongoing support services by FrontechSecurity across USA and Canada.',
+      description: 'Complete range of security camera installation, smart doorbell setup, Wi-Fi network configuration, and ongoing services by FrontechSecurity across USA and Canada.',
       url: PAGE_URL,
       provider: { '@type': 'LocalBusiness', name: 'FrontechSecurity', url: BASE },
       hasPart: [
         { '@type': 'Service', name: 'Security Camera Installation', url: `${BASE}/services/security-camera-installation` },
         { '@type': 'Service', name: 'Smart Doorbell Installation', url: `${BASE}/services/doorbell-installation` },
         { '@type': 'Service', name: 'Wi-Fi & Network Setup', url: `${BASE}/services/wifi-network-setup` },
-        { '@type': 'Service', name: 'Security Camera Support Plans', url: `${BASE}/services/quick-service-support` },
+        { '@type': 'Service', name: 'Security Camera Service Plans', url: `${BASE}/services/quick-service-plan` },
       ],
     },
   ],
@@ -85,7 +85,7 @@ const serviceSections = [
       'Night vision & IR setup',
       'Motion detection zone setup',
       'Cloud & local (NVR/DVR) storage config',
-      'Remote viewing app setup',
+      'Mobile viewing app setup',
       'Multi-camera system planning',
     ],
     cta: 'Book Camera Install',
@@ -123,7 +123,7 @@ const serviceSections = [
       'Extender & mesh network setup',
       'Port forwarding & router config',
       'Camera bandwidth optimization',
-      'Remote access (DDNS) setup',
+      'Anywhere access (DDNS) setup',
       'Static IP configuration',
       'App training & walkthrough',
       'All users & permissions setup',
@@ -132,18 +132,18 @@ const serviceSections = [
     color: 'from-[#7c3aed] to-[#0066cc]',
   },
   {
-    id: 'support',
+    id: 'assistance',
     icon: Headphones,
     badge: '7 Days Available',
     title: 'Quick Service & Ongoing Help',
-    subtitle: 'Fast remote and on-site service for your system',
-    desc: 'Technology can be unpredictable. Our specialists are available 7 days a week to diagnose and fix issues with your security system — whether it\'s a camera going offline, app connectivity issues, firmware problems, or a complete system reset. We keep you protected.',
+    subtitle: 'Fast guided and on-site service for your system',
+    desc: 'Technology can be unpredictable. Our specialists are available 7 days a week to diagnose and resolve issues with your security system — whether it\'s a camera going offline, app connectivity issues, firmware problems, or a complete system reset. We keep you protected.',
     features: [
       'Unlimited phone service',
-      'Remote diagnostics',
+      'Guided diagnostics',
       'Firmware update assistance',
       'Camera offline resolution',
-      'App login & sync fixes',
+      'App login & sync resolvees',
       'On-site visits (Annual plan)',
       'System health monitoring',
       'Priority emergency response',
@@ -177,11 +177,11 @@ export default function ServicesPage() {
             From a single camera installation to a full smart home security ecosystem — our certified technicians handle every aspect of your setup.
           </p>
           <a
-            href="tel:+18448100173"
+            href="tel:+18449667866"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
           >
             <Phone size={18} />
-            ☎ Call for Free Estimate — +1 (844) 810-0173
+            ☎ Call for Free Estimate — +1 (844) 966-7866
           </a>
         </div>
       </section>
@@ -215,7 +215,7 @@ export default function ServicesPage() {
                     {svc.cta} <ArrowRight size={16} />
                   </Link>
                   <a
-                    href="tel:+18448100173"
+                    href="tel:+18449667866"
                     className="inline-flex items-center gap-2 border border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a] hover:border-[#0066cc] font-semibold px-6 py-3 rounded-xl transition-all"
                   >
                     <Phone size={15} />
@@ -228,7 +228,7 @@ export default function ServicesPage() {
                   {svc.id === 'camera' && <SecurityCameraIllustration />}
                   {svc.id === 'doorbell' && <DoorbellIllustration />}
                   {svc.id === 'setup' && <NetworkIllustration />}
-                  {svc.id === 'support' && <QuickServiceIllustration />}
+                  {svc.id === 'assistance' && <QuickServiceIllustration />}
                   <div className={`absolute inset-0 bg-gradient-to-br ${svc.color} opacity-5 pointer-events-none`} />
                 </div>
               </div>
@@ -264,8 +264,8 @@ export default function ServicesPage() {
           <h2 className="text-2xl font-black text-[#1a1a1a] font-serif mb-4">Ready to Get Started?</h2>
           <p className="text-[#4a4a4a] mb-7">Call us now for a free consultation or book online in minutes.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+18448100173" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
-              <Phone size={18} /> +1 (844) 810-0173
+            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
+              <Phone size={18} /> +1 (844) 966-7866
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all">
               Book Online

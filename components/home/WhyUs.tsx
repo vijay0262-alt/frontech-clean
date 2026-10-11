@@ -14,7 +14,7 @@ const reasons = [
   {
     icon: HeadphonesIcon,
     title: 'Quick Service',
-    desc: 'Our dedicated service team is available 7 days a week via phone and remote sessions to resolve any issues quickly.',
+    desc: 'Our dedicated service team is available 7 days a week via phone and guided sessions to resolve any issues quickly.',
   },
   {
     icon: MapPin,

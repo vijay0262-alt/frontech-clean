@@ -13,15 +13,15 @@ export default function CtaSection() {
           Secure Your Home with Expert Installation
         </h2>
         <p className="text-[#4a4a4a] text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          Don't leave your home unprotected. Our certified technicians are ready to install, configure, and support your smart security system today.
+          Don't leave your home unprotected. Our certified technicians are ready to install, configure, and service your smart security system today.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
-            href="tel:+18448100173"
+            href="tel:+18449667866"
             className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold text-lg px-8 py-4 rounded-xl hover:shadow-2xl hover:shadow-[#0066cc]/40 transition-all hover:-translate-y-1 pulse-phone"
           >
             <Phone size={22} />
-            ☎ Call +1 (844) 810-0173
+            ☎ Call +1 (844) 966-7866
           </a>
           <Link
             href="/book"

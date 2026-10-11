@@ -5,7 +5,7 @@ const trusts = [
   { icon: Clock, label: 'Same-Day Available' },
   { icon: Wrench, label: 'Certified Technicians' },
   { icon: ThumbsUp, label: '10,000+ Installs' },
-  { icon: Phone, label: '24/7 Phone Support' },
+  { icon: Phone, label: '24/7 Phone Assistance' },
   { icon: Award, label: 'Satisfaction Guarantee' },
 ]
 

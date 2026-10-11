@@ -36,16 +36,16 @@ export default function PolicyLayout({ title, subtitle, lastUpdated, children }:
             <p className="text-[#4a4a4a] text-sm mb-4">Questions about this policy? Contact us directly.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:+18448100173"
+                href="tel:+18449667866"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-6 py-3 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all"
               >
-                <Phone size={15} /> +1 (844) 810-0173
+                <Phone size={15} /> +1 (844) 966-7866
               </a>
               <a
-                href="mailto:support@frontechsecurity.com"
+                href="mailto:info@frontechsecurity.com"
                 className="inline-flex items-center justify-center gap-2 border border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a] hover:border-[#0066cc] font-semibold px-6 py-3 rounded-xl transition-all"
               >
-                support@frontechsecurity.com
+                info@frontechsecurity.com
               </a>
             </div>
           </div>

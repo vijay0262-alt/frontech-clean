@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Montserrat } from 'next/font/google'
+import { Inter, Roboto_Condensed } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/Navbar'
@@ -13,12 +13,12 @@ const inter = Inter({
   display: 'swap',
   preload: true,
 })
-const montserrat = Montserrat({
+const robotoCondensed = Roboto_Condensed({
   subsets: ['latin'],
-  variable: '--font-heading',
+  variable: '--font-serif',
   display: 'swap',
   preload: true,
-  weight: ['700', '800', '900'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
 })
 
 const BASE_URL = 'https://frontechsecurity.com'
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     template: '%s | FrontechSecurity',
   },
   description:
-    'FrontechSecurity — certified security camera and smart doorbell installation, setup & support across USA & Canada. Same-day service from $49.99. Call +1 (844) 810-0173 now.',
+    'FrontechSecurity — certified security camera and smart doorbell installation, setup & service across USA & Canada. Same-day service from $49.99. Call +1 (844) 966-7866 now.',
   keywords: [
     'security camera installation',
     'security camera installation near me',
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Security Camera & Smart Doorbell Installation | FrontechSecurity',
     description:
-      'Certified technicians install security cameras and smart doorbells across USA & Canada. Same-day service from $49.99. Call +1 (844) 810-0173.',
+      'Certified technicians install security cameras and smart doorbells across USA & Canada. Same-day service from $49.99. Call +1 (844) 966-7866.',
     url: BASE_URL,
     siteName: 'FrontechSecurity',
     locale: 'en_US',
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Security Camera & Doorbell Installation | FrontechSecurity',
     description:
-      'Certified installation of security cameras and smart doorbells. USA & Canada. From $49.99. Call +1 (844) 810-0173.',
+      'Certified installation of security cameras and smart doorbells. USA & Canada. From $49.99. Call +1 (844) 966-7866.',
     creator: '@frontechsecurity',
     site: '@frontechsecurity',
     images: [`${BASE_URL}/og-image.png`],
@@ -133,8 +133,8 @@ const jsonLd = {
       name: 'FrontechSecurity',
       legalName: 'FrontechSecurity',
       url: BASE_URL,
-      telephone: '+18448100173',
-      email: 'support@frontechsecurity.com',
+      telephone: '+18449667866',
+      email: 'info@frontechsecurity.com',
       slogan: 'Expert Security Camera & Doorbell Installation — USA & Canada',
       address: {
         '@type': 'PostalAddress',
@@ -150,7 +150,7 @@ const jsonLd = {
         longitude: -117.5931,
       },
       description:
-        'FrontechSecurity provides professional security camera installation, smart doorbell installation, Wi-Fi network setup, and ongoing tech support for homes and businesses across the USA and Canada. Certified technicians, same-day service, all major brands.',
+        'FrontechSecurity provides professional security camera installation, smart doorbell installation, Wi-Fi network setup, and ongoing expert service for homes and businesses across the USA and Canada. Certified technicians, same-day service, all major brands.',
       priceRange: '$$',
       currenciesAccepted: 'USD, CAD',
       paymentAccepted: 'Cash, Credit Card, Debit Card, Digital Payment',
@@ -167,7 +167,7 @@ const jsonLd = {
         'Security Camera Installation',
         'Smart Doorbell Installation',
         'Wi-Fi & Network Setup',
-        'Tech Support & Service Plans',
+        'Service & Care Plans',
       ],
       knowsAbout: [
         'Ring Security Cameras',
@@ -190,7 +190,7 @@ const jsonLd = {
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Security Camera Installation', url: `${BASE_URL}/services/security-camera-installation` }, price: '49.99', priceCurrency: 'USD' },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Smart Doorbell Installation', url: `${BASE_URL}/services/doorbell-installation` }, price: '49.99', priceCurrency: 'USD' },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Wi-Fi & Network Setup', url: `${BASE_URL}/services/wifi-network-setup` } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Security Camera Support Plans', url: `${BASE_URL}/services/quick-service-support` }, price: '9.99', priceCurrency: 'USD' },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Security Camera Service Plans', url: `${BASE_URL}/services/quick-service-plan` }, price: '9.99', priceCurrency: 'USD' },
         ],
       },
       aggregateRating: {
@@ -202,7 +202,7 @@ const jsonLd = {
       },
       review: [
         { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5' }, author: { '@type': 'Person', name: 'Michael R.' }, reviewBody: 'Technician arrived on time, installed 4 cameras, and set up the app on all our phones. Professional and fast.' },
-        { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5' }, author: { '@type': 'Person', name: 'Sarah T.' }, reviewBody: 'Ring doorbell installed perfectly. They even fixed my weak Wi-Fi signal so it stays connected. Highly recommend.' },
+        { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5' }, author: { '@type': 'Person', name: 'Sarah T.' }, reviewBody: 'Ring doorbell installed perfectly. They even resolved my weak Wi-Fi signal so it stays connected. Highly recommend.' },
       ],
       sameAs: [
         'https://www.facebook.com/frontechsecurity',
@@ -235,17 +235,17 @@ const jsonLd = {
       '@type': 'Service',
       '@id': `${BASE_URL}/services/wifi-network-setup#service`,
       name: 'Wi-Fi & Network Setup',
-      description: 'Router configuration, mesh network setup, Wi-Fi extender installation, and remote access for smart home devices.',
+      description: 'Router configuration, mesh network setup, Wi-Fi extender installation, and anywhere access for smart home devices.',
       url: `${BASE_URL}/services/wifi-network-setup`,
       provider: { '@id': `${BASE_URL}/#business` },
       areaServed: [{ '@type': 'Country', name: 'United States' }, { '@type': 'Country', name: 'Canada' }],
     },
     {
       '@type': 'Service',
-      '@id': `${BASE_URL}/services/quick-service-support#service`,
-      name: 'Quick Service & Support',
-      description: 'Ongoing monthly phone and remote technical support for smart home security systems.',
-      url: `${BASE_URL}/services/quick-service-support`,
+      '@id': `${BASE_URL}/services/quick-service-plan#service`,
+      name: 'Quick Service Plan',
+      description: 'Ongoing monthly phone and guided expert service for smart home security systems.',
+      url: `${BASE_URL}/services/quick-service-plan`,
       provider: { '@id': `${BASE_URL}/#business` },
       areaServed: [{ '@type': 'Country', name: 'United States' }, { '@type': 'Country', name: 'Canada' }],
       offers: { '@type': 'Offer', priceCurrency: 'USD', price: '9.99', billingPeriod: 'Month' },
@@ -268,14 +268,14 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${montserrat.variable} font-sans`}>
+    <html lang="en" className={`${inter.variable} ${robotoCondensed.variable} font-sans`}>
       <head>
        <Script
   src="https://www.googletagmanager.com/gtag/js?id=AW-17888951335"
-  strategy="afterInteractive"
+  strategy="beforeInteractive"
 />
 
-<Script id="google-ads" strategy="afterInteractive">
+<Script id="google-ads" strategy="beforeInteractive">
   {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -296,8 +296,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="ICBM" content="34.1064, -117.5931" />
 
         {/* Business & contact signals */}
-        <meta name="contact" content="support@frontechsecurity.com" />
-        <meta name="reply-to" content="support@frontechsecurity.com" />
+        <meta name="contact" content="info@frontechsecurity.com" />
+        <meta name="reply-to" content="info@frontechsecurity.com" />
         <meta name="coverage" content="Worldwide" />
         <meta name="target" content="all" />
         <meta name="HandheldFriendly" content="True" />
