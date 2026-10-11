@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import LandingPageLayout from '@/components/LandingPageLayout'
 import Link from 'next/link'
 import { CheckCircle2, Phone, ArrowRight, Shield, Star, Clock, Zap, Headphones, RefreshCw, MonitorSmartphone, Wrench, ChevronDown } from 'lucide-react'
 
@@ -125,7 +126,7 @@ const issues = [
 ]
 
 const faqs = [
-  { q: 'Can you resolve my camera by phone without a home visit?', a: 'Yes. The vast majority of security camera issues — offline cameras, app sync problems, firmware failures, motion alert misconfiguration — can be resolved by phone over the phone and via guided connection to your system. We only schedule an on-site visit if phone-based resolution is not possible.' },
+  { q: 'Can you resolve my camera by phone without a home visit?', a: 'Yes. The vast majority of security camera issues — offline cameras, app sync problems, firmware failures, motion alert misconfiguration — can be resolved by phone or via guided connection to your system. We only schedule an on-site visit if phone-based resolution is not possible.' },
   { q: 'What brands do you cover for guided service?', a: 'We provide guided assistance for all major security brands including Ring, Google Nest, Arlo, Wyze, Eufy, Reolink, Hikvision, Dahua, Amcrest, Lorex, and more. If you have a less common brand, call us and we will confirm.' },
   { q: 'How quickly will someone respond when I call?', a: 'Average hold time is under 60 seconds. We answer 7 days a week from 7AM to 10PM EST. Annual plan members receive priority queue access and are connected first.' },
   { q: 'Is there a contract for the monthly plan?', a: 'No contracts. The monthly plan is billed month-to-month and can be cancelled at any time with no cancellation fee. The annual plan is billed once per year and provides the lowest per-month cost.' },
@@ -134,7 +135,7 @@ const faqs = [
 
 export default function QuickServiceAssistancePage() {
   return (
-    <>
+    <LandingPageLayout>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
     <div className="bg-white">
       <section className="relative py-10 px-4 overflow-hidden">
@@ -162,13 +163,13 @@ export default function QuickServiceAssistancePage() {
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
             {['7-Day Phone Assistance', 'Guided Diagnostics', 'Under 60 Sec Wait', 'All Major Brands', 'No Contracts', 'On-Site Available'].map((b) => (
-              <span key={b} className="flex items-center gap-1.5 text-xs text-[#f0f4ff] bg-white/5 border border-white/10 rounded-full px-3 py-1">
+              <span key={b} className="flex items-center gap-1.5 text-xs text-[#1a1a1a] bg-[#22c55e]/60 border border-[#22c55e] rounded-full px-3 py-1">
                 <CheckCircle2 size={11} className="text-[#22c55e] shrink-0" />{b}
               </span>
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18449667866" className="lg:hidden inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[#0052a3] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#22c55e]/30 transition-shadow pulse-phone">
+            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[#0052a3] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#22c55e]/30 transition-shadow pulse-phone">
               <Phone size={18} /> Call +1 (844) 966-7866 — Under 60 Sec
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-colors">
@@ -194,7 +195,7 @@ export default function QuickServiceAssistancePage() {
       </div>
 
       {/* Issues we resolve */}
-      <section className="py-20 px-4 bg-\[#f5f5f5\]">
+      <section className="py-20 px-4 bg-[#f5f5f5]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">What We Resolve</span>
@@ -248,7 +249,7 @@ export default function QuickServiceAssistancePage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-\[#f5f5f5\]">
+      <section className="py-20 px-4 bg-[#f5f5f5]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">FAQ</span>
@@ -286,7 +287,31 @@ export default function QuickServiceAssistancePage() {
           </div>
         </div>
       </section>
+
+      {/* Clear Disclaimers Section */}
+      <section className="py-12 px-4 bg-white border-t border-[#e5e7eb]">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-white border border-[#e5e7eb] rounded-xl p-6">
+            <h3 className="text-[#1a1a1a] font-bold mb-4 text-center">Third-Party Service Disclosure</h3>
+            <div className="space-y-3 text-sm text-[#4a4a4a] leading-relaxed">
+              <p>
+                <strong className="text-[#1a1a1a]">Independent Service Provider:</strong> FrontechSecurity is a third-party, independent service provider. We are NOT affiliated with, authorized by, endorsed by, or sponsored by Ring LLC, Google Nest, Arlo Technologies, Amazon Blink, Wyze, Eufy, Reolink, Hikvision, Dahua, Amcrest, Lorex, or any other device manufacturer or brand mentioned on this website.
+              </p>
+              <p>
+                <strong className="text-[#1a1a1a]">Brand Names & Trademarks:</strong> All product names, brand names, trademarks, and registered trademarks mentioned are the property of their respective owners. We use these names solely for descriptive and compatibility purposes to help customers understand which devices and brands we can service.
+              </p>
+              <p>
+                <strong className="text-[#1a1a1a]">Service Scope:</strong> Our service plans provide guided assistance, diagnostics, and configuration help for customer-owned security cameras and smart doorbells. Hardware/devices are not included unless explicitly stated. Customers must own or purchase their own equipment.
+              </p>
+              <p>
+                <strong className="text-[#1a1a1a]">Pricing:</strong> Service plan pricing is shown on this page and billed as described. No payment is collected online. On-site visits are included only where explicitly stated in the selected plan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
-    </>
+    </LandingPageLayout>
   )
 }

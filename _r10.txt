@@ -1,0 +1,6 @@
+﻿1: import type { Metadata } from 'next'
+2: import LandingPageLayout from '@/components/LandingPageLayout'
+3: import { CheckCircle2, Phone, ArrowRight, Shield, Star, Clock, Zap, BellRing, Wifi, Smartphone, Volume2, ChevronDown, Wrench, Aler
+132: <div className="inline-flex items-center gap-2 bg-[#0052a3]/15 border border-[#0052a3]/40 rounded-full px-3 py-1.5 mb-5">
+136: <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1a1a1a] leading-tight mb-5 font-serif text-balance">
+399: {/* Clear Disclaimers Section */}

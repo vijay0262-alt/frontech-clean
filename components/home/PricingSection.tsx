@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Check, Star, Zap, Phone } from 'lucide-react'
+import { Check, Star, Zap } from 'lucide-react'
 
 const plans = [
   {
@@ -132,17 +132,6 @@ export default function PricingSection() {
           ))}
         </div>
 
-        {/* Call CTA */}
-        <div className="mt-12 text-center">
-          <p className="text-[#4a4a4a] mb-3">Need a custom quote for multiple devices or a business property?</p>
-          <a
-            href="tel:+18449667866"
-            className="inline-flex items-center gap-2 text-[#0066cc] font-bold hover:text-[#0052a3] transition-colors text-lg"
-          >
-            <Phone size={18} />
-            Call +1 (844) 966-7866 for a Free Quote
-          </a>
-        </div>
       </div>
     </section>
   )

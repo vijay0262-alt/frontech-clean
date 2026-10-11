@@ -4,6 +4,7 @@ import PolicyLayout, { PolicySection, PolicyList } from '@/components/PolicyLayo
 export const metadata: Metadata = {
   title: 'Terms of Service | FrontechSecurity',
   description: 'Terms and conditions governing the use of FrontechSecurity services.',
+  alternates: { canonical: 'https://frontechsecurity.com/terms-of-service' },
 }
 
 export default function TermsOfServicePage() {

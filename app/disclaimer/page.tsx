@@ -4,6 +4,7 @@ import PolicyLayout, { PolicySection, PolicyList } from '@/components/PolicyLayo
 export const metadata: Metadata = {
   title: 'Disclaimer | FrontechSecurity',
   description: 'Important disclaimers regarding FrontechSecurity services, website content, and liability.',
+  alternates: { canonical: 'https://frontechsecurity.com/disclaimer' },
 }
 
 export default function DisclaimerPage() {

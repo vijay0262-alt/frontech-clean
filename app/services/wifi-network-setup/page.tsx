@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import LandingPageLayout from '@/components/LandingPageLayout'
 import Link from 'next/link'
 import { CheckCircle2, Phone, ArrowRight, Shield, Star, Clock, Zap, Wifi, Router, Globe, Lock, ChevronDown } from 'lucide-react'
 
@@ -70,7 +71,7 @@ const pageSchema = {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'Why does my security camera keep going offline?', acceptedAnswer: { '@type': 'Answer', text: 'The most common causes are weak Wi-Fi signal at the camera location, router firmware issues, IP address conflicts, or a router that drops idle connections. Our technicians diagnose the exact cause and resolve it during a single visit.' } },
-        { '@type': 'Question', name: 'Do I need a separate network for my security cameras?', acceptedAnswer: { '@type': 'Answer', text: 'It is best practice to put security cameras on a dedicated network or VLAN for security and performance. We can set this up if your router assistances it.' } },
+        { '@type': 'Question', name: 'Do I need a separate network for my security cameras?', acceptedAnswer: { '@type': 'Answer', text: 'It is best practice to put security cameras on a dedicated network or VLAN for security and performance. We can set this up if your router allows it.' } },
         { '@type': 'Question', name: 'What is port forwarding and do I need it?', acceptedAnswer: { '@type': 'Answer', text: 'Port forwarding allows you to access your NVR or camera system by phone over the internet without a cloud subscription. We set it up on your router so you can view cameras from any network worldwide.' } },
         { '@type': 'Question', name: 'Will setting up an extender slow down my internet?', acceptedAnswer: { '@type': 'Answer', text: 'A correctly placed and configured Wi-Fi extender will not noticeably slow your main network. We place extenders in optimal locations.' } },
         { '@type': 'Question', name: 'Can you configure my router if I have a complex setup?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We work with all router brands and ISP-provided gateways including Xfinity, AT&T, Spectrum, Fios, and more.' } },
@@ -90,7 +91,7 @@ const features = [
 
 const faqs = [
   { q: 'Why does my security camera keep going offline?', a: 'The most common causes are weak Wi-Fi signal at the camera location, router firmware that needs updating, IP address conflicts, or a router that drops connections after idle periods. Our technicians diagnose the exact cause and resolve it during a single visit.' },
-  { q: 'Do I need a separate network for my security cameras?', a: 'It is best practice to put security cameras on a dedicated network or VLAN for security and performance reasons. We can set this up during our visit if your router assistances it, or recommend an upgrade if needed.' },
+  { q: 'Do I need a separate network for my security cameras?', a: 'It is best practice to put security cameras on a dedicated network or VLAN for security and performance reasons. We can set this up during our visit if your router allows it, or recommend an upgrade if needed.' },
   { q: 'What is port forwarding and do I need it?', a: 'Port forwarding allows you to access your NVR or camera system by phone over the internet without a cloud subscription. We set it up on your router so you can view your cameras from any network worldwide. Not all systems require it — we advise based on your specific setup.' },
   { q: 'Will setting up an extender slow down my internet?', a: 'A correctly placed and configured Wi-Fi extender will not noticeably slow your main network. We place extenders in optimal locations and configure them as backhaul nodes where possible to minimize latency.' },
   { q: 'Can you configure my router if I have a complex setup?', a: 'Yes. We work with all router brands and ISP-provided gateway devices including Xfinity, AT&T, Spectrum, Fios, and more. We handle complex setups including double NAT situations, business routers, and managed switches.' },
@@ -98,7 +99,7 @@ const faqs = [
 
 export default function WifiNetworkSetupPage() {
   return (
-    <>
+    <LandingPageLayout>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
     <div className="bg-white">
       <section className="relative py-10 px-4 overflow-hidden">
@@ -115,8 +116,8 @@ export default function WifiNetworkSetupPage() {
             <span className="text-[#4a4a4a]">Wi-Fi & Network Setup</span>
           </nav>
           <div className="inline-flex items-center gap-2 bg-[#7c3aed]/15 border border-[#7c3aed]/40 rounded-full px-3 py-1.5 mb-5">
-            <Wifi size={13} className="text-[#a78bfa]" />
-            <span className="text-[#a78bfa] text-xs font-bold tracking-wider uppercase">Critical for Camera Performance</span>
+            <Wifi size={13} className="text-[#7c3aed]" />
+            <span className="text-[#7c3aed] text-xs font-bold tracking-wider uppercase">Critical for Camera Performance</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1a1a1a] leading-tight mb-5 font-serif text-balance">
             Wi-Fi & Network Setup <span className="gradient-text">for Security Cameras</span>
@@ -126,13 +127,13 @@ export default function WifiNetworkSetupPage() {
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
             {['Wi-Fi Signal Assessment', 'Extender & Mesh Setup', 'Port Forwarding Config', 'Anywhere Access Setup', 'Router Security Settings', 'All Devices Reconnected'].map((b) => (
-              <span key={b} className="flex items-center gap-1.5 text-xs text-[#f0f4ff] bg-white/5 border border-white/10 rounded-full px-3 py-1">
+              <span key={b} className="flex items-center gap-1.5 text-xs text-[#1a1a1a] bg-[#22c55e]/60 border border-[#22c55e] rounded-full px-3 py-1">
                 <CheckCircle2 size={11} className="text-[#22c55e] shrink-0" />{b}
               </span>
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+18449667866" className="lg:hidden inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#7c3aed]/30 transition-shadow pulse-phone">
+            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#7c3aed]/30 transition-shadow pulse-phone">
               <Phone size={18} /> Call +1 (844) 966-7866 — Free Consult
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-colors">
@@ -157,7 +158,7 @@ export default function WifiNetworkSetupPage() {
         </div>
       </div>
 
-      <section className="py-20 px-4 bg-\[#f5f5f5\]">
+      <section className="py-20 px-4 bg-[#f5f5f5]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#7c3aed] text-xs font-bold uppercase tracking-widest">What Is Included</span>
@@ -186,9 +187,6 @@ export default function WifiNetworkSetupPage() {
             <p className="text-[#4a4a4a] leading-relaxed mb-5">Most security camera issues — cameras going offline, delayed motion alerts, poor video quality, failed recordings — are not hardware problems. They are network problems. A camera that drops its Wi-Fi connection during a break-in is worse than having no camera at all because it creates a false sense of security.</p>
             <p className="text-[#4a4a4a] leading-relaxed mb-5">Our network specialists have configured hundreds of home and small business networks specifically for security device performance. We understand the bandwidth requirements of HD and 4K cameras, the latency requirements for real-time alerts, and the port forwarding rules needed for NVR anywhere access on every major router brand.</p>
             <p className="text-[#4a4a4a] leading-relaxed mb-6">Whether you just installed new cameras or you have an existing system that keeps going offline, our network service delivers a stable foundation for your entire security ecosystem.</p>
-            <a href="tel:+18449667866" className="lg:hidden inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold px-6 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
-              <Phone size={16} /> Restore My Camera Network
-            </a>
           </div>
           <div className="glow-card bg-white rounded-2xl p-7">
             <h3 className="text-[#1a1a1a] font-bold font-serif mb-5">Full Network Setup Checklist</h3>
@@ -218,7 +216,7 @@ export default function WifiNetworkSetupPage() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-\[#f5f5f5\]">
+      <section className="py-16 px-4 bg-[#f5f5f5]">
         <div className="max-w-4xl mx-auto text-center glow-card bg-white rounded-2xl p-10">
           <span className="text-[#22c55e] text-xs font-bold uppercase tracking-widest">Add-On Service</span>
           <h2 className="text-3xl font-black text-[#1a1a1a] mt-2 mb-3 font-serif">Network Setup — Add-On Pricing</h2>
@@ -228,9 +226,6 @@ export default function WifiNetworkSetupPage() {
             <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow pulse-phone">
               <Phone size={18} /> Call +1 (844) 966-7866
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-colors">
-              Book Online
-            </Link>
           </div>
         </div>
       </section>
@@ -255,7 +250,7 @@ export default function WifiNetworkSetupPage() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-\[#f5f5f5\]">
+      <section className="py-16 px-4 bg-[#f5f5f5]">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-xl font-black text-[#1a1a1a] font-serif mb-6 text-center">Explore Related Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -265,7 +260,7 @@ export default function WifiNetworkSetupPage() {
               { href: '/services/quick-service-plan', title: 'Ongoing Service & Care', desc: '7-day phone and guided assistance for your system.' },
             ].map(({ href, title, desc }) => (
               <Link key={href} href={href} className="glow-card bg-white rounded-xl p-5 hover:border-[#7c3aed] border border-[#e5e7eb] transition-colors group">
-                <h3 className="text-[#1a1a1a] font-bold text-sm mb-1 group-hover:text-[#a78bfa] transition-colors">{title}</h3>
+                <h3 className="text-[#1a1a1a] font-bold text-sm mb-1 group-hover:text-[#7c3aed] transition-colors">{title}</h3>
                 <p className="text-[#4a4a4a] text-xs leading-relaxed">{desc}</p>
                 <span className="inline-flex items-center gap-1 text-[#7c3aed] text-xs font-semibold mt-3">Learn More <ArrowRight size={12} /></span>
               </Link>
@@ -273,7 +268,31 @@ export default function WifiNetworkSetupPage() {
           </div>
         </div>
       </section>
+
+      {/* Clear Disclaimers Section */}
+      <section className="py-12 px-4 bg-white border-t border-[#e5e7eb]">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-white border border-[#e5e7eb] rounded-xl p-6">
+            <h3 className="text-[#1a1a1a] font-bold mb-4 text-center">Third-Party Service Disclosure</h3>
+            <div className="space-y-3 text-sm text-[#4a4a4a] leading-relaxed">
+              <p>
+                <strong className="text-[#1a1a1a]">Independent Service Provider:</strong> FrontechSecurity is a third-party, independent network configuration and service provider. We are NOT affiliated with, authorized by, endorsed by, or sponsored by Xfinity, AT&T, Spectrum, Fios, any internet service provider, or any router or device manufacturer mentioned on this website.
+              </p>
+              <p>
+                <strong className="text-[#1a1a1a]">Brand Names & Trademarks:</strong> All product names, brand names, trademarks, and registered trademarks mentioned are the property of their respective owners. We use these names solely for descriptive and compatibility purposes to help customers understand which devices, routers, and services we can configure.
+              </p>
+              <p>
+                <strong className="text-[#1a1a1a]">Service Scope:</strong> Our services include Wi-Fi assessment, extender and mesh installation, router configuration, port forwarding, DDNS setup, and anywhere access configuration for customer-owned equipment. Hardware is not included unless explicitly stated. Customers must own or purchase their own equipment.
+              </p>
+              <p>
+                <strong className="text-[#1a1a1a]">Pricing:</strong> Network setup is quoted at a flat rate before work begins. Hardware (extenders, managed switches, mesh nodes) is not included in the service price and is quoted separately. No payment is collected until service completion and customer satisfaction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
-    </>
+    </LandingPageLayout>
   )
 }

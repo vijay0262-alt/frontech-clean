@@ -4,6 +4,7 @@ import PolicyLayout, { PolicySection, PolicyList } from '@/components/PolicyLayo
 export const metadata: Metadata = {
   title: 'Privacy Policy | FrontechSecurity',
   description: 'How FrontechSecurity collects, uses, and protects your personal information.',
+  alternates: { canonical: 'https://frontechsecurity.com/privacy-policy' },
 }
 
 export default function PrivacyPolicyPage() {

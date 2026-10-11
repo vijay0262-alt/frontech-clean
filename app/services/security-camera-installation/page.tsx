@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import LandingPageLayout from '@/components/LandingPageLayout'
 import { CheckCircle2, Phone, ArrowRight, Shield, Star, Clock, Zap, Camera, Eye, Wifi, HardDrive, ChevronDown, Wrench, AlertCircle } from 'lucide-react'
 
@@ -136,12 +137,18 @@ export default function SecurityCameraInstallationPage() {
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#0066cc]/8 to-transparent" />
         </div>
         <div className="max-w-7xl mx-auto relative">
-
+          <nav className="flex items-center gap-2 text-xs text-[#64748b] mb-6" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-[#4a4a4a] transition-colors">Home</Link>
+            <span>/</span>
+            <Link href="/services" className="hover:text-[#4a4a4a] transition-colors">Services</Link>
+            <span>/</span>
+            <span className="text-[#4a4a4a]">Security Camera Installation</span>
+          </nav>
           <div className="inline-flex items-center gap-2 bg-[#0066cc]/15 border border-[#0066cc]/40 rounded-full px-3 py-1.5 mb-5">
             <Camera size={13} className="text-[#0066cc]" />
             <span className="text-[#0066cc] text-xs font-bold tracking-wider uppercase">Most Requested Service</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1a1a1a] leading-tight mb-5 font-serif text-balance">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1a1a1a] leading-tight mb-5 font-serif text-balance">
             Security Camera Installation & Service <span className="gradient-text">Near You</span>
           </h1>
           <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8 max-w-4xl">
@@ -154,12 +161,12 @@ export default function SecurityCameraInstallationPage() {
               </span>
             ))}
           </div>
-          <div className="mt-8">
-            <a href="tel:+18449667866" className="lg:hidden inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0066cc]/40 transition-all">
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0066cc]/40 transition-all">
               <Phone size={22} /> Call Now (844) 966-7866
             </a>
-            <a href="/book" className="hidden lg:inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0066cc]/40 transition-all">
-              Book Free Installation
+            <a href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-lg px-10 py-5 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all">
+              Book Free Consultation
             </a>
           </div>
           <p className="text-sm text-[#4a4a4a] mt-4">✓ Available 7 Days a Week  •  ✓ Same-Day Appointments  •  ✓ Free Phone Consultation</p>
@@ -216,7 +223,7 @@ export default function SecurityCameraInstallationPage() {
       </div>
 
       {/* What's included */}
-      <section className="py-20 px-4 bg-\[#f5f5f5\]">
+      <section className="py-20 px-4 bg-[#f5f5f5]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">What Is Included</span>
@@ -286,7 +293,7 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* How it works */}
-      <section className="py-20 px-4 bg-\[#f5f5f5\]">
+      <section className="py-20 px-4 bg-[#f5f5f5]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">Our Process</span>
@@ -335,7 +342,7 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-20 px-4 bg-\[#f5f5f5\]">
+      <section className="py-20 px-4 bg-[#f5f5f5]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[#0066cc] text-xs font-bold uppercase tracking-widest">FAQ</span>
@@ -388,7 +395,7 @@ export default function SecurityCameraInstallationPage() {
       </section>
 
       {/* Common Issues We Resolve */}
-      <section className="py-16 px-4 bg-\[#f5f5f5\]">
+      <section className="py-16 px-4 bg-[#f5f5f5]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-black text-[#1a1a1a] font-serif mb-3">Common Camera Issues We Resolve</h2>
@@ -413,6 +420,26 @@ export default function SecurityCameraInstallationPage() {
             ))}
           </div>
 
+        </div>
+      </section>
+
+      {/* Explore other services */}
+      <section className="py-16 px-4 bg-[#f5f5f5]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-xl font-black text-[#1a1a1a] font-serif mb-6 text-center">Explore Our Other Services</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              { href: '/services/doorbell-installation', title: 'Smart Doorbell Installation', desc: 'Professional doorbell setup with Wi-Fi pairing included.' },
+              { href: '/services/wifi-network-setup', title: 'Wi-Fi & Network Setup', desc: 'Ensure cameras stay online with optimized network settings.' },
+              { href: '/services/quick-service-plan', title: 'Ongoing Service & Care', desc: '7-day phone and guided assistance for your system.' },
+            ].map(({ href, title, desc }) => (
+              <Link key={href} href={href} className="glow-card bg-white rounded-xl p-5 hover:border-[#0066cc] border border-[#e5e7eb] transition-colors group">
+                <h3 className="text-[#1a1a1a] font-bold text-sm mb-1 group-hover:text-[#0066cc] transition-colors">{title}</h3>
+                <p className="text-[#4a4a4a] text-xs leading-relaxed">{desc}</p>
+                <span className="inline-flex items-center gap-1 text-[#0066cc] text-xs font-semibold mt-3">Learn More <ArrowRight size={12} /></span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

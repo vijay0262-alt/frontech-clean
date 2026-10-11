@@ -4,6 +4,7 @@ import PolicyLayout, { PolicySection, PolicyList } from '@/components/PolicyLayo
 export const metadata: Metadata = {
   title: 'Cookie Policy | FrontechSecurity',
   description: 'How FrontechSecurity uses cookies and tracking technologies on its website.',
+  alternates: { canonical: 'https://frontechsecurity.com/cookie-policy' },
 }
 
 export default function CookiePolicyPage() {

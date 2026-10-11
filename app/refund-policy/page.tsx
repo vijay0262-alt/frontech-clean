@@ -4,6 +4,7 @@ import PolicyLayout, { PolicySection, PolicyList } from '@/components/PolicyLayo
 export const metadata: Metadata = {
   title: 'Refund Policy | FrontechSecurity',
   description: 'FrontechSecurity refund and satisfaction guarantee policy for installation and services.',
+  alternates: { canonical: 'https://frontechsecurity.com/refund-policy' },
 }
 
 export default function RefundPolicyPage() {

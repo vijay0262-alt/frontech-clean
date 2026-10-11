@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { ChevronDown, Phone } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
@@ -76,16 +76,6 @@ export default function FaqSection() {
           ))}
         </div>
 
-        <div className="mt-10 text-center p-6 bg-[#f5f5f5] rounded-2xl border border-[#e5e7eb]">
-          <p className="text-[#4a4a4a] mb-3">Still have questions? Our team is standing by.</p>
-          <a
-            href="tel:+18449667866"
-            className="inline-flex items-center gap-2 text-[#0066cc] font-bold hover:text-[#0052a3] transition-colors"
-          >
-            <Phone size={16} />
-            Call +1 (844) 966-7866 — Free Consultation
-          </a>
-        </div>
       </div>
     </section>
   )

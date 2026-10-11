@@ -1,0 +1,20 @@
+﻿page.tsx:140: <section className="relative py-10 px-4 overflow-hidden">
+page.tsx:165: <span key={b} className="flex items-center gap-1.5 text-xs text-[#f0f4ff] bg-white/5 border border-white/10 rounded-full
+page.tsx:171: <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#22c55e] to-[
+page.tsx:174: <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] fon
+page.tsx:197: <section className="py-20 px-4 bg-\[#f5f5f5\]">
+page.tsx:219: <section className="py-20 px-4 bg-white">
+page.tsx:242: <Link href="/book" className="inline-flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-[#22c55e] 
+page.tsx:251: <section className="py-20 px-4 bg-\[#f5f5f5\]">
+page.tsx:271: <section className="py-16 px-4 bg-white">
+page.tsx:104: <section className="relative py-10 px-4 overflow-hidden">
+page.tsx:129: <span key={b} className="flex items-center gap-1.5 text-xs text-[#f0f4ff] bg-white/5 border border-white/10 rounded-full
+page.tsx:135: <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[
+page.tsx:138: <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] fon
+page.tsx:160: <section className="py-20 px-4 bg-\[#f5f5f5\]">
+page.tsx:181: <section className="py-20 px-4 bg-white">
+page.tsx:218: <section className="py-16 px-4 bg-\[#f5f5f5\]">
+page.tsx:225: <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[
+page.tsx:228: <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] fon
+page.tsx:235: <section className="py-20 px-4 bg-white">
+page.tsx:255: <section className="py-16 px-4 bg-\[#f5f5f5\]">

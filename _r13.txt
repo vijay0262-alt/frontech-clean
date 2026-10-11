@@ -1,0 +1,25 @@
+﻿import type { MetadataRoute } from 'next'
+import { blogPosts } from '@/lib/blog-data'
+const BASE_URL = 'https://frontechsecurity.com'
+core:    new Date('2026-03-03'),
+service: new Date('2026-03-03'),
+legal:   new Date('2025-12-01'),
+{ url: `${BASE_URL}/`,       lastModified: DATES.core,    changeFrequency: 'weekly',  prio
+{ url: `${BASE_URL}/book`,   lastModified: DATES.core,    changeFrequency: 'weekly',  prio
+{ url: `${BASE_URL}/pricing`,lastModified: DATES.core,    changeFrequency: 'monthly', prio
+{ url: `${BASE_URL}/contact`,lastModified: DATES.core,    changeFrequency: 'monthly', prio
+{ url: `${BASE_URL}/services`,                                          lastModified: DATE
+{ url: `${BASE_URL}/services/security-camera-installation`,             lastModified: DATE
+{ url: `${BASE_URL}/services/doorbell-installation`,                    lastModified: DATE
+{ url: `${BASE_URL}/services/wifi-network-setup`,                       lastModified: DATE
+{ url: `${BASE_URL}/services/quick-service-plan`,                    lastModified: DATES.s
+{ url: `${BASE_URL}/about`,  lastModified: DATES.service, changeFrequency: 'monthly', prio
+{ url: `${BASE_URL}/faq`,    lastModified: DATES.service, changeFrequency: 'monthly', prio
+{ url: `${BASE_URL}/blog`,   lastModified: DATES.core,    changeFrequency: 'weekly',  prio
+url: `${BASE_URL}/blog/${post.slug}`,
+changeFrequency: 'monthly' as const,
+{ url: `${BASE_URL}/privacy-policy`,  lastModified: DATES.legal, changeFrequency: 'yearly'
+{ url: `${BASE_URL}/terms-of-service`,lastModified: DATES.legal, changeFrequency: 'yearly'
+{ url: `${BASE_URL}/refund-policy`,   lastModified: DATES.legal, changeFrequency: 'yearly'
+{ url: `${BASE_URL}/disclaimer`,      lastModified: DATES.legal, changeFrequency: 'yearly'
+{ url: `${BASE_URL}/cookie-policy`,   lastModified: DATES.legal, changeFrequency: 'yearly'

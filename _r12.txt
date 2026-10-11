@@ -1,0 +1,7 @@
+﻿page.tsx:79: { '@type': 'Question', name: 'Can you resolve my camera by phone without a home visit?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Th
+page.tsx:129: { q: 'Can you resolve my camera by phone without a home visit?', a: 'Yes. The vast majority of security camera issues — offline cameras, app
+page.tsx:74: { '@type': 'Question', name: 'Do I need a separate network for my security cameras?', acceptedAnswer: { '@type': 'Answer', text: 'It is best
+page.tsx:94: { q: 'Do I need a separate network for my security cameras?', a: 'It is best practice to put security cameras on a dedicated network or VLAN
+ReadingProgress.tsx:19: <div className="fixed top-0 left-0 z-50 h-1 w-full bg-transparent" aria-hidden="true">
+LandingPageLayout.tsx:26: className="fixed top-4 left-4 z-50 flex items-center justify-center w-11 h-11 rounded-full bg-white/95 backdrop-blur border border-[#e5e7eb]
+LandingPageLayout.tsx:35: className="fixed bottom-5 right-5 z-50 lg:hidden flex items-center gap-2 px-5 py-3.5 bg-[#0066cc] hover:bg-[#0052a3] text-white text-sm font

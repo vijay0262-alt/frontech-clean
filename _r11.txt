@@ -1,0 +1,20 @@
+﻿===== CtaSection.tsx
+  4: export default function CtaSection() {
+  16: Don't leave your home unprotected. Our certified technicians are ready to install, configure, and service your
+  20: href="tel:+18449667866"
+===== FaqSection.tsx
+  82: href="tel:+18449667866"
+  86: Call +1 (844) 966-7866 — Free Consultation
+===== HeroSection.tsx
+  43: {/* CTA buttons */}
+  46: href="tel:+18449667866"
+  57: Book Free Consultation
+===== PricingSection.tsx
+  19: cta: 'Get Started',
+  38: cta: 'Start Monthly Plan',
+  58: cta: 'Get Annual Plan',
+  128: {plan.cta}
+  135: {/* Call CTA */}
+  139: href="tel:+18449667866"
+===== ServiceInfo.tsx
+  70: Contact us today for a free consultation and personalized

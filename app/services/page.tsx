@@ -176,13 +176,21 @@ export default function ServicesPage() {
           <p className="text-[#4a4a4a] text-lg max-w-3xl mx-auto mb-8">
             From a single camera installation to a full smart home security ecosystem — our certified technicians handle every aspect of your setup.
           </p>
-          <a
-            href="tel:+18449667866"
-            className="lg:hidden inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
-          >
-            <Phone size={18} />
-            ☎ Call for Free Estimate — +1 (844) 966-7866
-          </a>
+          <div className="flex flex-wrap justify-center gap-3">
+            <a
+              href="tel:+18449667866"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
+            >
+              <Phone size={18} />
+              Call for Free Estimate — +1 (844) 966-7866
+            </a>
+            <Link
+              href="/book"
+              className="inline-flex items-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all"
+            >
+              Book Free Consultation
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -231,7 +239,7 @@ export default function ServicesPage() {
       ))}
 
       {/* Add-ons */}
-      <section className="py-20 px-4 bg-\[#f5f5f5\]">
+      <section className="py-20 px-4 bg-[#f5f5f5]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl font-black text-[#1a1a1a] font-serif">Additional Services & Add-Ons</h2>
@@ -260,9 +268,6 @@ export default function ServicesPage() {
             <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
               <Phone size={18} /> +1 (844) 966-7866
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all">
-              Book Online
-            </Link>
           </div>
         </div>
       </section>
