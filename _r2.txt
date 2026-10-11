@@ -1,0 +1,1 @@
+﻿components\blog\ReadingProgress.tsx:19: <div className="fixed top-0 left-0 z-50 h-1 w-full bg-transparent" aria-hidden="true">

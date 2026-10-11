@@ -1,0 +1,6 @@
+﻿app\faq\page.tsx:73: description: 'Frequently asked questions about security camera installation, smart doorbell setup, pricing plans, and professional
+app\services\quick-service-plan\page.tsx:26: 'smart home expert service service',
+app\services\security-camera-installation\page.tsx:10: description: 'Expert security camera installation & service service. Ring, Arlo, Blink, Reolink, ADT & all brands. Resolve not con
+app\services\security-camera-installation\page.tsx:166: <strong className="text-[#0066cc]">Important Notice:</strong> FrontechSecurity is an independent third-party installation and prof
+app\services\page.tsx:13: title: 'Security Camera Installation, Doorbell Setup & Service Services | FrontechSecurity',
+components\Footer.tsx:151: FrontechSecurity is an independent third-party installation and professional service service. We are not affiliated with, authoriz

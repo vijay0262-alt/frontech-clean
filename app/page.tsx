@@ -9,6 +9,7 @@ import PricingSection from '@/components/home/PricingSection'
 import ReviewsSection from '@/components/home/ReviewsSection'
 import FaqSection from '@/components/home/FaqSection'
 import CtaSection from '@/components/home/CtaSection'
+import Reveal from '@/components/Reveal'
 
 const BASE = 'https://frontechsecurity.com'
 
@@ -216,21 +217,21 @@ export default function HomePage() {
       <HeroSection />
       <TrustBar />
       <div className="section-divider" />
-      <ServicesSection />
+      <Reveal><ServicesSection /></Reveal>
       <div className="section-divider" />
-      <HowItWorks />
+      <Reveal><HowItWorks /></Reveal>
       <div className="section-divider" />
-      <ServiceInfo />
+      <Reveal><ServiceInfo /></Reveal>
       <div className="section-divider" />
-      <WhyUs />
+      <Reveal><WhyUs /></Reveal>
       <div className="section-divider" />
-      <PricingSection />
+      <Reveal><PricingSection /></Reveal>
       <div className="section-divider" />
-      <ReviewsSection />
+      <Reveal><ReviewsSection /></Reveal>
       <div className="section-divider" />
-      <FaqSection />
+      <Reveal><FaqSection /></Reveal>
       <div className="section-divider" />
-      <CtaSection />
+      <Reveal><CtaSection /></Reveal>
     </>
   )
 }

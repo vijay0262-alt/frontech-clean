@@ -10,7 +10,7 @@ const BASE = 'https://frontechsecurity.com'
 const PAGE_URL = `${BASE}/services`
 
 export const metadata: Metadata = {
-  title: 'Security Camera Installation, Doorbell Setup & Service Services | FrontechSecurity',
+  title: 'Security Camera Installation, Doorbell Setup & Services | FrontechSecurity',
   description: 'Expert security camera installation, smart doorbell setup, Wi-Fi network optimization, and ongoing expert service — certified technicians across USA & Canada. Same-day service from $49.99. Call +1 (844) 966-7866.',
   keywords: [
     'security camera installation service',

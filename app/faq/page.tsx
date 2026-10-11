@@ -70,7 +70,7 @@ const faqSchema = {
       '@type': 'FAQPage',
       '@id': `${PAGE_URL}#page`,
       name: 'Security Camera Installation FAQ',
-      description: 'Frequently asked questions about security camera installation, smart doorbell setup, pricing plans, and professional service services.',
+      description: 'Frequently asked questions about security camera installation, smart doorbell setup, pricing plans, and professional services.',
       url: PAGE_URL,
       mainEntity: [
         {

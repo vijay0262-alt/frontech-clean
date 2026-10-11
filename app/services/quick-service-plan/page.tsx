@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'camera firmware update service',
     'security camera service plan',
     'monthly security camera service plan',
-    'smart home expert service service',
+    'smart home expert care plan',
     'security camera assistance USA',
     'security camera assistance Canada',
     'security camera annual service plan',

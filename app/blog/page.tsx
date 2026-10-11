@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, CalendarDays, Clock3 } from 'lucide-react'
 import { blogPosts } from '@/lib/blog-data'
+import Reveal from '@/components/Reveal'
 
 const BASE = 'https://frontechsecurity.com'
 
@@ -44,46 +45,80 @@ export default function BlogIndexPage() {
         </div>
       </section>
 
-      {/* Posts grid */}
-      <section className="mx-auto max-w-6xl px-4 py-14 sm:py-18">
+      {/* Featured post + grid */}
+      <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        {/* Featured */}
+        <Reveal>
+          <Link
+            href={`/blog/${blogPosts[0].slug}`}
+            className="group hover-lift mb-10 grid overflow-hidden rounded-2xl border border-[#e3eaf5] bg-white shadow-sm md:grid-cols-2"
+          >
+            <div className="relative h-60 w-full overflow-hidden bg-[#f0f4ff] md:h-auto">
+              <Image
+                src={blogPosts[0].image.src}
+                alt={blogPosts[0].image.alt}
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-col justify-center p-7 sm:p-10">
+              <div className="mb-3 flex items-center gap-3 text-xs">
+                <span className="rounded-full bg-[#0066cc] px-3 py-1 font-bold text-white">Featured</span>
+                <span className="rounded-full bg-[#0066cc]/10 px-3 py-1 font-bold text-[#0066cc]">{blogPosts[0].category}</span>
+                <span className="flex items-center gap-1 text-[#6b7280]"><Clock3 size={12} /> {blogPosts[0].readTime}</span>
+              </div>
+              <h2 className="font-serif text-2xl font-black leading-snug text-[#1a1a1a] transition-colors group-hover:text-[#0066cc] sm:text-3xl">
+                {blogPosts[0].title}
+              </h2>
+              <p className="mt-4 text-[15px] leading-relaxed text-[#4a4a4a]">{blogPosts[0].excerpt}</p>
+              <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-[#0066cc] transition-transform group-hover:translate-x-1">
+                Read the guide <ArrowRight size={15} />
+              </span>
+            </div>
+          </Link>
+        </Reveal>
+
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {blogPosts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-[#e3eaf5] bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0066cc]/10"
-            >
-              <div className="relative h-48 w-full overflow-hidden bg-[#f0f4ff]">
-                <Image
-                  src={post.image.src}
-                  alt={post.image.alt}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="flex flex-1 flex-col p-6">
-                <div className="mb-3 flex items-center gap-3 text-xs">
-                  <span className="rounded-full bg-[#0066cc]/10 px-3 py-1 font-bold text-[#0066cc]">{post.category}</span>
-                  <span className="flex items-center gap-1 text-[#6b7280]">
-                    <Clock3 size={12} /> {post.readTime}
-                  </span>
+          {blogPosts.slice(1).map((post, i) => (
+            <Reveal key={post.slug} delay={(i % 3) * 80}>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#e3eaf5] bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[#0066cc]/10"
+              >
+                <div className="relative h-48 w-full overflow-hidden bg-[#f0f4ff]">
+                  <Image
+                    src={post.image.src}
+                    alt={post.image.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
-                <h2 className="font-serif text-xl font-bold leading-snug text-[#1a1a1a] transition-colors group-hover:text-[#0066cc]">
-                  {post.title}
-                </h2>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-[#4a4a4a]">{post.excerpt}</p>
-                <div className="mt-5 flex items-center justify-between text-xs text-[#6b7280]">
-                  <span className="flex items-center gap-1.5">
-                    <CalendarDays size={13} />
-                    {new Date(post.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-                  </span>
-                  <span className="flex items-center gap-1 font-bold text-[#0066cc] transition-transform group-hover:translate-x-1">
-                    Read <ArrowRight size={13} />
-                  </span>
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="mb-3 flex items-center gap-3 text-xs">
+                    <span className="rounded-full bg-[#0066cc]/10 px-3 py-1 font-bold text-[#0066cc]">{post.category}</span>
+                    <span className="flex items-center gap-1 text-[#6b7280]">
+                      <Clock3 size={12} /> {post.readTime}
+                    </span>
+                  </div>
+                  <h2 className="font-serif text-xl font-bold leading-snug text-[#1a1a1a] transition-colors group-hover:text-[#0066cc]">
+                    {post.title}
+                  </h2>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-[#4a4a4a]">{post.excerpt}</p>
+                  <div className="mt-5 flex items-center justify-between text-xs text-[#6b7280]">
+                    <span className="flex items-center gap-1.5">
+                      <CalendarDays size={13} />
+                      {new Date(post.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                    </span>
+                    <span className="flex items-center gap-1 font-bold text-[#0066cc] transition-transform group-hover:translate-x-1">
+                      Read <ArrowRight size={13} />
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </section>

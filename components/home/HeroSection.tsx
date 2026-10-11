@@ -7,31 +7,31 @@ export default function HeroSection() {
     <section className="relative flex items-center overflow-hidden bg-white sm:min-h-[calc(100svh-64px)]" style={{ minHeight: '100svh' }}>
       {/* Lightweight CSS background — subtle light blue accent */}
       <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
-        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-50 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-50 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl animate-float-2" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 w-full">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-3 py-1.5 mb-5 sm:mb-6">
+          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-3 py-1.5 mb-5 sm:mb-6 fade-up">
             <ShieldCheck size={13} className="text-[#0066cc] shrink-0" />
             <span className="text-[#0066cc] text-[11px] sm:text-xs font-bold tracking-wider uppercase">Certified Smart Home Security Experts</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl text-[#1a1a1a] leading-tight mb-4 sm:mb-5 font-serif text-balance">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl text-[#1a1a1a] leading-tight mb-4 sm:mb-5 font-serif font-black text-balance fade-up-1">
             Professional Security Camera &amp;{' '}
             <span className="text-[#0066cc]">Smart Doorbell</span>{' '}
             Installation
           </h1>
 
-          <p className="text-base sm:text-lg text-[#4a4a4a] leading-relaxed mb-6 sm:mb-8 max-w-2xl">
+          <p className="text-base sm:text-lg text-[#4a4a4a] leading-relaxed mb-6 sm:mb-8 max-w-2xl fade-up-2">
             Expert installation, setup &amp; fast service for all security camera systems and smart doorbells. Serving homes across the USA &amp; Canada. Plans starting at just{' '}
             <span className="text-[#1a1a1a] font-bold">$49.99</span>.
           </p>
 
           {/* Key benefits */}
-          <div className="flex flex-wrap gap-2 sm:gap-3 mb-7 sm:mb-9">
+          <div className="flex flex-wrap gap-2 sm:gap-3 mb-7 sm:mb-9 fade-up-3">
             {['Same-Day Service', 'All Major Brands', 'Full App Setup', '100% Satisfaction'].map((b) => (
               <span key={b} className="flex items-center gap-1.5 text-xs sm:text-sm text-[#1a1a1a] bg-[#22c55e]/60 border border-[#22c55e] rounded-full px-3 py-1">
                 <CheckCircle2 size={12} className="text-[#22c55e] shrink-0" />
@@ -41,7 +41,7 @@ export default function HeroSection() {
           </div>
 
           {/* CTA buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10 fade-up-4">
             <a
               href="tel:+18449667866"
               className="flex items-center justify-center gap-2 sm:gap-3 bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-lg hover:shadow-xl transition-all pulse-phone"
@@ -59,7 +59,7 @@ export default function HeroSection() {
           </div>
 
           {/* Trust signals */}
-          <div className="flex flex-wrap items-center gap-3 sm:gap-5">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-5 fade-up-5">
             <div className="flex items-center gap-1">
               {[1,2,3,4,5].map((s) => <Star key={s} size={14} fill="#fbbf24" className="text-[#fbbf24]" />)}
               <span className="text-[#1a1a1a] text-sm font-semibold ml-1">4.9/5</span>
@@ -72,8 +72,8 @@ export default function HeroSection() {
       </div>
 
       {/* Security Camera & Doorbell Image — visible on large screens only */}
-      <div className="hidden xl:flex absolute right-4 top-1/2 -translate-y-1/2 z-10">
-        <div className="relative">
+      <div className="hidden xl:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 fade-up-3">
+        <div className="relative hover-lift rounded-2xl">
           <Image
             src="/hero.png"
             alt="Security Camera and Smart Doorbell Installation"
@@ -103,7 +103,7 @@ export default function HeroSection() {
       </div>
 
       {/* Mobile stat strip */}
-      <div className="absolute bottom-4 left-4 right-4 xl:hidden">
+      <div className="absolute bottom-4 left-4 right-4 xl:hidden fade-up-5">
         <div className="grid grid-cols-3 gap-2">
           {[
             { num: '10k+', label: 'Installs' },

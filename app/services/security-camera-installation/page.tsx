@@ -7,7 +7,7 @@ const PAGE_URL = `${BASE}/services/security-camera-installation`
 
 export const metadata: Metadata = {
   title: 'Security Camera Installation Service Near Me | USA & Canada — FrontechSecurity',
-  description: 'Expert security camera installation & service service. Ring, Arlo, Blink, Reolink, ADT & all brands. Resolve not connecting, not working issues. Professional setup & diagnostics. Same-day service USA & Canada. Call +1 (844) 966-7866.',
+  description: 'Expert security camera installation & professional service. Ring, Arlo, Blink, Reolink, ADT & all brands. Resolve not connecting, not working issues. Professional setup & diagnostics. Same-day service USA & Canada. Call +1 (844) 966-7866.',
   keywords: [
     'security camera installation',
     'security camera installation near me',
@@ -163,7 +163,7 @@ export default function SecurityCameraInstallationPage() {
           
           <div className="mt-8 p-4 bg-[#1e3a5f]/20 border border-[#e5e7eb] rounded-lg max-w-3xl mx-auto">
             <p className="text-xs text-[#4a4a4a] leading-relaxed">
-              <strong className="text-[#0066cc]">Important Notice:</strong> FrontechSecurity is an independent third-party installation and professional service service provider. We are not affiliated with, endorsed by, or sponsored by Ring, Arlo, Blink, Reolink, ADT, Google Nest, or any other camera manufacturer mentioned on this page. All brand names and trademarks are property of their respective owners and are used for descriptive purposes only to indicate compatibility and service expertise.
+              <strong className="text-[#0066cc]">Important Notice:</strong> FrontechSecurity is an independent third-party installation and professional services provider. We are not affiliated with, endorsed by, or sponsored by Ring, Arlo, Blink, Reolink, ADT, Google Nest, or any other camera manufacturer mentioned on this page. All brand names and trademarks are property of their respective owners and are used for descriptive purposes only to indicate compatibility and service expertise.
             </p>
           </div>
         </div>
