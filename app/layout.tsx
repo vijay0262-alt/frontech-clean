@@ -271,7 +271,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${inter.variable} ${robotoCondensed.variable} font-sans`}>
       <head>
        <Script
-  src="https://www.googletagmanager.com/gtag/js?id=AW-17888951335"
+  src="https://www.googletagmanager.com/gtag/js?id=AW-18513655727"
   strategy="beforeInteractive"
 />
 
@@ -280,7 +280,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'AW-17888951335');
+    gtag('config', 'AW-18513655727');
   `}
 </Script>
           
