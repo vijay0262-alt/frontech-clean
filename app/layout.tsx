@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import TopBar from '@/components/TopBar'
 import JivoChat from '@/components/JivoChat'
+import PhoneCallConversion from '@/components/PhoneCallConversion'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -316,6 +317,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <TopBar />
         <Navbar />
           <JivoChat />
+          <PhoneCallConversion />
         <main>{children}</main>
         <Footer />
       </body>
