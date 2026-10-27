@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import { Phone, CalendarCheck, MessageCircle } from 'lucide-react'
+import { Phone } from 'lucide-react'
 
 export default function CtaSection() {
   return (
@@ -23,13 +22,6 @@ export default function CtaSection() {
             <Phone size={22} />
             ☎ Call +1 (844) 966-7866
           </a>
-          <Link
-            href="/book"
-            className="flex items-center justify-center gap-3 border-2 border-[#0066cc] text-[#0066cc] font-bold text-lg px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#1a1a1a] transition-all hover:-translate-y-1"
-          >
-            <CalendarCheck size={22} />
-            Book Online — Free
-          </Link>
         </div>
         <p className="text-[#4a4a4a] text-sm">
           Available Mon–Sun, 7AM–10PM EST · USA &amp; Canada · Same-day slots available

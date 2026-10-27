@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
-import Link from 'next/link'
-import { Phone, ChevronDown, ArrowRight } from 'lucide-react'
+import { Phone, ChevronDown } from 'lucide-react'
 
 const categories = [
   {
@@ -118,9 +117,6 @@ export default function FaqClient() {
             <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1">
               <Phone size={18} /> +1 (844) 966-7866
             </a>
-            <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold px-8 py-4 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all">
-              Book Online <ArrowRight size={16} />
-            </Link>
           </div>
         </div>
       </section>

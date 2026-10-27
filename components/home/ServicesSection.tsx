@@ -127,9 +127,9 @@ export default function ServicesSection() {
         <div className="text-center mt-10">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
+            className="inline-flex items-center gap-1.5 text-[#0066cc] text-sm font-semibold hover:gap-3 transition-all"
           >
-            View All Services <ArrowRight size={18} />
+            View All Services <ArrowRight size={15} />
           </Link>
         </div>
       </div>

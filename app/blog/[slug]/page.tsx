@@ -155,10 +155,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 Certified installers, same-day appointments, all major brands. Service across USA &amp; Canada from $49.99.
               </p>
               <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
-                <Link href="/book" className="hover-lift rounded-full bg-white px-7 py-3.5 text-sm font-bold text-[#0066cc]">
-                  Book an Installation
-                </Link>
-                <a href={PHONE_HREF} className="inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-3.5 text-sm font-bold text-white transition-colors hover:bg-white/10">
+                <a href={PHONE_HREF} className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-bold text-[#0066cc] transition-colors hover:bg-blue-50">
                   <Phone size={15} /> {PHONE}
                 </a>
               </div>
