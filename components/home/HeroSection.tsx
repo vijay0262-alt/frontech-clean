@@ -26,8 +26,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-base sm:text-lg text-[#4a4a4a] leading-relaxed mb-6 sm:mb-8 max-w-2xl fade-up-2">
-            Expert installation, setup &amp; fast service for all security camera systems and smart doorbells. Serving homes across the USA &amp; Canada. Plans starting at just{' '}
-            <span className="text-[#1a1a1a] font-bold">$49.99</span>.
+            Expert installation, setup &amp; fast service for all security camera systems and smart doorbells. Serving homes across the USA &amp; Canada.
           </p>
 
           {/* Key benefits */}
@@ -44,9 +43,13 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10 fade-up-4">
             <a
               href="tel:+18449667866"
-              className="flex items-center justify-center gap-2 sm:gap-3 bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-lg hover:shadow-xl transition-all pulse-phone"
+              className="relative flex items-center justify-center gap-2 sm:gap-3 bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-lg hover:shadow-xl transition-all phone-cta"
             >
-              <Phone size={20} />
+              <span className="absolute -top-2 -right-2 flex items-center gap-1 bg-[#22c55e] text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow">
+                <span className="w-1.5 h-1.5 bg-white rounded-full live-dot" />
+                Available Now
+              </span>
+              <Phone size={20} className="phone-ring shrink-0" />
               📞 Call (844) 966-7866
             </a>
             <Link
@@ -67,6 +70,22 @@ export default function HeroSection() {
             </div>
             <div className="hidden sm:block h-4 w-px bg-[#d1d5db]" />
             <span className="text-[#4a4a4a] text-sm">Serving <span className="text-[#1a1a1a] font-semibold">50+ Cities</span> in USA &amp; Canada</span>
+          </div>
+
+          {/* Mobile stat strip — in normal flow to avoid overlapping content */}
+          <div className="mt-7 xl:hidden fade-up-5">
+            <div className="grid grid-cols-3 gap-2">
+              {[
+                { num: '10k+', label: 'Installs' },
+                { num: '98%', label: 'Satisfied' },
+                { num: '< 2h', label: 'Avg. Time' },
+              ].map((stat) => (
+                <div key={stat.num} className="bg-white border border-[#e5e7eb] rounded-lg px-2 py-2 text-center shadow-sm">
+                  <p className="text-sm font-black text-[#0066cc]">{stat.num}</p>
+                  <p className="text-[#4a4a4a] text-[10px]">{stat.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -102,21 +121,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Mobile stat strip */}
-      <div className="absolute bottom-4 left-4 right-4 xl:hidden fade-up-5">
-        <div className="grid grid-cols-3 gap-2">
-          {[
-            { num: '10k+', label: 'Installs' },
-            { num: '98%', label: 'Satisfied' },
-            { num: '< 2h', label: 'Avg. Time' },
-          ].map((stat) => (
-            <div key={stat.num} className="bg-white border border-[#e5e7eb] rounded-lg px-2 py-2 text-center shadow-sm">
-              <p className="text-sm font-black text-[#0066cc]">{stat.num}</p>
-              <p className="text-[#4a4a4a] text-[10px]">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
   )
 }
