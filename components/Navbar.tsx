@@ -107,7 +107,7 @@ export default function Navbar() {
               href="tel:+18449667866"
               className="flex items-center gap-2 px-4 py-2 bg-[#0066cc] hover:bg-[#0052a3] text-white text-sm font-bold rounded-lg hover:shadow-lg transition-all"
             >
-              <Phone size={14} />
+              <Phone size={14} className="phone-ring" />
               (844) 966-7866
             </a>
           </div>
@@ -163,7 +163,7 @@ export default function Navbar() {
               href="tel:+18449667866"
               className="flex items-center justify-center gap-2 px-4 py-3 bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold rounded-lg"
             >
-              <Phone size={16} />
+              <Phone size={16} className="phone-ring" />
               Call (844) 966-7866
             </a>
           </div>

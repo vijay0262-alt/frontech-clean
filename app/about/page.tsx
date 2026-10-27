@@ -143,7 +143,7 @@ export default function AboutPage() {
                 href="tel:+18449667866"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1"
               >
-                <Phone size={16} /> ☎ Call Us: +1 (844) 966-7866
+                <Phone size={16} className="phone-ring" /> Call Us: +1 (844) 966-7866
               </a>
               <Link
                 href="/book"

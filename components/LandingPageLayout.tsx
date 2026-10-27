@@ -35,7 +35,7 @@ export default function LandingPageLayout({ children }: { children: React.ReactN
         className="fixed bottom-5 right-5 z-50 lg:hidden flex items-center gap-2 px-5 py-3.5 bg-[#0066cc] hover:bg-[#0052a3] text-white text-sm font-bold rounded-full shadow-xl shadow-[#0066cc]/30 transition-all pulse-phone"
         aria-label="Call now"
       >
-        <Phone size={17} />
+        <Phone size={17} className="phone-ring" />
         (844) 966-7866
       </a>
 

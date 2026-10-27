@@ -56,7 +56,7 @@ export default function ContactClient() {
           <p className="text-[#4a4a4a] text-sm">Need immediate help? Call us now:</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg transition-shadow">
-              <Phone size={16} /> +1 (844) 966-7866
+              <Phone size={16} className="phone-ring" /> +1 (844) 966-7866
             </a>
             <a href="/" className="inline-flex items-center justify-center gap-2 border-2 border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a] font-bold px-7 py-3.5 rounded-xl transition-colors">
               Back to Home
@@ -79,7 +79,7 @@ export default function ContactClient() {
           </h1>
           <p className="text-[#4a4a4a] text-lg mb-6">Have a question about installation, pricing, or your existing system? Reach out — our team responds fast.</p>
           <a href="tel:+18449667866" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-black text-lg px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1 pulse-phone">
-            <Phone size={20} /> +1 (844) 966-7866 — Call Free
+            <Phone size={20} className="phone-ring" /> +1 (844) 966-7866 — Call Free
           </a>
         </div>
       </section>
@@ -181,7 +181,7 @@ export default function ContactClient() {
                 ))}
               </ul>
               <a href="tel:+18449667866" className="mt-5 flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-black rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-0.5 pulse-phone">
-                <Phone size={17} /> +1 (844) 966-7866
+                <Phone size={17} className="phone-ring" /> +1 (844) 966-7866
               </a>
             </div>
             <div className="glow-card bg-white rounded-xl p-6">

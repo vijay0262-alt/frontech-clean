@@ -163,7 +163,7 @@ export default function SecurityCameraInstallationPage() {
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold text-lg px-10 py-5 rounded-xl hover:shadow-2xl hover:shadow-[#0066cc]/40 transition-all">
-              <Phone size={22} /> Call Now (844) 966-7866
+              <Phone size={22} className="phone-ring" /> Call Now (844) 966-7866
             </a>
             <a href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-lg px-10 py-5 rounded-xl hover:bg-[#0066cc] hover:text-white transition-all">
               Book Free Consultation
@@ -333,7 +333,7 @@ export default function SecurityCameraInstallationPage() {
             </div>
             <div className="space-y-3">
               <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold text-xl px-12 py-6 rounded-xl hover:shadow-2xl hover:shadow-[#0066cc]/50 transition-all pulse-phone w-full sm:w-auto">
-                <Phone size={26} /> Call Now (844) 966-7866
+                <Phone size={26} className="phone-ring" /> Call Now (844) 966-7866
               </a>
               <p className="text-sm text-white">👨‍🔧 Live Expert Available • 📞 Free Consultation • ⚡ Same-Day Service</p>
             </div>

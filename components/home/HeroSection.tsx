@@ -43,14 +43,14 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10 fade-up-4">
             <a
               href="tel:+18449667866"
-              className="relative flex items-center justify-center gap-2 sm:gap-3 bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-lg hover:shadow-xl transition-all phone-cta"
+              className="relative flex items-center justify-center gap-2 sm:gap-3 bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-lg sm:text-xl px-8 sm:px-10 py-4 sm:py-5 rounded-lg hover:shadow-xl transition-all phone-cta"
             >
               <span className="absolute -top-2 -right-2 flex items-center gap-1 bg-[#22c55e] text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow">
                 <span className="w-1.5 h-1.5 bg-white rounded-full live-dot" />
                 Available Now
               </span>
-              <Phone size={20} className="phone-ring shrink-0" />
-              📞 Call (844) 966-7866
+              <Phone size={22} className="phone-ring shrink-0" />
+              Call (844) 966-7866
             </a>
             <Link
               href="/book"

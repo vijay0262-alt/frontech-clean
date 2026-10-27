@@ -31,24 +31,6 @@ const legal = [
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-[#e5e7eb]">
-      {/* CTA Banner */}
-      <div className="bg-gradient-to-r from-[#0066cc] to-[#0052a3] py-8 sm:py-10 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-white/90 text-xs sm:text-sm font-semibold uppercase tracking-widest mb-2">Ready to Secure Your Home?</p>
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 font-serif text-balance">
-            Get Expert Installation — Call Now
-          </h3>
-          <a
-            href="tel:+18449667866"
-            className="inline-flex items-center gap-2 sm:gap-3 bg-white text-[#0066cc] font-bold text-lg sm:text-xl px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl hover:bg-blue-50 hover:shadow-2xl transition-all"
-          >
-            <Phone size={20} />
-            ☎ +1 (844) 966-7866
-          </a>
-          <p className="text-white/90 text-xs sm:text-sm mt-3">USA &amp; Canada — Mon to Sun, 7AM–10PM EST</p>
-        </div>
-      </div>
-
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">

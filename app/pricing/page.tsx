@@ -172,8 +172,8 @@ export default function PricingPage() {
             href="tel:+18449667866"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066cc] to-[#0052a3] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-[#0066cc]/30 transition-all hover:-translate-y-1 pulse-phone"
           >
-            <Phone size={18} />
-            ☎ Questions? Call +1 (844) 966-7866
+            <Phone size={18} className="phone-ring" />
+            Questions? Call +1 (844) 966-7866
           </a>
         </div>
       </section>
@@ -229,7 +229,7 @@ export default function PricingPage() {
                     href="tel:+18449667866"
                     className={`flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-sm transition-all ${plan.highlight ? 'bg-white/10 text-[#1a1a1a] hover:bg-white/20' : 'border border-[#e5e7eb] text-[#4a4a4a] hover:text-[#1a1a1a]'}`}
                   >
-                    <Phone size={13} /> Call to Order
+                    <Phone size={13} className="phone-ring" /> Call to Order
                   </a>
                 </div>
               </div>

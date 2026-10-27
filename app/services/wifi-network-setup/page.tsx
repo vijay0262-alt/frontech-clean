@@ -134,7 +134,7 @@ export default function WifiNetworkSetupPage() {
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold text-base px-7 py-4 rounded-xl hover:shadow-xl hover:shadow-[#7c3aed]/30 transition-shadow pulse-phone">
-              <Phone size={18} /> Call +1 (844) 966-7866 — Free Consult
+              <Phone size={18} className="phone-ring" /> Call +1 (844) 966-7866 — Free Consult
             </a>
             <Link href="/book" className="inline-flex items-center justify-center gap-2 border-2 border-[#0066cc] text-[#0066cc] font-bold text-base px-7 py-4 rounded-xl hover:bg-[#0066cc] hover:text-[#0a0f1e] transition-colors">
               Book Online <ArrowRight size={16} />
@@ -224,7 +224,7 @@ export default function WifiNetworkSetupPage() {
           <p className="text-[#64748b] text-xs mb-7">Hardware (extenders, managed switches, mesh nodes) not included in service price and is quoted separately.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href="tel:+18449667866" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#0066cc] text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-shadow pulse-phone">
-              <Phone size={18} /> Call +1 (844) 966-7866
+              <Phone size={18} className="phone-ring" /> Call +1 (844) 966-7866
             </a>
           </div>
         </div>
